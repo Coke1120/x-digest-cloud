@@ -1,10 +1,10 @@
-"""Call this exact private Site's MCP using platform service access from stdin."""
+"""Call this exact Site with protected writer access from hidden stdin."""
 import json
 import sys
 import urllib.request
 import urllib.error
 
-ORIGIN = 'https://leo-x-daily.howailok1120jp2.chatgpt.site'
+ORIGINS = {'https://leo-x-daily.howailok1120jp2.chatgpt.site', 'https://news.hwl-hk.com'}
 
 class NoRedirect(urllib.request.HTTPRedirectHandler):
     def redirect_request(self, req, fp, code, msg, headers, newurl):
@@ -24,7 +24,7 @@ def main():
     finally:
         if settings is not None:
             termios.tcsetattr(sys.stdin.fileno(), termios.TCSANOW, settings)
-    if value.get('origin') != ORIGIN or not isinstance(value.get('token'), str) or not value['token']:
+    if value.get('origin') not in ORIGINS or not isinstance(value.get('token'), str) or not value['token']:
         raise ValueError('invalid_service_access')
     operation = value.get('operation', 'mcp')
     if operation == 'status':
@@ -49,7 +49,7 @@ def main():
     else:
         raise ValueError('invalid_service_operation')
     encoded = json.dumps(payload, ensure_ascii=False).encode() if payload is not None else None
-    request = urllib.request.Request(ORIGIN + path, data=encoded, headers={'Content-Type':'application/json','Accept':'application/json, text/plain','OAI-Sites-Authorization':'Bearer '+value['token']}, method=method)
+    request = urllib.request.Request(value['origin'] + path, data=encoded, headers={'Content-Type':'application/json','Accept':'application/json, text/plain','OAI-Sites-Authorization':'Bearer '+value['token'],'X-Digest-Authorization':'Bearer '+value['token']}, method=method)
     opener = urllib.request.build_opener(NoRedirect)
     try:
         with opener.open(request, timeout=25) as response:
@@ -60,7 +60,14 @@ def main():
             else:
                 raise ValueError('unexpected_response_type')
     except urllib.error.HTTPError as error:
-        print(json.dumps({'ok':False,'error':'http_'+str(error.code)}));return 2
+        code = 'http_' + str(error.code)
+        try:
+            server_code = json.load(error).get('error')
+            if server_code in {'writer_unauthorized', 'writer_auth_unconfigured', 'semantic_review_required', 'source_snapshot_stale', 'invalid_source_snapshot', 'invalid_update_time'}:
+                code = server_code
+        except (ValueError, AttributeError):
+            pass
+        print(json.dumps({'ok':False,'error':code}));return 2
     except urllib.error.URLError:
         print(json.dumps({'ok':False,'error':'service_network_unavailable'}));return 2
     print(json.dumps(result,ensure_ascii=False))
