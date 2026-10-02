@@ -16,7 +16,7 @@ Use when producing a plain-text Traditional Chinese 24h X/Twitter digest via Age
 - Traditional Chinese
 - **Never invent tweet IDs** — every ID must appear in twitter-cli JSON under `/tmp/x-digest-raw-*/`
 - Auth: use this package's `scripts/x_env.py` adapter with explicitly configured Agent-Reach credentials; never print secrets. The old `load-twitter-env.py` helper is not a prerequisite.
-- Prefer `twitter search -t top`; if search 404s, fix ClientTransaction (`https://x.com/home` + cookies) / twitter-cli ≥0.8.6, or fall back to feed + user-posts
+- Use both `twitter search -t Top` and `-t Latest`; if search 404s, fix ClientTransaction (`https://x.com/home` + cookies) / twitter-cli ≥0.8.6, or fall back to feed + user-posts
 - **Token thrift (strict):** disk-only gather → prefilter `candidates.jsonl` → LLM reads candidates only
 - **Reader-facing copy only:** the digest file must not contain meta notes (no「句式示範」、pipeline 說明、內部編輯備註). Put process notes in `*-NOTES.md` only.
 
@@ -37,7 +37,7 @@ Use **`最後更新：香港時間 YYYY-MM-DD HH:MM`** (Asia/Hong_Kong). Do **no
 
 ## Gather / prefilter
 ```bash
-python3 <skill-dir>/scripts/gather.py --out-dir /tmp/x-digest-raw-YYYY-MM-DD-HHMM-vN --n 12 --user-n 8
+python3 <skill-dir>/scripts/gather.py --out-dir /tmp/x-digest-raw-YYYY-MM-DD-HHMM-vN --n 12 --user-n 4
 python3 <skill-dir>/scripts/prefilter.py /tmp/x-digest-raw-YYYY-MM-DD-HHMM-vN -o <private-work-dir>/candidates.jsonl --hours 26 --limit 150
 ```
 
@@ -55,3 +55,12 @@ python3 <skill-dir>/scripts/prefilter.py /tmp/x-digest-raw-YYYY-MM-DD-HHMM-vN -o
 ### 📝 總結
 ```
 Files: `<private-output-dir>/x-digest-YYYY-MM-DD-vN.md` + a separate `…-NOTES.md` (process/funnel only in NOTES). Preserve same-day versions. Keep this editorial reference aligned when rules change.
+
+## Discovery and hourly changes (2026-10-02)
+- Use Top and Latest across the eight concrete topic queries. Anchor accounts provide continuity, not an exclusive source list. Include maintainers, researchers and hands-on users found outside the anchors.
+- Rank concrete releases, fixes, reproducible measurements and technical detail above engagement. Popularity is bounded and receives no watchlist boost. Candidate selection reserves opportunities across topics and outside the anchors; this is not a required publication quota.
+- Normally at most two bullets per author. Distinct major first-party announcements may justify an exception, documented privately. Keep one lead and at most two substantive follow-ups per event, even when different accounts discuss it.
+- Compare every claim with full text and label third-party reporting, rumours and personal judgments. A release keyword, link or derived quality signal is not proof. Remove unsupported product promises, contextless reactions, copied promotions and repetitive commentary.
+- Read the previous edition through the verified Site helper before drafting. Use `[本次新增] ` before Name only for a story absent from that edition; use `[有進展] ` only for a materially changed fact about an existing story. A different source ID with the same facts is not new. Leave repeated facts unmarked in the rolling-24h overview. Do not compare with other publishers' digests.
+- The optional prefix keeps the source shape: `- [本次新增] Name（@handle）事實摘要；收束句。（tweetId）`. Keep one genuine ID per bullet and the original Hong Kong label. Markers are reader content; funnel counts, source limitations and any author-cap exceptions remain private notes.
+- Aim for 45–55 substantive bullets only when supported. Never pad to satisfy a source, category, author or change-marker quota.

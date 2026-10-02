@@ -37,7 +37,8 @@ def build(raw_dir, candidates, run_id):
         records.append({'id': row['id'], 'author': {'screenName': handle, 'name': author.get('name') or handle},
                         'text': text, 'createdAtISO': ts.astimezone(timezone.utc).isoformat(),
                         'isRetweet': False, 'source': filename,
-                        'url': 'https://x.com/i/status/' + row['id'], 'candidate_text': row['text']})
+                        'url': 'https://x.com/i/status/' + row['id'], 'candidate_text': row['text'],
+                        'candidate_context': {key: row[key] for key in ('category','selection_lane','selection_score','quality_signals','sources') if key in row}})
     if not records:
         raise ValueError('no_verifiable_candidates')
     result = {'schema_version': 1, 'run_id': str(run_id), 'collected_at': now.isoformat(),
