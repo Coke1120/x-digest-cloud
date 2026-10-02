@@ -15,6 +15,10 @@ QUERIES = [
     '("open source" OR "open-source" OR 开源) (agent OR AI OR LLM) (released OR launch OR GitHub OR demo OR 发布)',
     '("AI safety" OR alignment OR "AI regulation") (research OR standard OR evaluation OR policy OR 报告 OR 监管)',
     '(OpenAI OR Anthropic OR Nvidia OR AMD OR Stripe OR stablecoin) (funding OR IPO OR valuation OR earnings OR pricing OR 融资 OR 上市 OR 财报)',
+    '(AI OR "artificial intelligence") (copyright OR privacy OR licensing OR legislation OR regulation OR 版權 OR 隐私 OR 监管)',
+    '(AI OR Nvidia OR AMD OR "data center") (capacity OR partnership OR supply OR procurement OR energy OR 芯片 OR 数据中心 OR 合作)',
+    '(AI OR OpenAI OR Anthropic OR Nvidia OR AMD OR Microsoft OR Alphabet) (revenue OR earnings OR funding OR acquisition OR investment OR 融资 OR 财报 OR 收购)',
+    '(stablecoin OR Stripe OR "AI startup" OR "AI infrastructure") (treasury OR funding OR valuation OR revenue OR payments OR 融资 OR 估值)',
 ]
 WATCHLIST = ['OpenAI', 'AnthropicAI', 'deepseek_ai', 'openclaw', 'sama', 'steipete', 'emollick', 'dotey', 'simonw', 'lidangzzz', 'levelsio', 'unsafemut', 'sydneyrunkle', 'unitygames']
 

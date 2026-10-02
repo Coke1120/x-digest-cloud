@@ -42,7 +42,7 @@ python3 <skill-dir>/scripts/prefilter.py /tmp/x-digest-raw-YYYY-MM-DD-HHMM-vN -o
 ```
 
 ## Editorial dedupe
-- **1 lead + ≤2 follow-ups** per story; target **~45–55** bullets
+- **1 lead + ≤2 follow-ups** per story; target **10–20 substantive bullets per default category**, 50–100 total when supported; no more than 100 source bullets overall
 - Substance bar: concrete claim (number, release, stance, verifiable quote)
 
 ## Output
@@ -57,10 +57,10 @@ python3 <skill-dir>/scripts/prefilter.py /tmp/x-digest-raw-YYYY-MM-DD-HHMM-vN -o
 Files: `<private-output-dir>/x-digest-YYYY-MM-DD-vN.md` + a separate `…-NOTES.md` (process/funnel only in NOTES). Preserve same-day versions. Keep this editorial reference aligned when rules change.
 
 ## Discovery and hourly changes (2026-10-02)
-- Use Top and Latest across the eight concrete topic queries. Anchor accounts provide continuity, not an exclusive source list. Include maintainers, researchers and hands-on users found outside the anchors.
+- Use Top and Latest across the twelve concrete topic queries. Anchor accounts provide continuity, not an exclusive source list. Include maintainers, researchers and hands-on users found outside the anchors.
 - Rank concrete releases, fixes, reproducible measurements and technical detail above engagement. Popularity is bounded and receives no watchlist boost. Candidate selection reserves opportunities across topics and outside the anchors; this is not a required publication quota.
 - Normally at most two bullets per author. Distinct major first-party announcements may justify an exception, documented privately. Keep one lead and at most two substantive follow-ups per event, even when different accounts discuss it.
 - Compare every claim with full text and label third-party reporting, rumours and personal judgments. A release keyword, link or derived quality signal is not proof. Remove unsupported product promises, contextless reactions, copied promotions and repetitive commentary.
 - Read the previous edition through the verified Site helper before drafting. Use `[本次新增] ` before Name only for a story absent from that edition; use `[有進展] ` only for a materially changed fact about an existing story. A different source ID with the same facts is not new. Leave repeated facts unmarked in the rolling-24h overview. Do not compare with other publishers' digests.
 - The optional prefix keeps the source shape: `- [本次新增] Name（@handle）事實摘要；收束句。（tweetId）`. Keep one genuine ID per bullet and the original Hong Kong label. Markers are reader content; funnel counts, source limitations and any author-cap exceptions remain private notes.
-- Aim for 45–55 substantive bullets only when supported. Never pad to satisfy a source, category, author or change-marker quota.
+- Aim for 10–20 substantive source bullets per default category, 50–100 total only when supported; cap the complete edition at 100. This supersedes the older 45–55 total target. If fewer than ten independent supported items exist in a category after semantic review, use its actual count and document the coverage gap in private notes. Keep all five default headings and count each event in its most relevant category once. Do not move unrelated items into a short category, extend the exact 24-hour window or split one story to meet its target. Never pad to satisfy a source, category, author or change-marker quota.

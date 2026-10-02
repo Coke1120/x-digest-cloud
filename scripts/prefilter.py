@@ -78,8 +78,8 @@ OFFICIAL = {'openai', 'anthropicai', 'deepseek_ai', 'openclaw', 'unitygames', 'g
 CATEGORIES = {
     '開發者工具': r'\b(?:mcp|rolldown|vite|unity|copilot|sdk|typescript|blender|macdock)\b|開發工具|开发工具',
     'OpenClaw／Agent 生態': r'\b(?:openclaw|claude code|codex|harness|agentic|opendots|dots|skills?)\b|智能体|智能體|代理工具',
-    '財經': r'\b(?:ipo|funding|valuation|earnings|stablecoins?|treasur(?:y|ies)|bankrupt\w*|stripe|privy)\b|融资|融資|上市|財報|财报|破产|破產',
-    '產業': r'\b(?:ai safety|alignment|regulation|governance|policy|subscription)\b|监管|監管|安全承诺|安全承諾',
+    '財經': r'\b(?:ipo|funding|valuation|earnings|revenue|acquisition|investment|stablecoins?|treasur(?:y|ies)|bankrupt\w*|stripe|privy)\b|融资|融資|上市|財報|财报|破产|破產|收购|收購|估值',
+    '產業': r'\b(?:ai safety|alignment|regulation|governance|policy|subscription|copyright|privacy|licensing|legislation|data centers?|partnership|procurement|energy)\b|监管|監管|安全承诺|安全承諾|版權|版权|隱私|隐私|数据中心|數據中心',
     'AI 模型與研究': r'\b(?:ai|llm|gpt\w*|openai|anthropic|deepseek|qwen|gemini|glm|kimi|minimax|astra|sol|vllm|sglang|mlx|cuda|gpu|benchmark)\b|人工智能|模型|量化|推理|評測|评测|AI(?=[\u4e00-\u9fff])',
 }
 RELEASE = re.compile(r'\b(?:releas\w*|launch\w*|shipp\w*|introduc\w*|changelog|beta|open.sourc\w*|fix(?:ed|es)?|rfc)\b|发布|發布|推出|開源|开源|修复|修復|新版', re.I)
@@ -152,9 +152,13 @@ def select_candidates(rows, limit, watch, now, author_limit=4):
                     count -= 1;progress=True;break
                 if count==0:break
             if not progress:break
-    # Reserve opportunities, not publication quotas; unused capacity is reclaimed.
-    take([r for r in unique if r['selection_lane']=='discovery'], math.ceil(limit*.4))
-    take([r for r in unique if r['selection_lane']=='anchor'], math.ceil(limit*.2))
+    # Reserve evidence per category before stronger high-volume topics fill capacity.
+    # These are candidate opportunities, not publication quotas; never add weak rows.
+    category_target = math.floor(limit / len(CATEGORIES) * .8)
+    for category in CATEGORIES:
+        take([r for r in unique if r['category']==category], category_target)
+    take([r for r in unique if r['selection_lane']=='discovery'], max(0,math.ceil(limit*.4)-sum(r['selection_lane']=='discovery' for r in selected)))
+    take([r for r in unique if r['selection_lane']=='anchor'], max(0,math.ceil(limit*.2)-sum(r['selection_lane']=='anchor' for r in selected)))
     take(unique, limit-len(selected))
     # Preserve strongest complete records if snapshot byte limits require trimming.
     selected.sort(key=lambda r: (-r['selection_score'], r['id']))

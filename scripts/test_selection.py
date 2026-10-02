@@ -46,6 +46,19 @@ class SelectionTests(unittest.TestCase):
         rows=[row(1,'a','Released LLM A on GitHub'),row(2,'b','Released LLM B on GitHub')]
         self.assertEqual(len(select_candidates(rows,1,{'a'},NOW)),1)
 
+    def test_high_volume_topic_cannot_crowd_out_other_categories(self):
+        texts=['Released LLM benchmark on GitHub', 'Released Codex skill on GitHub', 'Released MCP SDK on GitHub', 'AI copyright regulation research report: licensing cost changed 5%', 'AI startup funding revenue report: revenue increased 50%']
+        rows=[]
+        for category,text in enumerate(texts):
+            for i in range(100 if category==0 else 26):
+                number=category*1000+i
+                rows.append(row(number,'builder'+str(number),text+' project '+str(number)+' with detailed verifiable technical context.',likes=100000 if category==0 else 0))
+        output=select_candidates(rows,150,set(),NOW)
+        counts={category:sum(r['category']==category for r in output) for category in {r['category'] for r in output}}
+        self.assertEqual(len(counts),5)
+        self.assertEqual(len(output),150)
+        self.assertTrue(all(count>=24 for count in counts.values()),counts)
+
     def test_cli_preserves_all_source_provenance(self):
         with tempfile.TemporaryDirectory() as directory:
             root=Path(directory);tweet={'id':'1980000000000000001','author':{'screenName':'builder','name':'Builder'},'text':'Released an LLM tool on GitHub, with latency 20 ms.','createdAtISO':NOW.isoformat(),'isRetweet':False,'metrics':{'views':100}}
