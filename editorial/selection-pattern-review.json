@@ -1,0 +1,57 @@
+{
+  "schema_version": 1,
+  "source_url": "https://x.deepsrt.cc/index.txt",
+  "review_interval_days": 7,
+  "retry_after_hours": 24,
+  "last_successful_review_at": "2026-10-03T01:16:00+08:00",
+  "last_attempted_at": "2026-10-02T18:33:14.124Z",
+  "last_attempt_status": "source_read_unavailable",
+  "basis": "Summary of the previously completed 2026-10-03 01:16 public-text observation in this conversation; fresh retrieval failed, so no new sampling is claimed.",
+  "observations": {
+    "source_bullets": 66,
+    "distinct_authors": 65,
+    "category_sizes_in_source_order": [
+      11,
+      14,
+      20,
+      7,
+      9,
+      5
+    ],
+    "languages_observed": [
+      "English",
+      "Chinese",
+      "Japanese"
+    ],
+    "self_reported_funnel": {
+      "raw": 342,
+      "candidates": 292,
+      "selected": 66
+    }
+  },
+  "active_editorial_hints": [
+    {
+      "hint": "Look beyond large public figures for maintainers, researchers, independent builders and concrete operational experience.",
+      "confidence": "observed source mix; inferred priority"
+    },
+    {
+      "hint": "Use multilingual, specific technical discovery topics, including local inference and agent operation.",
+      "confidence": "observed topic/language variety; implementation inference"
+    },
+    {
+      "hint": "Preserve hardware, model, precision and workload limits when summarizing performance measurements.",
+      "confidence": "quality correction from the prior review"
+    },
+    {
+      "hint": "Deduplicate the same event across authors and avoid importing unrelated finance-category stories.",
+      "confidence": "quality correction from the prior review"
+    }
+  ],
+  "limits": [
+    "Public summaries do not establish hidden selection weights or collector implementation.",
+    "The observed funnel is self-reported.",
+    "Source roles and claims require primary-evidence review before use in our digest.",
+    "Fresh index retrieval and both searches did not supply a current index sample."
+  ],
+  "next_review_not_before": "2026-10-10T01:16:00+08:00"
+}
