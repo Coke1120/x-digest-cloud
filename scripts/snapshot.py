@@ -38,12 +38,21 @@ def build(raw_dir, candidates, run_id):
                         'text': text, 'createdAtISO': ts.astimezone(timezone.utc).isoformat(),
                         'isRetweet': False, 'source': filename,
                         'url': 'https://x.com/i/status/' + row['id'], 'candidate_text': row['text'],
-                        'candidate_context': {key: row[key] for key in ('category','selection_lane','selection_score','quality_signals','sources') if key in row}})
+                        'candidate_context': {key: row[key] for key in (
+                            'category', 'selection_lane', 'selection_score', 'quality_signals', 'sources',
+                            'claim_kind_hint', 'first_person_hint', 'source_role_hint',
+                            'source_verification_hint', 'measurement_context_hint') if key in row}})
     if not records:
         raise ValueError('no_verifiable_candidates')
     result = {'schema_version': 1, 'run_id': str(run_id), 'collected_at': now.isoformat(),
               'source_repository': 'Coke1120/x-digest-cloud', 'coverage': summary,
               'records': records[:150]}
+    diagnostics = raw_dir / '_prefilter_diagnostics.json'
+    if diagnostics.exists():
+        report = json.loads(diagnostics.read_text())
+        if report.get('semantic_reviewed') is not False:
+            raise ValueError('invalid_selection_diagnostics')
+        result['coverage']['selection_diagnostics'] = report
     # GitHub contents access remains below 1 MiB; remove lowest-ranked records intact.
     while len(json.dumps(result, ensure_ascii=False).encode()) > 750_000 and result['records']:
         result['records'].pop()

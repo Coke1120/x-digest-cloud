@@ -5,28 +5,14 @@ import json
 import os
 from pathlib import Path
 from x_env import SetupError, child_environment, cli, live_status
-
-QUERIES = [
-    '(OpenAI OR Anthropic OR DeepSeek OR Qwen OR Gemini OR GLM OR Kimi OR MiniMax) (release OR released OR pricing OR benchmark OR 发布 OR 开源)',
-    '(LLM OR "AI model" OR "AI research") (paper OR benchmark OR evaluation OR reproducible OR research OR 论文 OR 评测)',
-    '(OpenClaw OR "Claude Code" OR Codex OR "DeepSeek Harness") (release OR update OR plugin OR skill OR bug OR fix OR 发布 OR 更新 OR 修复)',
-    '(MCP OR Rolldown OR Vite OR Unity OR Copilot) (release OR RFC OR changelog OR fix OR SDK OR 发布 OR 修复)',
-    '(vLLM OR SGLang OR MLX OR llama.cpp OR CUDA OR GPU) (benchmark OR latency OR throughput OR VRAM OR quantization OR 量化 OR 性能)',
-    '("open source" OR "open-source" OR 开源) (agent OR AI OR LLM) (released OR launch OR GitHub OR demo OR 发布)',
-    '("AI safety" OR alignment OR "AI regulation") (research OR standard OR evaluation OR policy OR 报告 OR 监管)',
-    '(OpenAI OR Anthropic OR Nvidia OR AMD OR Stripe OR stablecoin) (funding OR IPO OR valuation OR earnings OR pricing OR 融资 OR 上市 OR 财报)',
-    '(AI OR "artificial intelligence") (copyright OR privacy OR licensing OR legislation OR regulation OR 版權 OR 隐私 OR 监管)',
-    '(AI OR Nvidia OR AMD OR "data center") (capacity OR partnership OR supply OR procurement OR energy OR 芯片 OR 数据中心 OR 合作)',
-    '(AI OR OpenAI OR Anthropic OR Nvidia OR AMD OR Microsoft OR Alphabet) (revenue OR earnings OR funding OR acquisition OR investment OR 融资 OR 财报 OR 收购)',
-    '(stablecoin OR Stripe OR "AI startup" OR "AI infrastructure") (treasury OR funding OR valuation OR revenue OR payments OR 融资 OR 估值)',
-]
-WATCHLIST = ['OpenAI', 'AnthropicAI', 'deepseek_ai', 'openclaw', 'sama', 'steipete', 'emollick', 'dotey', 'simonw', 'lidangzzz', 'levelsio', 'unsafemut', 'sydneyrunkle', 'unitygames']
+from source_pool import CONFIG, load_pool, rotation
 
 
-def plan(since, n, user_n):
-    jobs = [('search-%s-%02d.json' % (order.lower(), i), ['search', query, '-t', order, '--max', str(n), '--exclude', 'retweets', '--since', since]) for i, query in enumerate(QUERIES) for order in ('Top', 'Latest')]
+def plan(since, n, user_n, pool=None, now=None, rotation_hour=None):
+    selected = rotation(pool or load_pool(), now, rotation_hour)
+    jobs = [('search-%s-%02d.json' % (order.lower(), i), ['search', item['query'], '-t', order, '--max', str(n), '--exclude', 'retweets', '--since', since]) for i, item in enumerate(selected['queries']) for order in ('Top', 'Latest')]
     jobs += [('feed-%s.json' % tab, ['feed', '-t', tab, '--max', str(n)]) for tab in ('following', 'for-you')]
-    jobs += [('user-%s.json' % handle, ['user-posts', handle, '--max', str(user_n)]) for handle in WATCHLIST]
+    jobs += [('user-%s.json' % account['handle'], ['user-posts', account['handle'], '--max', str(user_n)]) for account in selected['accounts']]
     return jobs
 
 
@@ -37,6 +23,8 @@ def main():
     parser.add_argument('--n', type=int, default=12)
     parser.add_argument('--user-n', type=int, default=4)
     parser.add_argument('--plan', action='store_true')
+    parser.add_argument('--source-pool', type=Path, default=CONFIG)
+    parser.add_argument('--rotation-hour', type=int, help='Fixed hour for reproducible offline plans')
     args = parser.parse_args()
     if not 1 <= args.n <= 50 or not 1 <= args.user_n <= 50:
         parser.error('Counts must be between 1 and 50')
@@ -44,9 +32,16 @@ def main():
         datetime.strptime(args.since, '%Y-%m-%d')
     except ValueError:
         parser.error('Use --since YYYY-MM-DD')
-    jobs = plan(args.since, args.n, args.user_n)
+    now = datetime.now(timezone.utc)
+    try:
+        pool = load_pool(args.source_pool)
+        selected = rotation(pool, now, args.rotation_hour)
+        jobs = plan(args.since, args.n, args.user_n, pool, now, args.rotation_hour)
+    except (ValueError, OSError, KeyError, TypeError):
+        print(json.dumps({'ok': False, 'code': 'invalid_source_pool'}))
+        return 2
     if args.plan:
-        print(json.dumps({'calls': len(jobs), 'since': args.since, 'jobs': jobs}, ensure_ascii=False))
+        print(json.dumps({'calls': len(jobs), 'since': args.since, 'jobs': jobs, 'selection': selected}, ensure_ascii=False))
         return 0
     # The editorial skill requires evidence beneath this exact /tmp prefix.
     output = args.out_dir.absolute()
@@ -65,6 +60,7 @@ def main():
         return 2
     os.umask(0o077)
     output.mkdir(mode=0o700)
+    (output / '_collection_plan.json').write_text(json.dumps(selected, ensure_ascii=False, indent=2), encoding='utf-8')
     summaries = []
     blocked = False
     for filename, command in jobs:
@@ -81,6 +77,11 @@ def main():
             blocked = True
             break
     footer = {'done': True, 'ok': not blocked and any(item['n'] > 0 for item in summaries), 'calls': len(summaries), 'ok_calls': sum(item['ok'] for item in summaries), 'tweet_hits': sum(item['n'] for item in summaries), 'out_dir': str(output), 'since': args.since, 'calls_detail': summaries}
+    footer['source_pool_revision'] = selected['revision']
+    footer['rotation_hour'] = selected['rotation_hour']
+    footer['sampled_accounts'] = [a['handle'] for a in selected['accounts']]
+    footer['query_topics'] = [q['topic'] for q in selected['queries']]
+    footer['source_review_due'] = selected['review_due']
     (output / '_gather_summary.json').write_text(json.dumps(footer, ensure_ascii=False, indent=2), encoding='utf-8')
     print(json.dumps({key: value for key, value in footer.items() if key != 'calls_detail'}))
     return 0 if footer['ok'] else 2

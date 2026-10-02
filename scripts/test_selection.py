@@ -6,8 +6,11 @@ import subprocess
 import sys
 import tempfile
 import unittest
-from gather import plan, QUERIES, WATCHLIST
-from prefilter import select_candidates
+from gather import plan
+from prefilter import select_candidates, selection_report
+from source_pool import load_pool, rotation, account_hints, active_accounts
+import copy
+from source_health import build as health
 
 NOW = datetime.now(timezone.utc)
 def row(number, handle, text, likes=0, views=0, age=1):
@@ -69,11 +72,90 @@ class SelectionTests(unittest.TestCase):
             self.assertEqual(json.loads(result.stdout)['distinct_authors'],1)
 
     def test_collection_plan_has_both_orders_and_only_read_commands(self):
-        jobs=plan('2026-10-01',12,4)
+        fixed=datetime(2026,10,3,tzinfo=timezone.utc)
+        jobs=plan('2026-10-01',12,4,now=fixed,rotation_hour=0)
         searches=[command for _,command in jobs if command[0]=='search']
-        self.assertEqual(len(searches),2*len(QUERIES));self.assertEqual(len(WATCHLIST),14)
-        for query in QUERIES:
+        self.assertEqual(len(jobs),40);self.assertEqual(len(searches),24)
+        self.assertEqual(len([c for _,c in jobs if c[0]=='user-posts']),14)
+        for query in {c[1] for c in searches}:
             self.assertEqual({command[command.index('-t')+1] for command in searches if command[1]==query},{'Top','Latest'})
         self.assertTrue(all(command[0] in {'search','feed','user-posts'} for _,command in jobs))
+
+    def test_rotation_reaches_every_source_and_every_query_without_duplicates(self):
+        pool=load_pool();fixed=datetime(2026,10,3,tzinfo=timezone.utc)
+        handles,queries=set(),set()
+        plans=[rotation(pool,fixed,h) for h in range(24)]
+        for selected in plans:
+            current=[a['handle'].lower() for a in selected['accounts']]
+            self.assertEqual(len(current),14);self.assertEqual(len(set(current)),14)
+            self.assertTrue(all(a['handle'].lower() in current for a in pool['accounts'] if a['core']))
+            handles.update(current);queries.update(q['query'] for q in selected['queries'])
+            self.assertEqual(set(q['topic'] for q in selected['queries']),set(pool['topics']))
+        self.assertEqual(handles,{a['handle'].lower() for a in pool['accounts']})
+        self.assertEqual(queries,{q for options in pool['topics'].values() for q in options})
+        self.assertNotEqual(plans[0]['accounts'],plans[1]['accounts'])
+
+    def test_paused_and_unreviewed_sources_are_not_sampled(self):
+        pool=copy.deepcopy(load_pool());pool['accounts'][4]['status']='paused'
+        pool['accounts'][5]['reviewed_at']='2026-01-01'
+        selected=rotation(pool,datetime(2026,10,3,tzinfo=timezone.utc),0)
+        sampled={a['handle'] for a in selected['accounts']}
+        self.assertNotIn(pool['accounts'][4]['handle'],sampled)
+        self.assertNotIn(pool['accounts'][5]['handle'],sampled)
+        self.assertIn(pool['accounts'][5]['handle'],selected['review_due'])
+
+    def test_hong_kong_review_date_accepts_current_evening_utc(self):
+        pool=load_pool()
+        self.assertEqual(len(active_accounts(pool,datetime(2026,10,2,18,tzinfo=timezone.utc))),len(pool['accounts']))
+
+    def test_pure_long_opinion_and_trade_hype_cannot_fill_a_category(self):
+        rows=[row(1,'famous','AI will change everything. '*20,10**8),
+              row(2,'pumper','AI earnings growth 50% my bias is bullish buy now https://example.test'),
+              row(3,'builder','I tested Qwen Q4 on RTX 3090 with batch 1 and 8k context: benchmark 40 tok/s; reproduce with this script.')]
+        output=select_candidates(rows,150,set(),NOW)
+        self.assertEqual([r['handle'] for r in output],['builder'])
+        self.assertEqual(output[0]['claim_kind_hint'],'measurement_claim')
+        self.assertEqual(set(output[0]['measurement_context_hint']),{'hardware','model_or_precision','method'})
+
+    def test_account_role_does_not_make_a_claim_first_party_or_boost_its_score(self):
+        base=row(1,'Docker','Released an AI tool on GitHub, benchmark 20 ms.')
+        plain=select_candidates([base],1,set(),NOW)[0]
+        tagged=select_candidates([base],1,set(),NOW,hints=account_hints(load_pool()))[0]
+        self.assertEqual(plain['selection_score'],tagged['selection_score'])
+        self.assertEqual(tagged['source_role_hint'],'official')
+        self.assertFalse(tagged['first_person_hint'])
+
+    def test_private_funnel_and_proposals_do_not_assert_semantic_review(self):
+        rows=[row(1,'outsider','Released LLM A on GitHub'),row(2,'opinion','AI is nice. '*20)]
+        selected=select_candidates(rows,150,set(),NOW)
+        report=selection_report(rows,selected,NOW,{})
+        self.assertFalse(report['semantic_reviewed'])
+        self.assertEqual(report['category_funnel']['AI 模型與研究']['weak_or_promotional'],1)
+        self.assertEqual(report['source_proposals'][0]['status'],'unreviewed')
+
+    def test_health_retains_distinct_evidence_without_automatic_promotion(self):
+        base = {'schema_version': 1, 'source_repository': 'Coke1120/x-digest-cloud',
+                'run_id': 'offline-test-1', 'collected_at': NOW.isoformat(), 'coverage': {'ok': True},
+                'records': [{'id': '1980000000000000001', 'author': {'screenName': 'newbuilder'},
+                             'text': 'Offline fixture, never publish.', 'createdAtISO': (NOW-timedelta(hours=2)).isoformat(),
+                             'isRetweet': False, 'candidate_context': {'category': '開發者工具'}}]}
+        first = health(base, {}, load_pool())
+        second = health(base, first, load_pool())
+        self.assertEqual(len(second['runs']), 1)
+        self.assertEqual(second['sources'][0]['distinct_posts_retained'], 1)
+        self.assertEqual(second['sources'][0]['status'], 'unreviewed')
+        self.assertFalse(second['semantic_reviewed'])
+        base['run_id'] = 'offline-test-2'
+        base['collected_at'] = (NOW+timedelta(days=8)).isoformat()
+        base['records'][0]['id'] = '1980000000000000002'
+        base['records'][0]['createdAtISO'] = (NOW+timedelta(days=8, hours=-1)).isoformat()
+        third = health(base, second, load_pool())
+        self.assertEqual(len(third['runs']), 1)
+        self.assertEqual(third['sources'][0]['distinct_posts_retained'], 1)
+        self.assertEqual(third['sources'][0]['posts'][0]['id'], '1980000000000000002')
+
+    def test_failed_collection_cannot_advance_source_health(self):
+        with self.assertRaisesRegex(ValueError, 'invalid_health_snapshot'):
+            health({'schema_version': 1, 'coverage': {'ok': False}, 'records': [{}]}, {}, load_pool())
 
 if __name__=='__main__':unittest.main()

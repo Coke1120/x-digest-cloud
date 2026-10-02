@@ -1,0 +1,394 @@
+{
+  "schema_version": 1,
+  "revision": "2026-10-03",
+  "max_account_calls": 14,
+  "account_review_days": 60,
+  "topics": {
+    "models": [
+      "(OpenAI OR Anthropic OR DeepSeek OR Qwen OR Gemini OR GLM OR Kimi OR MiniMax) (release OR pricing OR benchmark OR paper)",
+      "(LLM OR \"language model\") (evaluation OR reproducible OR \"training recipe\" OR ablation OR \"model weights\")",
+      "(大模型 OR 模型 OR 开源) (发布 OR 评测 OR 论文 OR 权重 OR 训练)",
+      "(模型 OR 開源 OR 語言模型) (發布 OR 評測 OR 論文 OR 權重 OR 訓練)",
+      "(LLM OR モデル) (公開 OR 論文 OR 評価 OR ベンチマーク OR 学習)",
+      "(Qwen OR DeepSeek OR GLM OR Kimi OR MiniMax) (ライセンス OR 公開 OR 評価)"
+    ],
+    "agents": [
+      "(OpenClaw OR Hermes OR \"Grok Bot\" OR Codex OR \"Claude Code\") (\"multi-account\" OR OAuth OR memory OR permissions OR sandbox OR release)",
+      "(agent OR agents OR harness) (reproduced OR debugging OR postmortem OR \"tool calling\" OR regression OR fix)",
+      "(Hermes OR OpenClaw OR Grok OR Codex OR Agent) (多账号 OR 记忆 OR 权限 OR 实测 OR 修复)",
+      "(Hermes OR OpenClaw OR Grok OR Codex OR Agent) (多帳號 OR 記憶 OR 權限 OR 實測 OR 修復)",
+      "(エージェント OR Codex OR Hermes) (権限 OR メモリ OR 検証 OR 不具合 OR 修正)",
+      "(OpenClaw OR Grok OR \"Claude Code\") (複数アカウント OR 実測 OR 更新 OR ツール)"
+    ],
+    "tools": [
+      "(MCP OR Vite OR Rolldown OR Copilot OR Cursor OR SDK) (release OR RFC OR changelog OR bug OR fix)",
+      "(developer OR maintainer OR \"open source\") (CLI OR plugin OR \"pull request\" OR \"breaking change\" OR release)",
+      "(MCP OR SDK OR CLI OR 开发工具) (开源 OR 更新 OR 修复 OR 插件 OR 迁移)",
+      "(MCP OR SDK OR CLI OR 開發工具) (開源 OR 更新 OR 修復 OR 插件 OR 遷移)",
+      "(MCP OR SDK OR CLI OR 開発ツール) (公開 OR 更新 OR 修正 OR プラグイン)",
+      "(Copilot OR Cursor OR Vite OR Unity) (リリース OR 不具合 OR 修正 OR 検証)"
+    ],
+    "local": [
+      "(MLX OR llama.cpp OR vLLM OR SGLang) (benchmark OR latency OR throughput OR quantization OR VRAM)",
+      "(\"RTX 3090\" OR \"RTX 6000\" OR \"DGX Spark\" OR \"Apple Silicon\") (tok/s OR tokens OR benchmark OR memory OR inference)",
+      "(MLX OR llama.cpp OR Qwen OR DeepSeek) (量化 OR 显存 OR 吞吐 OR 实测 OR 本地)",
+      "(MLX OR llama.cpp OR Qwen OR DeepSeek) (量化 OR 顯存 OR 吞吐 OR 實測 OR 本地)",
+      "(MLX OR llama.cpp OR GPU) (量子化 OR メモリ OR 推論 OR 実測)",
+      "(3090 OR \"Apple Silicon\" OR \"DGX Spark\") (ベンチマーク OR 推論 OR 消費電力 OR 実測)"
+    ],
+    "industry": [
+      "(AI OR cloud OR \"data center\") (capacity OR partnership OR procurement OR privacy OR licensing OR regulation)",
+      "(Cloudflare OR AWS OR Vercel OR Supabase OR Docker) (incident OR security OR \"self-hosted\" OR deployment OR pricing)",
+      "(AI OR 数据中心 OR 云计算) (监管 OR 隐私 OR 许可 OR 能耗 OR 产能)",
+      "(AI OR 數據中心 OR 雲端) (監管 OR 隱私 OR 授權 OR 能耗 OR 產能)",
+      "(AI OR データセンター OR クラウド) (規制 OR 電力 OR 調達 OR 障害 OR セキュリティ)",
+      "(Cloudflare OR AWS OR Vercel OR Supabase) (料金 OR 更新 OR 障害 OR セキュリティ)"
+    ],
+    "finance": [
+      "(Nvidia OR AMD OR Micron OR \"AI startup\") (earnings OR revenue OR funding OR acquisition OR capex)",
+      "(Stripe OR stablecoin OR \"AI infrastructure\") (funding OR valuation OR payments OR revenue OR investment)",
+      "(AI OR 英伟达 OR AMD OR 美光) (财报 OR 融资 OR 收购 OR 营收 OR 资本开支)",
+      "(AI OR 英偉達 OR AMD OR 美光) (財報 OR 融資 OR 收購 OR 營收 OR 資本開支)",
+      "(AI OR Nvidia OR AMD OR Micron) (決算 OR 売上 OR 資金調達 OR 買収 OR 設備投資)",
+      "(半導体 OR AI OR stablecoin) (決算 OR 資金調達 OR 金利 OR 売上 OR 投資)"
+    ]
+  },
+  "accounts": [
+    {
+      "handle": "OpenAI",
+      "topic": "models",
+      "role": "official",
+      "core": true,
+      "status": "active",
+      "reviewed_at": "2026-10-03",
+      "verification": {
+        "kind": "existing_curated_source",
+        "url": "https://github.com/Coke1120/x-digest-cloud/blob/dc2b90019e49a9c0aaa409fd2acb4af92cefd78f/scripts/gather.py"
+      }
+    },
+    {
+      "handle": "AnthropicAI",
+      "topic": "models",
+      "role": "official",
+      "core": true,
+      "status": "active",
+      "reviewed_at": "2026-10-03",
+      "verification": {
+        "kind": "existing_curated_source",
+        "url": "https://github.com/Coke1120/x-digest-cloud/blob/dc2b90019e49a9c0aaa409fd2acb4af92cefd78f/scripts/gather.py"
+      }
+    },
+    {
+      "handle": "deepseek_ai",
+      "topic": "models",
+      "role": "official",
+      "core": true,
+      "status": "active",
+      "reviewed_at": "2026-10-03",
+      "verification": {
+        "kind": "existing_curated_source",
+        "url": "https://github.com/Coke1120/x-digest-cloud/blob/dc2b90019e49a9c0aaa409fd2acb4af92cefd78f/scripts/gather.py"
+      }
+    },
+    {
+      "handle": "openclaw",
+      "topic": "agents",
+      "role": "official",
+      "core": true,
+      "status": "active",
+      "reviewed_at": "2026-10-03",
+      "verification": {
+        "kind": "existing_curated_source",
+        "url": "https://github.com/Coke1120/x-digest-cloud/blob/dc2b90019e49a9c0aaa409fd2acb4af92cefd78f/scripts/gather.py"
+      }
+    },
+    {
+      "handle": "sama",
+      "topic": "models",
+      "role": "commentator",
+      "core": false,
+      "status": "active",
+      "reviewed_at": "2026-10-03",
+      "verification": {
+        "kind": "existing_curated_source",
+        "url": "https://github.com/Coke1120/x-digest-cloud/blob/dc2b90019e49a9c0aaa409fd2acb4af92cefd78f/scripts/gather.py"
+      }
+    },
+    {
+      "handle": "steipete",
+      "topic": "agents",
+      "role": "maintainer",
+      "core": false,
+      "status": "active",
+      "reviewed_at": "2026-10-03",
+      "verification": {
+        "kind": "existing_curated_source",
+        "url": "https://github.com/Coke1120/x-digest-cloud/blob/dc2b90019e49a9c0aaa409fd2acb4af92cefd78f/scripts/gather.py"
+      }
+    },
+    {
+      "handle": "emollick",
+      "topic": "models",
+      "role": "researcher",
+      "core": false,
+      "status": "active",
+      "reviewed_at": "2026-10-03",
+      "verification": {
+        "kind": "existing_curated_source",
+        "url": "https://github.com/Coke1120/x-digest-cloud/blob/dc2b90019e49a9c0aaa409fd2acb4af92cefd78f/scripts/gather.py"
+      }
+    },
+    {
+      "handle": "dotey",
+      "topic": "models",
+      "role": "commentator",
+      "core": false,
+      "status": "active",
+      "reviewed_at": "2026-10-03",
+      "verification": {
+        "kind": "existing_curated_source",
+        "url": "https://github.com/Coke1120/x-digest-cloud/blob/dc2b90019e49a9c0aaa409fd2acb4af92cefd78f/scripts/gather.py"
+      }
+    },
+    {
+      "handle": "simonw",
+      "topic": "local",
+      "role": "maintainer",
+      "core": false,
+      "status": "active",
+      "reviewed_at": "2026-10-03",
+      "verification": {
+        "kind": "existing_curated_source",
+        "url": "https://github.com/Coke1120/x-digest-cloud/blob/dc2b90019e49a9c0aaa409fd2acb4af92cefd78f/scripts/gather.py"
+      }
+    },
+    {
+      "handle": "lidangzzz",
+      "topic": "models",
+      "role": "community",
+      "core": false,
+      "status": "active",
+      "reviewed_at": "2026-10-03",
+      "verification": {
+        "kind": "existing_curated_source",
+        "url": "https://github.com/Coke1120/x-digest-cloud/blob/dc2b90019e49a9c0aaa409fd2acb4af92cefd78f/scripts/gather.py"
+      }
+    },
+    {
+      "handle": "levelsio",
+      "topic": "finance",
+      "role": "practitioner",
+      "core": false,
+      "status": "active",
+      "reviewed_at": "2026-10-03",
+      "verification": {
+        "kind": "existing_curated_source",
+        "url": "https://github.com/Coke1120/x-digest-cloud/blob/dc2b90019e49a9c0aaa409fd2acb4af92cefd78f/scripts/gather.py"
+      }
+    },
+    {
+      "handle": "unsafemut",
+      "topic": "tools",
+      "role": "maintainer",
+      "core": false,
+      "status": "active",
+      "reviewed_at": "2026-10-03",
+      "verification": {
+        "kind": "existing_curated_source",
+        "url": "https://github.com/Coke1120/x-digest-cloud/blob/dc2b90019e49a9c0aaa409fd2acb4af92cefd78f/scripts/gather.py"
+      }
+    },
+    {
+      "handle": "sydneyrunkle",
+      "topic": "tools",
+      "role": "practitioner",
+      "core": false,
+      "status": "active",
+      "reviewed_at": "2026-10-03",
+      "verification": {
+        "kind": "existing_curated_source",
+        "url": "https://github.com/Coke1120/x-digest-cloud/blob/dc2b90019e49a9c0aaa409fd2acb4af92cefd78f/scripts/gather.py"
+      }
+    },
+    {
+      "handle": "unitygames",
+      "topic": "tools",
+      "role": "official",
+      "core": false,
+      "status": "active",
+      "reviewed_at": "2026-10-03",
+      "verification": {
+        "kind": "existing_curated_source",
+        "url": "https://github.com/Coke1120/x-digest-cloud/blob/dc2b90019e49a9c0aaa409fd2acb4af92cefd78f/scripts/gather.py"
+      }
+    },
+    {
+      "handle": "awnihannun",
+      "topic": "local",
+      "role": "researcher",
+      "core": false,
+      "status": "active",
+      "reviewed_at": "2026-10-03",
+      "verification": {
+        "kind": "primary_profile_link",
+        "url": "https://github.com/awni"
+      }
+    },
+    {
+      "handle": "ggerganov",
+      "topic": "local",
+      "role": "maintainer",
+      "core": false,
+      "status": "active",
+      "reviewed_at": "2026-10-03",
+      "verification": {
+        "kind": "primary_profile_link",
+        "url": "https://github.com/ggerganov"
+      }
+    },
+    {
+      "handle": "Prince_Canuma",
+      "topic": "local",
+      "role": "maintainer",
+      "core": false,
+      "status": "active",
+      "reviewed_at": "2026-10-03",
+      "verification": {
+        "kind": "primary_profile_link",
+        "url": "https://github.com/Blaizzy"
+      }
+    },
+    {
+      "handle": "vllm_project",
+      "topic": "local",
+      "role": "official",
+      "core": false,
+      "status": "active",
+      "reviewed_at": "2026-10-03",
+      "verification": {
+        "kind": "primary_profile_link",
+        "url": "https://vllm.ai/"
+      }
+    },
+    {
+      "handle": "NousResearch",
+      "topic": "agents",
+      "role": "official",
+      "core": false,
+      "status": "active",
+      "reviewed_at": "2026-10-03",
+      "verification": {
+        "kind": "primary_profile_link",
+        "url": "https://nousresearch.com/"
+      }
+    },
+    {
+      "handle": "huggingface",
+      "topic": "models",
+      "role": "official",
+      "core": false,
+      "status": "active",
+      "reviewed_at": "2026-10-03",
+      "verification": {
+        "kind": "primary_profile_link",
+        "url": "https://huggingface.co/"
+      }
+    },
+    {
+      "handle": "cursor_ai",
+      "topic": "tools",
+      "role": "official",
+      "core": false,
+      "status": "active",
+      "reviewed_at": "2026-10-03",
+      "verification": {
+        "kind": "primary_profile_link",
+        "url": "https://cursor.com/"
+      }
+    },
+    {
+      "handle": "Docker",
+      "topic": "tools",
+      "role": "official",
+      "core": false,
+      "status": "active",
+      "reviewed_at": "2026-10-03",
+      "verification": {
+        "kind": "primary_profile_link",
+        "url": "https://www.docker.com/"
+      }
+    },
+    {
+      "handle": "supabase",
+      "topic": "industry",
+      "role": "official",
+      "core": false,
+      "status": "active",
+      "reviewed_at": "2026-10-03",
+      "verification": {
+        "kind": "primary_profile_link",
+        "url": "https://supabase.com/"
+      }
+    },
+    {
+      "handle": "Cloudflare",
+      "topic": "industry",
+      "role": "official",
+      "core": false,
+      "status": "active",
+      "reviewed_at": "2026-10-03",
+      "verification": {
+        "kind": "primary_profile_link",
+        "url": "https://www.cloudflare.com/"
+      }
+    },
+    {
+      "handle": "Vercel",
+      "topic": "industry",
+      "role": "official",
+      "core": false,
+      "status": "active",
+      "reviewed_at": "2026-10-03",
+      "verification": {
+        "kind": "primary_profile_link",
+        "url": "https://vercel.com/"
+      }
+    },
+    {
+      "handle": "NVIDIA",
+      "topic": "finance",
+      "role": "official",
+      "core": false,
+      "status": "active",
+      "reviewed_at": "2026-10-03",
+      "verification": {
+        "kind": "primary_profile_link",
+        "url": "https://www.nvidia.com/en-us/"
+      }
+    },
+    {
+      "handle": "AMD",
+      "topic": "finance",
+      "role": "official",
+      "core": false,
+      "status": "active",
+      "reviewed_at": "2026-10-03",
+      "verification": {
+        "kind": "primary_profile_link",
+        "url": "https://www.amd.com/en.html"
+      }
+    },
+    {
+      "handle": "stripe",
+      "topic": "finance",
+      "role": "official",
+      "core": false,
+      "status": "active",
+      "reviewed_at": "2026-10-03",
+      "verification": {
+        "kind": "primary_profile_link",
+        "url": "https://stripe.com/"
+      }
+    }
+  ]
+}

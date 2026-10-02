@@ -9,6 +9,8 @@ import re
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 from typing import Any
+from collections import Counter
+from source_pool import CONFIG, load_pool, account_hints
 
 
 def _load_tweets(path: Path) -> list[dict[str, Any]]:
@@ -77,18 +79,26 @@ def _parse_ts(s: str) -> datetime | None:
 OFFICIAL = {'openai', 'anthropicai', 'deepseek_ai', 'openclaw', 'unitygames', 'googledeepmind'}
 CATEGORIES = {
     '開發者工具': r'\b(?:mcp|rolldown|vite|unity|copilot|sdk|typescript|blender|macdock)\b|開發工具|开发工具',
-    'OpenClaw／Agent 生態': r'\b(?:openclaw|claude code|codex|harness|agentic|opendots|dots|skills?)\b|智能体|智能體|代理工具',
+    'OpenClaw／Agent 生態': r'\b(?:openclaw|claude code|codex|harness|agentic|opendots|dots|hermes|grok bot|skills?)\b|智能体|智能體|代理工具|エージェント',
     '財經': r'\b(?:ipo|funding|valuation|earnings|revenue|acquisition|investment|stablecoins?|treasur(?:y|ies)|bankrupt\w*|stripe|privy)\b|融资|融資|上市|財報|财报|破产|破產|收购|收購|估值',
     '產業': r'\b(?:ai safety|alignment|regulation|governance|policy|subscription|copyright|privacy|licensing|legislation|data centers?|partnership|procurement|energy)\b|监管|監管|安全承诺|安全承諾|版權|版权|隱私|隐私|数据中心|數據中心',
-    'AI 模型與研究': r'\b(?:ai|llm|gpt\w*|openai|anthropic|deepseek|qwen|gemini|glm|kimi|minimax|astra|sol|vllm|sglang|mlx|cuda|gpu|benchmark)\b|人工智能|模型|量化|推理|評測|评测|AI(?=[\u4e00-\u9fff])',
+    'AI 模型與研究': r'\b(?:ai|llm|gpt\w*|openai|anthropic|deepseek|qwen|gemini|glm|kimi|minimax|astra|sol|vllm|sglang|mlx|cuda|gpu|benchmark|llama\.cpp)\b|人工智能|模型|量化|推理|評測|评测|モデル|量子化|ベンチマーク|AI(?=[\u4e00-\u9fff])',
 }
-RELEASE = re.compile(r'\b(?:releas\w*|launch\w*|shipp\w*|introduc\w*|changelog|beta|open.sourc\w*|fix(?:ed|es)?|rfc)\b|发布|發布|推出|開源|开源|修复|修復|新版', re.I)
+RELEASE = re.compile(r'\b(?:releas\w*|launch\w*|shipp\w*|introduc\w*|changelog|beta|open.sourc\w*|fix(?:ed|es)?|rfc)\b|发布|發布|推出|開源|开源|修复|修復|新版|リリース|修正|公開', re.I)
 TECHNICAL = re.compile(r'github\.com|\b(?:github|documentation|docs|benchmark|latency|throughput|vram|quantization|sdk|rfc|install|docker|lean 4)\b|技术细节|技術細節|评测|評測|量化|復現|复现', re.I)
 MEASUREMENT = re.compile(r'\d[\d.,]*\s*(?:%|gb|mb|tb|tps|tok/s|ms|seconds|倍|秒|美元|億|亿)', re.I)
 PROMOTION = re.compile(r'\b(?:airdrop|giveaway|referral)\b|(?:check|查看).{0,20}(?:balance|餘額|余额)|approved posts earn|空投|返佣', re.I)
+REPORT = re.compile(r'\b(?:earnings|funding round|quarterly|reported|acquisition|regulator|legislation|policy|licen[cs]e|privacy|security advisory)\b|財報|财报|融資|融资|監管|监管|決算|資金調達|規制|脆弱性', re.I)
+HYPE = re.compile(r'\b(?:my bias is bullish|next 100x|guaranteed profit|buy now|price target)\b|穩賺|稳赚|必涨|必漲|無腦買|无脑买', re.I)
+FIRST_PERSON = re.compile(r'\b(?:I|we)\s+(?:built|tested|measured|reproduced|implemented|released|shipped)\b|我(?:們|们)?(?:實測|实测|測試|测试|做了|開發|开发)', re.I)
+CONTEXT = {
+    'hardware': re.compile(r'\b(?:RTX|GPU|CPU|M[1-9]|Apple Silicon|DGX|RAM|VRAM)\b|顯卡|显卡|記憶體|内存', re.I),
+    'model_or_precision': re.compile(r'\b(?:Qwen|DeepSeek|Llama|GLM|Kimi|FP\d+|BF\d+|INT\d+|Q[234568](?:_\w+)?|quantization)\b|量化|量子化', re.I),
+    'method': re.compile(r'\b(?:batch|context|prompt|decode|prefill|reproducible|script|command|commit|version)\b|上下文|並發|并发|復現|复现|命令|版本', re.I),
+}
 
 
-def rank(row, now):
+def rank(row, now, hints=None):
     """Bounded popularity is a tie-breaker, never a substitute for evidence."""
     text = row.get('_full_text') or row['text']
     category = next((name for name, pattern in CATEGORIES.items() if re.search(pattern, text, re.I)), None)
@@ -99,31 +109,40 @@ def rank(row, now):
     for name, pattern, weight in [('release_or_fix', RELEASE, 3), ('technical_detail', TECHNICAL, 2), ('measurement', MEASUREMENT, 2)]:
         if pattern.search(text):
             signals.append(name); quality += weight
+    if REPORT.search(text):
+        signals.append('report_or_policy_claim'); quality += 2
+    if not signals or PROMOTION.search(text) or HYPE.search(text):
+        return None
     if len(text) >= 100:
         signals.append('substantive_length'); quality += 1
     if 'http' in text:
         quality += .5
-    official = row['handle'].lower() in OFFICIAL
-    if official:
-        signals.append('official_account'); quality += 1
-    if PROMOTION.search(text):
-        quality -= 4; signals.append('promotion_penalty')
+    role_hints = (hints or {}).get(row['handle'].lower(), {})
+    if row['handle'].lower() in OFFICIAL or role_hints.get('source_role_hint') == 'official':
+        signals.append('official_account_hint')
     if quality < 1:
         return None
     age = max(0, (now - _parse_ts(row['createdAt'])).total_seconds()/3600)
     recency = max(0, 1-age/26) * 1.25
     popularity = min(1.5, math.log1p(max(0,row['likes']) + 2*max(0,row['retweets']) + max(0,row['views'])/1000)/8)
     row.update(category=category, quality_signals=signals, selection_score=round(quality+recency+popularity,4))
+    row.update(role_hints)
+    row['claim_kind_hint'] = ('measurement_claim' if MEASUREMENT.search(text) else
+                              'release_claim' if RELEASE.search(text) else
+                              'report_claim' if REPORT.search(text) else 'technical_discussion')
+    row['first_person_hint'] = bool(FIRST_PERSON.search(text))
+    if MEASUREMENT.search(text):
+        row['measurement_context_hint'] = [name for name, pattern in CONTEXT.items() if pattern.search(text)]
     return row
 
 
-def select_candidates(rows, limit, watch, now, author_limit=4):
+def select_candidates(rows, limit, watch, now, author_limit=4, hints=None):
     ranked = []
     for row in rows:
         ts = _parse_ts(str(row.get('createdAt') or ''))
         if row.get('isRetweet') or ts is None or ts.tzinfo is None or not now-timedelta(hours=26) <= ts <= now:
             continue
-        candidate = rank(dict(row), now)
+        candidate = rank(dict(row), now, hints)
         if candidate:
             candidate['selection_lane'] = 'anchor' if candidate['handle'].lower() in watch else 'discovery'
             ranked.append(candidate)
@@ -167,6 +186,37 @@ def select_candidates(rows, limit, watch, now, author_limit=4):
     return selected
 
 
+def selection_report(rows, selected, now, hints):
+    """Private mechanical funnel counts, never a semantic-quality verdict."""
+    categories = {name: {'available': 0, 'signal_eligible': 0, 'selected': 0,
+                         'weak_or_promotional': 0, 'not_selected': 0} for name in CATEGORIES}
+    for row in rows:
+        text = row.get('_full_text') or row['text']
+        category = next((name for name, pattern in CATEGORIES.items() if re.search(pattern, text, re.I)), None)
+        if category:
+            categories[category]['available'] += 1
+            if rank(dict(row), now, hints):
+                categories[category]['signal_eligible'] += 1
+            else:
+                categories[category]['weak_or_promotional'] += 1
+    for row in selected:
+        categories[row['category']]['selected'] += 1
+    for data in categories.values():
+        data['not_selected'] = data['signal_eligible'] - data['selected']
+    proposals = {}
+    for row in selected:
+        if row['handle'].lower() in hints:
+            continue
+        item = proposals.setdefault(row['handle'].lower(), {'handle': row['handle'], 'source_ids': [],
+                                                           'category_hints': [], 'status': 'unreviewed'})
+        item['source_ids'].append(row['id'])
+        if row['category'] not in item['category_hints']:
+            item['category_hints'].append(row['category'])
+    return {'semantic_reviewed': False, 'category_funnel': categories,
+            'claim_kind_hints': dict(Counter(r['claim_kind_hint'] for r in selected)),
+            'source_proposals': sorted(proposals.values(), key=lambda x: (-len(x['source_ids']), x['handle']))[:20]}
+
+
 def main() -> None:
     ap = argparse.ArgumentParser()
     ap.add_argument("raw_dir", type=Path)
@@ -175,14 +225,18 @@ def main() -> None:
     ap.add_argument("--limit", type=int, default=150)
     ap.add_argument(
         "--watchlist",
-        default="OpenAI,AnthropicAI,deepseek_ai,openclaw,sama,steipete,emollick,dotey,simonw,lidangzzz,levelsio,unsafemut,sydneyrunkle,unitygames",
+        default=None,
     )
     ap.add_argument('--author-limit',type=int,default=4)
+    ap.add_argument('--source-pool', type=Path, default=CONFIG)
     args = ap.parse_args()
     if not 1 <= args.limit <= 150 or args.hours <= 0 or args.author_limit <= 0:
         ap.error('Use limit 1..150, positive hours and positive author-limit')
 
-    watch = {h.strip().lstrip("@").lower() for h in args.watchlist.split(",") if h.strip()}
+    pool = load_pool(args.source_pool)
+    hints = account_hints(pool)
+    watch = ({h.strip().lstrip('@').lower() for h in args.watchlist.split(',') if h.strip()}
+             if args.watchlist is not None else {a['handle'].lower() for a in pool['accounts'] if a['core']})
     by_id: dict[str, dict[str, Any]] = {}
     for path in sorted(args.raw_dir.glob("*.json")):
         for row in _load_tweets(path):
@@ -205,7 +259,11 @@ def main() -> None:
         if ts < cutoff or ts > now:
             continue
         eligible.append(row)
-    top = select_candidates(eligible,args.limit,watch,now,args.author_limit)
+    top = select_candidates(eligible,args.limit,watch,now,args.author_limit,hints)
+    diagnostics = selection_report(eligible, top, now, hints)
+    diagnostics.update(raw_unique_ids=len(by_id), window_eligible=len(eligible),
+                       window_excluded=len(by_id)-len(eligible), source_pool_revision=pool['revision'])
+    (args.raw_dir / '_prefilter_diagnostics.json').write_text(json.dumps(diagnostics, ensure_ascii=False, indent=2), encoding='utf-8')
     args.output.parent.mkdir(parents=True, exist_ok=True)
     with args.output.open("w", encoding="utf-8") as f:
         for row in top:
