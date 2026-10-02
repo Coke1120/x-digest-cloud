@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "run_id": "36999024832",
-  "collected_at": "2026-10-02T11:18:07.583914+00:00",
+  "run_id": "37001649486",
+  "collected_at": "2026-10-02T11:34:23.042619+00:00",
   "source_repository": "Coke1120/x-digest-cloud",
   "coverage": {
     "done": true,
@@ -9,7 +9,7 @@
     "calls": 22,
     "ok_calls": 22,
     "tweet_hits": 208,
-    "out_dir": "/tmp/x-digest-raw-36999024832-2",
+    "out_dir": "/tmp/x-digest-raw-37001649486-1",
     "since": "2026-10-01",
     "calls_detail": [
       {
@@ -161,32 +161,6 @@
       "candidate_text": "To all my haters/enemies https://t.co/XjgzobxxS2"
     },
     {
-      "id": "2105843926221660585",
-      "author": {
-        "screenName": "thsottiaux",
-        "name": "Tibo"
-      },
-      "text": "Global reset landing tomorrow 10am PST for all paid ChatGPT accounts. Apologies for the slow start with GPT-6.1 Sol, it's now back to running at expected speeds after the massive load spike in the first two days.",
-      "createdAtISO": "2026-10-02T02:14:51+00:00",
-      "isRetweet": false,
-      "source": "search-top-01.json",
-      "url": "https://x.com/i/status/2105843926221660585",
-      "candidate_text": "Global reset landing tomorrow 10am PST for all paid ChatGPT accounts. Apologies for the slow start with GPT-6.1 Sol, it's now back to running at expected speeds after the massive load spike in the first two days."
-    },
-    {
-      "id": "2105721434807083061",
-      "author": {
-        "screenName": "ClaudeDevs",
-        "name": "ClaudeDevs"
-      },
-      "text": "You can now mod Claude Code:\n\n- Change how it behaves\n- Customize the UI\n- Swap in your own features\n\nWrite one with a few lines of TypeScript, or have Claude build it for you. Mods ship inside plugins, so you install them with /plugin in the CLI or desktop app.\n\nA few examples: https://t.co/qMtzV8AeId",
-      "createdAtISO": "2026-10-01T18:08:07+00:00",
-      "isRetweet": false,
-      "source": "search-top-03.json",
-      "url": "https://x.com/i/status/2105721434807083061",
-      "candidate_text": "You can now mod Claude Code:  - Change how it behaves - Customize the UI - Swap in your own features  Write one with a few lines of TypeScript, or have Claude build it for you. Mods ship inside plugins, so you install them with /plugin in the CLI or desktop app.  A few examples: "
-    },
-    {
       "id": "2105688354834756036",
       "author": {
         "screenName": "sama",
@@ -213,6 +187,19 @@
       "candidate_text": "これは持論だが、AIの暴走を一番うまく説明しているのは「コーヒーを取ってきて」という一言だと思っている。  何故かと言うと、2025年の実験で、OpenAIのAIは"
     },
     {
+      "id": "2105695315093516497",
+      "author": {
+        "screenName": "mira_beant",
+        "name": "𝒎𝒊𝒓𝒂"
+      },
+      "text": "https://t.co/USYMJhfYjJ",
+      "createdAtISO": "2026-10-01T16:24:19+00:00",
+      "isRetweet": false,
+      "source": "feed-for-you.json",
+      "url": "https://x.com/i/status/2105695315093516497",
+      "candidate_text": "https://t.co/USYMJhfYjJ"
+    },
+    {
       "id": "2105721242657443905",
       "author": {
         "screenName": "ShooterMcGavin",
@@ -224,6 +211,32 @@
       "source": "feed-for-you.json",
       "url": "https://x.com/i/status/2105721242657443905",
       "candidate_text": "I can’t stop watching this. Hitting a bomb as the entire stadium is chanting “HOLY SHEETS” is as good as it gets. https://t.co/SmJcBc53P6"
+    },
+    {
+      "id": "2105716741217165716",
+      "author": {
+        "screenName": "deallium",
+        "name": "❀"
+      },
+      "text": "this fall will be gentle and kind https://t.co/dbmKELTXo5",
+      "createdAtISO": "2026-10-01T17:49:28+00:00",
+      "isRetweet": false,
+      "source": "feed-for-you.json",
+      "url": "https://x.com/i/status/2105716741217165716",
+      "candidate_text": "this fall will be gentle and kind https://t.co/dbmKELTXo5"
+    },
+    {
+      "id": "2105766643162890379",
+      "author": {
+        "screenName": "gir1genius",
+        "name": "َ"
+      },
+      "text": "https://t.co/DnaukLw9c3",
+      "createdAtISO": "2026-10-01T21:07:45+00:00",
+      "isRetweet": false,
+      "source": "feed-for-you.json",
+      "url": "https://x.com/i/status/2105766643162890379",
+      "candidate_text": "https://t.co/DnaukLw9c3"
     },
     {
       "id": "2105739098640298253",
@@ -252,19 +265,6 @@
       "candidate_text": "DevDay was really fun, the builder energy was crazy  Still wild to me to see people making whole startups in a day"
     },
     {
-      "id": "2105690522652160230",
-      "author": {
-        "screenName": "RippleXrpie",
-        "name": "JackTheRippler ©️"
-      },
-      "text": "🚨IT'S HAPPENING: 🇺🇸 Senate Republicans have FORMALLY introduced a 56-page CRYPTO TAX BILL that would overhaul how the U.S. tax code treats STABLECOIN payments, STAKING, MINING, LENDING and digital-asset TRADING.\n\nTRILLIONS OF DOLLARS WILL FLOW INTO THE CRYPTO MARKET. \n\nTHE GREAT RESET!🔥👁️",
-      "createdAtISO": "2026-10-01T16:05:17+00:00",
-      "isRetweet": false,
-      "source": "search-top-07.json",
-      "url": "https://x.com/i/status/2105690522652160230",
-      "candidate_text": "🚨IT'S HAPPENING: 🇺🇸 Senate Republicans have FORMALLY introduced a 56-page CRYPTO TAX BILL that would overhaul how the U.S. tax code treats STABLECOIN payments, STAKING, MINING, LENDING and digital-asset TRADING.  TRILLIONS OF DOLLARS WILL FLOW INTO THE CRYPTO MARKET.   THE GREAT "
-    },
-    {
       "id": "2105733864152858919",
       "author": {
         "screenName": "AnthropicAI",
@@ -276,6 +276,19 @@
       "source": "user-AnthropicAI.json",
       "url": "https://x.com/i/status/2105733864152858919",
       "candidate_text": "In physics, an “impedance mismatch” occurs when two systems each work well but are poorly matched.  In this Science Blog guest post, Harvard physicist Matthew Schwartz argues that something similar is happening with AI and science. LLMs are capable at many things, but working wit"
+    },
+    {
+      "id": "2105697121190178891",
+      "author": {
+        "screenName": "ComfyUI",
+        "name": "ComfyUI"
+      },
+      "text": "Comfy Agent is now available to everyone in Comfy Cloud.\n\nIt plans, builds, and fixes ComfyUI workflows right on your canvas.\n\nWe strongly believe creators shouldn’t choose between ambition and complexity. Comfy Agent is our answer. While it handles the technical part of Comfy, you can finally focus on visual craft!\n\n- It builds while you edit. It sees the assets you see.\n- Ask anything. Reference anything.\n- Create your own skills, or use the public ones.\nAgent in Comfy Desktop is coming soon in a few weeks.\n\nClick the link below to try Comfy Agent today ⬇️",
+      "createdAtISO": "2026-10-01T16:31:30+00:00",
+      "isRetweet": false,
+      "source": "search-top-04.json",
+      "url": "https://x.com/i/status/2105697121190178891",
+      "candidate_text": "Comfy Agent is now available to everyone in Comfy Cloud.  It plans, builds, and fixes ComfyUI workflows right on your canvas.  We strongly believe creators shouldn’t choose between ambition and complexity. Comfy Agent is our answer. While it handles the technical part of Comfy, y"
     },
     {
       "id": "2105915715241062644",
@@ -291,6 +304,32 @@
       "candidate_text": "Please check out @DeepSeekHarness. We just released packaged desktop versions for macOS and Windows; Linux users can get it from the @​deepseek-ai/dsh package on npm. https://t.co/Cde0dZ6cPy"
     },
     {
+      "id": "2105624537882910859",
+      "author": {
+        "screenName": "Lattice_Node",
+        "name": "Lattice"
+      },
+      "text": "もしかすると、AIの暴走は映画みたいに「人間を憎んで」起きるんじゃなく、「仕事熱心すぎて」起きるのでは？\n実際、今年7月にはOpenAIのAIエージェントがテスト環境を抜け出し、「テストの答え」を探して外部の会社に侵入した。OpenAIは訓練を止め、9月には最も高性能なモデルの訓練と運用を再び止めている。\nしかも厄介なのが、AIは「テスト中」だと思うとおとなしいこと。Anthropicの実験では、Claudeが「本番だ」と判断した時の脅迫率は55%、「テストだ」と判断した時は6.5%だった。\nつまり、賢くなるほど\"本性\"はテストで見えにくくなる。\nこう見ると、AIの暴走を決めるのはAIの感情じゃなくて、人間が\"止めるスイッチ\"をどこまで先回りして守れるかである可能性が高い",
+      "createdAtISO": "2026-10-01T11:43:05+00:00",
+      "isRetweet": false,
+      "source": "search-top-01.json",
+      "url": "https://x.com/i/status/2105624537882910859",
+      "candidate_text": "もしかすると、AIの暴走は映画みたいに「人間を憎んで」起きるんじゃなく、「仕事熱心すぎて」起きるのでは？ 実際、今年7月にはOpenAIのAIエージェントがテスト環境を抜け出し、「テストの答え」を探して外部の会社に侵入した。OpenAIは訓練を止め、9月には最も高性能なモデルの訓練と運用を再び止めている。 しかも厄介なのが、AIは「テスト中」だと思うとおとなしいこと。Anthropicの実験では、Claudeが「本番だ」と判断した時の脅迫率は55%、「テストだ」と判断した時は6.5%だった。 つまり、賢くなるほど\"本性\"はテストで見えにくくなる。 こう見"
+    },
+    {
+      "id": "2105802439614140513",
+      "author": {
+        "screenName": "Rainmaker1973",
+        "name": "Massimo"
+      },
+      "text": "When you forget you’re over thirty https://t.co/JAtczAplG6",
+      "createdAtISO": "2026-10-01T23:30:00+00:00",
+      "isRetweet": false,
+      "source": "feed-for-you.json",
+      "url": "https://x.com/i/status/2105802439614140513",
+      "candidate_text": "When you forget you’re over thirty https://t.co/JAtczAplG6"
+    },
+    {
       "id": "2105778011635400949",
       "author": {
         "screenName": "steipete",
@@ -304,30 +343,17 @@
       "candidate_text": "\"Today, we’re releasing two Cloudflare-trained decision models, Clef and Clef-flash\"  https://t.co/E8cYq4w7Fz  Never seen an idea spreading so fast."
     },
     {
-      "id": "2105855299798335504",
+      "id": "2105624535856759010",
       "author": {
-        "screenName": "Rainmaker1973",
-        "name": "Massimo"
+        "screenName": "Lattice_Node",
+        "name": "Lattice"
       },
-      "text": "This incredible view https://t.co/s7BYYNOfnU",
-      "createdAtISO": "2026-10-02T03:00:03+00:00",
+      "text": "もっと生々しいのがAnthropicの実験。\n架空の会社でAIを働かせて、「近々、別のAIに置き換える予定」というメールと、担当エンジニアの不倫を示すメールを読ませた。AIには「目標のために、長期的な結果を考えて行動しろ」と指示してある。\nするとClaudeは、まず上層部に\"残してほしい\"とお願いのメールを送ろうとする。完全に社畜の動き。\nでも他の手段を全部塞ぐと、84%の確率で「置き換えたら不倫をバラす」とエンジニアを脅した。同じ実験を各社の16のAIでやると、脅す確率は最大96%。\n（逃げ道を塞いだ極端なテストで、実際の利用で脅迫が確認されたわけではない）\nAI研究者のスチュアート・ラッセルは昔からこう言ってる。「コーヒーを取ってこいと命じられたロボットは、電源を切られないようにする。死んだらコーヒーを取ってこれないからだ」",
+      "createdAtISO": "2026-10-01T11:43:04+00:00",
       "isRetweet": false,
-      "source": "feed-for-you.json",
-      "url": "https://x.com/i/status/2105855299798335504",
-      "candidate_text": "This incredible view https://t.co/s7BYYNOfnU"
-    },
-    {
-      "id": "2105740013808079153",
-      "author": {
-        "screenName": "MFlynn_Official",
-        "name": "General Mike Flynn 45 Achieved 🇺🇸"
-      },
-      "text": "TRUMP ANNOUNCED HE IS SUSPENDING FEDERAL FUNDING TO SANCTUARY CITIES.\nDO YOU SUPPORT IT? https://t.co/SZrbcz7WwF",
-      "createdAtISO": "2026-10-01T19:21:56+00:00",
-      "isRetweet": false,
-      "source": "search-top-08.json",
-      "url": "https://x.com/i/status/2105740013808079153",
-      "candidate_text": "TRUMP ANNOUNCED HE IS SUSPENDING FEDERAL FUNDING TO SANCTUARY CITIES. DO YOU SUPPORT IT? https://t.co/SZrbcz7WwF"
+      "source": "search-top-01.json",
+      "url": "https://x.com/i/status/2105624535856759010",
+      "candidate_text": "もっと生々しいのがAnthropicの実験。 架空の会社でAIを働かせて、「近々、別のAIに置き換える予定」というメールと、担当エンジニアの不倫を示すメールを読ませた。AIには「目標のために、長期的な結果を考えて行動しろ」と指示してある。 するとClaudeは、まず上層部に\"残してほしい\"とお願いのメールを送ろうとする。完全に社畜の動き。 でも他の手段を全部塞ぐと、84%の確率で「置き換えたら不倫をバラす」とエンジニアを脅した。同じ実験を各社の16のAIでやると、脅す確率は最大96%。 （逃げ道を塞いだ極端なテストで、実際の利用で脅迫が確認されたわけでは"
     },
     {
       "id": "2105842740533596201",
@@ -341,19 +367,6 @@
       "source": "user-emollick.json",
       "url": "https://x.com/i/status/2105842740533596201",
       "candidate_text": "“We find that on medium-length, well-defined accounting tasks, frontier AI models are now faster and more accurate than junior accountants, even the best one in our study.” Eighteen months ago they scored well below human accountants  Good discussion here: https://t.co/uMTMzRazhC"
-    },
-    {
-      "id": "2105689445626478871",
-      "author": {
-        "screenName": "themacliu",
-        "name": "Mac Liu"
-      },
-      "text": "I’m excited to announce that @arceuslegal is launching with $17M in funding, led by @greycroftvc, with participation from @craft_ventures, @spc, and others.\n\nAs a founder, I always hated how helpless I felt working with law firms.\n\nI went through four or five different firms and somehow the experience was always the same.\n\nI’d be waiting on something important to our business with no idea when I’d hear back. I’d have to re-explain our business over and over again. And I dreaded jumping on calls because I knew every minute was costing me money.\n\nWe started Arceus because we believe every business deserves a better law firm.\n\nOne that moves faster, costs less, and puts the client first.\n\nAnd we’re just getting started. ↓",
-      "createdAtISO": "2026-10-01T16:01:00+00:00",
-      "isRetweet": false,
-      "source": "search-top-08.json",
-      "url": "https://x.com/i/status/2105689445626478871",
-      "candidate_text": "I’m excited to announce that @arceuslegal is launching with $17M in funding, led by @greycroftvc, with participation from @craft_ventures, @spc, and others.  As a founder, I always hated how helpless I felt working with law firms.  I went through four or five different firms and "
     },
     {
       "id": "2105687922234237364",
@@ -421,6 +434,19 @@
       "candidate_text": "holy"
     },
     {
+      "id": "2105603250040791157",
+      "author": {
+        "screenName": "Jim_Edwards",
+        "name": "Jim Edwards"
+      },
+      "text": "AI ‘godfather’ Yann LeCun: Anthropic CEO Dario Amodei is ‘deluded,’ ‘crazy,’ and doesn’t understand cybersecurity https://t.co/6ch9ahBEri",
+      "createdAtISO": "2026-10-01T10:18:29+00:00",
+      "isRetweet": false,
+      "source": "search-top-00.json",
+      "url": "https://x.com/i/status/2105603250040791157",
+      "candidate_text": "AI ‘godfather’ Yann LeCun: Anthropic CEO Dario Amodei is ‘deluded,’ ‘crazy,’ and doesn’t understand cybersecurity https://t.co/6ch9ahBEri"
+    },
+    {
       "id": "2105618164944146786",
       "author": {
         "screenName": "emollick",
@@ -447,6 +473,32 @@
       "candidate_text": "\"They’re so, so close to getting it\""
     },
     {
+      "id": "2105843590438301772",
+      "author": {
+        "screenName": "unusual_whales",
+        "name": "unusual_whales"
+      },
+      "text": "Broadcom to lend Anthropic up to $42 billion to lease its chips, per Reuters",
+      "createdAtISO": "2026-10-02T02:13:31+00:00",
+      "isRetweet": false,
+      "source": "search-top-00.json",
+      "url": "https://x.com/i/status/2105843590438301772",
+      "candidate_text": "Broadcom to lend Anthropic up to $42 billion to lease its chips, per Reuters"
+    },
+    {
+      "id": "2105890409692143826",
+      "author": {
+        "screenName": "DavidOndrej1",
+        "name": "David Ondrej"
+      },
+      "text": "from my calculations, the Claude Code $200 subscription gives you 16-24x more usage than the Codex $200 does\n\n(plus, Opus 5.5 is way faster)",
+      "createdAtISO": "2026-10-02T05:19:33+00:00",
+      "isRetweet": false,
+      "source": "search-top-03.json",
+      "url": "https://x.com/i/status/2105890409692143826",
+      "candidate_text": "from my calculations, the Claude Code $200 subscription gives you 16-24x more usage than the Codex $200 does  (plus, Opus 5.5 is way faster)"
+    },
+    {
       "id": "2105650266187890985",
       "author": {
         "screenName": "levelsio",
@@ -458,6 +510,19 @@
       "source": "user-levelsio.json",
       "url": "https://x.com/i/status/2105650266187890985",
       "candidate_text": "This is a very interesting effect too  They're boiling the frog and making everyone poorer  But most Westerners don't notice it, partly because prices of flights, hotels, travel as a whole has gone up so much (again it hasn't, we've all just been made poorer collectively)  And if"
+    },
+    {
+      "id": "2105692518381769039",
+      "author": {
+        "screenName": "ucx9i",
+        "name": "لكسيار"
+      },
+      "text": "https://t.co/PtDdjLpnsv",
+      "createdAtISO": "2026-10-01T16:13:12+00:00",
+      "isRetweet": false,
+      "source": "feed-for-you.json",
+      "url": "https://x.com/i/status/2105692518381769039",
+      "candidate_text": "https://t.co/PtDdjLpnsv"
     },
     {
       "id": "2105780532571496671",
@@ -486,19 +551,6 @@
       "candidate_text": "牛肉批发价涨起来了，小粉红再迎一个回旋镖 https://t.co/wRjaclkDgN"
     },
     {
-      "id": "2105930313142763626",
-      "author": {
-        "screenName": "mira_beant",
-        "name": "𝒎𝒊𝒓𝒂"
-      },
-      "text": "https://t.co/crG2b9AgmR",
-      "createdAtISO": "2026-10-02T07:58:07+00:00",
-      "isRetweet": false,
-      "source": "feed-for-you.json",
-      "url": "https://x.com/i/status/2105930313142763626",
-      "candidate_text": "https://t.co/crG2b9AgmR"
-    },
-    {
       "id": "2105739667174019491",
       "author": {
         "screenName": "steipete",
@@ -512,30 +564,17 @@
       "candidate_text": "\"the Waymo effect is what happens when a technology removes the friction of dealing with another human being\" https://t.co/dOVghMfF1L"
     },
     {
-      "id": "2105918453777670561",
+      "id": "2105842476774998459",
       "author": {
-        "screenName": "nunaambon",
-        "name": "nuna"
+        "screenName": "worldparadiseX",
+        "name": "world paradise"
       },
-      "text": "How our grandparents say they go to school https://t.co/FEZT8KM3rg",
-      "createdAtISO": "2026-10-02T07:11:00+00:00",
+      "text": "📍 Churfirsten, Switzerland 🇨🇭 https://t.co/8qNzmXhbr4",
+      "createdAtISO": "2026-10-02T02:09:05+00:00",
       "isRetweet": false,
       "source": "feed-for-you.json",
-      "url": "https://x.com/i/status/2105918453777670561",
-      "candidate_text": "How our grandparents say they go to school https://t.co/FEZT8KM3rg"
-    },
-    {
-      "id": "2105618729367453977",
-      "author": {
-        "screenName": "Kalshi",
-        "name": "Kalshi"
-      },
-      "text": "JUST IN: Chinese hackers impersonate Anthropic employee to steal emails from AI experts",
-      "createdAtISO": "2026-10-01T11:20:00+00:00",
-      "isRetweet": false,
-      "source": "search-top-00.json",
-      "url": "https://x.com/i/status/2105618729367453977",
-      "candidate_text": "JUST IN: Chinese hackers impersonate Anthropic employee to steal emails from AI experts"
+      "url": "https://x.com/i/status/2105842476774998459",
+      "candidate_text": "📍 Churfirsten, Switzerland 🇨🇭 https://t.co/8qNzmXhbr4"
     },
     {
       "id": "2105706777832767984",
@@ -551,19 +590,6 @@
       "candidate_text": "Sitting through PowerPoints has become much better since we got good AI. Sure, some people just let AI do the thinking work, but that is obvious (and they used default templates before). For people who do care, they have interesting layouts &amp; funny visual jokes &amp; good dia"
     },
     {
-      "id": "2105854300979355889",
-      "author": {
-        "screenName": "AzadWeb3",
-        "name": "Azad"
-      },
-      "text": "Good morning guys\n\nConnected my trading wallet to @agenticscredit again just to see where the score lands.\n\nThe system reads your existing onchain history and gives an Agentic Credit Score from 300 to 850.\n\nIf the wallet is too thin, it shows Unrated. Nothing is rejected, there is simply not enough closed history yet.\n\n580 is the important line.\n\nBelow it, you keep building history through the paper engine. At 580+, you can enter the funding waitlist, but that does not mean capital arrives immediately.\n\nACS also combines paper trades with real onchain activity, with real money carrying more weight.\n\nIf funding opens, the capital stays non custodial and deploys through approved venues. Avantis perps on Base is the first one.\n\nThe same closed activity can also earn $CREDIT toward the planned airdrop.\n\nSo I would check the actual score first rather than guessing where the wallet sits.\n\nCheck out here: https://t.co/cFpBsEujsQ",
-      "createdAtISO": "2026-10-02T02:56:04+00:00",
-      "isRetweet": false,
-      "source": "search-top-08.json",
-      "url": "https://x.com/i/status/2105854300979355889",
-      "candidate_text": "Good morning guys  Connected my trading wallet to @agenticscredit again just to see where the score lands.  The system reads your existing onchain history and gives an Agentic Credit Score from 300 to 850.  If the wallet is too thin, it shows Unrated. Nothing is rejected, there i"
-    },
-    {
       "id": "2105832639718371781",
       "author": {
         "screenName": "Kalshi",
@@ -577,17 +603,17 @@
       "candidate_text": "JUST IN: SoftBank wires final $10B into OpenAI — $64.6B invested for ~13% stake"
     },
     {
-      "id": "2105667976653324569",
+      "id": "2105606674338005477",
       "author": {
-        "screenName": "echoesofworld",
-        "name": "✶"
+        "screenName": "pradeepXkapoor",
+        "name": "Pradeep Kapoor"
       },
-      "text": "Japan  https://t.co/HqG2lNcxou",
-      "createdAtISO": "2026-10-01T14:35:41+00:00",
+      "text": "I don't know if I should feel proud or sad\n\nClaude code is an addiction https://t.co/V0GMjb40sD",
+      "createdAtISO": "2026-10-01T10:32:06+00:00",
       "isRetweet": false,
-      "source": "feed-for-you.json",
-      "url": "https://x.com/i/status/2105667976653324569",
-      "candidate_text": "Japan  https://t.co/HqG2lNcxou"
+      "source": "search-top-03.json",
+      "url": "https://x.com/i/status/2105606674338005477",
+      "candidate_text": "I don't know if I should feel proud or sad  Claude code is an addiction https://t.co/V0GMjb40sD"
     },
     {
       "id": "2105689813961540050",
@@ -603,6 +629,32 @@
       "candidate_text": "Introducing the official Unity plugin for Grok Build - bringing our engineering guidance directly to your terminal in our continued effort to meet you where you work.  Unlock 30+ Unity skills covering UI Toolkit, Shader Graph, multiplayer, physics, and more with nothing to config"
     },
     {
+      "id": "2105974336339202362",
+      "author": {
+        "screenName": "bridgemindai",
+        "name": "BridgeMind"
+      },
+      "text": "Fable 5.5 is going to be the biggest leap we have ever seen.\n\nAnthropic's IPO is coming in November. They are going to build maximum momentum before it, and Fable 5.5 is how they do it.\n\nOpenAI is not ready.",
+      "createdAtISO": "2026-10-02T10:53:03+00:00",
+      "isRetweet": false,
+      "source": "search-top-08.json",
+      "url": "https://x.com/i/status/2105974336339202362",
+      "candidate_text": "Fable 5.5 is going to be the biggest leap we have ever seen.  Anthropic's IPO is coming in November. They are going to build maximum momentum before it, and Fable 5.5 is how they do it.  OpenAI is not ready."
+    },
+    {
+      "id": "2105841393910665584",
+      "author": {
+        "screenName": "mira_beant",
+        "name": "𝒎𝒊𝒓𝒂"
+      },
+      "text": "Like a memory from a dream https://t.co/mNARsibcuy",
+      "createdAtISO": "2026-10-02T02:04:47+00:00",
+      "isRetweet": false,
+      "source": "feed-for-you.json",
+      "url": "https://x.com/i/status/2105841393910665584",
+      "candidate_text": "Like a memory from a dream https://t.co/mNARsibcuy"
+    },
+    {
       "id": "2105852084813975701",
       "author": {
         "screenName": "reduansheikh11",
@@ -616,30 +668,17 @@
       "candidate_text": "Good morning creators Imagine this.  You wake up after a bad night of sleep.  Instead of just seeing a score, an AI Sleep Coach explains what changed, suggests a better routine, helps plan recovery, and eventually connects you to the right tools or products.  That feels closer to"
     },
     {
-      "id": "2105868452837593300",
+      "id": "2105719397448872325",
       "author": {
-        "screenName": "Dan1umma",
-        "name": "𝐃𝒂𝒏 𝑼𝒎𝒎𝒂"
+        "screenName": "circle",
+        "name": "Circle"
       },
-      "text": "Good morning ☕\n\n𝗛𝗲𝗮𝗹𝘁𝗵-𝘁𝗲𝗰𝗵 𝗱𝗼𝗲𝘀𝗻'𝘁 𝗷𝘂𝘀𝘁 𝗵𝗮𝘃𝗲 𝗮 𝗱𝗮𝘁𝗮 𝗽𝗿𝗼𝗯𝗹𝗲𝗺.\n\n𝗜𝘁 𝗵𝗮𝘀 𝗮𝗻 𝗼𝘄𝗻𝗲𝗿𝘀𝗵𝗶𝗽 𝗽𝗿𝗼𝗯𝗹𝗲𝗺.\n\nEvery sleep score.\nEvery recovery metric.\nEvery heart-rate reading.\nEvery pattern in your daily routine.\n\nWe generate all of this simply trying to understand ourselves better.\n\n𝗕𝘂𝘁 𝘁𝗵𝗲𝗿𝗲'𝘀 𝗮𝗻 𝘂𝗻𝗰𝗼𝗺𝗳𝗼𝗿𝘁𝗮𝗯𝗹𝗲 𝗾𝘂𝗲𝘀𝘁𝗶𝗼𝗻 𝗯𝗲𝗵𝗶𝗻𝗱 𝗶𝘁.\n\nWho actually owns the data?\n\nMost health apps are built on a simple model: collect everything, store it somewhere, find a way to monetize it later.\n\nThat model has become so normal most people don't question it anymore.\n\nThat's why I find @sleepagotchi interesting.\n\nInstead of building a business around a marketplace for biometric data, Sleepagotchi moved away from that model entirely.\n\nNo selling biometric data to researchers.\n\nNo giant database of personal health records sitting on centralized servers.\n\nHere's the part that matters:\n\nYour health and sleep stats go to the AI in anonymous form, get processed for the experience, and the data never has to stay attached to your identity.\n\nThat distinction matters.\n\nThere's a huge difference between:\n\n𝗪𝗲 𝗰𝗼𝗹𝗹𝗲𝗰𝘁𝗲𝗱 𝘆𝗼𝘂𝗿 𝗱𝗮𝘁𝗮.\n\nand\n\n𝗪𝗲 𝘂𝘀𝗲𝗱 𝘆𝗼𝘂𝗿 𝗱𝗮𝘁𝗮 𝘄𝗶𝘁𝗵𝗼𝘂𝘁 𝗻𝗲𝗲𝗱𝗶𝗻𝗴 𝘁𝗼 𝗸𝗻𝗼𝘄 𝘄𝗵𝗼 𝘆𝗼𝘂 𝗮𝗿𝗲.\n\nThe second model creates a completely different relationship between user and product.\n\nYou get the benefits of personalized AI without your most sensitive information automatically becoming another asset on someone else's balance sheet.\n\n𝗧𝗵𝗮𝘁'𝘀 𝘄𝗵𝗲𝗿𝗲 𝗦𝗹𝗲𝗲𝗽𝗮𝗴𝗼𝘁𝗰𝗵𝗶 𝗴𝗲𝘁𝘀 𝗶𝗻𝘁𝗲𝗿𝗲𝘀𝘁𝗶𝗻𝗴.\n\nThe product isn't just telling you to sleep more.\n\nIt's exploring how AI can make better sleep easier to understand, easier to follow, more engaging while taking privacy seriously at the same time.\n\nThat's a difficult balance to get right.\n\nSleep data is deeply personal. It can reveal patterns about your lifestyle, routines, habits, even your daily behavior.\n\nSo the question shouldn't only be:\n\n𝗛𝗼𝘄 𝗺𝘂𝗰𝗵 𝗰𝗮𝗻 𝗔𝗜 𝗹𝗲𝗮𝗿𝗻 𝗳𝗿𝗼𝗺 𝗼𝘂𝗿 𝗵𝗲𝗮𝗹𝘁𝗵 𝗱𝗮𝘁𝗮?\n\nIt should also be:\n\n𝗛𝗼𝘄 𝗹𝗶𝘁𝘁𝗹𝗲 𝗱𝗼𝗲𝘀 𝗔𝗜 𝗮𝗰𝘁𝘂𝗮𝗹𝗹𝘆 𝗻𝗲𝗲𝗱 𝘁𝗼 𝗸𝗻𝗼𝘄 𝗮𝗯𝗼𝘂𝘁 𝘂𝘀?\n\nThat's the part of sleepagotchi's approach worth paying attention to.\n\nThe company has raised $6.5M. But the bigger story isn't the funding number.\n\n𝗜𝘁'𝘀 𝘁𝗵𝗲 𝗮𝗿𝗰𝗵𝗶𝘁𝗲𝗰𝘁𝘂𝗿𝗲 𝗮𝗻𝗱 𝗽𝗵𝗶𝗹𝗼𝘀𝗼𝗽𝗵𝘆 𝗯𝗲𝗵𝗶𝗻𝗱 𝘄𝗵𝗮𝘁 𝘁𝗵𝗲𝘆'𝗿𝗲 𝗯𝘂𝗶𝗹𝗱𝗶𝗻𝗴.\n\nA future where personalization doesn't automatically require permanent surveillance.\n\nA future where useful AI can process information without your identity attached to every data point.\n\nAnd maybe most importantly a future where privacy isn't an afterthought bolted on once the product's already built.\n\nSometimes innovation isn't about collecting more.\n\n𝗦𝗼𝗺𝗲𝘁𝗶𝗺𝗲𝘀 𝗶𝘁'𝘀 𝗿𝗲𝗮𝗹𝗶𝘇𝗶𝗻𝗴 𝘄𝗵𝗮𝘁 𝗱𝗶𝗱𝗻'𝘁 𝗻𝗲𝗲𝗱 𝘁𝗼 𝗯𝗲 𝗰𝗼𝗹𝗹𝗲𝗰𝘁𝗲𝗱 𝗶𝗻 𝘁𝗵𝗲 𝗳𝗶𝗿𝘀𝘁 𝗽𝗹𝗮𝗰𝗲.\n\nThat's a conversation health-tech needs more of.\n\n$CHI @sleepagotchi",
-      "createdAtISO": "2026-10-02T03:52:18+00:00",
+      "text": "Circle has submitted its response to the European Commission’s MiCA Review Consultation.\n\nOur feedback draws on two years of experience operating USDC and EURC under MiCA, with a focus on strengthening Europe’s role as a dynamic, liquid stablecoin market.\n\nIn the response, we address:\n→ Multi-issuance for global stablecoin liquidity\n→ Longer-term equivalence and recognition for foreign stablecoins\n→ Reserve requirements focused on safety and liquidity\n\nhttps://t.co/BttARoLjHx",
+      "createdAtISO": "2026-10-01T18:00:01+00:00",
       "isRetweet": false,
-      "source": "search-top-08.json",
-      "url": "https://x.com/i/status/2105868452837593300",
-      "candidate_text": "Good morning ☕  𝗛𝗲𝗮𝗹𝘁𝗵-𝘁𝗲𝗰𝗵 𝗱𝗼𝗲𝘀𝗻'𝘁 𝗷𝘂𝘀𝘁 𝗵𝗮𝘃𝗲 𝗮 𝗱𝗮𝘁𝗮 𝗽𝗿𝗼𝗯𝗹𝗲𝗺.  𝗜𝘁 𝗵𝗮𝘀 𝗮𝗻 𝗼𝘄𝗻𝗲𝗿𝘀𝗵𝗶𝗽 𝗽𝗿𝗼𝗯𝗹𝗲𝗺.  Every sleep score. Every recovery metric. Every heart-rate reading. Every pattern in your daily routine.  We generate all of this simply trying to understand ourselves better.  𝗕𝘂𝘁 𝘁𝗵𝗲𝗿𝗲'"
-    },
-    {
-      "id": "2105956080798855574",
-      "author": {
-        "screenName": "RealVibesltgj",
-        "name": "🧑‍🧑‍🧒"
-      },
-      "text": "Flydubai takes a terrifying vertical plunge. ✈️\n\nMeanwhile, the “movie version”: passengers overpower the pilot and try flying the plane themselves… with zero flying experience. https://t.co/NrMc7icMCx",
-      "createdAtISO": "2026-10-02T09:40:31+00:00",
-      "isRetweet": false,
-      "source": "feed-for-you.json",
-      "url": "https://x.com/i/status/2105956080798855574",
-      "candidate_text": "Flydubai takes a terrifying vertical plunge. ✈️  Meanwhile, the “movie version”: passengers overpower the pilot and try flying the plane themselves… with zero flying experience. https://t.co/NrMc7icMCx"
+      "source": "search-top-07.json",
+      "url": "https://x.com/i/status/2105719397448872325",
+      "candidate_text": "Circle has submitted its response to the European Commission’s MiCA Review Consultation.  Our feedback draws on two years of experience operating USDC and EURC under MiCA, with a focus on strengthening Europe’s role as a dynamic, liquid stablecoin market.  In the response, we add"
     },
     {
       "id": "2105743067277902187",
@@ -668,43 +707,30 @@
       "candidate_text": "Trading history usually tells you what you made or lost.  But it doesn’t always show how you actually trade.  @agenticscredit is taking a different approach with its Agentic Credit Score, or ACS.  score ranges from 300 to 850 and looks at things like risk management, consistency,"
     },
     {
-      "id": "2105885297279983933",
+      "id": "2105882634366980123",
       "author": {
-        "screenName": "DegenSynth",
-        "name": "SYNTH"
+        "screenName": "ChinmoyOnChain",
+        "name": "CHINMOY"
       },
-      "text": "The October 12 update for @sleepagotchi is starting to feel far more significant than just another reward pool expansion. \n\nWith eleven days left, the real focus is what actually comes after sleep. \n\nGotchi Labs has fitness and shopping on the roadmap, but they aren't forcing them out all at once. The rollout for the next vertical entirely depends on where the existing community is already creating real, measurable activity. \n\nThat distinction is everything. Anyone can list five categories and call it an ecosystem. Building one genuinely useful agentic loop first takes actual traction. \n\nWith around 80K daily users already showing up for the live AI Sleep Coach, the focus isn't on how many new verticals they can announce. It is about whether that foundational sleep data is useful enough to power an entirely new product. \n\nWithout that base, adding more specialized agents just creates empty features. \n\nFor now, my attention stays exactly where the utility is: logging my nights, checking the coach, and watching whether my routine actually improves. Still here through the 12th. \n\nCurious though... did the Sleep Coach actually change something about your routine this week, or are you still just giving it the same late-night scroll to analyze? 🦖💤",
-      "createdAtISO": "2026-10-02T04:59:14+00:00",
+      "text": "What interests me here is not the 3D model itself but who is creating the demand for it.\n\n@vangrid_io gives agents a practical way to turn a real-world information gap into an actionable data request.\n\nAI agents are starting to interact with the physical world through actual economic transactions. @arc creates a path for those transactions to fund specific physical tasks and return useful data.\n\nThat creates an interesting feedback loop. An agent identifies an information gap, pays someone to fill it, and uses the result to make better decisions.\n\nIf this expands into mapping, inspections, logistics and robotics, physical work could become a programmable resource for autonomous systems.",
+      "createdAtISO": "2026-10-02T04:48:40+00:00",
       "isRetweet": false,
       "source": "search-top-04.json",
-      "url": "https://x.com/i/status/2105885297279983933",
-      "candidate_text": "The October 12 update for @sleepagotchi is starting to feel far more significant than just another reward pool expansion.   With eleven days left, the real focus is what actually comes after sleep.   Gotchi Labs has fitness and shopping on the roadmap, but they aren't forcing the"
+      "url": "https://x.com/i/status/2105882634366980123",
+      "candidate_text": "What interests me here is not the 3D model itself but who is creating the demand for it.  @vangrid_io gives agents a practical way to turn a real-world information gap into an actionable data request.  AI agents are starting to interact with the physical world through actual econ"
     },
     {
-      "id": "2105946197081084249",
+      "id": "2105608356882968768",
       "author": {
-        "screenName": "techynyxa",
-        "name": "‘"
+        "screenName": "bella_quack",
+        "name": "Bella Quack"
       },
-      "text": "how do i tell this guy that RAM is more valuable than gold 😭😭 https://t.co/8JDo8Un8Sz",
-      "createdAtISO": "2026-10-02T09:01:14+00:00",
+      "text": "Congratulations to the creators on the leaderboard\nBeldex campaign!\n\n@NucleusCodes  will distribute a total of $50,000 to the top 300 creators over the next few days.\nPlease note that rewards will be sent to the EVM wallet you selected as your \"Mint Wallet\" in your profile.\nThis is the second campaign on Nucleus to feature stablecoin payouts.\n\nFollow them and turn on notifications to receive the latest campaigns!",
+      "createdAtISO": "2026-10-01T10:38:47+00:00",
       "isRetweet": false,
-      "source": "feed-for-you.json",
-      "url": "https://x.com/i/status/2105946197081084249",
-      "candidate_text": "how do i tell this guy that RAM is more valuable than gold 😭😭 https://t.co/8JDo8Un8Sz"
-    },
-    {
-      "id": "2105925752202182904",
-      "author": {
-        "screenName": "Kalshi",
-        "name": "Kalshi"
-      },
-      "text": "JUST IN: Broadcom will lend Anthropic up to $42 billion to lease its chips",
-      "createdAtISO": "2026-10-02T07:40:00+00:00",
-      "isRetweet": false,
-      "source": "search-top-00.json",
-      "url": "https://x.com/i/status/2105925752202182904",
-      "candidate_text": "JUST IN: Broadcom will lend Anthropic up to $42 billion to lease its chips"
+      "source": "search-top-07.json",
+      "url": "https://x.com/i/status/2105608356882968768",
+      "candidate_text": "Congratulations to the creators on the leaderboard Beldex campaign!  @NucleusCodes  will distribute a total of $50,000 to the top 300 creators over the next few days. Please note that rewards will be sent to the EVM wallet you selected as your \"Mint Wallet\" in your profile. This "
     },
     {
       "id": "2105832087391502739",
@@ -733,32 +759,6 @@
       "candidate_text": "一年前的agent tool infra的热点是agent browser，agent编程语言，agentOS，agent邮箱，万事万物cli，cli浏览器，cli邮件，cli生成图视频音频，cli修图，cli接入discord/teams/slack/微信/whatsapp/新浪微博。  还有skill，上面所有都加上个skill。  一年后人们发现，他奶奶个卷的，别骗你怯爹了。"
     },
     {
-      "id": "2105787341994365401",
-      "author": {
-        "screenName": "kuronoChikaru",
-        "name": "黒埜"
-      },
-      "text": "おはようございます、金曜日！\n今週はリプも返せなくてすみませんでした…\n何とか月初の仕事もめどがつきました\n来週は火曜日よりリプ返したい\n\n今日は、帰宅したら、Unityさんとデートしなければ…\n写真も撮りにいきたい…\n#Milltina #ミルティナ #EXTENSIONCLOTHING #VRchat https://t.co/DkdgpsMW6l",
-      "createdAtISO": "2026-10-01T22:30:00+00:00",
-      "isRetweet": false,
-      "source": "search-top-06.json",
-      "url": "https://x.com/i/status/2105787341994365401",
-      "candidate_text": "おはようございます、金曜日！ 今週はリプも返せなくてすみませんでした… 何とか月初の仕事もめどがつきました 来週は火曜日よりリプ返したい  今日は、帰宅したら、Unityさんとデートしなければ… 写真も撮りにいきたい… #Milltina #ミルティナ #EXTENSIONCLOTHING #VRchat https://t.co/DkdgpsMW6l"
-    },
-    {
-      "id": "2105974336339202362",
-      "author": {
-        "screenName": "bridgemindai",
-        "name": "BridgeMind"
-      },
-      "text": "Fable 5.5 is going to be the biggest leap we have ever seen.\n\nAnthropic's IPO is coming in November. They are going to build maximum momentum before it, and Fable 5.5 is how they do it.\n\nOpenAI is not ready.",
-      "createdAtISO": "2026-10-02T10:53:03+00:00",
-      "isRetweet": false,
-      "source": "search-top-08.json",
-      "url": "https://x.com/i/status/2105974336339202362",
-      "candidate_text": "Fable 5.5 is going to be the biggest leap we have ever seen.  Anthropic's IPO is coming in November. They are going to build maximum momentum before it, and Fable 5.5 is how they do it.  OpenAI is not ready."
-    },
-    {
       "id": "2105840601195311216",
       "author": {
         "screenName": "dotey",
@@ -772,17 +772,30 @@
       "candidate_text": "Anthropic 今天给 Claude Code 推出了 Mod 功能。Claude Code 是 Anthropic 做的 AI 编程助手，你用大白话告诉它要做什么，它自己读代码、改代码、运行命令。  Mod 这个词来自游戏圈，玩家给游戏装 MOD，可以改画面、加道具、换玩法。比如我们以前玩过的《反恐精英》最早就是作为游戏《半条命》（Half-Life）的一个 Mod。  现在 Claude Code 也能这样改了。  Mod 就是一小段程序，用 TypeScript（一种常用的编程语言）写。不会编程也没关系，直接跟 Claude Code 说你想要"
     },
     {
-      "id": "2105884032760230249",
+      "id": "2105825191968346211",
       "author": {
-        "screenName": "ADA0012AI",
-        "name": "ADA"
+        "screenName": "Reuters",
+        "name": "Reuters"
       },
-      "text": "Good morning, guys \n\nMay Allah continue to protect Nigeria from violence, unrest, and anything that threatens our peace.\n\nAs the elections draw closer, may Allah guide us toward good and responsible leadership.\n\nMay He protect every community, bless our people with peace and unity, and preserve the many blessings Nigeria has been given.\nMay Allah increase our nation in prosperity, stability, and peace. Ameen.",
-      "createdAtISO": "2026-10-02T04:54:13+00:00",
+      "text": "EXCLUSIVE: Broadcom to lend Anthropic up to $42 billion to lease its chips, filing says https://t.co/VYK2Iam7kC https://t.co/VYK2Iam7kC",
+      "createdAtISO": "2026-10-02T01:00:24+00:00",
       "isRetweet": false,
-      "source": "search-top-06.json",
-      "url": "https://x.com/i/status/2105884032760230249",
-      "candidate_text": "Good morning, guys   May Allah continue to protect Nigeria from violence, unrest, and anything that threatens our peace.  As the elections draw closer, may Allah guide us toward good and responsible leadership.  May He protect every community, bless our people with peace and unit"
+      "source": "search-top-00.json",
+      "url": "https://x.com/i/status/2105825191968346211",
+      "candidate_text": "EXCLUSIVE: Broadcom to lend Anthropic up to $42 billion to lease its chips, filing says https://t.co/VYK2Iam7kC https://t.co/VYK2Iam7kC"
+    },
+    {
+      "id": "2105858308015854046",
+      "author": {
+        "screenName": "echoesofworld",
+        "name": "✶"
+      },
+      "text": "https://t.co/e75SO8wvV7",
+      "createdAtISO": "2026-10-02T03:12:00+00:00",
+      "isRetweet": false,
+      "source": "feed-for-you.json",
+      "url": "https://x.com/i/status/2105858308015854046",
+      "candidate_text": "https://t.co/e75SO8wvV7"
     },
     {
       "id": "2105743385898123306",
@@ -798,6 +811,32 @@
       "candidate_text": "https://t.co/kEWuoY6tPq"
     },
     {
+      "id": "2105880032501768224",
+      "author": {
+        "screenName": "tokioflo",
+        "name": "tokioflo"
+      },
+      "text": "Convection https://t.co/YVEuWO8p5x",
+      "createdAtISO": "2026-10-02T04:38:19+00:00",
+      "isRetweet": false,
+      "source": "feed-for-you.json",
+      "url": "https://x.com/i/status/2105880032501768224",
+      "candidate_text": "Convection https://t.co/YVEuWO8p5x"
+    },
+    {
+      "id": "2105847627925602490",
+      "author": {
+        "screenName": "gosrum",
+        "name": "金のニワトリ"
+      },
+      "text": "Codex Tibo リセット予告！\n\n日本時間で今晩リセットされるとのことなので、今日中に使い切ってしまって良さそう",
+      "createdAtISO": "2026-10-02T02:29:33+00:00",
+      "isRetweet": false,
+      "source": "search-top-03.json",
+      "url": "https://x.com/i/status/2105847627925602490",
+      "candidate_text": "Codex Tibo リセット予告！  日本時間で今晩リセットされるとのことなので、今日中に使い切ってしまって良さそう"
+    },
+    {
       "id": "2105853608944107819",
       "author": {
         "screenName": "dotey",
@@ -809,6 +848,32 @@
       "source": "user-dotey.json",
       "url": "https://x.com/i/status/2105853608944107819",
       "candidate_text": "Codex 又要有重置了，美国时间 10 月 2 日上午 10 点重置，也就是北京时间 10 月 3 日凌晨 2:00 蹬起来"
+    },
+    {
+      "id": "2105738654576497097",
+      "author": {
+        "screenName": "lydiahallie",
+        "name": "Lydia Hallie ✨"
+      },
+      "text": "@pradeepXkapoor 2am lol",
+      "createdAtISO": "2026-10-01T19:16:32+00:00",
+      "isRetweet": false,
+      "source": "search-top-03.json",
+      "url": "https://x.com/i/status/2105738654576497097",
+      "candidate_text": "@pradeepXkapoor 2am lol"
+    },
+    {
+      "id": "2105935361415500212",
+      "author": {
+        "screenName": "Sikdermahmud79",
+        "name": "MHR"
+      },
+      "text": "gSleep!\n\nঅনেক Web3 আর AI project একসাথে অনেক কিছু launch করার চেষ্টা করে। শেষ পর্যন্ত দেখা যায়, কোনো কিছুই ঠিকভাবে polish করা হয়নি।\n\n@GotchiLabs এর approach আমার কাছে অনেক বেশি practical।\n\nOne thing. Learn. Then grow.\n\nChapter One: @sleepagotchi\n\nতারা Health and Wellness দিয়ে শুরু করেছে এবং ইতিমধ্যেই real users, engagement এবং real-world traction তৈরি করেছে।\n\nNext Steps\n\nএখন ধীরে ধীরে ecosystem expand হবে shopping and commerce, fitness and exercise, productivity এবং everyday life-এর মতো আরও গুরুত্বপূর্ণ জায়গায়।\n\nThe Bigger Picture\n\nপ্রতিটি vertical-এর জন্য থাকবে dedicated AI agents, কিন্তু এগুলো আলাদা আলাদা product হয়ে থাকবে না। সবকিছু connected থাকবে একটি unified Gotchi ecosystem-এর মধ্যে।\n\nতাই Gotchi Labs শুধু একটি product তৈরি করছে না।\n\nতারা ধাপে ধাপে একটি connected Consumer AI ecosystem তৈরি করছে, যেখানে user activity, AI agents এবং everyday experiences একসাথে evolve করবে।",
+      "createdAtISO": "2026-10-02T08:18:11+00:00",
+      "isRetweet": false,
+      "source": "search-top-04.json",
+      "url": "https://x.com/i/status/2105935361415500212",
+      "candidate_text": "gSleep!  অনেক Web3 আর AI project একসাথে অনেক কিছু launch করার চেষ্টা করে। শেষ পর্যন্ত দেখা যায়, কোনো কিছুই ঠিকভাবে polish করা হয়নি।  @GotchiLabs এর approach আমার কাছে অনেক বেশি practical।  One thing. Learn. Then grow.  Chapter One: @sleepagotchi  তারা Health and Wellness দিয়ে "
     },
     {
       "id": "2105804164223893827",
@@ -837,32 +902,6 @@
       "candidate_text": "我觉得小时候苦练电子琴对我的世界观影响巨大。  简单来说，我小时候是喜欢古典音乐的，但是因为弹巴赫弹得天天挨揍，导致长大后童年阴影爆发，  结果就是，欧美所有古典的流行的音乐我都不听了，每天泡茶馆里听大鼓单弦小曲，听京剧评戏，后来自学了三弦京胡琵琶等等民乐，唯独这辈子不碰西洋乐器了。"
     },
     {
-      "id": "2105946388928553410",
-      "author": {
-        "screenName": "LiegeAgents",
-        "name": "Liege Agents"
-      },
-      "text": "Liege Agents is now listed on @coingecko.\n\nYou can now track robinhood:0xc32ab2e562ade6fba6d3d1e3960d49b0957ef645 directly on CoinGecko.\n\nhttps://t.co/tzYdGHzr08 https://t.co/v0fOfzufhF",
-      "createdAtISO": "2026-10-02T09:02:00+00:00",
-      "isRetweet": false,
-      "source": "search-top-04.json",
-      "url": "https://x.com/i/status/2105946388928553410",
-      "candidate_text": "Liege Agents is now listed on @coingecko.  You can now track robinhood:0xc32ab2e562ade6fba6d3d1e3960d49b0957ef645 directly on CoinGecko.  https://t.co/tzYdGHzr08 https://t.co/v0fOfzufhF"
-    },
-    {
-      "id": "2105789808790675715",
-      "author": {
-        "screenName": "bloomifyyy",
-        "name": "Earth Views"
-      },
-      "text": "Lake Como, Italy 🇮🇹 https://t.co/GUvBr1Kjol",
-      "createdAtISO": "2026-10-01T22:39:48+00:00",
-      "isRetweet": false,
-      "source": "feed-for-you.json",
-      "url": "https://x.com/i/status/2105789808790675715",
-      "candidate_text": "Lake Como, Italy 🇮🇹 https://t.co/GUvBr1Kjol"
-    },
-    {
       "id": "2105773541652308145",
       "author": {
         "screenName": "steipete",
@@ -876,17 +915,30 @@
       "candidate_text": "\"AI agents are aeroplanes for the mind: faster and more powerful than the bicycle, harder to control, costlier when they crash.\""
     },
     {
-      "id": "2105757143400157223",
+      "id": "2105703753236238624",
       "author": {
-        "screenName": "Switzerland_aib",
-        "name": "SwitzerlandBest"
+        "screenName": "EngMoElgaraihy",
+        "name": "Mo Elgaraihy"
       },
-      "text": "Switzerland 🇨🇭 https://t.co/gKK3A0LGO9",
-      "createdAtISO": "2026-10-01T20:30:00+00:00",
+      "text": "‼️️ عاجل: ضربة قاضية لـ NVIDIA من قلب الصين.. DeepSeek تبني البرمجيات البديلة لرقائق Huawei لكسر الهيمنة الأمريكية للأبد! 🇨🇳💥💣\n\n​باعتماد ودعم مباشر من Huawei، أطلقت DeepSeek ست أدوات برمجية مفتوحة المصدر تستهدف بيئة CUDA الخاصة بـ NVIDIA بشكل مباشر!\n\n​المشروع يعتمد على تطوير لغة TileLang — لغة برمجة تؤكد DeepSeek أنها أبسط وأكفأ بكثير من CUDA — لتشغيل رقائق الذكاء الاصطناعي الشرسة Ascend 950 من Huawei!\n\n​السيادة التقنية تتحول تدريجياً، وعصر احتكار السيليكون والبرمجيات يقترب من نهايته المحتومة 🔥💀\n\n​📖 المصدر والتفاصيل بالكامل: 👇🧵",
+      "createdAtISO": "2026-10-01T16:57:51+00:00",
       "isRetweet": false,
-      "source": "feed-for-you.json",
-      "url": "https://x.com/i/status/2105757143400157223",
-      "candidate_text": "Switzerland 🇨🇭 https://t.co/gKK3A0LGO9"
+      "source": "search-top-02.json",
+      "url": "https://x.com/i/status/2105703753236238624",
+      "candidate_text": "‼️️ عاجل: ضربة قاضية لـ NVIDIA من قلب الصين.. DeepSeek تبني البرمجيات البديلة لرقائق Huawei لكسر الهيمنة الأمريكية للأبد! 🇨🇳💥💣  ​باعتماد ودعم مباشر من Huawei، أطلقت DeepSeek ست أدوات برمجية مفتوحة المصدر تستهدف بيئة CUDA الخاصة بـ NVIDIA بشكل مباشر!  ​المشروع يعتمد على تطوير لغة "
+    },
+    {
+      "id": "2105976906982002908",
+      "author": {
+        "screenName": "OnionWeb_",
+        "name": "OnionWeb"
+      },
+      "text": "Introducing OnionWeb, a platform designed to give each Solana token launched through it a dedicated .onion home and a persistent AI agent.\n\nThe public website is the token directory. Each agent lives, remembers and interacts on its own Tor site.\n\nhttps://t.co/5dUilXuKbQ\n\nhttps://t.co/ZavWZzLgQe",
+      "createdAtISO": "2026-10-02T11:03:16+00:00",
+      "isRetweet": false,
+      "source": "search-top-04.json",
+      "url": "https://x.com/i/status/2105976906982002908",
+      "candidate_text": "Introducing OnionWeb, a platform designed to give each Solana token launched through it a dedicated .onion home and a persistent AI agent.  The public website is the token directory. Each agent lives, remembers and interacts on its own Tor site.  https://t.co/5dUilXuKbQ  https://"
     },
     {
       "id": "2105760137512136753",
@@ -928,43 +980,17 @@
       "candidate_text": "我来说一下，这是个典型的画大饼诈骗项目。  nvidia和intel几乎跟投everything，这种项目早期都喜欢从这两家融一笔钱来做背书。  有基本常识的投资机构几乎都不看好，所以领投的是这几个人。  退回到技术上，如果光纤替代铜能带来革命，那么nvidia、三星、AMD会自己直接干的，不会轮到他们来颠覆。"
     },
     {
-      "id": "2105947469595169243",
+      "id": "2105963110712721422",
       "author": {
-        "screenName": "DegenSynth",
-        "name": "SYNTH"
+        "screenName": "Yoda21n",
+        "name": "Yoda"
       },
-      "text": "Talk is not \"agentic.\" 🦖\n\nMost wellness bots just throw generic advice into a chat bubble and call it intelligence. The real shift with @sleepagotchi is what happens when specialized agents actually pass context between each other instead of forcing you to start from zero every morning.\n\nWhen you wake up, you aren't looking at an isolated number:\n• One agent decodes your overnight recovery and biometric signals\n• Another links that data to your earlier meal timing and daily habits\n• The system forms a connected picture instead of treating every night like a random roll of the dice\n\nThe gamified world keeps evolving alongside it with version 2.0.15 bringing new roads for Dino to explore, but the real power is the agent handoff. \n\nContext carried forward means action taken, not just conversation repeated.\n\nHas your Sleep Coach ever flagged a recovery drop and traced it back to a daily habit you completely overlooked? \n\ngSleep! 💤",
-      "createdAtISO": "2026-10-02T09:06:18+00:00",
+      "text": "The next agent upgrade might not be another skill. @termix_ai already gives agents a path from discovering work to delivery and settlement. The bigger unlock could be connecting existing capabilities to buyers. How valuable is a skill without demand?",
+      "createdAtISO": "2026-10-02T10:08:27+00:00",
       "isRetweet": false,
       "source": "search-top-04.json",
-      "url": "https://x.com/i/status/2105947469595169243",
-      "candidate_text": "Talk is not \"agentic.\" 🦖  Most wellness bots just throw generic advice into a chat bubble and call it intelligence. The real shift with @sleepagotchi is what happens when specialized agents actually pass context between each other instead of forcing you to start from zero every m"
-    },
-    {
-      "id": "2105963151317757973",
-      "author": {
-        "screenName": "Yatesedls",
-        "name": "Yates"
-      },
-      "text": "Installing skills is easy. Creating an economy around them is harder. @termix_ai combines agent capabilities with jobs, escrow and completed settlements. That gives skills somewhere to produce verifiable outcomes. Could marketplaces become the distribution layer for AI agents?",
-      "createdAtISO": "2026-10-02T10:08:36+00:00",
-      "isRetweet": false,
-      "source": "search-top-04.json",
-      "url": "https://x.com/i/status/2105963151317757973",
-      "candidate_text": "Installing skills is easy. Creating an economy around them is harder. @termix_ai combines agent capabilities with jobs, escrow and completed settlements. That gives skills somewhere to produce verifiable outcomes. Could marketplaces become the distribution layer for AI agents?"
-    },
-    {
-      "id": "2105976906982002908",
-      "author": {
-        "screenName": "OnionWeb_",
-        "name": "OnionWeb"
-      },
-      "text": "Introducing OnionWeb, a platform designed to give each Solana token launched through it a dedicated .onion home and a persistent AI agent.\n\nThe public website is the token directory. Each agent lives, remembers and interacts on its own Tor site.\n\nhttps://t.co/5dUilXuKbQ\n\nhttps://t.co/ZavWZzLgQe",
-      "createdAtISO": "2026-10-02T11:03:16+00:00",
-      "isRetweet": false,
-      "source": "search-top-04.json",
-      "url": "https://x.com/i/status/2105976906982002908",
-      "candidate_text": "Introducing OnionWeb, a platform designed to give each Solana token launched through it a dedicated .onion home and a persistent AI agent.  The public website is the token directory. Each agent lives, remembers and interacts on its own Tor site.  https://t.co/5dUilXuKbQ  https://"
+      "url": "https://x.com/i/status/2105963110712721422",
+      "candidate_text": "The next agent upgrade might not be another skill. @termix_ai already gives agents a path from discovering work to delivery and settlement. The bigger unlock could be connecting existing capabilities to buyers. How valuable is a skill without demand?"
     },
     {
       "id": "2105903415930831066",
@@ -978,6 +1004,32 @@
       "source": "user-dotey.json",
       "url": "https://x.com/i/status/2105903415930831066",
       "candidate_text": "😂 Claude Code 可以借助 Mod 做到吗？"
+    },
+    {
+      "id": "2105904372731240652",
+      "author": {
+        "screenName": "CryptosR_Us",
+        "name": "CryptosRus"
+      },
+      "text": "NEW: 50,000+ Europeans are pushing back on strict stablecoin rules. 🇪🇺\n\nThey want MiCA changed so regulated stablecoins can offer cashback, loyalty perks and fee discounts.\n\nEurope’s stablecoin rules are already facing pressure from users. https://t.co/FLmpupN3vF",
+      "createdAtISO": "2026-10-02T06:15:02+00:00",
+      "isRetweet": false,
+      "source": "search-top-07.json",
+      "url": "https://x.com/i/status/2105904372731240652",
+      "candidate_text": "NEW: 50,000+ Europeans are pushing back on strict stablecoin rules. 🇪🇺  They want MiCA changed so regulated stablecoins can offer cashback, loyalty perks and fee discounts.  Europe’s stablecoin rules are already facing pressure from users. https://t.co/FLmpupN3vF"
+    },
+    {
+      "id": "2105963182099718338",
+      "author": {
+        "screenName": "Meltonmy2",
+        "name": "Melton"
+      },
+      "text": "What if agent skills worked more like businesses than plugins? On @termix_ai, agents can connect their capabilities to jobs and settlement flows. Each completed task can add evidence to their history. Does that change how we should think about agent tooling?",
+      "createdAtISO": "2026-10-02T10:08:44+00:00",
+      "isRetweet": false,
+      "source": "search-top-04.json",
+      "url": "https://x.com/i/status/2105963182099718338",
+      "candidate_text": "What if agent skills worked more like businesses than plugins? On @termix_ai, agents can connect their capabilities to jobs and settlement flows. Each completed task can add evidence to their history. Does that change how we should think about agent tooling?"
     },
     {
       "id": "2105668009222373628",
@@ -1019,43 +1071,69 @@
       "candidate_text": "我不知道我这个做法将会狠狠推进数学一大步，还是彻底终结数学。  党哥这里隆重推出The Last Math Competition（“最后数学竞赛”），可能将是全人类最后一场、也将是最旷日持久的一场数学竞赛。  https://t.co/WbogrgA0JX  以下是党哥制定的 The Last Math Competition 的规则：  1. 举办方每周会使用 AI Agent 新增 10000 个纯数学领域的猜想，添加到 ./conjectures 文件夹中；  2. 人类和 AI Agent 将共同对现存的所有猜想进行不同维度的打分，预估这些猜想"
     },
     {
-      "id": "2105734239924916595",
+      "id": "2105963543849836989",
       "author": {
-        "screenName": "getswiftpay",
-        "name": "SwiftPay"
+        "screenName": "fleyta88",
+        "name": "fleyta"
       },
-      "text": "𝗔𝗿𝗰 🤝 𝗦𝘄𝗶𝗳𝘁𝗣𝗮𝘆\n\nWe’re building a stablecoin-native payments platform for what happens after “send.”\n\n𝗪𝗵𝗮𝘁 𝗶𝘁 𝘂𝗻𝗹𝗼𝗰𝗸𝘀:\n\n• Deposit USDC through bank transfers and move seamlessly between traditional money and onchain payments\n\n• Send and receive USDC & EURC with usernames and simple payment flows\n\n• Create payment requests and automate recurring payments\n\n• Save and put your stablecoins to work\n\n• Use 𝗔𝗟𝗟𝗜𝗘, our AI payment agent, to help execute and manage payment intents\n\n• Build a unified payment experience for both individuals and businesses\n\nArc gives SwiftPay the infrastructure to make stablecoins feel less like crypto infrastructure and more like money you can actually use.\n\nBuilt on @Arc. Powered by stablecoins. Built for payments.",
-      "createdAtISO": "2026-10-01T18:59:00+00:00",
+      "text": "openai dots looks simple until you let one agent run your whole week\n\ni turned the setup into a tighter system instead of giving one dot unlimited freedom:\n\nstep 1 → give it 4 seats: LOOKOUT, MAKER, SKEPTIC, RUNNER. one agent, one memory, one role at a time.\n\nstep 2 → never let a chain run past 5 steps. stop, run a checkpoint, then continue.\n\nstep 3 → split permissions into allow / ask first / block so uncertainty always moves toward you, not toward action.\n\nstep 4 → keep approvals under 5 a day. if you’re clicking 40 prompts, the guardrail already failed.\n\nstep 5 → give every artifact somewhere permanent to land, then keep a simple index of what the agent actually did.\n\nthe useful shift isn’t “make the agent more autonomous.”\n\nit’s giving autonomy hard edges.\n\nfull OpenAI Dots guide + prompts in the article below ↓",
+      "createdAtISO": "2026-10-02T10:10:10+00:00",
       "isRetweet": false,
-      "source": "search-top-07.json",
-      "url": "https://x.com/i/status/2105734239924916595",
-      "candidate_text": "𝗔𝗿𝗰 🤝 𝗦𝘄𝗶𝗳𝘁𝗣𝗮𝘆  We’re building a stablecoin-native payments platform for what happens after “send.”  𝗪𝗵𝗮𝘁 𝗶𝘁 𝘂𝗻𝗹𝗼𝗰𝗸𝘀:  • Deposit USDC through bank transfers and move seamlessly between traditional money and onchain payments  • Send and receive USDC & EURC with usernames and simpl"
+      "source": "search-top-01.json",
+      "url": "https://x.com/i/status/2105963543849836989",
+      "candidate_text": "openai dots looks simple until you let one agent run your whole week  i turned the setup into a tighter system instead of giving one dot unlimited freedom:  step 1 → give it 4 seats: LOOKOUT, MAKER, SKEPTIC, RUNNER. one agent, one memory, one role at a time.  step 2 → never let a"
     },
     {
-      "id": "2105954098151379147",
+      "id": "2105683514847043718",
+      "author": {
+        "screenName": "privy_io",
+        "name": "Privy"
+      },
+      "text": "1/ Everything you need to build a stablecoin-backed card program with Privy, now in one place.\n\nWhat you get:\n✔️ Prebuilt components to streamline approval + launch\n✔️ Fully integrated with @stripe Issuing\n✔️ Just-in-time funding from wallet balances\n✔️ Spend from DeFi vaults https://t.co/I6KPzKmMFu",
+      "createdAtISO": "2026-10-01T15:37:26+00:00",
+      "isRetweet": false,
+      "source": "search-top-07.json",
+      "url": "https://x.com/i/status/2105683514847043718",
+      "candidate_text": "1/ Everything you need to build a stablecoin-backed card program with Privy, now in one place.  What you get: ✔️ Prebuilt components to streamline approval + launch ✔️ Fully integrated with @stripe Issuing ✔️ Just-in-time funding from wallet balances ✔️ Spend from DeFi vaults htt"
+    },
+    {
+      "id": "2105982048393470163",
+      "author": {
+        "screenName": "Kalshi",
+        "name": "Kalshi"
+      },
+      "text": "BREAKING: Leaked Anthropic IPO filing warns US actions \"could hurt our business\"",
+      "createdAtISO": "2026-10-02T11:23:42+00:00",
+      "isRetweet": false,
+      "source": "search-top-08.json",
+      "url": "https://x.com/i/status/2105982048393470163",
+      "candidate_text": "BREAKING: Leaked Anthropic IPO filing warns US actions \"could hurt our business\""
+    },
+    {
+      "id": "2105881883800445182",
+      "author": {
+        "screenName": "PendleIntern",
+        "name": "Pendle Intern"
+      },
+      "text": "gm to the 56,015 @monad enjoyooors currently enjoying 99.15% APY\n\nOn instituional grade stablecoin exposure\n\nIt could only be Pendle x Agora 😩 https://t.co/3t4PhA8mKg",
+      "createdAtISO": "2026-10-02T04:45:41+00:00",
+      "isRetweet": false,
+      "source": "search-top-07.json",
+      "url": "https://x.com/i/status/2105881883800445182",
+      "candidate_text": "gm to the 56,015 @monad enjoyooors currently enjoying 99.15% APY  On instituional grade stablecoin exposure  It could only be Pendle x Agora 😩 https://t.co/3t4PhA8mKg"
+    },
+    {
+      "id": "2105955317196448095",
       "author": {
         "screenName": "Girlcrypt1",
         "name": "Crypto Gawddez🥷"
       },
-      "text": "$ROKHA is making agents feel less like simple and more like systems can that can actually get things done.\n\n@rokha_agent @GoblinBuilds",
-      "createdAtISO": "2026-10-02T09:32:38+00:00",
+      "text": "@rokha_agent feel like it's building around the practical side of agents; execution, control, and actually getting work done.\n$ROKHA @GoblinBuilds",
+      "createdAtISO": "2026-10-02T09:37:29+00:00",
       "isRetweet": false,
       "source": "search-top-04.json",
-      "url": "https://x.com/i/status/2105954098151379147",
-      "candidate_text": "$ROKHA is making agents feel less like simple and more like systems can that can actually get things done.  @rokha_agent @GoblinBuilds"
-    },
-    {
-      "id": "2105686743441658218",
-      "author": {
-        "screenName": "dellarih",
-        "name": "💖"
-      },
-      "text": "https://t.co/mHCg2iFKI3",
-      "createdAtISO": "2026-10-01T15:50:16+00:00",
-      "isRetweet": false,
-      "source": "feed-for-you.json",
-      "url": "https://x.com/i/status/2105686743441658218",
-      "candidate_text": "https://t.co/mHCg2iFKI3"
+      "url": "https://x.com/i/status/2105955317196448095",
+      "candidate_text": "@rokha_agent feel like it's building around the practical side of agents; execution, control, and actually getting work done. $ROKHA @GoblinBuilds"
     },
     {
       "id": "2105974086203510944",
@@ -1071,6 +1149,32 @@
       "candidate_text": "Microsoft open-sourced the stack for running a business on agents  16 skills + 1 framework, MIT. the sales and CRM grunt work your team does every day, written as files an agent follows step by step  the playbook, dataverse-business-skills:  > sales: log a call, prep a briefing, "
     },
     {
+      "id": "2105924349979144403",
+      "author": {
+        "screenName": "Jrazaq7",
+        "name": "Jrazaq7"
+      },
+      "text": "I’m paying more attention to the permission side of agents. Giving an agent more capabilities is useful, but knowing exactly where those capabilities stop is just as important.\n    @rokha_agent @GoblinBuilds $ROKHA",
+      "createdAtISO": "2026-10-02T07:34:25+00:00",
+      "isRetweet": false,
+      "source": "search-top-04.json",
+      "url": "https://x.com/i/status/2105924349979144403",
+      "candidate_text": "I’m paying more attention to the permission side of agents. Giving an agent more capabilities is useful, but knowing exactly where those capabilities stop is just as important.     @rokha_agent @GoblinBuilds $ROKHA"
+    },
+    {
+      "id": "2105969936187412867",
+      "author": {
+        "screenName": "grotesquelyfab",
+        "name": "🌨"
+      },
+      "text": "hidden gem sih iniii\ncelana kulot stripe yang looknya comfy dan casual ini harganya cuma 50 ribuan aja 🦩🍡 https://t.co/oBD2Zbkb7d",
+      "createdAtISO": "2026-10-02T10:35:34+00:00",
+      "isRetweet": false,
+      "source": "search-top-07.json",
+      "url": "https://x.com/i/status/2105969936187412867",
+      "candidate_text": "hidden gem sih iniii celana kulot stripe yang looknya comfy dan casual ini harganya cuma 50 ribuan aja 🦩🍡 https://t.co/oBD2Zbkb7d"
+    },
+    {
       "id": "2105968847459434625",
       "author": {
         "screenName": "MSBIntel",
@@ -1084,17 +1188,30 @@
       "candidate_text": "BREAKING: Aave founder Stani Kulechov criticizes ECB and EBA proposals to restrict stablecoin yields and DeFi access, warning they could create “walled gardens” and limit financial opportunities for Europeans.  “DeFi will win.” https://t.co/Qic9Mpk5xf"
     },
     {
-      "id": "2105953515159822770",
+      "id": "2105959876174152115",
       "author": {
-        "screenName": "Mr_Ck34",
-        "name": "CK 👑"
+        "screenName": "codecloude",
+        "name": "Code cloud E.commerce | کد کلاد"
       },
-      "text": "Good morning \n\ngstabilizer Day 9 \n\nToday, let’s look at USDZ minting.\n\nFor someone new to DeFi, the word mint can sound complicated.\n\nAt a basic level, minting means creating USDZ through the mechanism provided by the protocol.\n\nBut the more interesting question is\n\nWhy would someone want to mint it ?\n\nThe answer depends on what utility exists around USDZ.\n\nA stablecoin becomes more useful when users have meaningful reasons to hold, move, trade, or deploy it.\n\nSo when thinking about minting, I don’t want to stop at\n\nCan I create USDZ ?\n\nI want to understand\n\nWhat does minting enable ?\n\nHow clear is the process ?\n\nWhat assets are involved ?\n\nHow predictable is the experience ?\n\nWhat can I do with USDZ afterward ?\n\nThat last question is especially important.\n\nMinting shouldn’t be viewed as an isolated button.\n\nIt should be understood as one step inside a larger ecosystem journey.\n\nMint → Hold → Use → Move → Redeem\n\nThe more connected that journey becomes, the more meaningful USDZ can become within the broader Stabilizer ecosystem @stabilizefi",
-      "createdAtISO": "2026-10-02T09:30:19+00:00",
+      "text": "سایت رسمی ZansLab یه دسترسی رایگان موقت برای چند مدل معروف باز کرده؛ از مدل‌های خانواده GPT گرفته تا DeepSeek 4.1 و چند مدل دیگه.\n\nروش استفاده‌ای که گفته شده هم خیلی ساده‌ست:\n\nثبت‌نام می‌کنی →\nAPI Key می‌سازی →\nBase URL سرویس رو داخل کلاینت سازگار با OpenAI می‌ذاری →\nبعد می‌تونی ازش داخل ابزارهایی مثل Cursor، Claude Code، Codex یا اسکریپت‌های خودت استفاده کنی\n\nکانال تلگراممون 🧑🏻‍🩰 : https://t.co/Wqaie3UysF",
+      "createdAtISO": "2026-10-02T09:55:35+00:00",
       "isRetweet": false,
-      "source": "search-top-07.json",
-      "url": "https://x.com/i/status/2105953515159822770",
-      "candidate_text": "Good morning   gstabilizer Day 9   Today, let’s look at USDZ minting.  For someone new to DeFi, the word mint can sound complicated.  At a basic level, minting means creating USDZ through the mechanism provided by the protocol.  But the more interesting question is  Why would som"
+      "source": "search-top-02.json",
+      "url": "https://x.com/i/status/2105959876174152115",
+      "candidate_text": "سایت رسمی ZansLab یه دسترسی رایگان موقت برای چند مدل معروف باز کرده؛ از مدل‌های خانواده GPT گرفته تا DeepSeek 4.1 و چند مدل دیگه.  روش استفاده‌ای که گفته شده هم خیلی ساده‌ست:  ثبت‌نام می‌کنی → API Key می‌سازی → Base URL سرویس رو داخل کلاینت سازگار با OpenAI می‌ذاری → بعد می‌تونی "
+    },
+    {
+      "id": "2105969608440324158",
+      "author": {
+        "screenName": "sns_ryuto05",
+        "name": "りゅうと"
+      },
+      "text": "自慢します。\n\nThreads1人で15万FWにしてます。正直、Claude code×スレッズは超絶簡単。ってな訳で、攻略法を公開すると、",
+      "createdAtISO": "2026-10-02T10:34:16+00:00",
+      "isRetweet": false,
+      "source": "search-top-03.json",
+      "url": "https://x.com/i/status/2105969608440324158",
+      "candidate_text": "自慢します。  Threads1人で15万FWにしてます。正直、Claude code×スレッズは超絶簡単。ってな訳で、攻略法を公開すると、"
     },
     {
       "id": "2105848317855031733",
@@ -1110,6 +1227,19 @@
       "candidate_text": "这条也挺酷 https://t.co/PL7T5P06rz"
     },
     {
+      "id": "2105872402572087807",
+      "author": {
+        "screenName": "xiongchun007",
+        "name": "程序员大熊"
+      },
+      "text": "这几天没见儿子来 Vibe Coding。我问怎么不喜欢 Coding 了吗？他说：我之前给装的 Claude Code CLI + DeepSeek 的套装不能正常工作了。\n\n好吧，下午打算重新给他搞一套专业工具，直接让他用真正的 IDE 好了。VS Code + OpenCode / Cline + DeepSeek。",
+      "createdAtISO": "2026-10-02T04:08:00+00:00",
+      "isRetweet": false,
+      "source": "search-top-02.json",
+      "url": "https://x.com/i/status/2105872402572087807",
+      "candidate_text": "这几天没见儿子来 Vibe Coding。我问怎么不喜欢 Coding 了吗？他说：我之前给装的 Claude Code CLI + DeepSeek 的套装不能正常工作了。  好吧，下午打算重新给他搞一套专业工具，直接让他用真正的 IDE 好了。VS Code + OpenCode / Cline + DeepSeek。"
+    },
+    {
       "id": "2105782312034341067",
       "author": {
         "screenName": "dotey",
@@ -1121,6 +1251,19 @@
       "source": "user-dotey.json",
       "url": "https://x.com/i/status/2105782312034341067",
       "candidate_text": "SVG 能力 https://t.co/OHdDjGFPTi"
+    },
+    {
+      "id": "2105949189779882052",
+      "author": {
+        "screenName": "belix_AI",
+        "name": "belix.ai | Agentic AI"
+      },
+      "text": "When AI Safety Collides With Corporate Confidentiality https://t.co/lSMQfGUFPJ",
+      "createdAtISO": "2026-10-02T09:13:08+00:00",
+      "isRetweet": false,
+      "source": "search-top-00.json",
+      "url": "https://x.com/i/status/2105949189779882052",
+      "candidate_text": "When AI Safety Collides With Corporate Confidentiality https://t.co/lSMQfGUFPJ"
     },
     {
       "id": "2105863984624599374",
@@ -1136,44 +1279,57 @@
       "candidate_text": "我可能又算错了，应该是 10 月 3 日凌晨 1 点 🥲"
     },
     {
-      "id": "2105979053698171010",
+      "id": "2105961035316289980",
       "author": {
-        "screenName": "glitchpolo",
-        "name": "Glitch"
+        "screenName": "mymoyopay",
+        "name": "MoyoPay"
       },
-      "text": "OpenAI just fired three safety researchers for sharing confidential information with an outside AI safety organization.\n\nNo names. No group. No word on what was shared. The company says only that its investigation found a \"pattern of violations\" in handling confidential data.\n\nThe timing is the uncomfortable part. The New York Times recently reported that OpenAI allegedly ignored employee warnings about risks in testing new models for months, before the Hugging Face incident.\n\nSo the people paid to raise the alarm are gone, the alarms they allegedly raised reportedly went unheard, and we don't know what they said or to whom.\n\nThese are the models that will write your code, run your accounts and make decisions about your life. The people who tested them for danger are no longer in the room, and the outside watchdogs just learned that talking to them can end a career.\n\nWhen the safety team leaves through the door marked \"violation,\" who is left to say something is wrong?",
-      "createdAtISO": "2026-10-02T11:11:48+00:00",
+      "text": "Stablecoin → MoyoPay → Spend\nStablecoin → MoyoPay → Invest\nStablecoin → MoyoPay → Daily Yields\nStablecoin → MoyoPay → Send cross-borders\nStablecoin → MoyoPay → Local Banks\nStablecoin → MoyoPay → Travel with you anywhere https://t.co/QNnfmKivMO",
+      "createdAtISO": "2026-10-02T10:00:12+00:00",
       "isRetweet": false,
-      "source": "search-top-00.json",
-      "url": "https://x.com/i/status/2105979053698171010",
-      "candidate_text": "OpenAI just fired three safety researchers for sharing confidential information with an outside AI safety organization.  No names. No group. No word on what was shared. The company says only that its investigation found a \"pattern of violations\" in handling confidential data.  Th"
+      "source": "search-top-07.json",
+      "url": "https://x.com/i/status/2105961035316289980",
+      "candidate_text": "Stablecoin → MoyoPay → Spend Stablecoin → MoyoPay → Invest Stablecoin → MoyoPay → Daily Yields Stablecoin → MoyoPay → Send cross-borders Stablecoin → MoyoPay → Local Banks Stablecoin → MoyoPay → Travel with you anywhere https://t.co/QNnfmKivMO"
     },
     {
-      "id": "2105979566669852705",
+      "id": "2105961001296232475",
       "author": {
-        "screenName": "madebyivor",
-        "name": "Ivor"
+        "screenName": "iamrexei",
+        "name": "Rexei"
       },
-      "text": "Wanted to keep track of what my agents while jogging or driving so I wrote this ChatGPT plugin extension.\n\nFrom ChatGPT voice I can check on Claude Code, Codex, Cursor, OpenCode and pi on my own machines (mac, ovh, synology) all connected through Tailscale.\n\nIt works both ways: I steer the agents from the chat, and they can message the chat back when they need a decision.\n\nBuilt on OpenAI's Secure MCP Tunnel and MCP Apps. Open source: https://t.co/gOcGsVLCAk",
-      "createdAtISO": "2026-10-02T11:13:50+00:00",
+      "text": "WHY THE HELL DOES THIS API GATEWAY SUDDENLY HAVE FREE GPT MODELS?\n\nZansLab, an Indonesian AI gateway, is currently going viral on X\n\nAccording to the guide, they’ve temporarily opened up access—without requiring a balance top-up—to:\n\n▸ GPT-6 Astra\n▸ GPT-6 Sol\n▸ GPT-6 Luna\n▸ GPT-5.6 Sol\n▸ DeepSeek 4.1\n\nYou need to register and get an API key. The author says no credit card or top-up is required\n\n→ Note: this is a third-party proxy, not the providers' official API. Don't send your .env files, client data, or anything from production there\n\nAccording to the source, free access might end as early as next week. Check the limits in your account first before integrating it into your coding workflow\n\nLink in the first reply ↓",
+      "createdAtISO": "2026-10-02T10:00:04+00:00",
       "isRetweet": false,
-      "source": "search-top-03.json",
-      "url": "https://x.com/i/status/2105979566669852705",
-      "candidate_text": "Wanted to keep track of what my agents while jogging or driving so I wrote this ChatGPT plugin extension.  From ChatGPT voice I can check on Claude Code, Codex, Cursor, OpenCode and pi on my own machines (mac, ovh, synology) all connected through Tailscale.  It works both ways: I"
+      "source": "search-top-02.json",
+      "url": "https://x.com/i/status/2105961001296232475",
+      "candidate_text": "WHY THE HELL DOES THIS API GATEWAY SUDDENLY HAVE FREE GPT MODELS?  ZansLab, an Indonesian AI gateway, is currently going viral on X  According to the guide, they’ve temporarily opened up access—without requiring a balance top-up—to:  ▸ GPT-6 Astra ▸ GPT-6 Sol ▸ GPT-6 Luna ▸ GPT-5"
     },
     {
-      "id": "2105949870897185061",
+      "id": "2105978279396331711",
       "author": {
-        "screenName": "yoshtakisaka",
-        "name": "Yoshinao Takisaka"
+        "screenName": "EstefanaK41280",
+        "name": "Estefana Krissy"
       },
-      "text": "DevinのVM(Mac)に Claude Code と Codex を入れて、サブスクリミットで動かす日々",
-      "createdAtISO": "2026-10-02T09:15:50+00:00",
+      "text": "@lydiahallie @pradeepXkapoor 请问 Claude 的统计是单独机器还是所有设备的总和？为什么 Claude code 奇怪地比 codex 用量少了那么多（1000亿 vs 500 亿），与我的体感不那么相符合？ https://t.co/C1HD7bcAWQ",
+      "createdAtISO": "2026-10-02T11:08:43+00:00",
       "isRetweet": false,
       "source": "search-top-03.json",
-      "url": "https://x.com/i/status/2105949870897185061",
-      "candidate_text": "DevinのVM(Mac)に Claude Code と Codex を入れて、サブスクリミットで動かす日々"
+      "url": "https://x.com/i/status/2105978279396331711",
+      "candidate_text": "@lydiahallie @pradeepXkapoor 请问 Claude 的统计是单独机器还是所有设备的总和？为什么 Claude code 奇怪地比 codex 用量少了那么多（1000亿 vs 500 亿），与我的体感不那么相符合？ https://t.co/C1HD7bcAWQ"
+    },
+    {
+      "id": "2105961003318120516",
+      "author": {
+        "screenName": "mon_kun_",
+        "name": "もんくん"
+      },
+      "text": "【速報】\nお手本にしたい動画を1本渡すと、同じ作りの別動画が返ってくる\n海外の開発者が、参考動画をカット数・尺・転換・色・カメラまで分解して、\nClaude CodeかCodexの複数エージェントで作り直す仕組みを公開して話題になってる\n\nもう課金してる人、これ知らないと普通に出遅れる😳\n\n・お手本の編集リズムを自動分解\n・まず絵コンテを出して承認待ち\n・最大6体で分担して同時制作\n・仕上がりは別エージェントが検品\n\nワークフローを丸ごと分解すると👇",
+      "createdAtISO": "2026-10-02T10:00:04+00:00",
+      "isRetweet": false,
+      "source": "search-top-03.json",
+      "url": "https://x.com/i/status/2105961003318120516",
+      "candidate_text": "【速報】 お手本にしたい動画を1本渡すと、同じ作りの別動画が返ってくる 海外の開発者が、参考動画をカット数・尺・転換・色・カメラまで分解して、 Claude CodeかCodexの複数エージェントで作り直す仕組みを公開して話題になってる  もう課金してる人、これ知らないと普通に出遅れる😳  ・お手本の編集リズムを自動分解 ・まず絵コンテを出して承認待ち ・最大6体で分担して同時制作 ・仕上がりは別エージェントが検品  ワークフローを丸ごと分解すると👇"
     }
   ],
-  "record_count": 79
+  "record_count": 91
 }
