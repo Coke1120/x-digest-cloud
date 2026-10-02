@@ -13,7 +13,8 @@ def build(raw_dir, candidates, run_id):
         raise ValueError('collection_not_successful')
     now = datetime.now(timezone.utc)
     cutoff = now - timedelta(hours=26)
-    selected = [json.loads(line) for line in candidates.read_text().splitlines() if line.strip()]
+    # JSONL is delimited by LF; Unicode line separators can appear inside JSON strings.
+    selected = [json.loads(line) for line in candidates.read_text().split('\n') if line.strip()]
     records = []
     seen = set()
     for row in selected:

@@ -11,7 +11,7 @@ class SnapshotTests(unittest.TestCase):
     def test_full_evidence_survives_preview_and_diagnostics_never_grant_review(self):
         with tempfile.TemporaryDirectory() as directory:
             raw = Path(directory)
-            full = 'I tested this model. ' * 30 + 'Details beyond the compact preview.'
+            full = 'I tested this model.\u2028Paragraph separator:\u2029Next-line:\u0085 ' * 30 + 'Details beyond the compact preview.'
             original = {'id': '1980000000000000001', 'author': {'screenName': 'builder', 'name': 'Builder'},
                         'text': full, 'createdAtISO': datetime.now(timezone.utc).isoformat(), 'isRetweet': False}
             (raw/'search-top-00.json').write_text(json.dumps({'data': [original]}))
