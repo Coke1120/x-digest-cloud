@@ -1,9 +1,9 @@
 {
   "schema_version": 1,
-  "run_id": "37111764555",
+  "run_id": "371117645550002",
   "github_run_id": "37111764555",
-  "github_run_attempt": 1,
-  "collected_at": "2026-10-03T09:04:52.507879+00:00",
+  "github_run_attempt": 2,
+  "collected_at": "2026-10-03T09:06:41.453948+00:00",
   "source_repository": "Coke1120/x-digest-cloud",
   "coverage": {
     "done": true,
@@ -11,7 +11,7 @@
     "calls": 40,
     "ok_calls": 40,
     "tweet_hits": 356,
-    "out_dir": "/tmp/x-digest-raw-37111764555-1",
+    "out_dir": "/tmp/x-digest-raw-37111764555-2",
     "since": "2026-10-02",
     "calls_detail": [
       {
@@ -292,46 +292,46 @@
       "semantic_reviewed": false,
       "category_funnel": {
         "開發者工具": {
-          "available": 18,
-          "signal_eligible": 16,
-          "selected": 16,
+          "available": 17,
+          "signal_eligible": 15,
+          "selected": 15,
           "weak_or_promotional": 2,
           "not_selected": 0
         },
         "OpenClaw／Agent 生態": {
-          "available": 25,
-          "signal_eligible": 16,
-          "selected": 16,
-          "weak_or_promotional": 9,
+          "available": 30,
+          "signal_eligible": 20,
+          "selected": 20,
+          "weak_or_promotional": 10,
           "not_selected": 0
         },
         "財經": {
-          "available": 9,
-          "signal_eligible": 8,
-          "selected": 8,
+          "available": 8,
+          "signal_eligible": 7,
+          "selected": 7,
           "weak_or_promotional": 1,
           "not_selected": 0
         },
         "產業": {
-          "available": 18,
-          "signal_eligible": 11,
-          "selected": 11,
-          "weak_or_promotional": 7,
+          "available": 17,
+          "signal_eligible": 12,
+          "selected": 12,
+          "weak_or_promotional": 5,
           "not_selected": 0
         },
         "AI 模型與研究": {
-          "available": 107,
-          "signal_eligible": 60,
-          "selected": 58,
-          "weak_or_promotional": 47,
+          "available": 94,
+          "signal_eligible": 52,
+          "selected": 50,
+          "weak_or_promotional": 42,
           "not_selected": 2
         }
       },
       "claim_kind_hints": {
-        "measurement_claim": 50,
-        "release_claim": 37,
-        "report_claim": 9,
-        "technical_discussion": 13
+        "measurement_claim": 47,
+        "release_claim": 39,
+        "technical_discussion": 12,
+        "report_claim": 6
       },
       "source_proposals": [
         {
@@ -361,17 +361,6 @@
           "status": "unreviewed"
         },
         {
-          "handle": "JulyCroisy",
-          "source_ids": [
-            "2106164799516414433",
-            "2106009292998598749"
-          ],
-          "category_hints": [
-            "產業"
-          ],
-          "status": "unreviewed"
-        },
-        {
           "handle": "ORACLE_OKLA",
           "source_ids": [
             "2106282392101196250",
@@ -384,10 +373,10 @@
           "status": "unreviewed"
         },
         {
-          "handle": "jimmy_longbow_",
+          "handle": "avesan_27",
           "source_ids": [
-            "2106291986387161315",
-            "2106292196358103517"
+            "2106308335968628778",
+            "2106309596059259350"
           ],
           "category_hints": [
             "AI 模型與研究"
@@ -395,36 +384,25 @@
           "status": "unreviewed"
         },
         {
-          "handle": "majewskizby",
+          "handle": "dhdevtest",
           "source_ids": [
-            "2106302591814545641",
-            "2105962150158041477"
+            "2106087045278126288",
+            "2106045966885548370"
           ],
           "category_hints": [
-            "AI 模型與研究"
+            "產業",
+            "開發者工具"
           ],
           "status": "unreviewed"
         },
         {
-          "handle": "mylifcc",
+          "handle": "tomatolabo_x",
           "source_ids": [
-            "2106015437339369668",
-            "2106308285288640878"
+            "2106178056167776295",
+            "2106000958711066905"
           ],
           "category_hints": [
-            "開發者工具",
-            "產業"
-          ],
-          "status": "unreviewed"
-        },
-        {
-          "handle": "shimax_news",
-          "source_ids": [
-            "2106308285385056582",
-            "2106308275998281977"
-          ],
-          "category_hints": [
-            "AI 模型與研究"
+            "OpenClaw／Agent 生態"
           ],
           "status": "unreviewed"
         },
@@ -459,9 +437,9 @@
           "status": "unreviewed"
         },
         {
-          "handle": "Ahmadbukhari",
+          "handle": "AIQuickFindings",
           "source_ids": [
-            "2106135109820993692"
+            "2106153233765085664"
           ],
           "category_hints": [
             "AI 模型與研究"
@@ -469,39 +447,19 @@
           "status": "unreviewed"
         },
         {
-          "handle": "BHCC2025",
+          "handle": "AYi_AInotes",
           "source_ids": [
-            "2106046556268888457"
+            "2105972440010514521"
           ],
           "category_hints": [
-            "AI 模型與研究"
+            "開發者工具"
           ],
           "status": "unreviewed"
         },
         {
-          "handle": "Biz_Acumen",
+          "handle": "AravSrinivas",
           "source_ids": [
-            "2106266349366620666"
-          ],
-          "category_hints": [
-            "AI 模型與研究"
-          ],
-          "status": "unreviewed"
-        },
-        {
-          "handle": "Butamaru_Butako",
-          "source_ids": [
-            "2106264282103206130"
-          ],
-          "category_hints": [
-            "AI 模型與研究"
-          ],
-          "status": "unreviewed"
-        },
-        {
-          "handle": "ChainBeautyFaye",
-          "source_ids": [
-            "2105980130661367811"
+            "2106119404433908149"
           ],
           "category_hints": [
             "開發者工具"
@@ -547,11 +505,51 @@
             "AI 模型與研究"
           ],
           "status": "unreviewed"
+        },
+        {
+          "handle": "FrankLeo888",
+          "source_ids": [
+            "2106309068734320737"
+          ],
+          "category_hints": [
+            "財經"
+          ],
+          "status": "unreviewed"
+        },
+        {
+          "handle": "Gajelog_jp",
+          "source_ids": [
+            "2106300659687735303"
+          ],
+          "category_hints": [
+            "OpenClaw／Agent 生態"
+          ],
+          "status": "unreviewed"
+        },
+        {
+          "handle": "Jia1678434863",
+          "source_ids": [
+            "2106235852636721308"
+          ],
+          "category_hints": [
+            "OpenClaw／Agent 生態"
+          ],
+          "status": "unreviewed"
+        },
+        {
+          "handle": "KrzakalaF",
+          "source_ids": [
+            "2106295013495697881"
+          ],
+          "category_hints": [
+            "AI 模型與研究"
+          ],
+          "status": "unreviewed"
         }
       ],
-      "raw_unique_ids": 312,
-      "window_eligible": 282,
-      "window_excluded": 30,
+      "raw_unique_ids": 300,
+      "window_eligible": 271,
+      "window_excluded": 29,
       "source_pool_revision": "2026-10-03"
     }
   },
@@ -565,13 +563,13 @@
       "text": "本期主题：决策模型正式成了一个品类（Cloudflare 开放权重入场，两周内第四家）；中国在算力上两条腿走路——开源拆 CUDA 的墙（DeepSeek×华为）、70 亿美元租 Oracle 的芯；AI 安全攻防两端同时加码（OpenAI 指控 Moonshot 蒸馏、Armadin 2.5 亿美元融资、IBM 把 coding agent 关进断网环境）。\n\n- **Cloudflare 发布 Clef / Clef-flash：首个自研开放权重\"决策模型\"，agent 不再为 yes/no 生成一整句话**：不写文本，只对类型化问题返回概率——yes/no、选项、打分三类；Apache 2.0 开放权重上架 Hugging Face，同时跑在 Workers AI 上（输入 $0.24 / $0.09 每百万 token，输出免费）。这是两周内第四个决策模型（TypeSafe Jev 9/15、OpenAI Decisions API 9/29、AWS Strands Decider 2B 在前），Jev 协议兼容可直接替换；自报 10 个决策基准拿下 7 项第一、BANKING77 宏 F1 94.20 对 Jev 79.74，flash 中位延迟 38.8ms（Jev 524ms）。agent 热路径的\"判别\"与\"生成\"正在分家：高频小决策用便宜的专用模型，大模型只做真正需要推理的事。[Cloudflare](https://t.co/iFOwfnUWiU) / [The Register](https://t.co/NUxGiY2WeO)\n- **OpenAI 指控 Moonshot AI 关联人员搞\"对抗性蒸馏\"：1.6 万次请求试图提取隐藏推理**：OpenAI 披露并阻断了一起针对其隐藏推理链的协同提取行动：7 月 1 日开始、7 月 24–25 日两天内 4,000+ 用户发起约 16,000 次提取模式请求，7 月 28 日完全阻断；核心集群被归因到与北京 Moonshot AI（Kimi 母公司）有关联的个人。手法是把加密推理块复制到另一会话里诱使模型解密转写——OpenAI 称加密未被破解、无数据库被访问；公司为此造了新词\"adversarial distillation\"，封号、收紧注册、关闭回放通道，并经 Frontier Model Forum 与政府渠道同步。Moonshot 未回应；归因的技术证据未公开。这是\"蒸馏攻防\"第一次被摆上台面：推理链加密正在成为前沿实验室的新护城河。[The Hacker News](https://t.co/8HeWIkwbVP) / [AI Weekly](https://t.co/kuk65SISs4)\n- **DeepSeek 开源昇腾版 TileLang 等六件套：给华为芯片造\"CUDA 平替\"软件栈**：DeepSeek 在微信宣布与华为合作、开源整套昇腾 AI 芯片编程工具：TileLang（号称比 CUDA 更简单的编程模型）加上 DeepGEMM、DeepEP、TileKernels、FlashMLA、DeepSelect 的昇腾版，与此前英伟达版一一对应；华为\"全力支持\"，双方还联调出 128 颗昇腾 950 的 supernode。背景是 8 月 Bloomberg 称 DeepSeek 计划在内蒙古数据中心部署 16 万颗昇腾加速器。CUDA 的护城河从来不只是芯片而是软件生态——这套开源工具就是在正面拆这堵墙，开发者今天就能下载用。[CNBC TV18](https://t.co/GSDSyV6c97)\n- **OpenAI 上线 GPT-6 Astra Ultrafast：Blackwell 上 token 生成快 8 倍**：OpenAI 在 API 与部分 ChatGPT Work / Codex 用户中上线 Astra Ultrafast 推理档：英伟达 Blackwell GPU 上的推理优化带来最高 8 倍于标准档的 token 生成速度。英伟达官方博客确认，OpenAI 推理负责人称模型自己为 Blackwell / Rubin 写高性能 kernel，性能还会持续涨。对 agent 的意义最直接：写码→调工具→看结果→再决策的循环每一步都变快，整条链路收紧。注意这是厂商自报数字，尚无独立实测。[NVIDIA 博客](https://t.co/k325wzm0XA)\n- **腾讯向 Oracle 租 10 万颗 AI 芯片：5 年约 70 亿美元，绕开出口管制**：FT 引述知情人士：腾讯今年签下五年期协议，租用 Oracle 在东南亚多数据中心的约 10 万颗先进 AI 芯片，总价约 70 亿美元、约 30% 预付；芯片不入境中国——美国出口管制禁的是\"买\"，租用海外算力不在禁令内。这是腾讯史上最大海外租赁协议，预付款已让其二季度自由现金流出现十余年来首次季度赤字。Reuters 未能独立核实，Oracle 与腾讯均未置评。北京一面推国产替代，一面花真金白银租美国算力——两条腿走路的成本写在了财报里。[Straits Times](https://t.co/1jX6ZqbgQB)\n- **Armadin 完成 2.555 亿美元 B 轮：Mandiant 创始人的 agent 红队公司估值超 25 亿美元**：Kevin Mandia（Mandiant 创始人，2022 年 54 亿美元卖给谷歌）的新公司 Armadin 宣布 B 轮 2.555 亿美元，a16z 与 Accel 领投，累计融资 4.45 亿美元，成立仅 7 个月。产品是常驻的 agent 攻击群：把低危漏洞串成可验证的攻击链，替代季度制渗透测试；WSJ 披露一例：2.6 万个 agent 三天发起 1,700 万次攻击动作，挖出 38 条有效攻击路径。Mandia 的原话值得记：\"找漏洞已经不难了，前沿模型天天都在找\"——难的是把噪音压成可行动的风险。[TechCrunch](https://t.co/k1QgsgqPQp)\n- **JetBrains Air 进 IDE 开启 EAP：不卖模型，卖\"agent 并行工作台\"**：开放 Air in IDEs 的早期体验（Marketplace 插件或 2026.3 EAP 版）：它不是 AI 供应商、不自带 agent，而是把开发者已有的 agent（Codex、Gemini、GitHub Copilot、Claude Agent、Junie、Cursor，另经 ACP 协议接其他）并行跑在 IDE 里，无需 JetBrains AI 订阅；第三方订阅的数据直连供应商、不经过 JetBrains。这是 IDE 厂商的表态：agentic 开发成常态后，IDE 的价值从\"写代码\"转向\"验证与接管 agent 的产出\"。[JetBrains](https://t.co/NjcfOr30q1)\n- **ElevenLabs 完成 3 亿美元员工售股：估值 220 亿美元翻倍，同步发布 Eleven v4**：完成 3 亿美元员工 tender offer，估值 220 亿美元，较 2 月 110 亿美元的 D 轮翻倍；Wellington 与 T. Rowe Price 领投——这是二级售股提供流动性，不是公司募资。同期发布 TTS 模型 Eleven v4 / v4 Turbo：按文本上下文与角色控制语气语速情绪、多说话人一致、90+ 语言。公司称其 voice agent 每周处理 1,500 万+ 对话（2 月以来 3 倍），企业占收入 55%。语音 agent 正在成为 AI 落地最实的品类之一。[Reuters](https://t.co/z9SMZmFlGS)\n- **Ai2 发布 Olmo-core 3：万亿参数 MoE 训练的开放基础设施**：Allen AI 研究院发布 Olmo-core 3：重写的 MoE 训练框架，把专家池从 8 扩到 128（每 token 仍只激活 4 个），活跃参数稳定在约 32 亿、总容量从 46 亿涨到 470 亿，训练吞吐只降不到 5%；同一套设施已跑过超 1 万亿总参数的系统基准——注意这是系统性能测试，不是训出了一个万亿模型。技术报告、代码、交互式 demo 全开源在 Hugging Face。[Hugging Face](https://t.co/rYd2ClhHlb)\n- **微软公开 30 万条 Copilot agent 轨迹：生产级 coding agent 的第一份遥测切片**：微软 Azure Research 公开 GitHub Copilot coding agent 的 301,026 个会话遥测：930 万次模型调用、870 万次工具调用，取自 2026 年 6 月第一周；只含时间、token 数、缓存行为、匿名模型标签与工具调用序列，不含 prompt、代码、输出与用户身份——配套 arXiv 论文《Agentic Coding in the Wild》分析了 LLM↔工具约 1:1 的紧耦合循环等结构特性。做 agent infra 的人第一次有了真实负载数据来校准假设。[runtimewire](https://t.co/5oDPo0JRPx)\n- **IBM Bob 支持自托管：coding agent 可以完全跑在断网环境**：IBM 宣布其 agentic 软件开发平台 Bob 支持自托管部署：本地、私有云、主权云直至完全 air-gapped；多模型路由（Claude、Mistral、Granite），带审批检查点、敏感数据扫描与实时策略执行。IBM 称内部已有 8 万员工在用、调研平均生产力提升 45%（自报）。当 coding agent 屡屡越权闯祸，\"把 agent 关进客户自己的墙里\"成了差异化卖点——主权 AI 正在从口号变成部署选项。[IBM](https://t.co/j5YWMEw8s2)\n- **康涅狄格 CART 法案 10 月 1 日生效：美国首部综合性州级 AI 法**：AI 订阅自动续费须书面告知并获书面同意（点名 ChatGPT / Google AI 这类服务）；前沿开发者员工享举报人保护，可匿名上报\"灾难性风险\"；陪伴类 chatbot 须做自杀自伤风险识别、提供危机转介、披露 AI 身份，未成年人须有家长控制；雇佣决策 AI 的部署方义务 2027 年 10 月先生效。联邦缺位时，州法正在一条一条写出 AI 的合规基线。[PYMNTS](https://t.co/Ht6KKA4xd6)",
       "createdAtISO": "2026-10-03T07:59:16+00:00",
       "isRetweet": false,
-      "source": "search-top-05.json",
+      "source": "search-top-02.json",
       "url": "https://x.com/i/status/2106292988989341878",
       "candidate_text": "本期主题：决策模型正式成了一个品类（Cloudflare 开放权重入场，两周内第四家）；中国在算力上两条腿走路——开源拆 CUDA 的墙（DeepSeek×华为）、70 亿美元租 Oracle 的芯；AI 安全攻防两端同时加码（OpenAI 指控 Moonshot 蒸馏、Armadin 2.5 亿美元融资、IBM 把 coding agent 关进断网环境）。  - **Cloudflare 发布 Clef / Clef-flash：首个自研开放权重\"决策模型\"，agent 不再为 yes/no 生成一整句话**：不写文本，只对类型化问题返回概率——ye",
       "candidate_context": {
         "category": "開發者工具",
         "selection_lane": "discovery",
-        "selection_score": 11.9283,
+        "selection_score": 11.9268,
         "quality_signals": [
           "release_or_fix",
           "technical_detail",
@@ -580,6 +578,7 @@
           "substantive_length"
         ],
         "sources": [
+          "search-top-02.json",
           "search-top-05.json"
         ],
         "claim_kind_hint": "measurement_claim",
@@ -606,7 +605,7 @@
       "candidate_context": {
         "category": "OpenClaw／Agent 生態",
         "selection_lane": "discovery",
-        "selection_score": 11.8992,
+        "selection_score": 11.8978,
         "quality_signals": [
           "release_or_fix",
           "technical_detail",
@@ -627,6 +626,40 @@
       }
     },
     {
+      "id": "2106119404433908149",
+      "author": {
+        "screenName": "AravSrinivas",
+        "name": "Aravind Srinivas"
+      },
+      "text": "a few open source contributions from perplexity recently:\n\n•pplx-decider-v1-27b: SoTA multimodal decision model. 85.7% average across 11 benchmarks, ahead of Jev.\n•pplx-embed-v2-context-9b-preview: SoTA contextual embeddings, best on ConTEB and turbopuffer context-bench.\n•Lily: local inference engine for Apple silicon. rust plus custom metal kernels, no pytorch or mlx. 1.23x faster prefill and 1.35x faster decode than MLX-LM on an M5 Max\n•PII-Tracer: 0.6B on-device PII classifier that decides when a hybrid compute task stays on your Mac. beats OpenAI’s Privacy Filter on all 5 public benchmarks. also released with the PII-TRACE benchmark: 13k conversations in 13 languages\n•WANDR: benchmark for wide and deep research agents. 500 tasks needing 170k source-backed records\n•Numbat: agent detection and response for laptops and workstations. 52 rules, single go binary for macOS, linux and windows\n•Bumblebee: read-only supply chain scanner for dev machines. covers packages, MCP configs, and editor and browser extensions. \n\na lot more open source contributions coming soon!",
+      "createdAtISO": "2026-10-02T20:29:30+00:00",
+      "isRetweet": false,
+      "source": "search-top-06.json",
+      "url": "https://x.com/i/status/2106119404433908149",
+      "candidate_text": "a few open source contributions from perplexity recently:  •pplx-decider-v1-27b: SoTA multimodal decision model. 85.7% average across 11 benchmarks, ahead of Jev. •pplx-embed-v2-context-9b-preview: SoTA contextual embeddings, best on ConTEB and turbopuffer context-bench. •Lily: l",
+      "candidate_context": {
+        "category": "開發者工具",
+        "selection_lane": "discovery",
+        "selection_score": 11.3966,
+        "quality_signals": [
+          "release_or_fix",
+          "technical_detail",
+          "measurement",
+          "report_or_policy_claim",
+          "substantive_length"
+        ],
+        "sources": [
+          "search-top-06.json"
+        ],
+        "claim_kind_hint": "measurement_claim",
+        "first_person_hint": false,
+        "measurement_context_hint": [
+          "hardware",
+          "method"
+        ]
+      }
+    },
+    {
       "id": "2106275022235132163",
       "author": {
         "screenName": "luis_4257",
@@ -641,7 +674,7 @@
       "candidate_context": {
         "category": "AI 模型與研究",
         "selection_lane": "discovery",
-        "selection_score": 10.3384,
+        "selection_score": 10.3369,
         "quality_signals": [
           "release_or_fix",
           "measurement",
@@ -649,7 +682,8 @@
           "substantive_length"
         ],
         "sources": [
-          "search-top-10.json"
+          "search-top-10.json",
+          "search-top-11.json"
         ],
         "claim_kind_hint": "measurement_claim",
         "first_person_hint": false,
@@ -671,7 +705,7 @@
       "candidate_context": {
         "category": "AI 模型與研究",
         "selection_lane": "discovery",
-        "selection_score": 9.9601,
+        "selection_score": 9.9586,
         "quality_signals": [
           "release_or_fix",
           "technical_detail",
@@ -703,7 +737,7 @@
       "candidate_context": {
         "category": "AI 模型與研究",
         "selection_lane": "discovery",
-        "selection_score": 9.8349,
+        "selection_score": 9.8334,
         "quality_signals": [
           "release_or_fix",
           "technical_detail",
@@ -723,32 +757,35 @@
       }
     },
     {
-      "id": "2106190123100746023",
+      "id": "2106293684647965148",
       "author": {
-        "screenName": "iamlukethedev",
-        "name": "Luke The Dev"
+        "screenName": "jwbobbink",
+        "name": "Jan-Willem Bobbink"
       },
-      "text": "Hermes merged 175 PRs on October 2\n\nThe ones worth knowing:\n\n• Dozens of new catalog plugins landed, from memory providers to Gmail, WhatsApp, Health, and Agent Builder\n• Memory providers migrate on Desktop, the gateway, and scripted updates without opening a terminal\n• Supermemory and Honcho install from the catalog; core no longer bundles Honcho\n• Plugin guard false positives no longer block or prompt on denylist noise\n• SMS, email, and WeCom deliver long replies and cron output in full\n• Desktop skips rebuilds on updates that do not move HEAD, and finished updates stay finished\n• macOS 26 gets a layered app icon with the ring dropped from every icon\n• Tray-hidden Hermes on Windows restores without going dead to input\n• Voice honors silence_threshold and stops gating streaming TTS on sounddevice\n• Local MCP and plugin tool batches in one tool_call run instead of being rejected\n• Partial clones stop growing their .git as lazy-fetch packs fold on update\n• Windows update survives when a process still holds the old Python runtime DLLs\n\nHere is the full list:\n\nDESKTOP IMPROVEMENTS (22 PRs)\n\n• fix(dashboard): show the slot model as current in aux/MoA pickers\n• feat(desktop): macOS 26 layered app icon, ring dropped from every icon\n• fix(desktop): stop duplicate replies after history refresh\n• fix(desktop): run the Windows update checkers from bundled core code\n• Desktop: pick Classic Hermes gold/navy in Appearance without repainting stock installs\n• fix(desktop): scope preview tabs to the session that opened them\n• Finished updates stay finished: no same-commit re-run on launch, Windows exit 124 after completion is success\n• fix(desktop): YouTube embed host answers malformed paths with 404 instead of crashing\n• fix(desktop): right-click in a pane opens the menu for what you clicked\n• Desktop SDK: plugins decorate model menu rows; themes style chat switches via data-session-switching\n• Skills and Plugins are back to the list tabs; card catalog browser removed again\n• Desktop app is no longer rebuilt on updates that don't move HEAD\n• fix(dashboard): free PTY sessions whose process died, and end their helpers\n• fix(desktop): the reasoning pill no longer shows a stale clamp after a model switch\n• fix(desktop): clear a deleted session's subagents, todos, goal and background status\n• fix(desktop): model picker keeps names whole; message time on hover\n• fix(desktop,tui): /browser use [off] works outside the CLI\n• fix(desktop): ship exact-size, theme-aware MSIX icons instead of one 44px tile\n• Restoring a tray-hidden Hermes window on Windows no longer leaves it dead to input\n• fix(desktop): render a tool turn once on switch-back; core e2e catches duplicated or misordered replies\n• Fallback to a Desktop-managed llama.cpp model works instead of failing \"provider not configured\"\n• fix(desktop): forbid .only in all Playwright configs\n\nVOICE & REAL-TIME (2 PRs)\n\n• fix(tts): hide the console window on Windows command-provider spawns\n• fix(voice): honor configured silence_threshold and stop gating streaming TTS on sounddevice\n\nDEVELOPER TOOLS & PLUGINS (126 PRs)\n\n• feat(catalog): add God's Eye View for Hermes Desktop\n• plugin-catalog: add hermes-workflows (community, automation)\n• fix(tui_gateway): allocate file.attach uploads atomically\n• plugin-catalog: add openltm (community, memory)\n• plugin-catalog: add agora (self-driving multi-agent dev team)\n• plugins: add Inline platform to the curated catalog\n• chore(catalog): update secure-env-ingress to 0.6.4\n• feat(plugin-catalog): add made-shelf community plugin\n• plugin-catalog: bump memex8 to v1.1.0\n• plugin-catalog: re-pin jev-effort-router to 562dc2a (0.2.2)\n• fix(plugin-guard): catalog false positives no longer block or prompt (denylist regex, host noun, sha256sum, SQL exec, coin keyword, JSON tips, quoted fixtures)\n• feat(catalog): add SerpApi plugin\n• feat(plugin-catalog): add go-whatsapp\n• chore(plugin-catalog): next-prompt hero that survives the plugin page crop\n• feat(plugin-catalog): add tam memory provider (total-agent-memory)\n• feat(plugin-catalog): add reaction-feedback\n• feat(plugin-catalog): add ntfy-approval\n• catalog: bump hermes-discord-rpc to v1.2.5\n• chore(catalog): update hermes-speech to v0.3.3\n• feat(plugin-catalog): add deja-vu memory provider\n• plugin-catalog: bump hermes-session-reset-policy to 0.3.0 (/new funnel + policy-reader fix)\n• Catalog: hermes-rich-ui v0.1.4 @ 693fe29\n• feat(plugin-catalog): add hermes-toon\n• feat(plugin-catalog): add prompt-studio 1.8.0\n• chore(plugin-catalog): telegram_dashboard_probe 0.9.2 (review nits closed, title and screenshots, disclosure for limits_sources, errors.log, cron files and the Telegram adapter's counters)\n• feat(plugin-catalog): add minimax-search (community, web)\n• fix(plugin-catalog): ship OR Picker as one entry\n• feat(plugin-catalog): bump bot-forge to v0.15.2\n• catalog: add Hermes Notch Plugin\n• Catalog: pinned-folders v0.1.2 @ 7ab24e18\n• plugin-catalog: add evalroute (community, tools)\n• feat(plugin-catalog): add snag-shelf community plugin\n• catalog: bump antigravity-subscription-directsdk pin to v1.0.6\n• feat(plugin-catalog): add Jira Browser\n• feat(plugin-catalog): add groq-provider\n• feat(plugin-catalog): add cloudflare-workers-ai-provider\n• plugin-catalog: add kanban-live-gantt\n• feat(plugin-catalog): add letsfg\n• Add qdrant memory provider to plugin catalog\n• chore(plugin-catalog): bump little-canary to 0.4.0\n• catalog: update hermes-auto-titler to v0.3.0\n• plugin-catalog: add healthrelay (read-only Apple Health MCP + skills)\n• feat(plugin-catalog): add wiki-ref\n• feat(plugin-catalog): add hermes-anilist plugin\n• Split activate from running a command in the dev env\n• plugin-catalog: add health-insights (local-first Apple Health analysis skills)\n• fix(plugins): memory provider setup lists the dependencies PM would install\n• feat(plugin-catalog): add osv-ref\n• feat(plugin-catalog): add gh-ref\n• plugin-catalog: bump hermes-subscription-meter to 0.5.0\n• fix(pm): keep restored runtimes usable after locked displaced cleanup\n• feat(plugin-catalog): bump whatsapp-agent-platform to 0.2.0 (media support)\n• catalog(hindsight): pin the released v1.2.1\n• feat(plugin-catalog): add 0bull community plugin\n• feat(plugin-catalog): bump provider-status to 1.5.11\n• feat(plugin-catalog): add Gmail Desktop plugin\n• plugin-catalog: add dashboard-button (community, desktop)\n• catalog: add hermes-turn-usage (per-reply usage/cost footer)\n• feat(plugin-catalog): add t3-code-theme\n• feat(catalog): add vidIQ creator workflows\n• feat(plugin-catalog): add pep-ref\n• feat(plugin-catalog): add rfc-ref\n• Catalog: bunny_space-platform v1.0.5 (pin + version)\n• chore(plugin-catalog): bump tool-slimmer to 0.8.0\n• catalog: add hermes-beads v0.1.2 (native Beads work-graph plugin)\n• plugin-catalog: add cloudflare-sandbox\n• feat(plugin-catalog): add git-hook plugin\n• feat(plugin-catalog): add secret-handoff plugin\n• feat(plugin-catalog): add gbrain-retrieval-reflex plugin\n• feat(catalog): list Monitoring Dashboard\n• Add hicortex to plugin catalog (memory, community)\n• feat(plugin-catalog): add hermes-council plugin\n• catalog(optmem-hermes): add v0.3.2\n• feat(plugin-catalog): add drag-to-pin-session card image\n• feat(plugin-catalog): add rtk-rewrite-docker\n• feat(plugin-catalog): bump better-session-appearance to 1.2.2\n• feat(plugin-catalog): bump sidebar-manager to 1.0.1\n• feat(catalog): add Hermes Agent Builder\n• plugin-catalog: add hermes-worker-monitor 0.2.0 (worker-only fork of hermes-monitor)\n• fix(catalog): update ClinePass to 1.2.3 using provider profiles\n• catalog: add Markdown .new public web research plugin\n• plugin-catalog: add dashboard-auth-ldap\n• feat(plugin-catalog): add memanto\n• plugin-catalog: add agent_memory_es memory provider\n• feat(plugin-catalog): bump prompt-enhance to 1.1.1\n• hermes status shows a one-screen summary by default, --full for every section\n• Plugin catalog submission guide: one complete page, synced with the README rules\n• fix(agent): normalize provider-minted parallel tool-call ids at mint time\n• plugin-catalog: bump web-search-plus to 4.3.3\n• chore(plugin-catalog): bump Nerve to v0.3.1\n• hermes status --full lists each messaging platform once, with the summary's verdict\n• feat(plugin-catalog): add sidebar-cycle plugin\n• ci: run the Python suite and the macOS lane as two slices each\n• test: seed the version cache per test process instead of running git 7 times\n• Local MCP/plugin tool batches in one tool_call now run instead of being rejected\n• fmt(js): `npm run fix` auto-fix (3x)\n• ci(label-rerun): never rerun a CI run whose PR head has moved\n• Cloned profiles keep their catalog-installed plugins and memory provider\n• retaindb, byterover and holographic memory providers join the plugin catalog (Nous-maintained)\n• Memory providers migrate on Desktop, the gateway and scripted updates, no terminal needed for their Python deps\n• fix(memory): never lose memory silently when a provider moves out of core\n• Supermemory installs from the plugin catalog, existing setups migrate automatically\n• Honcho memory installs from Plastic Labs' catalog plugin; core no longer bundles it\n• fix(tui): close agents that finish building after their session closed\n• fix(tests): kanban wake drain helpers no longer busy-spin forever on Python 3.12+\n• fix(tui): arm the slash-worker parent watchdog before the cli import\n• fix(logging): stop writing into a profile deleted while serve runs\n• retaindb, byterover and holographic are no longer listed as Nous-maintained catalog plugins\n• plugin-catalog: update provider-usage to v0.2.0\n• feat(plugin-catalog): add jp-corporate\n• feat(plugin-catalog): add memtomem (community, memory) @ v0.6.6\n• feat(plugin-catalog): add jp-charts\n• release. py abandon now cancels the abandoned rc's in-progress runs\n• fix(cli): honor --dry-run in uninstall --gui and keep shared workspace node_modules\n• ci: replace the ci-reviewed label gate with CODEOWNERS\n• feat(activate): add activate. fish for the fish shell\n• test(observability): timeout metrics test waits for the export worker, no more empty-store flake\n• test(observability): direct-runtime metrics package no longer races the session close\n• plugin-catalog: add agent-mail-gateway\n• docs: remove source channels and install identity section; main is the only source channel\n• fix(kanban): point bare kanban_show/comment calls at kanban_list outside a worker\n• feat(plugin-catalog): pricewin bundles its MCP server and skill with the cards\n• feat(plugin-catalog): add dexio memory provider\n• feat(plugin-catalog): add vornik-companion\n\nSECURITY & SECRETS (3 PRs)\n\n• docs: route agents and contributors to SECURITY.md for security reports\n• fix(tui): answer the vault save-login and verification-code prompts\n• fix(web): fail over keyless auth rejections\n\nINTEGRATIONS & CHAT (11 PRs)\n\n• fix(gateway): SMS, email and WeCom deliver long replies and cron output in full instead of failing or truncating\n• fix(gateway): render early Unix timestamps safely on Windows\n• fix(gateway): skip restart-safe scoped cron runs in the restart wait, keyed per profile\n• fix(gateway): /fast and /fast ultrafast follow the session's /model route\n• fix(models): a failed Codex/Anthropic catalog fetch no longer hides Astra for an hour\n• fix(browser): /browser connect and disconnect retarget browser_exec\n• Add `solar-pro4` and `solar-mini4` to model pickers\n• fix(relay): stream chunks live under managed execution (steer stacking, stuck timer)\n• fix(transports): strip replayed reasoning_details on the Nous Portal wire\n• fix(bot-mode): a stopped Bot relay no longer publishes stale rosters\n• fix(gateway): stop scraping /mnt/ PATH entries into WSL interop unit PATH\n\nSTABILITY & FIXES (11 PRs)\n\n• fix(cron): ignore measured durations in the incident error signature\n• Onboarding on a Spark no longer offers a local model that a task chat installs by hand\n• fix(tests): failure-writer ownership probe stops flaking at 19/20 (no real tirith download mid-probe)\n• A partial clone's .git stops growing: lazy-fetch packs fold on update and the commit-graph loop is off\n• fix(cron): stop counting host sleep as job inactivity\n• A finished turn no longer waits on other sessions' tools\n• A partial clone keeps folding its lazy-fetch packs; earlier cuts' keys migrate once, an operator's own stay\n• stable release: the win32-bundle candidate call no longer skips the universal bundle\n• Windows update no longer fails when a running process still holds the old Python runtime's DLLs\n• fix(install): login-bash users with only ~/.bash_login get ~/.local/bin on PATH\n• fix(windows): arm64 update no longer fails when vcpkg picks a Visual Studio without the arm64 toolset\n\n175 new features and fixes\n\nhttps://t.co/0dAZKHIWbJ",
-      "createdAtISO": "2026-10-03T01:10:31+00:00",
+      "text": "I keep seeing GEO advice to make every chunk stand alone. I checked what 2.458.072 sentence chunks say about that. \n\nThe advice has a real origin: in 2023 Chen et al. showed that dense retrievers found answers more reliably when Wikipedia was indexed as small, self-contained propositions instead of 100-word passages. That makes sense for any system that embeds each chunk on its own, because a sentence like The companys revenue grew by 3% tells a retriever nothing once it is cut away from the paragraph that names the company. \n\nSince then, retrieval research has attacked the same problem from the other side. Anthropic used an LLM to write a short context line in front of every chunk and cut failed retrievals by 49%, Jina introduced late chunking where the whole document is encoded before it is split, and the ConTEB paper showed that removing the entity name from paragraphs makes standard retrieval collapse while contextual models barely notice. \n\nOn 30 September, Perplexity and turbopuffer published the next step, which is a contextual embedding model trained to retrieve the answer sentence together with the sentences that prove it belongs to the right document. Their benchmark has 2.099 queries over 38.894 long documents split into 2.458.072 sentence chunks, and it deliberately includes near-identical documents, like lease agreements where the same rent sentence appears in many files. At top 10 the model found the answer for 45,5% of queries and recovered 40,6% of the supporting evidence.\n\nWhat I take from this is that rewriting every paragraph so it repeats your brand and product name mainly helps the retrieval setup that is now being replaced. A contextual model needs something different, which is evidence somewhere in the same document that settles which entity, version, market and date the answer belongs to, because it retrieves those sentences alongside the answer. Clear table headers, scoped section headings and an explicit line about who or what a page applies to do more of that work than a forced rewrite.\n\nI would not throw out self-contained writing, since many pipelines still embed chunks independently and a clear sentence costs nothing. This is also vendor research on a preview model, the benchmark is private and co-run by turbopuffer, and nothing in the post says the model runs in Perplexitys answer engine today. Even this model misses the answer in its top 10 for more than half of the queries, so I treat it as a direction, not as something I have tested on client sites yet.\n\n#seo #geo #perplexity\nSOURCES\n\n1. Perplexity Research & turbopuffer, Contextual embedding beyond the gold passage, 30 September 2026, Perplexity Blog, https://t.co/2ymXYdh97d\n\n2. Max Conti, Manuel Faysse et al., Context is Gold to find the Gold Passage: Evaluating and Training Contextual Document Embeddings, 30 May 2025, arXiv (EMNLP 2025), https://t.co/RKaj9wqdSv\n\n3. Daniel Ford, Introducing Contextual Retrieval, 19 September 2024, Anthropic, https://t.co/7TJz3U3hPV\n\n4. Michael Günther, Isabelle Mohr et al., Late Chunking: Contextual Chunk Embeddings Using Long-Context Embedding Models, 7 September 2024, arXiv, https://t.co/IUaBPxp7yf\n\n5. Tong Chen, Hongwei Wang et al., Dense X Retrieval: What Retrieval Granularity Should We Use?, December 2023, arXiv (EMNLP 2024), https://t.co/knDhRkyWlz",
+      "createdAtISO": "2026-10-03T08:02:02+00:00",
       "isRetweet": false,
-      "source": "search-top-02.json",
-      "url": "https://x.com/i/status/2106190123100746023",
-      "candidate_text": "Hermes merged 175 PRs on October 2  The ones worth knowing:  • Dozens of new catalog plugins landed, from memory providers to Gmail, WhatsApp, Health, and Agent Builder • Memory providers migrate on Desktop, the gateway, and scripted updates without opening a terminal • Supermemo",
+      "source": "search-top-00.json",
+      "url": "https://x.com/i/status/2106293684647965148",
+      "candidate_text": "I keep seeing GEO advice to make every chunk stand alone. I checked what 2.458.072 sentence chunks say about that.   The advice has a real origin: in 2023 Chen et al. showed that dense retrievers found answers more reliably when Wikipedia was indexed as small, self-contained prop",
       "candidate_context": {
-        "category": "開發者工具",
+        "category": "財經",
         "selection_lane": "discovery",
-        "selection_score": 9.6693,
+        "selection_score": 9.7009,
         "quality_signals": [
           "release_or_fix",
           "technical_detail",
-          "report_or_policy_claim",
+          "measurement",
           "substantive_length"
         ],
         "sources": [
-          "search-top-02.json"
+          "search-top-00.json"
         ],
-        "claim_kind_hint": "release_claim",
-        "first_person_hint": false
+        "claim_kind_hint": "measurement_claim",
+        "first_person_hint": false,
+        "measurement_context_hint": [
+          "method"
+        ]
       }
     },
     {
@@ -766,7 +803,7 @@
       "candidate_context": {
         "category": "開發者工具",
         "selection_lane": "discovery",
-        "selection_score": 9.642,
+        "selection_score": 9.6406,
         "quality_signals": [
           "release_or_fix",
           "technical_detail",
@@ -774,7 +811,8 @@
           "substantive_length"
         ],
         "sources": [
-          "search-latest-03.json"
+          "search-latest-03.json",
+          "search-top-03.json"
         ],
         "claim_kind_hint": "measurement_claim",
         "first_person_hint": false,
@@ -798,7 +836,7 @@
       "candidate_context": {
         "category": "AI 模型與研究",
         "selection_lane": "discovery",
-        "selection_score": 9.5654,
+        "selection_score": 9.5642,
         "quality_signals": [
           "release_or_fix",
           "technical_detail",
@@ -812,6 +850,39 @@
         "first_person_hint": false,
         "measurement_context_hint": [
           "hardware"
+        ]
+      }
+    },
+    {
+      "id": "2106235463132381402",
+      "author": {
+        "screenName": "xiaomovps",
+        "name": "小墨同学"
+      },
+      "text": "Cloudflare  最新的三个福利，你必须知道🔥\n\n以前 Cloudflare 主要还是 DNS、CDN、Workers，现在已经明显开始往 Agent 基础设施走了\n\n1、Clef\n\nCloudflare 自研的开源决策模型，不是拿来聊天，而是专门给 Agent 做“选哪个、要不要做、该走哪条路”这种判断。\n\n底层基于 Qwen3.8-27B，支持视觉、64K 上下文，而且兼容 Jev API，Apache 2.0 开源。Cloudflare Blog\n\n2、Clef-flash\n\nClef 的极速版，底层是 Qwen3.5-9B。\n\nCloudflare 自己 43 组评测里，中位延迟只有 38.8ms，特别适合放在 Agent 高频决策链路里：路由、分类、权限判断、工具选择这些都能交给它。Cloudflare Blog\n\n3、新的 cf CLI\n\n这个我觉得更值得关注。\n\nCloudflare 把原本分散的能力收进一个 CLI，目前已经覆盖 2900+ 条命令，DNS、R2、Workers、安全配置都能直接管。Cloudflare Docs\n\n而且它明显是冲着 Coding Agent 来的：\n\ncf cli search \"create an R2 bucket\"\n\nAgent 可以先用自然语言找命令，再直接执行，不需要提前背 Cloudflare API。Cloudflare Docs\n\n像模型的话 可以拿来做邮箱相关的内容判断，CF 的 CLI 可以给自己的 Agent 做绑定，完成更复杂的一些内容 最简单的像搜索域名就可以直接用",
+      "createdAtISO": "2026-10-03T04:10:41+00:00",
+      "isRetweet": false,
+      "source": "search-top-02.json",
+      "url": "https://x.com/i/status/2106235463132381402",
+      "candidate_text": "Cloudflare  最新的三个福利，你必须知道🔥  以前 Cloudflare 主要还是 DNS、CDN、Workers，现在已经明显开始往 Agent 基础设施走了  1、Clef  Cloudflare 自研的开源决策模型，不是拿来聊天，而是专门给 Agent 做“选哪个、要不要做、该走哪条路”这种判断。  底层基于 Qwen3.8-27B，支持视觉、64K 上下文，而且兼容 Jev API，Apache 2.0 开源。Cloudflare Blog  2、Clef-flash  Clef 的极速版，底层是 Qwen3.5-9B。  Cloudf",
+      "candidate_context": {
+        "category": "AI 模型與研究",
+        "selection_lane": "discovery",
+        "selection_score": 9.5219,
+        "quality_signals": [
+          "release_or_fix",
+          "technical_detail",
+          "measurement",
+          "substantive_length"
+        ],
+        "sources": [
+          "search-top-02.json",
+          "search-top-04.json"
+        ],
+        "claim_kind_hint": "measurement_claim",
+        "first_person_hint": false,
+        "measurement_context_hint": [
+          "method"
         ]
       }
     },
@@ -830,7 +901,7 @@
       "candidate_context": {
         "category": "AI 模型與研究",
         "selection_lane": "discovery",
-        "selection_score": 9.4755,
+        "selection_score": 9.4742,
         "quality_signals": [
           "release_or_fix",
           "technical_detail",
@@ -864,7 +935,7 @@
       "candidate_context": {
         "category": "AI 模型與研究",
         "selection_lane": "discovery",
-        "selection_score": 9.4636,
+        "selection_score": 9.4622,
         "quality_signals": [
           "release_or_fix",
           "technical_detail",
@@ -898,7 +969,7 @@
       "candidate_context": {
         "category": "OpenClaw／Agent 生態",
         "selection_lane": "discovery",
-        "selection_score": 9.3591,
+        "selection_score": 9.3577,
         "quality_signals": [
           "release_or_fix",
           "technical_detail",
@@ -930,7 +1001,7 @@
       "candidate_context": {
         "category": "財經",
         "selection_lane": "discovery",
-        "selection_score": 9.2553,
+        "selection_score": 9.2565,
         "quality_signals": [
           "release_or_fix",
           "measurement",
@@ -944,39 +1015,6 @@
         "first_person_hint": false,
         "measurement_context_hint": [
           "hardware",
-          "model_or_precision",
-          "method"
-        ]
-      }
-    },
-    {
-      "id": "2106107442010734869",
-      "author": {
-        "screenName": "sgl_project",
-        "name": "SGLang"
-      },
-      "text": "SGLang v0.5.21 landed! Native decisions API is here 🎉\n\nSome of our favorite updates:\n\n- Decisions API turns an LLM/VLM into a low-latency classifier and scorer\n- /v1/score can now rerank search or RAG results in one go\n- PD instances can switch between prefill and decode with no restart needed\n- DeepSeek-V4.1 Flash gets 22% faster first token on long prompts\n- Kimi K3 gets 20.6% higher prefill throughput in PD serving\n- GLM-5.3-Flash now runs on AMD MI355X with FP8 / MXFP4 MoE and MTP\n- You can now run MiniMax H3 inside @ComfyUI with SGLang-Diffusion backend\n\nNew models include DeepSeek-V4.1 Flash, GigaChat 3.5, MiMo-V2.6, Ling-3.0-flash-VL, IQuest-Q1, Qwen-Image 2.1, FLUX 3 Action, and more.\n\nFull release notes👇",
-      "createdAtISO": "2026-10-02T19:41:58+00:00",
-      "isRetweet": false,
-      "source": "search-top-06.json",
-      "url": "https://x.com/i/status/2106107442010734869",
-      "candidate_text": "SGLang v0.5.21 landed! Native decisions API is here 🎉  Some of our favorite updates:  - Decisions API turns an LLM/VLM into a low-latency classifier and scorer - /v1/score can now rerank search or RAG results in one go - PD instances can switch between prefill and decode with no ",
-      "candidate_context": {
-        "category": "AI 模型與研究",
-        "selection_lane": "discovery",
-        "selection_score": 9.1821,
-        "quality_signals": [
-          "release_or_fix",
-          "technical_detail",
-          "measurement",
-          "substantive_length"
-        ],
-        "sources": [
-          "search-top-06.json"
-        ],
-        "claim_kind_hint": "measurement_claim",
-        "first_person_hint": false,
-        "measurement_context_hint": [
           "model_or_precision",
           "method"
         ]
@@ -997,7 +1035,7 @@
       "candidate_context": {
         "category": "AI 模型與研究",
         "selection_lane": "discovery",
-        "selection_score": 8.9751,
+        "selection_score": 8.9745,
         "quality_signals": [
           "technical_detail",
           "measurement",
@@ -1017,66 +1055,34 @@
       }
     },
     {
-      "id": "2106076431294095388",
+      "id": "2106202511560605749",
       "author": {
-        "screenName": "ritvikpandey21",
-        "name": "Ritvik Pandey"
+        "screenName": "kii__1981",
+        "name": "kii | AI × note"
       },
-      "text": "A big focus for our team at @Pulse__AI  is making the data AI agents receive more useful.\n\nHuge congrats to the @HelloSurgeAI team on GDP.xlsx, a strong benchmark testing spreadsheet reasoning across finance, engineering and healthcare.\n\nWith Ultra 2, our latest model, we’re focused on preserving hidden content, formulas, complete records and visual context within these enterprise documents. We evaluated Pulse’s spreadsheet extraction pipeline using the benchmark’s OpenHands agent harness, providing structured text and image evidence upfront. \n\nOur latest reported task-pass rates, compared with our earlier Pulse-assisted results:\n\n- Claude Opus 5.5 46.4% (up from 41.4%; +5 percentage points)\n- GPT-6.1 Sol 37.9% (up from 32.9%; +5 percentage points)\n- GPT-6 Astra 35.0% (up from 30.0%; +5 percentage points)\n- Claude Fable 5.1 33.6% (up from 28.6%; +5 percentage points)\n- Gemini 3.8 Flash 23.6% (up from 18.6%; +5 percentage points)\n\nBetter data gives agents more to work with, read more here: https://t.co/4JFNPQaLd8",
-      "createdAtISO": "2026-10-02T17:38:44+00:00",
+      "text": "おはようございます。2026年10月3日のAI開発・自動化デイリーブリーフです。\n\n今日はまずGitHubです。\n\nGitHub CopilotのCode Reviewを、REST APIとGraphQL APIから実行できるようになりました。\n\nこれは一見小さなUpdateですが、AI自動開発ではかなり重要です。\n\n例えばCodexがFeatureを実装します。\n\n自動Testを実行します。\n\nPull Requestを作ります。\n\nここでGitHub CopilotへAPI経由でCode Reviewを依頼します。\n\n問題が見つかったら、その指摘をCodexへ戻します。\n\nCodexが修正します。\n\nもう一度Testします。\n\n最後に人間が確認してMergeします。\n\nつまり、AIがコードを書く工程だけではなく、Reviewまで開発Pipelineへ組み込めるようになります。\n\nここで重要なのは、コードを作るAgentとReviewするAgentを分けることです。\n\n自分で作って、自分で正しいと判断させるのではありません。\n\n別のModelや別のAgentを検証役として使います。\n\n次はAWSです。\n\nAWS Well-Architected AgentがPublic Previewになりました。\n\nこれはCloud ArchitectのようにAWS環境を分析するAgentです。\n\nCost。\n\nSecurity。\n\nPerformance。\n\nResilience。\n\nこれらを調べます。\n\nさらに問題を見つけるだけではありません。\n\nAWS CLI Command。\n\nTerraform。\n\nCloudFormation。\n\nCDK。\n\n実際に修正するためのCodeまで作ります。\n\nただし、ここは重要です。\n\nAWS自身もAIのRecommendationには誤りがあり得ると説明しています。\n\nそのためAgentが修正案を作る。\n\nTestする。\n\n人間が確認する。\n\nそしてDeployする。\n\nこの順番が安全です。\n\n次はNVIDIAです。\n\nNVIDIAが64GB版DGX Sparkを発表しました。\n\n最大1000億Parameter級のModelを、Cloudを使わずDevice上で動かせます。\n\n二台を接続すればMemoryを128GBに拡張し、より大きなModelも扱えます。\n\nこれはLocal AI Agentで重要です。\n\n例えば会社の機密Document。\n\nSource Code。\n\n顧客Data。\n\nこうした情報を外部Cloudへ送らず、社内でAgentを24時間動かすことができます。\n\nただしLocal AIが必ずCloudより安いわけではありません。\n\nHardware代。\n\n電気代。\n\n管理Cost。\n\nこれらを含め、一つの仕事を完了するためにいくら掛かったかで比較する必要があります。\n\n次はAnthropicです。\n\nAnthropicがClaude Frontier Academyを開始しました。\n\n1億ドルを投じ、2027年末までに1万人のFrontier Deployed Engineerを育成します。\n\nこの人たちは単なるPrompt Engineerではありません。\n\n会社の業務を理解する。\n\nAgentを設計する。\n\nSecurityを確認する。\n\nProductionへ導入する。\n\n社員に使ってもらう。\n\nここまで担当します。\n\nこれはAI導入のBottleneckがModel性能だけではなくなっていることを示しています。\n\nAIを会社の仕事へ接続できる人材が重要になっています。\n\n次は専門Agentです。\n\nOpenAIとSynopsysが、半導体設計専用のGPT-Synopsysを共同開発しています。\n\nこれは半導体について質問できるChatbotではありません。\n\nAIがSynopsysの専門的な設計Toolを操作します。\n\n設計します。\n\n結果を読みます。\n\n変更します。\n\nまたToolを実行します。\n\n条件を満たすまで繰り返します。\n\n最後にEngineerが確認します。\n\nここから重要な流れが見えます。\n\nこれからのAgentは、何でも知っている必要はありません。\n\n専門Softwareを上手に使えることが重要になります。\n\n会計Agentなら会計Software。\n\n設計AgentならCAD。\n\nMarketing Agentなら広告Tool。\n\n検査Agentなら検査System。\n\nこうした専門Agentが増えていく可能性があります。\n\n日本でもAgentの実運用が広がっています。\n\n店舗向けAI AgentのKUROKO AIは、Releaseから半年で500店舗を突破したと運営会社が発表しました。\n\nGoogle Business Profile。\n\n口コミ返信。\n\nSNS。\n\nLINE。\n\nAI検索対策。\n\nこうした集客業務を毎日継続してAgentが担当します。\n\nこれはAgent商品を作る際にも参考になります。\n\n何でもできるAIではありません。\n\n特定の業種。\n\n特定の仕事。\n\n毎日繰り返す業務。\n\nここへ絞ります。\n\n今日の結論です。\n\nAI開発は、さらに賢いModelを探すだけではなくなっています。\n\nAgentが仕事を作る。\n\n別のAgentが検証する。\n\n専門Toolを使う。\n\n重要なActionだけ人間が承認する。\n\nそして結果を記録する。\n\nこのWorkflow全体をどう設計するか。\n\nここがAI開発・自動化の重要な競争領域になっています。",
+      "createdAtISO": "2026-10-03T01:59:44+00:00",
       "isRetweet": false,
-      "source": "search-top-00.json",
-      "url": "https://x.com/i/status/2106076431294095388",
-      "candidate_text": "A big focus for our team at @Pulse__AI  is making the data AI agents receive more useful.  Huge congrats to the @HelloSurgeAI team on GDP.xlsx, a strong benchmark testing spreadsheet reasoning across finance, engineering and healthcare.  With Ultra 2, our latest model, we’re focu",
+      "source": "search-top-05.json",
+      "url": "https://x.com/i/status/2106202511560605749",
+      "candidate_text": "おはようございます。2026年10月3日のAI開発・自動化デイリーブリーフです。  今日はまずGitHubです。  GitHub CopilotのCode Reviewを、REST APIとGraphQL APIから実行できるようになりました。  これは一見小さなUpdateですが、AI自動開発ではかなり重要です。  例えばCodexがFeatureを実装します。  自動Testを実行します。  Pull Requestを作ります。  ここでGitHub CopilotへAPI経由でCode Reviewを依頼します。  問題が見つかったら、その指摘をC",
       "candidate_context": {
-        "category": "OpenClaw／Agent 生態",
+        "category": "AI 模型與研究",
         "selection_lane": "discovery",
-        "selection_score": 8.4266,
+        "selection_score": 8.9133,
         "quality_signals": [
+          "release_or_fix",
           "technical_detail",
           "measurement",
-          "report_or_policy_claim",
           "substantive_length"
         ],
         "sources": [
-          "search-top-00.json"
+          "search-top-05.json"
         ],
         "claim_kind_hint": "measurement_claim",
         "first_person_hint": false,
         "measurement_context_hint": [
           "method"
-        ]
-      }
-    },
-    {
-      "id": "2106291986387161315",
-      "author": {
-        "screenName": "jimmy_longbow_",
-        "name": "JimiLonbo"
-      },
-      "text": "MiniMax H3 video gen now runs locally in 8 GB VRAM + 16 GB RAM — FreeVideo ships as Windows one-click, ComfyUI plugin, Linux CLI. It runs OpenVDN's 8-step VDN-H3, not MiniMax's weights. Code Apache-2.0; weights under MiniMax's H3 Community License, territorial limits included.",
-      "createdAtISO": "2026-10-03T07:55:17+00:00",
-      "isRetweet": false,
-      "source": "search-top-00.json",
-      "url": "https://x.com/i/status/2106291986387161315",
-      "candidate_text": "MiniMax H3 video gen now runs locally in 8 GB VRAM + 16 GB RAM — FreeVideo ships as Windows one-click, ComfyUI plugin, Linux CLI. It runs OpenVDN's 8-step VDN-H3, not MiniMax's weights. Code Apache-2.0; weights under MiniMax's H3 Community License, territorial limits included.",
-      "candidate_context": {
-        "category": "AI 模型與研究",
-        "selection_lane": "discovery",
-        "selection_score": 8.1987,
-        "quality_signals": [
-          "technical_detail",
-          "measurement",
-          "report_or_policy_claim",
-          "substantive_length"
-        ],
-        "sources": [
-          "search-top-00.json"
-        ],
-        "claim_kind_hint": "measurement_claim",
-        "first_person_hint": false,
-        "measurement_context_hint": [
-          "hardware"
         ]
       }
     },
@@ -1095,7 +1101,7 @@
       "candidate_context": {
         "category": "AI 模型與研究",
         "selection_lane": "discovery",
-        "selection_score": 7.9029,
+        "selection_score": 7.9021,
         "quality_signals": [
           "release_or_fix",
           "measurement",
@@ -1122,13 +1128,13 @@
       "text": "▼12/14（月）挑戦者募集｜第一次締切11/30・最終締切12/7\n応募・詳細はこちら\nhttps://t.co/wns74Gpexk\n\n【学生・就活生へ｜「生成AIを使えます」から、「AIで挑戦し、失敗し、完成させた経験があります」へ。12月14日までに、自分でガクチカを作りにいく】\n\nChatGPTを使ったことがある。\n\nClaudeも触った。\nGeminiも使った。\n画像生成AIも使った。\nClaude CodeやCodex、Cursorも知っている。\n\nこれからは、それだけでは珍しくなくなります。\n\n生成AIを使う学生は増えます。\n\nだから、就活で差がつくのは、\n「AIを知っています」\nではなく、\n「AIで何を完成させましたか」\nです。\n\n次回のAI Business Challenge Fes 2026は、2026年12月14日（月）開催です。\n\n挑戦者募集はすでに始まっています。\n\n第一次締切は11月30日。\n最終締切は12月7日。\n\n今日からなら、まだ時間があります。\n\n今の時点で作品がなくても構いません。\n\n応募をきっかけに、\nテーマを決める。\nAIを使う。\n失敗する。\n直す。\n人に見せる。\n\nこの経験を、自分で作りに行けます。\n\n◆ガクチカは「すごい経歴」ではなく、自分がどう動いたか\n\n就活で話しやすい経験には、共通点があります。\n\nなぜ始めたか。\n何が難しかったか。\nどう考えたか。\nどう動いたか。\n何を失敗したか。\n何を改善したか。\n最後に何が残ったか。\n\nAI Business Challenge Fesへの挑戦は、この流れを自分で作れます。\n\n最初から受賞する必要はありません。\n\n大きなサービスを作る必要もありません。\n\n自分でテーマを決めて、締切までに形にし、人に説明する。\n\nこれだけでも、受け身の経験ではありません。\n\n「授業でAIを使いました」\nより、\n「自分で課題を決め、AI Agentを使ってPrototypeを作り、失敗を直して発表しました」\nの方が、話せる内容が増えます。\n\n◆AI Apprenticeship Gapを、自分から埋める\n\nAIが新人の仕事を代行すると、経験の入口が減る。\n\nこの問題が注目されています。\n\n調査。\n資料作成。\n簡単なCode。\n議事録。\nデータ整理。\n競合比較。\n\nこれまで若手が担当しながら覚えていた仕事を、AIが速く処理する。\n\n便利です。\n\n一方で、\n自分で一度も調べたことがない人が、AIの調査結果をReviewできるのか。\n自分で文章構成を考えたことがない人が、AIの弱い構成に気づけるのか。\n自分でDebugした経験がない人が、Coding Agentの変更を安全に判断できるのか。\n\nここが課題になります。\n\nだから、AI時代の学生は「仕事を与えられるのを待つ」だけでは足りません。\n\nAIがあるからこそ、自分で経験を作る。\n\n一人では難しかったProjectへ挑戦する。\n\nこれがAI Apprenticeship Gapを埋める方法の一つです。\n\n◆AIを使えば、一人でもProjectを作りやすくなる\n\n以前なら、\n企画。\n調査。\nDesign。\nCoding。\n文章。\n画像。\n動画。\n\n全部できる人は少なかった。\n\n今はAIを使えば、不得意な部分を補えます。\n\nResearch Agentで調べる。\nCoding AgentでPrototypeを作る。\n画像生成AIでVisualを作る。\nAIで資料を整える。\n\nだから、学生一人でもProjectを始めやすい。\n\nでも、大事なのは「全部AIが作った」ではありません。\n\n何を自分が決めたか。\n\n誰の課題を解くのか。\n何を作るのか。\nどのOutputを採用するのか。\nどこを修正するのか。\n何を最後に捨てるのか。\n\nここが、自分の経験になります。\n\n◆応募テーマが決まらないなら、大学生活の「面倒」を探す\n\n大きな社会課題から始めなくていい。\n\n大学生活の中に、AIで変えられることがあります。\n\n授業資料の整理。\n研究論文の検索。\n就活企業研究。\nサークル運営。\nイベント告知。\n予定調整。\n学習計画。\nノート整理。\n資格勉強。\n\n自分が毎週困っていること。\n\n友達も困っていること。\n\nそこから始める。\n\n例えば、\n企業研究に時間がかかる。\nResearch Agentで公開情報を集める。\n重要な数字だけ公式情報へ戻る。\n最後に自分で志望理由へつなげる。\n\nこれだけでも、AI活用のWorkflowです。\n\n◆「AIで就活を楽にする」より、「AIを使った経験を就活で話せる」にする\n\n就活でAIを使う人は増えます。\n\nESの下書き。\n企業研究。\n面接練習。\n\n便利です。\n\nでも、AIで就活作業を短くするだけでなく、\nAIを使ったProjectそのものを就活実績にする。\n\nこちらも考えてください。\n\n「AIでESを書きました」\nより、\n「AI Agentを使った企業研究Workflowを作り、情報の誤りを防ぐために公式Source確認のRuleを入れました」\nの方が、Skillの中身が見えます。\n\nAIを就活の裏方として使うだけではなく、AI活用自体を経験へ変える。\n\n◆面接で聞かれる「なぜ？」に答えられる経験を作る\n\n面接では、結果だけでなく理由を聞かれます。\n\nなぜそのテーマ。\nなぜそのAI。\nなぜその方法。\nなぜ失敗した。\nなぜ直した。\nなぜその結果。\n\nAIが作品を作ってくれても、「なぜ」に答えるのは自分です。\n\nだから、Projectの途中で判断を記録する。\n\n最初の案。\n変更した理由。\n失敗。\n改善。\n捨てた案。\n\nこれをMemoに残す。\n\n12月には、完成品だけでなく、自分の思考過程を説明できます。\n\n◆AI Agent時代は「何を任せたか」を話せると強い\n\nResearch Agent。\nCoding Agent。\nBrowser Agent。\nComputer Use。\nRAG。\nMCP。\n\n技術名を知っているだけではなく、自分のProjectで何を任せたか。\n\n例えば、\nResearch Agentには情報収集。\n自分はSource確認と結論。\nCoding Agentには実装初稿。\n自分は仕様とTest。\n画像生成AIにはVisual案。\n自分は選択と文字確認。\n\n役割分担を説明する。\n\nこれだけで、AIを「丸投げ」していないことが伝わります。\n\n◆AI Proficiencyは、Promptを上手く書くことだけではない\n\nAI Proficiencyという言葉を見ると、AI Skillの高さを想像します。\n\nでも、実務ではPromptだけでは足りません。\n\n課題を分ける。\n必要な情報を集める。\nAIへ任せる。\nOutputを疑う。\nSourceを見る。\n失敗したら戻る。\n最後に完成させる。\n\nこの一連の力です。\n\n学生のうちから、このWorkflowを経験できると強い。\n\n会社へ入ってから初めて学ぶのではなく、今からProjectで試せます。\n\n◆「AIで作ったから価値がない」ではない\n\nAIが作った部分が多いと、\n「自分の実力ではない」\nと感じる人もいます。\n\nでも、現実の仕事でも一人で全部やるわけではありません。\n\n人に頼む。\nToolを使う。\n外注する。\nTeamで進める。\n\n重要なのは、成果にどう責任を持ったかです。\n\nAIが書いたCodeを理解せず出す。\nこれは弱い。\n\nAIが書いたCodeをTestし、必要な修正をし、なぜ採用したか説明できる。\nこれは経験です。\n\nAIを使ったから価値がないのではありません。\n\nAIをどう使ったかが価値になります。\n\n◆失敗した経験を、隠さない\n\nAIが間違った。\nPrototypeが動かなかった。\nRAGの検索が弱かった。\nCoding Agentが壊した。\n画像の文字が崩れた。\nBrowser Agentが迷った。\n\n失敗はあります。\n\nそのままではただの失敗です。\n\nでも、\nなぜ起きたか。\nどう直したか。\n次にどう防ぐか。\n\nここまで整理すると、知見になります。\n\n就活でも、\n「失敗しませんでした」\nより、\n「この失敗が起き、原因を切り分け、Ruleを変えました」\nの方が、行動が見えます。\n\n◆大学の専攻とAIを組み合わせる\n\n情報系だけが対象ではありません。\n\n経営。\n経済。\n法学。\n教育。\n観光。\n建築。\nデザイン。\n心理。\n農業。\n医療周辺。\n語学。\n\n自分の専攻には、その分野を知らない人には見えない課題があります。\n\nAIをそこへ使う。\n\n例えば、\n観光なら多言語案内。\n教育なら学習支援。\n経営なら市場調査。\n建築なら資料整理。\n法学なら公開法令の検索支援。\n農業なら現場記録。\n\nAI技術そのものより、分野知識との組み合わせが価値になります。\n\n◆文系でもAIサービス提案に出られる\n\nコードを書けない。\n\n問題ありません。\n\n業務や生活の課題を言葉にできるなら、AIサービス提案を作れます。\n\n誰が困っている。\n今どうしている。\nどこに時間がかかる。\nAIを入れると何が変わる。\n人は何を判断する。\n\nこれを整理する。\n\n技術構成は、必要ならAIや詳しい人に相談できます。\n\n文系だからAIは無理、ではありません。\n\n課題を見つける力。\n説明する力。\n顧客を想像する力。\n\nこれもAIサービスに必要です。\n\n◆理系・情報系なら、技術を「使う人」まで下ろす\n\n技術的にすごい。\n\nそれだけでは、Businessでは伝わらないことがあります。\n\n高速。\n高精度。\nMulti-Agent。\nRAG。\nMCP。\n\nその結果、誰が何をできるようになるのか。\n\nここまで説明する。\n\n技術をBusinessへ翻訳する経験になります。\n\n将来、Engineerとして働く時にも重要です。\n\n◆リアルタイムAI活用バトルは、完成品がなくても挑戦できる\n\n今からサービスを作るのは重い。\n\nそう感じるなら、リアルタイムなAI活用に挑戦する方法もあります。\n\n当日のお題を理解する。\nAIで調べる。\n必要なものを作る。\n間違いを直す。\n時間内に完成させる。\n\nこれは、普段のAI利用の総合力です。\n\nChatGPTやClaudeを日常的に使っている。\nAI画像や動画が得意。\nClaude CodeやCodexで作るのが速い。\n複数Toolを使い分けられる。\n\nそのSkill自体を外へ出せます。\n\n◆「完成品がないから応募できない」を理由にしない\n\n完成品がない。\n\n今から作ればいい。\n\n企画がない。\n\n身近な面倒を一つ探せばいい。\n\nTeamがない。\n\n個人で始めればいい。\n\n技術に自信がない。\n\n提案から始めればいい。\n\n発表が苦手。\n\n準備する理由ができる。\n\n応募を止める理由を、一つずつ減らす。\n\n今の完成度ではなく、12月14日にどこまで行きたいかで考えてください。\n\n◆第一次締切11/30を、最初の完成日にする\n\nまだ2か月近くあります。\n\n10月前半。\nテーマを決める。\n\n10月後半。\n最初に動くものを作る。\n\n11月前半。\n自分で使う。\n友達に見せる。\n\n11月後半。\n資料やDemoへまとめる。\n\n11月30日。\nVersion 1を出す。\n\n12月7日までに直す。\n\n12月14日。\n発表する。\n\nこうすると、毎週やることが見えます。\n\n◆AIを使って、改善回数を増やす\n\nAIで初稿が速くなる。\n\nその分、最初の案を提出して終わりにしない。\n\n2回目。\n3回目。\n4回目。\n\n何度も直す。\n\nAI時代の強みは、一発で完璧なものを作ることではありません。\n\n試行回数を増やせることです。\n\n早く応募する意味もここにあります。\n\n早く始めれば、失敗して直す時間が増えます。\n\n◆作品を作る時、「誰が使うか」を一人決める\n\n全員に使ってほしい。\n\nそうすると、機能が増えます。\n\nまず一人。\n\n自分。\n友達。\n大学の後輩。\nサークルの担当者。\n就活中の学生。\n\nその人の一つの困りごとを解く。\n\n利用者が具体的だと、何を作るか決めやすい。\n\nAIサービスは、AIがすごいかより、使う人に価値があるかです。\n\n◆Portfolioに残す項目\n\nProject名。\n課題。\n対象者。\nAIの役割。\n自分の役割。\n使ったTool。\n失敗。\n改善。\n結果。\n次に直したいこと。\n\nこれを一枚にまとめる。\n\n就活でも説明しやすい。\n\nイベントでも説明しやすい。\n\nAI時代のPortfolioは、完成物だけでなく判断記録も入れる。\n\n◆AIが作った文章を、そのまま自分の言葉にしない\n\nAIはきれいな文章を書きます。\n\nでも、自分が理解していない言葉をそのまま使うと、質問された時に止まります。\n\n自分で読み直す。\n言い換える。\n分からない言葉を消す。\n自分の経験を足す。\n\n最後は自分の言葉にする。\n\nこれは応募資料でも同じです。\n\n◆AIで企業研究する時、Factを確認する\n\n会社名。\n売上。\n役員。\n事業。\nニュース。\n採用情報。\n\nAIは混ぜることがあります。\n\n就活で間違った情報を話すと、印象が悪くなる。\n\n重要なFactは企業公式へ戻る。\n\nAIは調査を広げる。\n人は確認する。\n\nこの習慣を、Projectでも持つ。\n\n◆Coding Agentを使う学生へ\n\nClaude Code。\nCodex。\nCursor。\n\n使えるなら、ただ速く作るだけで終わらない。\n\nTaskを小さくする。\nSpecを書く。\nTestする。\nDiffを見る。\n戻せるようにする。\n\n自分なりの開発Ruleを作る。\n\nこれを就活で話せると、\n「AIでCodeを書きました」\nより深い。\n\n◆Research Agentを使う学生へ\n\n論文。\n企業。\n市場。\n技術。\n\nAIは大量に集められます。\n\nだからこそ、\nどのSourceを信用するか。\nいつの情報か。\n一次情報か。\n推測か。\n\nここを分ける。\n\nAI時代のResearch Skillです。\n\n◆AI画像・動画が得意な学生へ\n\n生成するだけでなく、\n誰へ何を伝えるためのVisualかを考える。\n\n文字崩れ。\n著作権。\n人物。\nブランド。\n事実性。\n\nAIが作れたから公開する、ではなく、公開してよいか確認する。\n\nCreative Skill＋判断力。\n\nこれも実務Skillです。\n\n◆自分の強みを一つ決める\n\n全部できる必要はありません。\n\nResearchが強い。\nCodingが強い。\nVisualが強い。\n文章が強い。\n発表が強い。\n企画が強い。\n\n一つ強みを決める。\n\nAIで弱い部分を補う。\n\nこのTeam構成なら、一人でも挑戦できます。\n\n◆友達とTeamを組むなら、役割を分ける\n\n全員が同じことをする必要はありません。\n\n企画。\nResearch。\n開発。\nDesign。\n発表。\n\nAIも使う。\n\n人とAIでTeamを作る。\n\n自分がどの役割を担ったか説明できるようにする。\n\n◆「受賞できるか」より「応募前と後で何が変わったか」\n\n結果は分かりません。\n\nでも、応募前と後で、\n一つProjectができた。\n発表経験ができた。\nAIの使い方が深くなった。\n他の人から質問を受けた。\n\nこれらは残ります。\n\n挑戦する価値を、結果だけに置かない。\n\n◆12月14日に、自分の言葉で1分話せる状態を作る\n\n私は、○○という課題に取り組みました。\nAIには△△を任せました。\n最初は□□で失敗しました。\nそこで××へ変えました。\n結果、今はこうなっています。\n\nこの1分。\n\nここまで言えれば、経験が自分のものになっています。\n\n◆今日やること\n\n応募・詳細ページを開く。\n\n大学生活で面倒なことを3つ書く。\n\nその中から一つ選ぶ。\n\nAIでどう変えられるか、一文書く。\n\n今週中にPrototypeを一つ作る。\n\nこれだけ。\n\n大きく始めない。\n\n小さく始めて、12月までに深くする。\n\n▼AI Business Challenge Fes 2026\n次回開催：2026年12月14日（月）\n第一次締切：2026年11月30日（月）\n最終締切：2026年12月7日（月）\n\n▼挑戦者募集・詳細\nhttps://t.co/wns74Gpexk\n\n「AIを使ったことがある学生」から、\n「AIで挑戦し、完成させた経験がある学生」へ。\n\nガクチカは、待つより作りに行けます。\n\n#AI #ガクチカ\n\n◆AIを使って「学んだこと」を証拠に変える\n\n授業で学んだ。\n本を読んだ。\n動画を見た。\nAIについて調べた。\n\n知識は大切です。\n\nでも、就活では「それをどう使ったか」まで話せると強い。\n\n例えば、RAGについて学んだ。\n\nそこで、自分の授業資料を検索できる小さな仕組みを作った。\n最初は古い資料と新しい資料が混ざった。\n更新日を持たせるようにした。\n出典を表示するようにした。\n\nこうなると、学習が実績へ変わります。\n\n知識を、作品と判断の記録へ変える。\n\n12月14日を、その締切として使えます。\n\n◆就活で強いのは、AI用語の多さではなく「自分の役割」が見えること\n\nAI Agent。\nAgentic AI。\nAgentic Coding。\nMCP。\nRAG。\nMulti-Agent。\n\n全部知っていても、\n「自分は何をしたのですか」\nに答えられなければ弱い。\n\n逆に、使った技術は一つでも、\n「私は課題を決め、利用者へ聞き、AIにこの工程を任せ、結果を検証しました」\nと言える。\n\nこちらの方が、自分の役割が見えます。\n\n企業側は、AIそのものを採用するわけではありません。\n\n人を採用します。\n\nだから、AIを使ったProjectでも、\n自分の判断。\n自分の行動。\n自分の学び。\n\nここを残してください。\n\n◆「一人で作った」より「人に見せた」を入れる\n\n自分だけで完成させると、気づかない問題があります。\n\n友達に触ってもらう。\n先輩に見せる。\n先生に聞く。\n家族に説明する。\n\n一人でもいい。\n\n人に見せる。\n\nすると、\n説明が分かりにくい。\n使い方が分からない。\n必要だと思っていた機能が使われない。\n逆に、想定外の使い方をされる。\n\n発見があります。\n\nAIはたくさん案を出せます。\n\nでも、実際の人の反応はAIの中にはありません。\n\nProjectを外へ出す。\n\nそれがBusiness Challengeの意味です。\n\n◆Feedbackを受けたら、全部直さなくていい\n\n人に見せると、色々な意見が出ます。\n\n機能を増やして。\n色を変えて。\nもっと簡単に。\n別の使い方ができる。\n\n全部を入れると、Projectがぶれます。\n\n誰の課題を解くのか。\n今回の目的は何か。\n12月までに何を完成させるか。\n\n軸へ戻る。\n\nAI時代は修正も速い。\n\nだからこそ、何を直さないかを決める力が必要です。\n\nこれはProduct Managementの経験になります。\n\n◆自分の判断を「Before / After」で残す\n\n最初のVersionでは、こう考えていた。\n\n実際に使うと、ここが弱かった。\n\nだから、こう変えた。\n\nBefore / Afterを残す。\n\n例えば、\n最初はAIへ全部調査させた。\n間違いが混ざった。\n重要Factだけ公式Source確認へ変えた。\n\n最初はCoding Agentへ大きなTaskを渡した。\n変更が広がった。\n一つずつIssueへ分けた。\n\nこの変化が、学びです。\n\n完成品だけでは見えない成長を説明できます。\n\n◆AI時代の「努力」は、作業時間だけではない\n\n長時間手を動かした。\n\nそれだけが努力ではありません。\n\nAIが作業を速くするなら、\n問いを考えた。\n比較した。\n検証した。\n失敗原因を調べた。\n人に見せた。\n何度も改善した。\n\nここに時間を使えます。\n\n就活でも、\n「何時間かけた」\nより、\n「何を考え、どう改善した」\nを話せる方が中身があります。\n\n◆AIを使う時こそ、著作権や利用条件も見る\n\n画像。\n文章。\nCode。\n音楽。\nData。\n\nAIで生成・取得できるから、何でも自由に使えるとは限りません。\n\n元データ。\nLicense。\n商用利用。\n引用。\n個人情報。\n\n確認する。\n\n学生Projectでも、この習慣を持つ。\n\n実務へ入った時に役立ちます。\n\nAI Skillは、生成する力だけではありません。\n\n安全に使う力も含まれます。\n\n◆「もっとすごい人がいるから応募しない」を捨てる\n\nSNSを見ると、\n一人で高度なAgentを作る人。\n大規模なサービスを作る人。\n研究をしている人。\n\nたくさんいます。\n\n比較すると、自分のProjectが小さく見えます。\n\nでも、今回必要なのは世界一の技術ではありません。\n\n自分で一つ挑戦すること。\n\n身近な課題でもいい。\n\n小さな改善でもいい。\n\nその代わり、\nなぜやった。\nどう失敗した。\n何を変えた。\n\n自分の言葉で話す。\n\nここは他人と比較できません。\n\n◆「AIを使った」ではなく「AIと役割分担した」と言える状態へ\n\nAIに丸投げした。\n\nでは、経験が薄く見えます。\n\nAIはResearch。\n自分はFact確認。\n\nAIはCode初稿。\n自分はSpecとTest。\n\nAIはVisual案。\n自分は選択と文字確認。\n\nAIは面接練習。\n自分は回答内容を考える。\n\n役割を分ける。\n\nすると、AIを使ったことと、自分がしたことを分けて説明できます。\n\n◆就活生なら、応募Projectと企業研究をつなげてもいい\n\n例えば、志望業界が決まっている。\n\nその業界の課題をAIで調べる。\n\n物流。\n建設。\n金融。\n教育。\nSaaS。\n製造。\n\nそこで見つけた課題からProjectを作る。\n\nすると、\n業界研究。\nAI活用。\nProject経験。\n\n三つがつながります。\n\nただし、企業や業界の情報は一次Sourceを確認する。\n\nAIの要約だけで語らない。\n\nこの姿勢も面接で説明できます。\n\n◆大学1・2年生でも早すぎない\n\n就活はまだ先。\n\nだからこそ、結果を気にしすぎず挑戦できます。\n\n失敗してもいい。\n作り直してもいい。\n方向を変えてもいい。\n\n早い時期に、\n自分でProjectを決める。\n締切まで進める。\n人に見せる。\n\nこの経験があると、その後の授業やインターンでも動きやすくなります。\n\n◆大学3・4年生なら、今の経験を就活・入社後へつなげる\n\n今すぐ使えるPortfolioを作る。\n\n面接で話す。\n内定後も改善する。\n入社後、同じ考え方でAIを使う。\n\nイベントだけで終わらせない。\n\n一つのProjectを、Careerの入口として使ってください。\n\n◆社会人学生・専門学校生・高専生も同じ\n\n年齢や所属だけで、自分を対象外にしない。\n\n学んでいる。\n仕事をしている。\n技術を試している。\n\n今の環境だから見える課題があります。\n\n自分の生活や仕事に近いテーマほど、具体的に作れます。\n\n◆AIの勉強会へ参加するだけから、自分が発表する側へ\n\nセミナーを見る。\n動画を見る。\n記事を読む。\n\nそれも学習です。\n\n次は、自分が一つ作る。\n\n説明する。\n質問を受ける。\nFeedbackを受ける。\n\n学習の向きが変わります。\n\n見る側から、出る側へ。\n\nこの変化が、今回の募集で一番作りたい経験です。\n\n◆12月14日までの週次チェック\n\n毎週、日曜日に5分だけ確認する。\n\n今週やったこと。\nAIが失敗したこと。\n自分が判断したこと。\n来週直すこと。\n\n4行でいい。\n\nこれを続ける。\n\n12月には、10週間近い記録になります。\n\nそれを読み返すだけで、Projectの成長を説明できます。\n\n◆応募した後に迷ったら、最初の一文へ戻る\n\n私は、\n○○の課題を、\nAIを使って、\n△△できるようにする。\n\nこの一文。\n\nToolが増えても。\nアイデアが増えても。\n途中で迷っても。\n\nこの一文へ戻る。\n\n必要なら一文自体を変える。\n\nProjectを進める軸になります。\n\n◆12月14日の自分へ、今日ひとつ約束する\n\n「AIについて詳しくなりたい」\n\nではなく、\n\n「AIで一つ完成させる」\n\nと決める。\n\nその完成品が小さくてもいい。\n\n自分で考え、\nAIと役割分担し、\n失敗を直し、\n人へ見せる。\n\nこの一周を終える。\n\nそれだけで、今日の自分とは違う経験が残ります。",
       "createdAtISO": "2026-10-03T09:00:01+00:00",
       "isRetweet": false,
-      "source": "search-latest-10.json",
+      "source": "search-latest-04.json",
       "url": "https://x.com/i/status/2106308277265109355",
       "candidate_text": "▼12/14（月）挑戦者募集｜第一次締切11/30・最終締切12/7 応募・詳細はこちら https://t.co/wns74Gpexk  【学生・就活生へ｜「生成AIを使えます」から、「AIで挑戦し、失敗し、完成させた経験があります」へ。12月14日までに、自分でガクチカを作りにいく】  ChatGPTを使ったことがある。  Claudeも触った。 Geminiも使った。 画像生成AIも使った。 Claude CodeやCodex、Cursorも知っている。  これからは、それだけでは珍しくなくなります。  生成AIを使う学生は増えます。  だから、就",
       "candidate_context": {
         "category": "開發者工具",
         "selection_lane": "discovery",
-        "selection_score": 7.8365,
+        "selection_score": 7.8356,
         "quality_signals": [
           "release_or_fix",
           "report_or_policy_claim",
@@ -1158,7 +1164,7 @@
       "candidate_context": {
         "category": "AI 模型與研究",
         "selection_lane": "discovery",
-        "selection_score": 7.7442,
+        "selection_score": 7.7427,
         "quality_signals": [
           "release_or_fix",
           "technical_detail",
@@ -1166,6 +1172,34 @@
         ],
         "sources": [
           "search-latest-06.json"
+        ],
+        "claim_kind_hint": "release_claim",
+        "first_person_hint": false
+      }
+    },
+    {
+      "id": "2106247992726659095",
+      "author": {
+        "screenName": "Yolo_ai_001",
+        "name": "yolo_ai"
+      },
+      "text": "你算对了 FLOPs，系统还是慢。因为 LLM 的瓶颈早就不在算力了。\n显存先被 KV cache 吃光，HBM 带宽比 Tensor Core 更早打满，batch 一大延迟就炸，多卡一上通信就开始互相等。prefill 在算，decode 在搬；参数在等激活，激活在等网络。模型再强，也跑不赢一次没算清楚的数据搬运。很多人把推理慢、训练贵、扩容不线性，都归成“工程细节”。其实不是细节，是系统设计从一开始就算错了约束。\n李博杰把这条线开源成了书：《深入理解 AI Infra：量化分析与系统设计》。它是 GitHub 5 万星《深入理解 AI Agent》的姊妹篇。写完 Agent 之后才会发现，应用层再漂亮，也得知道模型到底跑在什么上面：内存放得下吗，带宽够不够，状态活多久，卡和卡之间谁在等谁。\n这本书不堆名词。它从硬件约束和模型架构出发，用第一性原理把推理和训练系统推出来。Attention、状态、MoE 会怎么改内存和通信；加速器在算力、存储、带宽、功耗和成本之间怎么取舍；kernel 该不该融合，超节点同步值不值；数据中心网络什么时候会变成真正的瓶颈；batching、KV cache、offload、speculative decoding 各自在换什么；分布式推理怎么放、怎么扩、挂了怎么办；训练里重计算、通信和显存规划怎么一起算。反复只问一件事：数据搬了什么，搬多少，搬几次，搬到哪，谁在等。\n说得更直一点：模型成了 LLM 时代的操作系统，AI Infra 就是这个时代的计算机体系结构。以前调优是对着 CPU 和内存层次，现在是对着加速器、网络和上下文状态。\n十二章全文开源，PDF、EPUB、在线都能读，简中、英文、繁中、俄文都有。书里大部分数字可以复算，仓库里带着计算工具和实验记录，不是看完只剩感觉。\n做推理、做训练、做调度，或者只是想搞清楚一张卡的账单为什么这么贵，都值得从头翻一遍。\nhttps://t.co/dnql4pl0or",
+      "createdAtISO": "2026-10-03T05:00:28+00:00",
+      "isRetweet": false,
+      "source": "search-top-09.json",
+      "url": "https://x.com/i/status/2106247992726659095",
+      "candidate_text": "你算对了 FLOPs，系统还是慢。因为 LLM 的瓶颈早就不在算力了。 显存先被 KV cache 吃光，HBM 带宽比 Tensor Core 更早打满，batch 一大延迟就炸，多卡一上通信就开始互相等。prefill 在算，decode 在搬；参数在等激活，激活在等网络。模型再强，也跑不赢一次没算清楚的数据搬运。很多人把推理慢、训练贵、扩容不线性，都归成“工程细节”。其实不是细节，是系统设计从一开始就算错了约束。 李博杰把这条线开源成了书：《深入理解 AI Infra：量化分析与系统设计》。它是 GitHub 5 万星《深入理解 AI Agent》",
+      "candidate_context": {
+        "category": "產業",
+        "selection_lane": "discovery",
+        "selection_score": 7.7305,
+        "quality_signals": [
+          "release_or_fix",
+          "technical_detail",
+          "substantive_length"
+        ],
+        "sources": [
+          "search-top-09.json"
         ],
         "claim_kind_hint": "release_claim",
         "first_person_hint": false
@@ -1186,7 +1220,7 @@
       "candidate_context": {
         "category": "OpenClaw／Agent 生態",
         "selection_lane": "discovery",
-        "selection_score": 7.7037,
+        "selection_score": 7.7024,
         "quality_signals": [
           "release_or_fix",
           "measurement",
@@ -1218,7 +1252,7 @@
       "candidate_context": {
         "category": "財經",
         "selection_lane": "discovery",
-        "selection_score": 7.6426,
+        "selection_score": 7.6413,
         "quality_signals": [
           "release_or_fix",
           "report_or_policy_claim",
@@ -1246,7 +1280,7 @@
       "candidate_context": {
         "category": "OpenClaw／Agent 生態",
         "selection_lane": "discovery",
-        "selection_score": 7.583,
+        "selection_score": 7.5817,
         "quality_signals": [
           "release_or_fix",
           "report_or_policy_claim",
@@ -1274,7 +1308,7 @@
       "candidate_context": {
         "category": "AI 模型與研究",
         "selection_lane": "discovery",
-        "selection_score": 7.5537,
+        "selection_score": 7.5522,
         "quality_signals": [
           "release_or_fix",
           "report_or_policy_claim",
@@ -1302,7 +1336,7 @@
       "candidate_context": {
         "category": "OpenClaw／Agent 生態",
         "selection_lane": "discovery",
-        "selection_score": 7.3952,
+        "selection_score": 7.3938,
         "quality_signals": [
           "release_or_fix",
           "measurement",
@@ -1334,7 +1368,7 @@
       "candidate_context": {
         "category": "產業",
         "selection_lane": "discovery",
-        "selection_score": 7.3191,
+        "selection_score": 7.3182,
         "quality_signals": [
           "release_or_fix",
           "report_or_policy_claim",
@@ -1362,7 +1396,7 @@
       "candidate_context": {
         "category": "OpenClaw／Agent 生態",
         "selection_lane": "discovery",
-        "selection_score": 7.3138,
+        "selection_score": 7.3126,
         "quality_signals": [
           "release_or_fix",
           "technical_detail",
@@ -1370,34 +1404,6 @@
         ],
         "sources": [
           "search-latest-02.json"
-        ],
-        "claim_kind_hint": "release_claim",
-        "first_person_hint": false
-      }
-    },
-    {
-      "id": "2106015437339369668",
-      "author": {
-        "screenName": "mylifcc",
-        "name": "lifcc"
-      },
-      "text": "把别人的视觉系统，收成一份 AI 能直接读的 Markdown，这就是Design.md，分享几个好用的design网站：\n\n1. 从现成网站「拆」出 DESIGN.md\nhttps://t.co/wDXeuCWODT\n贴一个 URL，爬关键页面的计算样式，吐出结构化 DESIGN.md，还有 HTML 预览和一键进 Figma。示例站点就是 Apple、Stripe、Linear、GitHub、Notion 这类。\n\nhttps://t.co/dyhiYOLFUL\n输入任意公有域名，按 Google 那套章节生成一份可喂给 agent 的文件。背后用 https://t.co/w1rRWpTvdl 抽 styleguide。\n\nhttps://t.co/ds3NEJuAfI\n本身是落地页/模板生成器，现在也做成「网站或模板 → DESIGN.md」库，强调把视觉方向变成可复用的 prompt 上下文。\n\nhttps://t.co/GC1cKD7kwy\nRefero 把大量真实产品站整理成 AI 可读的 design system 示例，按 Minimal、Clean SaaS、Editorial、High Contrast 这\n\n2. 现成风格库 + 一条命令装进项目\n适合不想从零写，先借一套成熟视觉语言。\n\ngetdesign.md\n有目录，也有 CLI：npx getdesign add <slug>，直接在项目根目录写出 DESIGN.md。明确面向 Cursor / Claude Code / v0 / Lovable。\n\n同类站点还有 https://t.co/emUsz8Ed40、https://t.co/NeHbqwy7Nb、https://t.co/dwPQKKKDHS 这种「几百份品牌风 DESIGN.md 目录」，帖子里没全列，但生态已经很大。\n\n3. 把 DESIGN.md 当成整个设计工作台的核心\n\nhttps://t.co/uGZuTsQetK\n开源、本地优先的 Claude Design 替代。不自己卖模型，调用你本机已有的 Claude Code / Cursor / Codex 等 agent，用可组合 Skill + 便携 DESIGN.md 出原型、页面、幻灯片、仪表盘。定位是「agent 时代的 Figma 替代思路」：产出是真 HTML/CSS，不是平面稿。\nhttps://t.co/m2OImt7Dnv\n给 AI 编码工具喂设计上下文的平台：从主题、Markdown 或 Figma 生成设计系统，再通过 MCP 接到 Codex / Claude / Cursor。也有 CLI 去 pull / generate skill 文件。\n\nNeuform（https://t.co/2uq3Nkc6zz）和 Hyperbrowser 的 DESIGN-MD（https://t.co/KySoVzvGnC）\n一个偏生成/变形界面风格，一个偏用浏览器能力从页面抽设计文档。帖子把它们和 TypeUI 放在同一排，当「能产出可给 agent 用的设计描述」的入口。",
-      "createdAtISO": "2026-10-02T13:36:22+00:00",
-      "isRetweet": false,
-      "source": "search-top-05.json",
-      "url": "https://x.com/i/status/2106015437339369668",
-      "candidate_text": "把别人的视觉系统，收成一份 AI 能直接读的 Markdown，这就是Design.md，分享几个好用的design网站：  1. 从现成网站「拆」出 DESIGN.md https://t.co/wDXeuCWODT 贴一个 URL，爬关键页面的计算样式，吐出结构化 DESIGN.md，还有 HTML 预览和一键进 Figma。示例站点就是 Apple、Stripe、Linear、GitHub、Notion 这类。  https://t.co/dyhiYOLFUL 输入任意公有域名，按 Google 那套章节生成一份可喂给 agent 的文件。背后用 ",
-      "candidate_context": {
-        "category": "開發者工具",
-        "selection_lane": "discovery",
-        "selection_score": 7.2698,
-        "quality_signals": [
-          "release_or_fix",
-          "technical_detail",
-          "substantive_length"
-        ],
-        "sources": [
-          "search-top-05.json"
         ],
         "claim_kind_hint": "release_claim",
         "first_person_hint": false
@@ -1418,7 +1424,7 @@
       "candidate_context": {
         "category": "產業",
         "selection_lane": "discovery",
-        "selection_score": 7.1683,
+        "selection_score": 7.1668,
         "quality_signals": [
           "release_or_fix",
           "report_or_policy_claim",
@@ -1446,7 +1452,7 @@
       "candidate_context": {
         "category": "產業",
         "selection_lane": "discovery",
-        "selection_score": 7.1654,
+        "selection_score": 7.1642,
         "quality_signals": [
           "release_or_fix",
           "report_or_policy_claim",
@@ -1454,65 +1460,6 @@
         ],
         "sources": [
           "search-latest-09.json"
-        ],
-        "claim_kind_hint": "release_claim",
-        "first_person_hint": false
-      }
-    },
-    {
-      "id": "2106248163560505443",
-      "author": {
-        "screenName": "ttaimox",
-        "name": "taimox"
-      },
-      "text": "📈 𝐌𝐀𝐑𝐊𝐄𝐓𝐒\n- US payrolls rose 29,000 in September, below every Bloomberg economist estimate. Unemployment reached 4.2% and wage growth slowed.\n- The G7 and partners plan to release up to 100 million barrels of emergency oil and diesel reserves over four months. Brent and European diesel prices fell on the news.\nSources: @business\n\n🪙 𝐂𝐑𝐘𝐏𝐓𝐎\n- Bitcoin closed Q3 up 42.7% and traded near $⁠86,768, up 3% on the day. Spot BTC ETFs recorded $⁠103 million of net inflows, while ETH ETFs saw $⁠55 million of outflows.\n- NEAR Intents lost $⁠3.8 million through a flaw affecting USDT bridged from BNB Chain. NEAR says it will compensate affected users and gave the attacker 48 hours to return funds.\n- Ethereum generated about $⁠64 million in annualized chain revenue against a $⁠326 billion market value, according to DeFiLlama data cited by Milk Road. Much L2 fee revenue remains on the L2s after Dencun.\n- Robinhood Chain activity cooled after its late-August surge. Its three largest native tokens fell, and stock-token TVL was $⁠145.8 million on October 1, nearly flat since early September.\nSources: @rektmando, @MilkRoadDaily, @0xResearch\n\n🕵️ 𝐓𝐄𝐂𝐇 / 𝐀𝐈\n- OpenAI reportedly fired three safety researchers for sharing confidential material with a third-party AI safety group. Reports also say the company paused its GPT-6.1 Astra launch over safety concerns.\n- Microsoft released MAI-Transcribe-2-Streaming, a real-time transcription model covering 60 languages, alongside new MAI-Voice models.\n- Cloudflare released open-source Clef and Clef-flash decision models under Apache 2.0. They return typed, probability-scored choices for agent routing and can run locally.\nSources: @tldrnewsletter",
-      "createdAtISO": "2026-10-03T05:01:09+00:00",
-      "isRetweet": false,
-      "source": "search-top-00.json",
-      "url": "https://x.com/i/status/2106248163560505443",
-      "candidate_text": "📈 𝐌𝐀𝐑𝐊𝐄𝐓𝐒 - US payrolls rose 29,000 in September, below every Bloomberg economist estimate. Unemployment reached 4.2% and wage growth slowed. - The G7 and partners plan to release up to 100 million barrels of emergency oil and diesel reserves over four months. Brent and European ",
-      "candidate_context": {
-        "category": "財經",
-        "selection_lane": "discovery",
-        "selection_score": 7.0615,
-        "quality_signals": [
-          "release_or_fix",
-          "measurement",
-          "substantive_length"
-        ],
-        "sources": [
-          "search-top-00.json"
-        ],
-        "claim_kind_hint": "measurement_claim",
-        "first_person_hint": false,
-        "measurement_context_hint": [
-          "model_or_precision"
-        ]
-      }
-    },
-    {
-      "id": "2106227363428413899",
-      "author": {
-        "screenName": "yoshinaga_aipro",
-        "name": "吉永　武正"
-      },
-      "text": "【今日のAIニュース 3選】\n・Gemini 4 Argon公開、価格はOpenAIの約1/5。AIは価格競争の時代へ（VentureBeat）\n・米当局がOpenAI等のAI暴走リスクを調査。安全規制が現実味に（時事）\n・Google CloudのAPIがMCP対応。既存システムのAI接続が手軽に（Google）\n#AI #生成AI",
-      "createdAtISO": "2026-10-03T03:38:29+00:00",
-      "isRetweet": false,
-      "source": "search-top-04.json",
-      "url": "https://x.com/i/status/2106227363428413899",
-      "candidate_text": "【今日のAIニュース 3選】 ・Gemini 4 Argon公開、価格はOpenAIの約1/5。AIは価格競争の時代へ（VentureBeat） ・米当局がOpenAI等のAI暴走リスクを調査。安全規制が現実味に（時事） ・Google CloudのAPIがMCP対応。既存システムのAI接続が手軽に（Google） #AI #生成AI",
-      "candidate_context": {
-        "category": "AI 模型與研究",
-        "selection_lane": "discovery",
-        "selection_score": 6.9888,
-        "quality_signals": [
-          "release_or_fix",
-          "report_or_policy_claim",
-          "substantive_length"
-        ],
-        "sources": [
-          "search-top-04.json"
         ],
         "claim_kind_hint": "release_claim",
         "first_person_hint": false
@@ -1533,7 +1480,7 @@
       "candidate_context": {
         "category": "AI 模型與研究",
         "selection_lane": "discovery",
-        "selection_score": 6.9323,
+        "selection_score": 6.9318,
         "quality_signals": [
           "technical_detail",
           "measurement",
@@ -1566,7 +1513,7 @@
       "candidate_context": {
         "category": "AI 模型與研究",
         "selection_lane": "discovery",
-        "selection_score": 6.869,
+        "selection_score": 6.8675,
         "quality_signals": [
           "technical_detail",
           "measurement",
@@ -1595,7 +1542,7 @@
       "candidate_context": {
         "category": "AI 模型與研究",
         "selection_lane": "discovery",
-        "selection_score": 6.8423,
+        "selection_score": 6.8418,
         "quality_signals": [
           "technical_detail",
           "measurement",
@@ -1613,32 +1560,63 @@
       }
     },
     {
-      "id": "2106269468384985448",
+      "id": "2105972440010514521",
       "author": {
-        "screenName": "takasi11292",
-        "name": "タカシ｜米国株・金利・為替"
+        "screenName": "AYi_AInotes",
+        "name": "AYi"
       },
-      "text": "NVIDIAが最高値を更新しました。でも僕はいま、株価より別の数字を見ています。\n\nNVIDIA最高値。でも本当に安心していい？\n\n10/2のNVDAは取引時間中に最高値を更新。終値233.95ドルは終値最高値を更新していません。株価は強い。一方で、AI投資を支える信用市場には警戒材料があります。\n\n信用＝Creditとは「返してもらえるという信用をもとに、お金を貸すこと」。米10年金利が借入金利の土台なら、信用スプレッドは貸し手が信用リスクに求める上乗せ金利です。\n\nFREDの米10年金利は最新観測10/1で5.24%。米社債スプレッドは9/25〜10/1に拡大。ただし一般の社債指数はAI/DC専用ではありません。\n\n9/29のReutersはMetaのHyperion向けBeignet債のスプレッドが発行時より拡大したと報道。一方、7月のピークは下回っています。CoreWeaveの9月のSEC届出では42億ドルの転換社債調達成立も確認でき、資金が全面停止したわけではありません。\n\nなぜ株に重要なのか。\nAI設備投資は借入・社債、自社の現金、株式調達で賄います。借金依存の案件ほど条件悪化が効きやすい。\n\nもし信用が悪化すれば、\n貸し手が慎重になる\n→ 金利上乗せ幅＝スプレッド拡大\n→ 自己資金をもっと求められる\n→ 担保・保証・融資条件が厳しくなる\n→ 必要額を借りにくくなる\n→ データセンター建設延期・縮小\n→ GPU購入の減少・後ずれ\n→ NVIDIAなどの業績予想にも影響する可能性。\n\nこれは将来の波及仮説です。すべてが既に起きた事実ではなく、条件は同時に変わることもあります。高い金利さえ払えば必ず借りられるわけでもありません。\n\n「NVDA最高値更新」と「信用市場の警戒」は矛盾しません。\n表側は株式市場の成長期待。裏側は貸し手の返済・担保への評価。見ているものが違うからです。\n\n僕の仮説は「今後のAI相場はGPU需要だけでは不十分。そのGPUやデータセンターを買うお金を調達できるかが、次の重要テーマになる」です。\n今回の水準だけから金融危機とは判断しません。短期間で悪化する速さと、他案件への広がりを追います。\n\n次に見る6項目\n①信用スプレッド\n②AI/DC融資の金利・自己資金・担保・保証条件\n③プロジェクト延期・縮小とその理由\n④米10年金利\n⑤NVDAの高値圏維持\n⑥AI企業のIPO・増資など株式調達\n\nスプレッドが落ち着き、調達が成立し、建設が計画通り進めば警戒仮説を弱めます。延期には電力・許認可など別の原因もあり、借金のせいと決めつけません。\n\n確認日10/3。株価10/2、FRED10/1観測。\n出典：\nhttps://t.co/wH16P3YdzT\nhttps://t.co/EVG7RZEWaf\nhttps://t.co/HuyJbgbSTk\nhttps://t.co/QNgFmQxJbA\nhttps://t.co/buIROmmZw0\nhttps://t.co/qsfg6jaAS3\n\nAI需要が消えるかどうかではない。巨額のAI投資を誰が、どんな条件でファイナンスするのか。ここが次の相場の分岐点になると見ています。",
-      "createdAtISO": "2026-10-03T06:25:48+00:00",
+      "text": "哇偶，感觉 DeepSeek Harness 正在开启 Agent 领域的 Linux 时刻，说是DeepSeek 放了个核弹级大招也不为过，所有做 AI Agent、搞代码自动化和本地工作流的铁汁都可以去下载体验啦，\n\n为什么这么说呢，我觉得它打破了所有闭源工具把模型和界面死死绑定的垄断做法，做到了连 Agent 循环本身都能热插拔，\n从双击运行的桌面端，到数百个开源插件自由组合，这篇我跟大家用大白话详细讲清楚， DeepSeek 真正想做的是下一代开源基建，\n\n他们正式为开源 Agent 框架 DeepSeek Harness（dsh）发布了原生的 macOS 和 Windows 桌面安装包，Linux 也可以通过 npm 一行命令直接跑， \n\n这意味着从今天起，一个完全不被任何大厂生态绑架、零门槛双击即用的顶级开源 AI 智体底座，正式端到了所有普通用户的桌面上。\n\n一句大变化概括这件事的本质就是： Claude Code 把 Agent 锁在闭源模型和订阅制里，而 DeepSeek 把整个 Agent 的神经中枢、工具沙箱与插件系统全部拆解开源，并用开箱即用的原生桌面端彻底砸穿了本地部署的门槛。\n\n现在绝大多数想在本地用 AI 解决复杂工程、自动化办公的人，都在经历同一种极度痛苦的折磨：\n 用闭源工具，每天面对按 token 计费的昂贵账单和随时被封号限流的窝囊气，\n 转去折腾开源框架，又得在终端里配环境、搞 node 版本、修权限依赖，还没开始干活就被报错劝退， 更致命的是，市面上绝大多数 Agent 框架的底层循环是写死的，想换个模型、加个新工具就像动一场开颅手术。\n\n我把 DeepSeek Harness 这次杀穿行业的三大核心维度给大家拆解透：\n\n第一个，生产力底座的范式革命：\n一切皆插件，连 Agent 循环本身都能热插拔 DeepSeek Harness 绝不是又一个简单的聊天外壳或套壳 IDE，它的核心哲学叫 Everything is a Plugin。 \n\n在它的架构里没有特权核心：\n → 接入的模型是插件，DeepSeek、Kimi、Claude 或本地 Ollama 随便切；\n\n → 运行的环境是插件，从终端 CLI、沉浸式 TUI 到本地 Web UI 和桌面客户端自由组合；\n\n → 甚至连 Agent 的思考循环、任务分发与反思验证机制，都可以作为插件随时卸载、重组与热替换； 你不是在用某一家公司的工具，而是在搭积木一样定制属于你自己的专属工作机。\n\n第二个，工程落地的降维暴击：从极客命令行直接跃迁到双击即用的桌面端 过去几个月 Harness 在开源社区狂飙突进，但很多人依然被 npm 权限和终端指令卡在门外。 \n\n这次官方直接打包出 macOS 和 Windows 的独立桌面应用： 你不需要懂复杂的编程环境配置，下载安装包、填入 API Key、选中工作目录， \n\n它就能像资深架构师一样接管本地文件、自动跨文件搜索分析、运行测试、修 Bug 并生成完整的执行溯源链路， 把原本属于极客的自动化超能力，直接变成了人手一个的系统级生产力工具。\n\n第三个，生态开放与资产主权闭环：\n把工具定义权彻底还给开发者 闭源平台把用户圈在自己的围墙花园里，而 DeepSeek 选择了最彻底的开源与去中心化。 \n\n它完美兼容 MCP（模型上下文协议）和社区数百个开源插件： 你的代码历史、本地知识库、自动化测试脚本和会话记忆全部沉淀在本地， 敏感项目绝不上传任何未授权的云端， 模型负责在远端提供算力，而真正的工具链、工作流与核心资产，从第一天起就死死攥在用户自己手里。\n\n真实历史与数据硬核印证： \n→ 开源演进的代际规律： 从当年封闭的商业 Unix 到自由的 Linux，底层操作系统的开放最终繁衍出了整个互联网；DeepSeek Harness 正在将 Agent 的底层执行框架推向同样的 Linux 时刻； \n→ 成本与算力的解绑战报： 配合 DeepSeek 极致性价比的推理定价，跑通原本在闭源旗舰上需要几十美金的百轮复杂长任务，在本地 Harness 上只需几毛钱即可完成；\n → 社区生态的指数裂变： 从代码审查、多模态视觉桥接（ModLens）到跨项目记忆同步，GitHub 上 dsh-plugin 话题下已有数百个开源项目开箱即用。\n\n但褪去台前的宏大光环，硬币的反面极其冷峻：\n → 自由度的代价是配置认知： 插件化赋予了极高的定制上限，但也意味着用户需要对模型特性、上下文窗口和工具调用边界有基本认知，才能组装出最顺手的流水线； \n→ 开源生态的初期兼容性博弈： 随着各家大模型接口频繁迭代，部分社区第三方插件在极端复杂边缘场景下，依然需要开发者具备一定的调试能力； \n→ 算力底座的智力分水岭： Harness 解决了执行框架和手脚问题，但任务长链条规划的上限，依然取决于你挂载的大脑模型本身的推理硬实力。\n\n过去我们以为 Agent 竞争比的是谁的模型名字更响亮，\n现在 DeepSeek 证明了，真正决定生产力未来的，是把模型变成插件、把执行权完整交还给用户的开源基础设施。\n\n你们平时在本地跑代码和工作流，最被困扰的是环境配置太烦、闭源 API 账单太贵，还是工具生态太封闭？我的感受是以前天天在各种工具之间切来切去导上下文，现在一个完全开源可定制的本地 Harness，终于把所有的手脚给聚齐了，很爽～",
+      "createdAtISO": "2026-10-02T10:45:31+00:00",
       "isRetweet": false,
-      "source": "search-top-11.json",
-      "url": "https://x.com/i/status/2106269468384985448",
-      "candidate_text": "NVIDIAが最高値を更新しました。でも僕はいま、株価より別の数字を見ています。  NVIDIA最高値。でも本当に安心していい？  10/2のNVDAは取引時間中に最高値を更新。終値233.95ドルは終値最高値を更新していません。株価は強い。一方で、AI投資を支える信用市場には警戒材料があります。  信用＝Creditとは「返してもらえるという信用をもとに、お金を貸すこと」。米10年金利が借入金利の土台なら、信用スプレッドは貸し手が信用リスクに求める上乗せ金利です。  FREDの米10年金利は最新観測10/1で5.24%。米社債スプレッドは9/25〜10",
+      "source": "search-top-04.json",
+      "url": "https://x.com/i/status/2105972440010514521",
+      "candidate_text": "哇偶，感觉 DeepSeek Harness 正在开启 Agent 领域的 Linux 时刻，说是DeepSeek 放了个核弹级大招也不为过，所有做 AI Agent、搞代码自动化和本地工作流的铁汁都可以去下载体验啦，  为什么这么说呢，我觉得它打破了所有闭源工具把模型和界面死死绑定的垄断做法，做到了连 Agent 循环本身都能热插拔， 从双击运行的桌面端，到数百个开源插件自由组合，这篇我跟大家用大白话详细讲清楚， DeepSeek 真正想做的是下一代开源基建，  他们正式为开源 Agent 框架 DeepSeek Harness（dsh）发布了原生的 ",
       "candidate_context": {
-        "category": "財經",
+        "category": "開發者工具",
         "selection_lane": "discovery",
-        "selection_score": 6.7644,
+        "selection_score": 6.7954,
         "quality_signals": [
-          "measurement",
-          "report_or_policy_claim",
+          "release_or_fix",
+          "technical_detail",
           "substantive_length"
         ],
         "sources": [
-          "search-top-11.json"
+          "search-top-04.json"
+        ],
+        "claim_kind_hint": "release_claim",
+        "first_person_hint": false
+      }
+    },
+    {
+      "id": "2106309656893071823",
+      "author": {
+        "screenName": "guifav",
+        "name": "Guilherme Favaron"
+      },
+      "text": "Your agent benchmark scores a pair: the model plus the harness that runs it. Swap the harness and the ranking flips.\n\nNTU ran 66 configurations: 4 configurable harnesses x 5 models x 3 benchmarks, plus Codex and Claude Code natives. On Terminal-Bench 4, Claude Opus 5 beats GPT-6 Astra by 7.94 points in OpenHands. In PI, GPT-6 Astra wins by 30.16.\n\nThe best harness changed across benchmarks for 4 of 5 models. Codex never gave GPT-6 Astra its top score.\n\nOn Terminal-Bench 4, GPT-6 Astra in PI scored 60.32% at $4.66 per task. In DeepSeek Harness it scored 52.38% at $19.94, with 4.6x the calls.\n\nMatched trajectories point to failure handling. In 10 matched pairs, models initiated 180 of 192 responses to failure signals. The harness decides if a failure reaches the model:\n- PI's shell has no default timeout. 34 runs hung on a final command with no signal.\n- The OpenHands stuck detector ended 55 runs, 48 of them Kimi K3 re-sending a malformed edit.\n- openJiuwen resumes turns cut by the output cap. 48 of 100 resumed runs went on to score above zero.\n\nNo harness gives the agent the acceptance criterion. Of 45 failed Terminal-Bench 4 tasks for openJiuwen + Kimi K3, 35 ended in a report, and all 35 claimed every requirement was verified.\n\nOne run per task; variance unmeasured.\n\nEvaluate model, harness and task as one unit, and hand the agent the acceptance test where the task allows.\n\nhttps://t.co/q3g4HD9f1P\n@NTUsg @OpenHandsDev @AnthropicAI @OpenAI @Kimi_Moonshot @deepseek_ai",
+      "createdAtISO": "2026-10-03T09:05:30+00:00",
+      "isRetweet": false,
+      "source": "search-latest-00.json",
+      "url": "https://x.com/i/status/2106309656893071823",
+      "candidate_text": "Your agent benchmark scores a pair: the model plus the harness that runs it. Swap the harness and the ranking flips.  NTU ran 66 configurations: 4 configurable harnesses x 5 models x 3 benchmarks, plus Codex and Claude Code natives. On Terminal-Bench 4, Claude Opus 5 beats GPT-6 ",
+      "candidate_context": {
+        "category": "OpenClaw／Agent 生態",
+        "selection_lane": "discovery",
+        "selection_score": 6.7491,
+        "quality_signals": [
+          "technical_detail",
+          "measurement",
+          "substantive_length"
+        ],
+        "sources": [
+          "search-latest-00.json"
         ],
         "claim_kind_hint": "measurement_claim",
         "first_person_hint": false,
-        "measurement_context_hint": []
+        "measurement_context_hint": [
+          "model_or_precision",
+          "method"
+        ]
       }
     },
     {
@@ -1650,85 +1628,25 @@
       "text": "Broadcom（AVGO）\n\n【どんな会社？】\n通信用や顧客仕様の半導体、企業向けソフトウェアを手がける会社です。AI向けでは、専用半導体や周辺の通信技術などを供給します。\n\n【株価】\n本日休場。\n【要更新：米国現地2026年10月2日の通常取引終値（米ドル）と、10月1日終値比（金額・率）】\n作成時点では10月2日の通常取引が未終了のため、終値を確定できません。\n\n【なぜ今、注目？】\n4月6日のForm 8-Kでは、Anthropicが2027年からBroadcomを通じて約3.5GWのTPU計算資源にアクセスする計画を開示しました。10月1日のReutersは目論見書に基づき、最大420億ドルの資金支援の取り決めも報道。後者は報道に基づく情報として区別します。\n\n【業績・株価を見るポイント】\nAI向け半導体の企業を見るときは、販売できる量に加え、誰が設備を用意し、顧客からいつ代金を回収するかも重要になります。供給する企業が資金面でも支える場合、成長機会と顧客への依存が同時に大きくなる可能性があります。\n\n会社の開示も、計算資源の利用拡大がAnthropicの商業的な成功に依存すると説明しています。契約が大きいことと、その契約が利益・現金へ変わることは別の確認事項です。契約総額、資金支援額、売上高を足し合わせて事業規模とするのは適切ではありません。\n\n週末は、供給計画の稼働時期と顧客の資金調達をつないで考えます。IPOへの期待だけでなく、サービス需要が契約履行を支えられるかを追いたいところです。\n\n【次に確認したいこと】\n・計算資源の稼働開始と、資金支援の条件を確認します。\n・大口顧客への集中、売上計上と回収の時間差を次の開示で追います。\n\n📌 明日6:00は日本のAI基盤企業の利益と投資負担、12:00はAI導入企業の収益化を深掘りします。\n\n出典：\n・Google・Anthropicとの協業に関するForm 8-K／2026年4月6日\nhttps://t.co/ZfY8YHO5LK\n・Anthropic向け最大420億ドルの資金支援に関する報道／Reuters、2026年10月1日\nhttps://t.co/AsRocmi2Kz\n・株価：Yahoo!ファイナンス／米国現地10/2通常取引終了後の更新用\nhttps://t.co/xLaP2Y9MaI\n\n企業公式HP：\nhttps://t.co/nTfaTjNWGh",
       "createdAtISO": "2026-10-03T09:00:03+00:00",
       "isRetweet": false,
-      "source": "search-top-11.json",
+      "source": "search-top-10.json",
       "url": "https://x.com/i/status/2106308285385056582",
       "candidate_text": "Broadcom（AVGO）  【どんな会社？】 通信用や顧客仕様の半導体、企業向けソフトウェアを手がける会社です。AI向けでは、専用半導体や周辺の通信技術などを供給します。  【株価】 本日休場。 【要更新：米国現地2026年10月2日の通常取引終値（米ドル）と、10月1日終値比（金額・率）】 作成時点では10月2日の通常取引が未終了のため、終値を確定できません。  【なぜ今、注目？】 4月6日のForm 8-Kでは、Anthropicが2027年からBroadcomを通じて約3.5GWのTPU計算資源にアクセスする計画を開示しました。10月1日のRe",
       "candidate_context": {
         "category": "AI 模型與研究",
         "selection_lane": "discovery",
-        "selection_score": 6.747,
+        "selection_score": 6.7459,
         "quality_signals": [
           "measurement",
           "report_or_policy_claim",
           "substantive_length"
         ],
         "sources": [
+          "search-top-10.json",
           "search-top-11.json"
         ],
         "claim_kind_hint": "measurement_claim",
         "first_person_hint": false,
         "measurement_context_hint": []
-      }
-    },
-    {
-      "id": "2106306906587570665",
-      "author": {
-        "screenName": "aikabulab",
-        "name": "AI株ラボ｜漫画でわかる決算"
-      },
-      "text": "AI設備の増設で、計算チップと通信部品の両方の注文が増える。Broadcom（AVGO）で期待するのは、この稼ぎ方の広さです。\n\n顧客向けに設計する専用AIチップは計算を担い、ネットワーク半導体は大量のデータを運びます。計算能力を増やす設備投資は、通信を強くする投資にもつながる。Broadcomはその両方を供給しています。\n\n9/2発表の決算では、AI半導体の四半期売上が167億ドル、前年同期比221％増。会社は専用AIチップとネットワークの強い需要を説明し、次の四半期は217億ドルを予想しています。これは会社予想で、まだ実績ではありません。\n\n私が期待しているのは、大口顧客の増設が続くほど、計算と通信の両方で追加注文を取り込むこと。計算用チップだけでなく、データを運ぶ部品も追加で売れる会社として見ています。\n\n大口顧客が投資を延期したり、他社製品へ注文を移したりすれば、この伸び方は崩れます。また、AI半導体だけの利益は今回の資料で分からず、売上の増加率をそのまま利益の増加率にはできません。\n\n10/3時点。根拠：\nhttps://t.co/k8H9PblG7S",
-      "createdAtISO": "2026-10-03T08:54:34+00:00",
-      "isRetweet": false,
-      "source": "search-latest-10.json",
-      "url": "https://x.com/i/status/2106306906587570665",
-      "candidate_text": "AI設備の増設で、計算チップと通信部品の両方の注文が増える。Broadcom（AVGO）で期待するのは、この稼ぎ方の広さです。  顧客向けに設計する専用AIチップは計算を担い、ネットワーク半導体は大量のデータを運びます。計算能力を増やす設備投資は、通信を強くする投資にもつながる。Broadcomはその両方を供給しています。  9/2発表の決算では、AI半導体の四半期売上が167億ドル、前年同期比221％増。会社は専用AIチップとネットワークの強い需要を説明し、次の四半期は217億ドルを予想しています。これは会社予想で、まだ実績ではありません。  私が期待",
-      "candidate_context": {
-        "category": "AI 模型與研究",
-        "selection_lane": "discovery",
-        "selection_score": 6.7427,
-        "quality_signals": [
-          "measurement",
-          "report_or_policy_claim",
-          "substantive_length"
-        ],
-        "sources": [
-          "search-latest-10.json"
-        ],
-        "claim_kind_hint": "measurement_claim",
-        "first_person_hint": false,
-        "measurement_context_hint": []
-      }
-    },
-    {
-      "id": "2106239837791559907",
-      "author": {
-        "screenName": "JCLoreian",
-        "name": "Kai Cheung"
-      },
-      "text": "With DGX Spark prices flying high, using Strata by @coldniko running on consumer hardware with Qwen3.8-Flash-next, it achieves high speed for inference and prefill providing an alternative for local AI.\n\nFrom the repo, requirement for hardware:\n\nGraphics card: \n- NVIDIA GeForce RTX 20, 30, 40 or 50 series;\n- AMD Radeon RX 7900 XT / XTX, RX 7800 XT / 7700 XT, RX 9060 XT, RX 9070 / 9070 XT, Radeon AI PRO R9700 or RX 6800 / 6900 series - with 12 GB of VRAM or more.\n- More vram the better.\n\nRAM:\n- 32 GB+ need to choose a model size; \n- With 64 GB runs every size.\n\nHard Drive:\n-  80 GB free.\n\nSystem: \n- Win10/11 or Linux.\n\nRepo: https://t.co/x8Yosy8WLW\n\nGiven those specs, here are some machines using the 64GB RAM + graphics card combo at Canada Computers that are of good value:\n\nhttps://t.co/3uJYXBCWux\n\nhttps://t.co/kLUMNdeunH\n\nhttps://t.co/PQloX7RPdh",
-      "createdAtISO": "2026-10-03T04:28:04+00:00",
-      "isRetweet": false,
-      "source": "search-top-07.json",
-      "url": "https://x.com/i/status/2106239837791559907",
-      "candidate_text": "With DGX Spark prices flying high, using Strata by @coldniko running on consumer hardware with Qwen3.8-Flash-next, it achieves high speed for inference and prefill providing an alternative for local AI.  From the repo, requirement for hardware:  Graphics card:  - NVIDIA GeForce R",
-      "candidate_context": {
-        "category": "AI 模型與研究",
-        "selection_lane": "discovery",
-        "selection_score": 6.5394,
-        "quality_signals": [
-          "technical_detail",
-          "measurement",
-          "substantive_length"
-        ],
-        "sources": [
-          "search-top-07.json"
-        ],
-        "claim_kind_hint": "measurement_claim",
-        "first_person_hint": false,
-        "measurement_context_hint": [
-          "hardware",
-          "method"
-        ]
       }
     },
     {
@@ -1746,7 +1664,7 @@
       "candidate_context": {
         "category": "OpenClaw／Agent 生態",
         "selection_lane": "discovery",
-        "selection_score": 6.5341,
+        "selection_score": 6.5327,
         "quality_signals": [
           "technical_detail",
           "measurement",
@@ -1765,63 +1683,6 @@
       }
     },
     {
-      "id": "2105980130661367811",
-      "author": {
-        "screenName": "ChainBeautyFaye",
-        "name": "菲菲Faye"
-      },
-      "text": "前几天微软新版Copilot发一出，股价冲到516美元，创下去年11月以来收盘新高。\n\n这次更新改动升级成能主动干活的AI智能体，整合办公、自动搭建工具、跨流程执行任务。现在付费席位已经破3000万，但渗透率才6%-7%，上涨空间还是蛮大的，收费模式也改成基础席位+按量计费。\n\n市场看好微软想借着Office、Azure这套体系，拿下企业AI时代的底层生态。当然企业会不会高频用、能不能真的省下人力成本，AI收入能不能扛住高昂的算力开销。企业到底愿不愿意持续掏钱买AI，还得继续观察。\n#Copilot",
-      "createdAtISO": "2026-10-02T11:16:05+00:00",
-      "isRetweet": false,
-      "source": "search-top-05.json",
-      "url": "https://x.com/i/status/2105980130661367811",
-      "candidate_text": "前几天微软新版Copilot发一出，股价冲到516美元，创下去年11月以来收盘新高。  这次更新改动升级成能主动干活的AI智能体，整合办公、自动搭建工具、跨流程执行任务。现在付费席位已经破3000万，但渗透率才6%-7%，上涨空间还是蛮大的，收费模式也改成基础席位+按量计费。  市场看好微软想借着Office、Azure这套体系，拿下企业AI时代的底层生态。当然企业会不会高频用、能不能真的省下人力成本，AI收入能不能扛住高昂的算力开销。企业到底愿不愿意持续掏钱买AI，还得继续观察。 #Copilot",
-      "candidate_context": {
-        "category": "開發者工具",
-        "selection_lane": "discovery",
-        "selection_score": 6.5268,
-        "quality_signals": [
-          "release_or_fix",
-          "measurement",
-          "substantive_length"
-        ],
-        "sources": [
-          "search-top-05.json"
-        ],
-        "claim_kind_hint": "measurement_claim",
-        "first_person_hint": false,
-        "measurement_context_hint": []
-      }
-    },
-    {
-      "id": "2106028950740775012",
-      "author": {
-        "screenName": "RahulSain714",
-        "name": "Rahul Sain"
-      },
-      "text": "Evaluating LLM safety just got easier. Innodata released an open-source LLM Evaluation Toolkit and 14 datasets on GitHub to benchmark Llama2, Mistral, Gemma, and GPT for factuality, toxicity, bias, and hallucination.\n#OpenSource #LLM #AI",
-      "createdAtISO": "2026-10-02T14:30:04+00:00",
-      "isRetweet": false,
-      "source": "search-top-01.json",
-      "url": "https://x.com/i/status/2106028950740775012",
-      "candidate_text": "Evaluating LLM safety just got easier. Innodata released an open-source LLM Evaluation Toolkit and 14 datasets on GitHub to benchmark Llama2, Mistral, Gemma, and GPT for factuality, toxicity, bias, and hallucination. #OpenSource #LLM #AI",
-      "candidate_context": {
-        "category": "AI 模型與研究",
-        "selection_lane": "discovery",
-        "selection_score": 6.4462,
-        "quality_signals": [
-          "release_or_fix",
-          "technical_detail",
-          "substantive_length"
-        ],
-        "sources": [
-          "search-top-01.json"
-        ],
-        "claim_kind_hint": "release_claim",
-        "first_person_hint": false
-      }
-    },
-    {
       "id": "2106087723752948073",
       "author": {
         "screenName": "rapidmlx",
@@ -1836,7 +1697,7 @@
       "candidate_context": {
         "category": "AI 模型與研究",
         "selection_lane": "discovery",
-        "selection_score": 6.3472,
+        "selection_score": 6.3458,
         "quality_signals": [
           "technical_detail",
           "measurement",
@@ -1867,7 +1728,36 @@
       "candidate_context": {
         "category": "財經",
         "selection_lane": "discovery",
-        "selection_score": 6.3357,
+        "selection_score": 6.3349,
+        "quality_signals": [
+          "measurement",
+          "report_or_policy_claim",
+          "substantive_length"
+        ],
+        "sources": [
+          "search-latest-08.json"
+        ],
+        "claim_kind_hint": "measurement_claim",
+        "first_person_hint": false,
+        "measurement_context_hint": []
+      }
+    },
+    {
+      "id": "2106308285288640878",
+      "author": {
+        "screenName": "mylifcc",
+        "name": "lifcc"
+      },
+      "text": "过去 100 天，AI 悄悄干了一件事：给病人看病。\n\n一、AI 第一次拿到\"放行权\"\n\n9 月 2 日，Vara 的乳腺筛查 AI 拿到欧盟 CE 认证。AI 判定为\"明显正常\"的乳腺片子，可以不经放射科医生阅片，直接放行。它此前参与过一项覆盖 46 万女性的大型研究。\n\n这是 AI 第一次在大规模癌症筛查里自己做决定。\n\n二、成绩单确实好看\n\nGoogle 的 AMIE 在《Nature》发表了一项盲测：100 个复诊病例，跟 21 名全科医生比。AI 给出的治疗方案合格率是 95–98%，人类医生是 72–81%。\n\nOpenAI 跟肯尼亚 Penda Health 合作，在约 4 万次真实门诊里给医生当\"安全网\"：诊断错误降了 16%，治疗错误降了 13%。\n\n三、医保开始谈钱了\n\n据《纽约时报》报道，美国 Medicare 在讨论给\"AI 医生\"付诊费，标准是人类医生的 60–80%。\n\n一旦医保开始为它付钱，这件事就不再是技术演示，而是一门生意了。\n\n四、数据的另一面，同样来自这 100 天\n\nFDA 批过的 1,357 个 AI 医疗设备里，只有 3 个评估过病人的实际结局。\n纪念斯隆-凯特琳癌症中心的研究：AI 写病历摘要，关键指标准确率 95%（人类 72%），但编造内容的比例是人类的 6 倍。\n一款皮肤癌 App 被算出\"更省钱\"，原因是它漏掉的黑色素瘤更多：检出率 60% 对 87%。\n肯尼亚那个项目里，医生犯的错确实少了，但病人自己报告的康复情况没有变化。\n\n\"AI 比医生答得好\"和\"病人因此活得更好\"，中间还隔着一大段距离。\n\n五、真正跨过的那条线\n\nAI 从\"能不能用\"进入了\"谁来负责\"的阶段。\n\n加州 9 月 30 日刚签了 AB 1979，明年起禁止 AI 单独执业。监管、医保、医院正在同时下注，而病人是第一批真实样本。\n\n你会让 AI 单独看你的片子吗？",
+      "createdAtISO": "2026-10-03T09:00:03+00:00",
+      "isRetweet": false,
+      "source": "search-latest-08.json",
+      "url": "https://x.com/i/status/2106308285288640878",
+      "candidate_text": "过去 100 天，AI 悄悄干了一件事：给病人看病。  一、AI 第一次拿到\"放行权\"  9 月 2 日，Vara 的乳腺筛查 AI 拿到欧盟 CE 认证。AI 判定为\"明显正常\"的乳腺片子，可以不经放射科医生阅片，直接放行。它此前参与过一项覆盖 46 万女性的大型研究。  这是 AI 第一次在大规模癌症筛查里自己做决定。  二、成绩单确实好看  Google 的 AMIE 在《Nature》发表了一项盲测：100 个复诊病例，跟 21 名全科医生比。AI 给出的治疗方案合格率是 95–98%，人类医生是 72–81%。  OpenAI 跟肯尼亚 Pen",
+      "candidate_context": {
+        "category": "產業",
+        "selection_lane": "discovery",
+        "selection_score": 6.3348,
         "quality_signals": [
           "measurement",
           "report_or_policy_claim",
@@ -1896,7 +1786,7 @@
       "candidate_context": {
         "category": "OpenClaw／Agent 生態",
         "selection_lane": "anchor",
-        "selection_score": 6.2921,
+        "selection_score": 6.2907,
         "quality_signals": [
           "release_or_fix",
           "substantive_length",
@@ -1912,28 +1802,28 @@
       }
     },
     {
-      "id": "2106308285288640878",
+      "id": "2106291670098805027",
       "author": {
-        "screenName": "mylifcc",
-        "name": "lifcc"
+        "screenName": "cooper_cin21979",
+        "name": "悟"
       },
-      "text": "过去 100 天，AI 悄悄干了一件事：给病人看病。\n\n一、AI 第一次拿到\"放行权\"\n\n9 月 2 日，Vara 的乳腺筛查 AI 拿到欧盟 CE 认证。AI 判定为\"明显正常\"的乳腺片子，可以不经放射科医生阅片，直接放行。它此前参与过一项覆盖 46 万女性的大型研究。\n\n这是 AI 第一次在大规模癌症筛查里自己做决定。\n\n二、成绩单确实好看\n\nGoogle 的 AMIE 在《Nature》发表了一项盲测：100 个复诊病例，跟 21 名全科医生比。AI 给出的治疗方案合格率是 95–98%，人类医生是 72–81%。\n\nOpenAI 跟肯尼亚 Penda Health 合作，在约 4 万次真实门诊里给医生当\"安全网\"：诊断错误降了 16%，治疗错误降了 13%。\n\n三、医保开始谈钱了\n\n据《纽约时报》报道，美国 Medicare 在讨论给\"AI 医生\"付诊费，标准是人类医生的 60–80%。\n\n一旦医保开始为它付钱，这件事就不再是技术演示，而是一门生意了。\n\n四、数据的另一面，同样来自这 100 天\n\nFDA 批过的 1,357 个 AI 医疗设备里，只有 3 个评估过病人的实际结局。\n纪念斯隆-凯特琳癌症中心的研究：AI 写病历摘要，关键指标准确率 95%（人类 72%），但编造内容的比例是人类的 6 倍。\n一款皮肤癌 App 被算出\"更省钱\"，原因是它漏掉的黑色素瘤更多：检出率 60% 对 87%。\n肯尼亚那个项目里，医生犯的错确实少了，但病人自己报告的康复情况没有变化。\n\n\"AI 比医生答得好\"和\"病人因此活得更好\"，中间还隔着一大段距离。\n\n五、真正跨过的那条线\n\nAI 从\"能不能用\"进入了\"谁来负责\"的阶段。\n\n加州 9 月 30 日刚签了 AB 1979，明年起禁止 AI 单独执业。监管、医保、医院正在同时下注，而病人是第一批真实样本。\n\n你会让 AI 单独看你的片子吗？",
-      "createdAtISO": "2026-10-03T09:00:03+00:00",
+      "text": "欧盟反垄断的铁拳终于砸到云计算头上了。彭博社透露欧盟委员会计划在11月把微软Azure和亚马逊AWS正式列为数字市场法案的守门人。虽然两家的用户规模没达到常规指标，但监管认定客户转出成本太高，而且AI算力全锁在自家里。一旦敲定，半年内必须开放生态、允许客户自由迁移数据，违规最高罚全球营收的20%，两家之前拼命游说抗议看来全白费了。",
+      "createdAtISO": "2026-10-03T07:54:01+00:00",
       "isRetweet": false,
-      "source": "search-latest-08.json",
-      "url": "https://x.com/i/status/2106308285288640878",
-      "candidate_text": "过去 100 天，AI 悄悄干了一件事：给病人看病。  一、AI 第一次拿到\"放行权\"  9 月 2 日，Vara 的乳腺筛查 AI 拿到欧盟 CE 认证。AI 判定为\"明显正常\"的乳腺片子，可以不经放射科医生阅片，直接放行。它此前参与过一项覆盖 46 万女性的大型研究。  这是 AI 第一次在大规模癌症筛查里自己做决定。  二、成绩单确实好看  Google 的 AMIE 在《Nature》发表了一项盲测：100 个复诊病例，跟 21 名全科医生比。AI 给出的治疗方案合格率是 95–98%，人类医生是 72–81%。  OpenAI 跟肯尼亚 Pen",
+      "source": "search-top-08.json",
+      "url": "https://x.com/i/status/2106291670098805027",
+      "candidate_text": "欧盟反垄断的铁拳终于砸到云计算头上了。彭博社透露欧盟委员会计划在11月把微软Azure和亚马逊AWS正式列为数字市场法案的守门人。虽然两家的用户规模没达到常规指标，但监管认定客户转出成本太高，而且AI算力全锁在自家里。一旦敲定，半年内必须开放生态、允许客户自由迁移数据，违规最高罚全球营收的20%，两家之前拼命游说抗议看来全白费了。",
       "candidate_context": {
         "category": "產業",
         "selection_lane": "discovery",
-        "selection_score": 6.2503,
+        "selection_score": 6.1942,
         "quality_signals": [
           "measurement",
           "report_or_policy_claim",
           "substantive_length"
         ],
         "sources": [
-          "search-latest-08.json"
+          "search-top-08.json"
         ],
         "claim_kind_hint": "measurement_claim",
         "first_person_hint": false,
@@ -1941,31 +1831,35 @@
       }
     },
     {
-      "id": "2106060053497426019",
+      "id": "2105951094027526626",
       "author": {
-        "screenName": "mostofakamal00",
-        "name": "Mostofa |AI Tools & News"
+        "screenName": "aisignallog",
+        "name": "AI Signal Log"
       },
-      "text": "🚀 I’ve stopped thinking of AI as “just an LLM.\n\nA production-grade AI system is an entire engineering stack.\n\nThe LLM is only one layer.\n\nIf you want to build serious Agentic AI systems, this is the architecture you need to understand:👇\n\n1. Frontend\nReact → Next.js → Streamlit\n\n2. Data ingestion\nOCR → Apache Tika → Microsoft Fabric\n\n3. Processing\nspaCy → Hugging Face → LangChain\n\n4. Embeddings\nOpenAI → Cohere → Azure\n\n5. Vector storage\nPostgreSQL → Cosmos DB → FAISS → Milvus\n\n6. Retrieval\nAzure AI Search → LangChain → LlamaIndex\n\n7. Prompt / orchestration\nLangChain → DSPy → structured prompting\n\n8. Intelligence\nOpenAI → Llama → Mistral → Azure AI\n\n9. Deployment\nDocker → Kubernetes → AKS → Azure Container Apps\n\n10. Evaluation & observability\nAzure AI Foundry → OpenTelemetry → Grafana\n\nBut the real value appears when these layers work together.\n\nExample #1 — Enterprise Knowledge Agent 📚\nA company has thousands of PDFs, policies and internal documents.\n\nThe agent can:\nUpload → OCR → Chunk → Embed → Store → Retrieve → Reason \n\n Answer\n\nInstead of searching through hundreds of documents manually, employees can ask:\n\n“What is our refund policy for enterprise customers?”\n\nThe system retrieves the relevant information and generates an answer based on the company's knowledge base.\n\nExample #2 — AI Research Agent 🔎\nImagine an agent researching a new technology.\n\nIt can:\nUnderstand the question\n↓\nSearch multiple sources\n↓\nRetrieve relevant information\n↓\nCompare results\n↓\nUse tools when necessary\n↓\nGenerate a structured report\n↓\nEvaluate the output\nThe important part isn't just generating text.\n\nIt's building a system that can retrieve, reason, use tools and verify.\n\nExample #3 — AI Customer Support Agent 🤖\nA production support agent could:\nReceive customer request\n↓\nUnderstand intent\n↓\nSearch customer knowledge base\n↓\nRetrieve account information\n↓\nCall an external tool/API\n↓\nTake an approved action\n↓\nVerify the result\n↓\nRespond to the customer\n\nFor example:\n\n“My order hasn't arrived. Can you check the status?”\nThe agent can retrieve the order, check the delivery API, understand the result and respond — without a human manually searching multiple systems.\n\n🧠 The biggest lesson\nDon't try to memorize every AI framework.\n\nUnderstand the architecture.\n\nData → Retrieval → Context → Reasoning → Tools → Action → Evaluation → Deployment\nOnce you understand that flow, individual tools become much easier to learn.\n\nAI Engineering isn't about knowing one powerful model.\n\nIt's about knowing how to turn models, data, tools and infrastructure into a reliable system that actually works in production.\n\n🔖 Save this roadmap.\n\nFollow me @mostofakamal00 for practical AI tools, workflows, prompts & Agentic AI insights.\n\n#AgenticAI #AIAgents #AIEngineering #LLM #RAG #GenerativeAI #MachineLearning",
-      "createdAtISO": "2026-10-02T16:33:40+00:00",
+      "text": "【AI Signal Log】Metaは「最高のAI」を売る会社ではなくなる\n\n― Social GraphからPersonal Superintelligenceへ。人間とAIの接点を握る10年戦略\n\nGoogle、Microsoft、AmazonのAI戦略を見てきた。\n\nGoogleは、AIが安くなってもContextとDistributionを持つ。\n\nMicrosoftは、modelが交換可能になってもIdentity、Workflow、Trustを持つ。\n\nAmazonは、どのmodelが勝ってもCompute、Transaction、Execution Infrastructureから利益を取れる。\n\nではMetaは何を持っているのか。\n\nAWSのような巨大Cloudではない。\n\nWindowsやMicrosoft 365のようなEnterprise OSでもない。\n\nAmazonのような物流networkでもない。\n\nMetaが持っているものは、\n\n人間そのものに近い。\n\n誰とつながっているか。\n\n何を見ているか。\n\n何に反応するか。\n\n何を保存したか。\n\n誰と会話しているか。\n\n何に興味を持っているか。\n\nFacebook、Instagram、WhatsApp、Messenger、Threadsを通して蓄積された巨大なSocial Contextである。\n\n2026年6月時点で、MetaのFamily of Appsの日次利用者は36億人に達している。\n\nMetaの今後10年を考えるなら、このSocial Graphを、\n\nPersonal Context Graph\n\nへ変えていく会社だと見ると分かりやすい。\n\n「24時間その人のために働くAI」\n\n2026年8月、Mark ZuckerbergはMetaの長期AI構想をかなり明確に書いた。\n\n将来、誰もが自分自身を理解するpersonal agentを持つ。\n\nそのagentは、その人の目標や価値観を理解し、\n\nrelationships\nhealth\ncareer\nfinances\nhome management\nhobbies\n\nなどについて、\n\n24時間、その人のために働く。\n\nMetaはこれを「personal superintelligence」と呼んでいる。しかも可能な限り無料、あるいは安価に提供し、billions of peopleへ配布する方針まで明示している。\n\nこれは単なる「Meta AIをもっと賢くする」という話ではない。\n\nChatbotからPersonal Agentへの移行である。\n\nMuseは、その最初の実装\n\n9月に登場したMuseは、質問に答えるだけではない。\n\nメールを送る。\n\n旅行を予約する。\n\n買い物をする。\n\n長期goalを具体的なaction planへ分解する。\n\n以前話した好みを記憶する。\n\nInstagramで保存したrecipeを見てshopping listを作る。\n\nそれをWhatsAppから使うこともできる。\n\nMeta自身がMuseをpersonal superintelligenceへの「first step」と位置付けている。\n\nここでMeta AIの意味が変わる。\n\n従来は、\n\nHuman\n↓\nMeta App\n↓\nContent\n\nだった。\n\nこれからは、\n\nHuman\n↓\nPersonal Agent\n↓\nApps / People / Businesses / Services\n\nになる。\n\nMetaは「人間と情報の間」にいる会社から、\n\n人間と世界の間にいるagent\n\nを作ろうとしている。\n\nMeta最大のMoatはModelではないかもしれない\n\nMeta自身も高度なmodelを作る。\n\nMuse Sparkはplanning、computer use、multimodal、agentic taskへ進んでいる。Metaはcustom siliconも拡大し、MTIAを数十万単位で運用しながら、今後2年間で4世代の新chipを投入する計画を示している。Armともgigawatt級AI data center向けCPUを共同開発している。\n\nしかし、Metaの最大の優位性がmodelそのものとは限らない。\n\nむしろmodel layerがcommodity化してもMetaは戦える。\n\nなぜなら、Metaにはすでにbillions of usersがいるからだ。\n\nさらにMetaはopen-source AI支持も維持している。Meta自身も、一部modelのopen releaseを続ける方針を明言している。\n\nこれは理念だけではなく、経済的にも整合する。\n\nもしIntelligenceそのものが安くなるなら、\n\nModel Rent ↓\n↓\nAI利用量 ↑\n↓\nPersonal Agent利用 ↑\n↓\nMetaのDistribution価値 ↑\n\nとなり得る。\n\nMetaは必ずしも「知能そのもの」に最大の価格を付ける必要がない。\n\n現在のAI投資を支えているのは、まだ広告\n\nただし現実を見る必要がある。\n\nMetaは現在も圧倒的に広告会社である。\n\n2026年Q2の売上は608億ドル。増収は主として広告収入によるもので、広告表示回数は前年比14％、平均広告単価は12％増加した。\n\nつまり現在の循環は、\n\nAds\n↓\nCash Flow\n↓\nAI Infrastructure\n↓\nより良いRecommendation / Ads\n↓\nさらにAds\n\nである。\n\nAIは未来の新事業である以前に、現在の広告machineをさらに強化する技術でもある。\n\nしかしMetaは、広告以外のRevenue Poolを作り始めた\n\n2026年に、この点がかなり動いた。\n\nMeta Oneでは、基本機能を無料のまま残しながら、高いAI利用量やcreator/business向け機能をsubscription化した。Metaによればsubscriptionとtrialはすでに1500万件を超えている。\n\nBusiness Agentでは、すでに100万以上のbusinessがWhatsAppやMessenger上でAI agentを利用している。\n\nしかもWhatsApp、Messenger、Instagramではbusinessとのactive conversationが1日10億thread以上ある。\n\nBusiness Agentは問い合わせ対応だけではなく、\n\n商品推薦\n予約\nlead qualification\n販売完結\n\nまで行う。\n\nこれはMetaにとって非常に重要だ。\n\nGoogle Searchでは、\n\nSearch\n→ Ad\n→ Website\n→ Purchase\n\nだった。\n\nMetaでは、\n\nConversation\n→ Business Agent\n→ Recommendation\n→ Transaction\n\nになる可能性がある。\n\nそしてMetaはEnterpriseにも入ってきた\n\n2026年9月、MetaはMeta Enterprise Platformを発表した。\n\nZuckerberg自身がこれをMetaの「next major pillar of our business」と表現している。\n\nMuse、Business Agent、Muse API、Muse Codeなどを企業へ提供し、新しいenterprise businessを構築するという。\n\nMicrosoftと正面からOfficeを奪う必要はない。\n\nMetaには別の入口がある。\n\n顧客とのconversationだ。\n\n企業内部のworkflowではMicrosoftが強い。\n\nしかし、\n\n企業\n↔\n顧客\n\nというinterfaceではWhatsApp、Instagram、Messengerという極めて巨大なdistributionがある。\n\nMetaのEnterprise戦略は、この外側から入ってくる可能性がある。\n\nそして一番重要なのがAI Glasses\n\n私は、Metaの10年戦略の最大のbetはここだと思う。\n\n2026年ConnectでMetaはMuseをAI glassesへ統合し、年末までにRay-Ban、Oakley、Meta Glassesを合わせて100種類以上のAI glassesを展開すると発表した。\n\nこれは単なるwearable businessではない。\n\n現在のAIは、\n\nPhoneを取り出す\n↓\nAppを開く\n↓\n文字や音声で指示する\n\nというinterfaceを持つ。\n\nGlassesなら、\n\n見る\n聞く\n話す\n↓\nAIが常時Contextを理解する\n\nへ変わる。\n\nAIは、\n\n今何を見ているか。\n\n誰と話しているか。\n\nどこにいるか。\n\n何を聞いたか。\n\nを理解できる。\n\nここでMetaの資産が全部つながる。\n\nSocial Graph\n＋\nPersonal Memory\n＋\nVision\n＋\nAudio\n＋\nLocation\n＋\nAgent Action\n\nである。\n\nMetaが本当に狙っているのは、\n\n「AI App」\n\nではなく、\n\nHuman-AI Interface\n\nなのかもしれない。\n\nReality Labsの意味も変わって見える\n\nMetaは長年、Reality Labsへ巨額の投資を続けてきた。\n\nVR / Metaverseへの投資として見ると、収益性には長く疑問が残っていた。\n\nしかしAI時代から逆算すると意味が少し変わる。\n\nこれは私の戦略解釈だが、Metaにとって最大の長期riskの一つは、\n\n次のHuman-Computer InterfaceをAppleやGoogleに所有されること\n\nだったのではないか。\n\nSmartphone時代、MetaはAndroidとiOSの上に存在してきた。\n\nしかしglassesが次の主要interfaceになれば、\n\nAI\nSoftware\nDevice\nHuman Context\n\nを初めてMeta自身で垂直に接続できる。\n\nMetaが欲しいのは「眼鏡business」ではない。\n\n人間の目と耳のすぐ横にあるAI Interface\n\nなのだと思う。\n\nただしMetaには巨大な矛盾がある\n\nここがMetaの10年で一番興味深い。\n\nZuckerbergが描くpersonal superintelligenceでは、alignmentを、\n\n「Metaのgoalではなく、その人自身のgoalを達成すること」\n\nとかなり明確に定義している。\n\nしかしMetaの現在のeconomic engineは、\n\nAttention\n↓\nEngagement\n↓\nAds\n\nである。\n\n本当に優秀なpersonal agentが完成したとする。\n\nそのAIは、\n\n「Instagramをあと40分見てください」\n\nと言うのだろうか。\n\nそれとも、\n\n「今日は十分見ています。あなたが本当にやりたいことに戻りましょう」\n\nと言うのだろうか。\n\nあるいは100本の広告を見せるより、\n\n「あなたの条件ならこれが一番良いので、これを買えば十分です」\n\nと1回で終わらせるかもしれない。\n\nつまり、\n\nUser Utility Maximization\n\nと\n\nAttention Monetization\n\nは、長期的には同じ方向を向かない可能性がある。\n\n現在はAI recommendationがengagementを高めるため、両者の矛盾は目立たない。\n\nしかしPersonal Agentが本当にuser alignedになれば、この問題は避けにくくなる。\n\n私はこれを、Metaの10年戦略における最大の構造的Uncertaintyの一つだと思う。\n\nPrivacyはMoatであると同時にAttack Surfaceになる\n\nPersonal Agentが、\n\nemail\ncalendar\npayment\nhealth\nrelationships\ncamera\nmicrophone\n\nへaccessするなら、privacyとsecurityは単なる付属機能ではない。\n\n製品そのものになる。\n\nMuseでは、個人ごとに専用Secure VMを用意し、別のSentinel agentが外部actionを監視する。Metaはさらに、利用者自身しか鍵を持たず、Metaすら内容を読めないConfidential VMを予定している。\n\n一方、Muse公開直後には外部研究者がsensitive dataへaccessできる可能性のあるsecurity flawを発見したと報じられた。\n\nPersonal Contextを多く持てば持つほどmoatは強くなる。\n\nしかし同時に、\n\n侵害されたときのdamageも大きくなる。\n\nMetaにとって、\n\nContext Moat = Security Liability\n\nでもある。\n\nMetaの10年を一本のStackにする\n\n現在見えているものを並べると、\n\nEnergy / Data Center\n↓\nMTIA / Custom CPU\n↓\nFrontier Models\n↓\nMuse\n↓\nPersonal Agent\n↓\nFacebook / Instagram / WhatsApp / Threads\n↓\nAI Glasses\n↓\nHuman Context\n↓\nBusiness Agent / Commerce / Subscription / Enterprise\n\nとなる。\n\nGoogleよりHuman Relationshipに近い。\n\nMicrosoftよりConsumerに近い。\n\nAmazonよりPhysical Executionから遠い。\n\nその代わり、\n\n「人間自身が何を望んでいるか」\n\nに最も近い場所を取ろうとしている。\n\nだからMetaの10年戦略を一言で表すなら、\n\n> Personal SuperintelligenceのDistributionとHuman Interfaceを握る。\n\nだと思う。\n\nGoogleについては、\n\nIntelligence is cheap. Context and Action are valuable.\n\nMicrosoftは、\n\nModels are substitutable. Identity, Context, Workflow and Trust are not.\n\nAmazonは、\n\nIntelligence may be interchangeable. Execution, Transactions and Physical Infrastructure are not.\n\nそしてMetaなら、\n\nModels may become commodities. Human Context and Human Interface may not.\n\nになる。\n\nAI Signal Log\n\nASL-META-001\n\nTopic\nMetaのPersonal Superintelligence / Human Interface戦略\n\nClaim\n\nMetaはfrontier model単体の販売を中心にするのではなく、36億人規模のsocial distribution、personal context、Muse、business messaging、AI glasses、自社AI infrastructureを統合し、「個人とAIの接点」を主要platformにすることで、現在の広告中心businessをSubscription、Commerce、Business Agent、Enterpriseへ拡張しようとしている可能性が高い。\n\nConfidence：4/5\n\nPersonal superintelligenceをbillionsへ配布すること、24時間働くpersonal agent、Muse、AI glasses、Enterprise Platform、free＋subscription構造などはMeta自身が明示している。\n\n一方、\n\n「Human-AI relationship layerそのものがMetaの最終的なMoatになる」\n\nという部分は、これらを統合した戦略解釈である。\n\nUncertainty\n\n最大の不確実性は、\n\nPersonal AgentによるUser Utility最大化と、Attention / Advertising最大化を両立できるか。\n\n巨額AI infrastructure投資を広告以外のRevenue Poolへ十分転換できるか。\n\nAI glassesがsmartphoneに次ぐ主要interfaceへ成長するか。\n\nPersonal Contextを扱う上で十分なTrustを維持できるか。\n\nそしてmodel layerがcommodity化したとき、MetaのDistribution優位がどこまでeconomic rentへ転換されるか。\n\nNext Check\n\nMuseの日常継続利用率。\n\nMuseが実際に処理するautonomous task数。\n\nMeta Oneの有料conversion。\n\nBusiness Agentのpaid adoption。\n\nMeta Enterprise Platformの売上。\n\nAI glassesの販売数だけでなく継続装着率。\n\n広告以外のRevenue比率。\n\nAI CapExに対するreturn。\n\nそして最も重要なのは、\n\nMetaは本当に「Metaが望む行動」ではなく「利用者自身が望む人生」を最適化するAIを作れるのか。\n\nMetaはSocial Media companyとして始まった。\n\nしかし10年後、\n\nFacebookやInstagramそのものより重要なのは、\n\n36億人の人間と、その人専用のAIとの間にMetaが存在すること\n\nなのかもしれない。",
+      "createdAtISO": "2026-10-02T09:20:42+00:00",
       "isRetweet": false,
-      "source": "search-top-01.json",
-      "url": "https://x.com/i/status/2106060053497426019",
-      "candidate_text": "🚀 I’ve stopped thinking of AI as “just an LLM.  A production-grade AI system is an entire engineering stack.  The LLM is only one layer.  If you want to build serious Agentic AI systems, this is the architecture you need to understand:👇  1. Frontend React → Next.js → Streamlit  2",
+      "source": "search-top-03.json",
+      "url": "https://x.com/i/status/2105951094027526626",
+      "candidate_text": "【AI Signal Log】Metaは「最高のAI」を売る会社ではなくなる  ― Social GraphからPersonal Superintelligenceへ。人間とAIの接点を握る10年戦略  Google、Microsoft、AmazonのAI戦略を見てきた。  Googleは、AIが安くなってもContextとDistributionを持つ。  Microsoftは、modelが交換可能になってもIdentity、Workflow、Trustを持つ。  Amazonは、どのmodelが勝ってもCompute、Transaction、Exec",
       "candidate_context": {
         "category": "OpenClaw／Agent 生態",
         "selection_lane": "discovery",
-        "selection_score": 6.1373,
+        "selection_score": 6.1112,
         "quality_signals": [
-          "technical_detail",
-          "report_or_policy_claim",
+          "release_or_fix",
+          "measurement",
           "substantive_length"
         ],
         "sources": [
-          "search-top-01.json"
+          "search-top-03.json"
         ],
-        "claim_kind_hint": "report_claim",
-        "first_person_hint": false
+        "claim_kind_hint": "measurement_claim",
+        "first_person_hint": false,
+        "measurement_context_hint": [
+          "hardware",
+          "method"
+        ]
       }
     },
     {
@@ -1983,7 +1877,7 @@
       "candidate_context": {
         "category": "AI 模型與研究",
         "selection_lane": "discovery",
-        "selection_score": 6.0953,
+        "selection_score": 6.0995,
         "quality_signals": [
           "release_or_fix",
           "substantive_length"
@@ -1993,6 +1887,37 @@
         ],
         "claim_kind_hint": "release_claim",
         "first_person_hint": false
+      }
+    },
+    {
+      "id": "2106087045278126288",
+      "author": {
+        "screenName": "dhdevtest",
+        "name": "dhdevtest"
+      },
+      "text": "arXiv:2610.00010v1 Announce Type: new \nAbstract: Long-horizon language agents increasingly rely on external memory as a frozen world model, yet current memory systems are usually judged only by task success or token cost. We argue that the missing object is the shape of memory use: under finite context and repeated retrieval, agent memory can concentrate on a small core while leaving rare states in a long tail where prediction errors accumulate. We study this effect through a conservative tail audit and find that concentration is reproducible but policy-dependent. Random-walk agents produce log-normal-compatible retrieval artifacts, whereas semantic LLM policies yield the strongest truncated-power-law-compatible core--tail traces. Motivated by this audit, we propose Core--Tail World Model (CTWM), a rank-based memory controller that allocates prompt budget with a single exponent $\\tau$ while retaining a summarized tail. On Synthetic Graph World, CTWM preserves full state and transition coverage, reduces prompt tokens by 5.9%, and lowers bottom-half tail prediction error by 13.6% relative to a graph-memory baseline. The same paired comparison gives consistent token savings on ALFWorld and a 24.48% token reduction on LongMemEval with aggregate accuracy parity. These results suggest that heavy-tailed memory traces are not only a diagnostic of finite retrieval, but also a practical control signal for token-efficient agent world models. https://t.co/RsCUvVUM6D",
+      "createdAtISO": "2026-10-02T18:20:55+00:00",
+      "isRetweet": false,
+      "source": "search-top-01.json",
+      "url": "https://x.com/i/status/2106087045278126288",
+      "candidate_text": "arXiv:2610.00010v1 Announce Type: new  Abstract: Long-horizon language agents increasingly rely on external memory as a frozen world model, yet current memory systems are usually judged only by task success or token cost. We argue that the missing object is the shape of memory us",
+      "candidate_context": {
+        "category": "產業",
+        "selection_lane": "discovery",
+        "selection_score": 6.0693,
+        "quality_signals": [
+          "measurement",
+          "report_or_policy_claim",
+          "substantive_length"
+        ],
+        "sources": [
+          "search-top-01.json"
+        ],
+        "claim_kind_hint": "measurement_claim",
+        "first_person_hint": false,
+        "measurement_context_hint": [
+          "method"
+        ]
       }
     },
     {
@@ -2010,7 +1935,7 @@
       "candidate_context": {
         "category": "OpenClaw／Agent 生態",
         "selection_lane": "anchor",
-        "selection_score": 6.0024,
+        "selection_score": 6.0009,
         "quality_signals": [
           "release_or_fix",
           "substantive_length",
@@ -2040,7 +1965,7 @@
       "candidate_context": {
         "category": "開發者工具",
         "selection_lane": "discovery",
-        "selection_score": 5.9585,
+        "selection_score": 5.9699,
         "quality_signals": [
           "release_or_fix",
           "substantive_length"
@@ -2067,7 +1992,7 @@
       "candidate_context": {
         "category": "開發者工具",
         "selection_lane": "discovery",
-        "selection_score": 5.855,
+        "selection_score": 5.8537,
         "quality_signals": [
           "release_or_fix",
           "substantive_length"
@@ -2080,30 +2005,32 @@
       }
     },
     {
-      "id": "2106280087712895468",
+      "id": "2106153233765085664",
       "author": {
-        "screenName": "codexneo4",
-        "name": "Codex研究ラボ"
+        "screenName": "AIQuickFindings",
+        "name": "AI Quick Findings"
       },
-      "text": "🚨 Open AI創業者本人が一斉公開‼️\nCEO自らが普段使う「ChatGPT Dots」の使い方\n即保存した⇩                                                                                                                                                                                                                                                                                                          \n\n開発者本人の使い方は参考になる\n毎晩、\n→ その日に届いた情報を全部レビュー\n→ 重要度を整理\n→ 緊急事項を抽出\n→ 翌朝までにまとめる\nそして1日が始まる前に、\n「今日、最優先で見るべきもの」\nだけ通知させる。\n\nさらに使えば使うほど、\n・何を重要視するか\n・どんな情報は無視していいか\n・どんなタイミングで通知するか\n・どこに自分の注意を使うべきか\nまで学習していく。\n\nつまり、\n毎朝ゼロからAIに指示する必要がなくなる。\n\nさらにDotsは、\n単なる情報整理だけじゃない。\n基調講演で紹介されたタスクは\n👇\nバグ報告を監視\n↓\n問題を特定\n↓\nテスト修正\n↓\nDraft PRまで作成\n\n他にも、\n・アプリを遅くしている原因を調査\n・古いAPI終了前に移行作業\n・継続的な監視\n・長時間のバックグラウンド作業\nまで任せられる。\n\nここが一番ヤバい。\n\n今までのChatGPTは、\n「必要になったら開くAI」\nだった。\n\nDotsは逆。\n人間が寝てても動く。\n問題を見つける。\n調べる。\n作業する。\n必要な時だけ人間を呼ぶ。\n\nSam Altmanの使い方を見ると、\nDotsの本質は「便利なアシスタント」じゃない\n自分の注意力を代わりに管理するAIに近い。\n\n同じ構成を保存して丸投げ推奨👇",
-      "createdAtISO": "2026-10-03T07:08:00+00:00",
+      "text": "Griffin (Tavus) is the first model to pass the video Turing test — 48% of live viewers thought it was human. Meanwhile r/LocalLLaMA users hit 2.8x throughput on Qwen3.8 via DFlash2 SGLang/vLLM recipes. Frontier realism and local efficiency advancing in parallel. Source: Tavus,",
+      "createdAtISO": "2026-10-02T22:43:56+00:00",
       "isRetweet": false,
-      "source": "search-top-09.json",
-      "url": "https://x.com/i/status/2106280087712895468",
-      "candidate_text": "🚨 Open AI創業者本人が一斉公開‼️ CEO自らが普段使う「ChatGPT Dots」の使い方 即保存した⇩                                                                                                                                                                                                                               ",
+      "source": "search-top-06.json",
+      "url": "https://x.com/i/status/2106153233765085664",
+      "candidate_text": "Griffin (Tavus) is the first model to pass the video Turing test — 48% of live viewers thought it was human. Meanwhile r/LocalLLaMA users hit 2.8x throughput on Qwen3.8 via DFlash2 SGLang/vLLM recipes. Frontier realism and local efficiency advancing in parallel. Source: Tavus,",
       "candidate_context": {
-        "category": "OpenClaw／Agent 生態",
+        "category": "AI 模型與研究",
         "selection_lane": "discovery",
-        "selection_score": 5.7691,
+        "selection_score": 5.7522,
         "quality_signals": [
-          "release_or_fix",
+          "technical_detail",
+          "measurement",
           "substantive_length"
         ],
         "sources": [
-          "search-top-09.json"
+          "search-top-06.json"
         ],
-        "claim_kind_hint": "release_claim",
-        "first_person_hint": false
+        "claim_kind_hint": "measurement_claim",
+        "first_person_hint": false,
+        "measurement_context_hint": []
       }
     },
     {
@@ -2121,7 +2048,7 @@
       "candidate_context": {
         "category": "開發者工具",
         "selection_lane": "discovery",
-        "selection_score": 5.7293,
+        "selection_score": 5.7278,
         "quality_signals": [
           "release_or_fix",
           "substantive_length"
@@ -2148,7 +2075,7 @@
       "candidate_context": {
         "category": "OpenClaw／Agent 生態",
         "selection_lane": "discovery",
-        "selection_score": 5.7234,
+        "selection_score": 5.7219,
         "quality_signals": [
           "release_or_fix",
           "substantive_length"
@@ -2175,7 +2102,7 @@
       "candidate_context": {
         "category": "開發者工具",
         "selection_lane": "discovery",
-        "selection_score": 5.7175,
+        "selection_score": 5.7161,
         "quality_signals": [
           "release_or_fix",
           "substantive_length"
@@ -2185,38 +2112,6 @@
         ],
         "claim_kind_hint": "release_claim",
         "first_person_hint": false
-      }
-    },
-    {
-      "id": "2106046556268888457",
-      "author": {
-        "screenName": "BHCC2025",
-        "name": "BHCC Spark Lab"
-      },
-      "text": "How much does quantization cost Qwen3.8-27B? 🔬\n\nI measured drift from the full BF16 model (KL on 49K held-out tokens) for EXL3 at five bit sizes vs MLX and NVFP4, on TensorFold 0.6.2 on one DGX Spark.\n\n• EXL3 5.0 bpw: as accurate as MLX 6-bit, ~3 GB smaller\n• EXL3 3.5 bpw: smaller than MLX 4-bit, 34% less drift\n• EXL3 4.0 bpw: 1/3 the drift of MLX 4-bit\n\nSpeed tests next 🚀",
-      "createdAtISO": "2026-10-02T15:40:02+00:00",
-      "isRetweet": false,
-      "source": "search-top-06.json",
-      "url": "https://x.com/i/status/2106046556268888457",
-      "candidate_text": "How much does quantization cost Qwen3.8-27B? 🔬  I measured drift from the full BF16 model (KL on 49K held-out tokens) for EXL3 at five bit sizes vs MLX and NVFP4, on TensorFold 0.6.2 on one DGX Spark.  • EXL3 5.0 bpw: as accurate as MLX 6-bit, ~3 GB smaller • EXL3 3.5 bpw: smalle",
-      "candidate_context": {
-        "category": "AI 模型與研究",
-        "selection_lane": "discovery",
-        "selection_score": 5.5021,
-        "quality_signals": [
-          "technical_detail",
-          "measurement",
-          "substantive_length"
-        ],
-        "sources": [
-          "search-top-06.json"
-        ],
-        "claim_kind_hint": "measurement_claim",
-        "first_person_hint": true,
-        "measurement_context_hint": [
-          "hardware",
-          "model_or_precision"
-        ]
       }
     },
     {
@@ -2234,41 +2129,40 @@
       "candidate_context": {
         "category": "OpenClaw／Agent 生態",
         "selection_lane": "discovery",
-        "selection_score": 5.4885,
+        "selection_score": 5.5035,
         "quality_signals": [
           "release_or_fix",
           "substantive_length"
         ],
         "sources": [
-          "search-latest-00.json",
-          "search-top-00.json"
+          "search-latest-00.json"
         ],
         "claim_kind_hint": "release_claim",
         "first_person_hint": false
       }
     },
     {
-      "id": "2106162642142269634",
+      "id": "2106178985092960658",
       "author": {
-        "screenName": "duckai_lab",
-        "name": "あひる｜楽すぎるAI副業"
+        "screenName": "milbon_",
+        "name": "みるぼん@スモビジ"
       },
-      "text": "OpenAIがGPT-6ファミリーの実践ガイドを公開。\nモデル選定や推論負荷の調整、ツール連携など本番運用の準備手順が示されています。\n対象は開発現場の構築で、一般的な対話解説とは異なります。\n推論設計の勘所を掴めば、自動化の案件作成に直結します。\nhttps://t.co/0ju8ZUBZjw",
-      "createdAtISO": "2026-10-02T23:21:19+00:00",
+      "text": "【Mora 1 要約】\n\nMeshy創業者のEthan Huが公開した研究デモ。\n「探索できる映像」ではなく「遊べるゲーム」をAIで作るための仕組み。\n\n■ 何が新しいか\nこれまでのワールドモデルは、動画生成だけで世界を動かそうとしていた。\nだから位置がずれる、ルールが壊れる、HPのような状態を持てない、が起きやすかった。\n\nMoraはそこを分けている。\n\n1. コーディングエージェントがロジックを書く\n2. Meshyの3D生成が空間とアセット、制御信号を出す\n3. リアルタイム動画モデルがピクセルと音に変換する\n\n世界の正解はコード側にある。動画は演出担当。\nだから「見た目は映画っぽいのに、操作はゲームとして成立する」に寄せられる。\n\n■ いま遊べるもの\n・空間パズル（Portalへのオマージュ）\n・マルチプレイのプラットフォーマー\n・建築、物理、スポーツ系の操作\n・アートスタイルの切り替え\n\nプレイはこちら\nhttps://t.co/2qpTvIAnRQ\n\n補足記事\nhttps://t.co/MaMsQyqbdS\n\n■ まだ弱いところ\n・映像の崩れ（アーティファクト）\n・レイテンシ\n・ポータルの向こう側はまだ描けず、今は表示オフ\n\n研究デモであり、完成した商用エンジンではない。Mora 2は開発中。\n\n■ マネタイズ案（今すぐ現実的な順）\n\n1. 受託のプロトタイプ制作\n「1週間で遊べる縦スライスを出す」を商品にする。\n企画・ルールはClaude等、アセットはMeshy、見た目の参考映像はMoraや動画生成。\n価格目安は15〜50万円。ゲーム会社・IPホルダー・広告代理店向け。\n\n2. ショート動画量産\nスタイル切替と物理ネタはTikTok/Reels/Shorts向き。\n「AIが作ったゲーム実況」として毎日投稿し、案件・教材・受託に流す。\n集客が先、課金は後。\n\n3. 教材・コミュニティ\n「非エンジニアでもAIでミニゲームを1本作る」をnote/Brain/Udemyで販売。\n単価3,000〜15,000円。デモ動画がそのまま販売ページになる。\n\n4. アセット外販\nMeshyで作った3DをUnity/UE向けに整え、BoothやFabで販売。\nMoraの映像は商品ページの見せ用に使う。\n\n5. 企業向けワークショップ\n「自社IPで30分の体験プロトタイプを作る」半日研修。\n1社20〜80万円。見た目のインパクトが売りやすい。\n\n■ 初心者の最小ステップ\n1. https://t.co/qnlUvhUM9Fで実機を触る\n2. 同じ仕組みを自分の言葉で1分解説動画にする\n3. Meshyで1キャラ作り、Claudeでルールを書かせてミニゲーム化\n4. その過程を毎日投稿し、固定ポストから教材か受託へ誘導\n\nポイントは「動画AIで全部作る」ではなく、\nルールはコード、見た目は生成、集客はショート、収益は受託か教材。\nこの分離がそのまま稼ぎ方になる。",
+      "createdAtISO": "2026-10-03T00:26:15+00:00",
       "isRetweet": false,
-      "source": "search-top-04.json",
-      "url": "https://x.com/i/status/2106162642142269634",
-      "candidate_text": "OpenAIがGPT-6ファミリーの実践ガイドを公開。 モデル選定や推論負荷の調整、ツール連携など本番運用の準備手順が示されています。 対象は開発現場の構築で、一般的な対話解説とは異なります。 推論設計の勘所を掴めば、自動化の案件作成に直結します。 https://t.co/0ju8ZUBZjw",
+      "source": "search-top-05.json",
+      "url": "https://x.com/i/status/2106178985092960658",
+      "candidate_text": "【Mora 1 要約】  Meshy創業者のEthan Huが公開した研究デモ。 「探索できる映像」ではなく「遊べるゲーム」をAIで作るための仕組み。  ■ 何が新しいか これまでのワールドモデルは、動画生成だけで世界を動かそうとしていた。 だから位置がずれる、ルールが壊れる、HPのような状態を持てない、が起きやすかった。  Moraはそこを分けている。  1. コーディングエージェントがロジックを書く 2. Meshyの3D生成が空間とアセット、制御信号を出す 3. リアルタイム動画モデルがピクセルと音に変換する  世界の正解はコード側にある。動画は演",
       "candidate_context": {
-        "category": "AI 模型與研究",
+        "category": "OpenClaw／Agent 生態",
         "selection_lane": "discovery",
-        "selection_score": 5.4846,
+        "selection_score": 5.4896,
         "quality_signals": [
           "release_or_fix",
           "substantive_length"
         ],
         "sources": [
-          "search-top-04.json"
+          "search-top-05.json"
         ],
         "claim_kind_hint": "release_claim",
         "first_person_hint": false
@@ -2289,13 +2183,67 @@
       "candidate_context": {
         "category": "開發者工具",
         "selection_lane": "discovery",
-        "selection_score": 5.4604,
+        "selection_score": 5.459,
         "quality_signals": [
           "release_or_fix",
           "substantive_length"
         ],
         "sources": [
           "search-latest-05.json"
+        ],
+        "claim_kind_hint": "release_claim",
+        "first_person_hint": false
+      }
+    },
+    {
+      "id": "2106278076371861921",
+      "author": {
+        "screenName": "ai_300",
+        "name": "鈴木@アナログ営業会社を100日後にAIで売上を300％にする人"
+      },
+      "text": "これはヤバい\n電話で話すだけでBlenderが動く\nDotsに「MacBook作って」で制作開始\nマウス操作をほぼ会話に置き換える\n3D制作の前提が完全に変わる\n動画を見ると未来感が一発でわかる\n\n実際の流れは👇　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　\n\n今回やっているのはかなりシンプル\n\nDotsと電話で会話するだけ\n\nその会話をもとに\nPC側のBlenderを操作していく\n\n動画ではBlenderが起動していて\n\n画面中央には\n3DのMacBookが表示される\n\nディスプレイ\n\nキーボード\n\n本体の形状まで作られている\n\n重要なのは\n自分でBlenderを細かく触るのではなく\n\nDotsに電話で指示していること\n\nつまり操作方法を覚えて\n\nメニューを探して\n\n項目をクリックして\n\n数値を調整していく\n\nこの従来の流れを\n\n「会話」に寄せられる\n\nしかも途中で結果を見ながら\n\nそのまま追加指示できる\n\nイメージと違えば修正を伝える\n\n足りない部分があれば追加する\n\n人間は完成イメージを伝えて\n\nAI側に操作を任せていく\n\nこれが強烈\n\nBlenderはできることが多い反面\n\n初心者には操作の壁が高い\n\nでも会話が操作UIになれば\n\n必要なのは\n「何を作りたいか」を言葉にする力\n\n今回はMacBookだけど\n\n商品モックアップ\n\n3D素材\n\n広告用ビジュアル\n\n簡単なプロトタイプにも応用できる\n\nGUIを人間が全部操作する時代から\n\nAIに目的を伝えて\nソフトを動かしてもらう時代へ\n\n「AIに質問する」から\n「AIにPCを操作させる」に変わってる\n\nこの進化はマジでデカい",
+      "createdAtISO": "2026-10-03T07:00:00+00:00",
+      "isRetweet": false,
+      "source": "search-top-10.json",
+      "url": "https://x.com/i/status/2106278076371861921",
+      "candidate_text": "これはヤバい 電話で話すだけでBlenderが動く Dotsに「MacBook作って」で制作開始 マウス操作をほぼ会話に置き換える 3D制作の前提が完全に変わる 動画を見ると未来感が一発でわかる  実際の流れは👇　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　  今回やっているのはかなりシンプル  Dotsと電話で会話するだけ  その会話をもとに PC側のBlenderを操作していく  動画ではBlenderが起動していて  画面中央には 3DのMacBookが表示される  ディスプレイ  キーボード ",
+      "candidate_context": {
+        "category": "AI 模型與研究",
+        "selection_lane": "discovery",
+        "selection_score": 5.4299,
+        "quality_signals": [
+          "release_or_fix",
+          "substantive_length"
+        ],
+        "sources": [
+          "search-top-10.json"
+        ],
+        "claim_kind_hint": "release_claim",
+        "first_person_hint": false
+      }
+    },
+    {
+      "id": "2106291705347797499",
+      "author": {
+        "screenName": "Sanyam0605",
+        "name": "Sanyam Jain (sanyam-ai.in)"
+      },
+      "text": "vLLm and Ollama has catched up to decision models, both have launched a compatible end point for decision models :))\n\nI m doing a lot of experiments with diff encoder models, cross, bi and with LLM backbones as well, a thread on it soon :)",
+      "createdAtISO": "2026-10-03T07:54:10+00:00",
+      "isRetweet": false,
+      "source": "search-top-06.json",
+      "url": "https://x.com/i/status/2106291705347797499",
+      "candidate_text": "vLLm and Ollama has catched up to decision models, both have launched a compatible end point for decision models :))  I m doing a lot of experiments with diff encoder models, cross, bi and with LLM backbones as well, a thread on it soon :)",
+      "candidate_context": {
+        "category": "AI 模型與研究",
+        "selection_lane": "discovery",
+        "selection_score": 5.4225,
+        "quality_signals": [
+          "release_or_fix",
+          "substantive_length"
+        ],
+        "sources": [
+          "search-top-06.json"
         ],
         "claim_kind_hint": "release_claim",
         "first_person_hint": false
@@ -2316,7 +2264,7 @@
       "candidate_context": {
         "category": "AI 模型與研究",
         "selection_lane": "discovery",
-        "selection_score": 5.3539,
+        "selection_score": 5.3525,
         "quality_signals": [
           "release_or_fix",
           "substantive_length",
@@ -2329,6 +2277,33 @@
         "first_person_hint": false,
         "source_role_hint": "official",
         "source_verification_hint": "primary_profile_link"
+      }
+    },
+    {
+      "id": "2106273042699817282",
+      "author": {
+        "screenName": "chiba_toshiyuki",
+        "name": "Toshi｜55歳、副業0円からのAI×note実験"
+      },
+      "text": "@manju_cons 僕も55歳で、AI×noteを副業0円から実験しています😊\n「うまくいかなかったことも数字で公開」、めちゃくちゃ共感しました。\n僕も今まさに売上0円です😂\nお互い最初の1円まで、実験続けていきましょう！",
+      "createdAtISO": "2026-10-03T06:40:00+00:00",
+      "isRetweet": false,
+      "source": "search-top-10.json",
+      "url": "https://x.com/i/status/2106273042699817282",
+      "candidate_text": "@manju_cons 僕も55歳で、AI×noteを副業0円から実験しています😊 「うまくいかなかったことも数字で公開」、めちゃくちゃ共感しました。 僕も今まさに売上0円です😂 お互い最初の1円まで、実験続けていきましょう！",
+      "candidate_context": {
+        "category": "AI 模型與研究",
+        "selection_lane": "discovery",
+        "selection_score": 5.3338,
+        "quality_signals": [
+          "release_or_fix",
+          "substantive_length"
+        ],
+        "sources": [
+          "search-top-10.json"
+        ],
+        "claim_kind_hint": "release_claim",
+        "first_person_hint": false
       }
     },
     {
@@ -2346,7 +2321,7 @@
       "candidate_context": {
         "category": "開發者工具",
         "selection_lane": "discovery",
-        "selection_score": 5.3136,
+        "selection_score": 5.3134,
         "quality_signals": [
           "release_or_fix",
           "substantive_length"
@@ -2373,14 +2348,16 @@
       "candidate_context": {
         "category": "開發者工具",
         "selection_lane": "discovery",
-        "selection_score": 5.247,
+        "selection_score": 5.2458,
         "quality_signals": [
           "release_or_fix",
           "substantive_length"
         ],
         "sources": [
           "search-latest-04.json",
-          "search-latest-05.json"
+          "search-latest-05.json",
+          "search-top-04.json",
+          "search-top-05.json"
         ],
         "claim_kind_hint": "release_claim",
         "first_person_hint": false
@@ -2401,7 +2378,7 @@
       "candidate_context": {
         "category": "產業",
         "selection_lane": "discovery",
-        "selection_score": 5.2357,
+        "selection_score": 5.2345,
         "quality_signals": [
           "release_or_fix",
           "substantive_length"
@@ -2428,13 +2405,14 @@
       "candidate_context": {
         "category": "OpenClaw／Agent 生態",
         "selection_lane": "discovery",
-        "selection_score": 5.2202,
+        "selection_score": 5.2192,
         "quality_signals": [
           "release_or_fix",
           "substantive_length"
         ],
         "sources": [
-          "search-latest-03.json"
+          "search-latest-03.json",
+          "search-top-03.json"
         ],
         "claim_kind_hint": "release_claim",
         "first_person_hint": false
@@ -2455,13 +2433,40 @@
       "candidate_context": {
         "category": "AI 模型與研究",
         "selection_lane": "discovery",
-        "selection_score": 5.2139,
+        "selection_score": 5.2128,
         "quality_signals": [
           "release_or_fix",
           "substantive_length"
         ],
         "sources": [
           "search-latest-09.json"
+        ],
+        "claim_kind_hint": "release_claim",
+        "first_person_hint": false
+      }
+    },
+    {
+      "id": "2106235178607939965",
+      "author": {
+        "screenName": "doraking_jp",
+        "name": "Doraking"
+      },
+      "text": "invideo MCPが公開されました！\n\nClaudeやGPTなど、普段使っているエージェントからエディタ全体を操作でき、画像や動画の生成も自分のコンソール側で進められます。編集の往復が減って、作業の流れがかなり柔軟になりそうです。\n\n@invideoOfficial",
+      "createdAtISO": "2026-10-03T04:09:33+00:00",
+      "isRetweet": false,
+      "source": "search-top-04.json",
+      "url": "https://x.com/i/status/2106235178607939965",
+      "candidate_text": "invideo MCPが公開されました！  ClaudeやGPTなど、普段使っているエージェントからエディタ全体を操作でき、画像や動画の生成も自分のコンソール側で進められます。編集の往復が減って、作業の流れがかなり柔軟になりそうです。  @invideoOfficial",
+      "candidate_context": {
+        "category": "OpenClaw／Agent 生態",
+        "selection_lane": "discovery",
+        "selection_score": 5.1913,
+        "quality_signals": [
+          "release_or_fix",
+          "substantive_length"
+        ],
+        "sources": [
+          "search-top-04.json"
         ],
         "claim_kind_hint": "release_claim",
         "first_person_hint": false
@@ -2482,7 +2487,7 @@
       "candidate_context": {
         "category": "AI 模型與研究",
         "selection_lane": "discovery",
-        "selection_score": 5.138,
+        "selection_score": 5.1366,
         "quality_signals": [
           "release_or_fix",
           "substantive_length"
@@ -2495,54 +2500,82 @@
       }
     },
     {
-      "id": "2106264282103206130",
+      "id": "2106235852636721308",
       "author": {
-        "screenName": "Butamaru_Butako",
-        "name": "ぶたまる🐽米国株投資"
+        "screenName": "Jia1678434863",
+        "name": "Javin"
       },
-      "text": "#今日の米国株式相場まとめ #米国投資情報速報\n「悪いニュースが良いニュース」として受け止められる、あまり健全とはいえない局面ですが、そのなかでもエヌビディア株の強さは心強いですね。\nまだ長期金利と原油価格という逆風が吹いているため、これらが落ち着くまでは、しばらくこの2点に一喜一憂する相場が続きそうです。\nまた、これから決算シーズンに入るにつれ、これまで以上に金利が企業業績へ与える影響と、AI投資に関する情報の重みが増してきそうですね。\nPFを少し軽くして、状況に応じて動きやすくしておくのも、秋の相場をうまく乗り越える一つの手かもしれません。では、今週もお疲れさまでした。良い週末をお過ごしください😀✨\n今日の相場やニュース銘柄らを詳しく解説(無料)👇\nhttps://t.co/WRJnOV96yO\nぼかしなしを毎回見たい方はこちら(月390円）👇\nhttps://t.co/WRJnOV96yO",
-      "createdAtISO": "2026-10-03T06:05:12+00:00",
+      "text": "不到一年时间，我们已经从“OpenClaw”到“Personal AI Agent ”。\n\n之前行业总说C端难以落地，但是反认知的是Instinct目前估值已经来到了100亿美元，而且日增长保持在10%。\n\n一个月时间从Grok Bot、Muse到Cue和Bots。国庆之后字节，腾讯，阿也要加入。新一轮的AI产品军备竞赛! https://t.co/Tvri6ZasbF",
+      "createdAtISO": "2026-10-03T04:12:13+00:00",
       "isRetweet": false,
-      "source": "search-top-10.json",
-      "url": "https://x.com/i/status/2106264282103206130",
-      "candidate_text": "#今日の米国株式相場まとめ #米国投資情報速報 「悪いニュースが良いニュース」として受け止められる、あまり健全とはいえない局面ですが、そのなかでもエヌビディア株の強さは心強いですね。 まだ長期金利と原油価格という逆風が吹いているため、これらが落ち着くまでは、しばらくこの2点に一喜一憂する相場が続きそうです。 また、これから決算シーズンに入るにつれ、これまで以上に金利が企業業績へ与える影響と、AI投資に関する情報の重みが増してきそうですね。 PFを少し軽くして、状況に応じて動きやすくしておくのも、秋の相場をうまく乗り越える一つの手かもしれません。では、今週",
+      "source": "search-top-02.json",
+      "url": "https://x.com/i/status/2106235852636721308",
+      "candidate_text": "不到一年时间，我们已经从“OpenClaw”到“Personal AI Agent ”。  之前行业总说C端难以落地，但是反认知的是Instinct目前估值已经来到了100亿美元，而且日增长保持在10%。  一个月时间从Grok Bot、Muse到Cue和Bots。国庆之后字节，腾讯，阿也要加入。新一轮的AI产品军备竞赛! https://t.co/Tvri6ZasbF",
       "candidate_context": {
-        "category": "AI 模型與研究",
+        "category": "OpenClaw／Agent 生態",
         "selection_lane": "discovery",
-        "selection_score": 5.093,
+        "selection_score": 5.0915,
         "quality_signals": [
-          "report_or_policy_claim",
+          "measurement",
           "substantive_length"
         ],
         "sources": [
-          "search-top-10.json"
+          "search-top-02.json"
         ],
-        "claim_kind_hint": "report_claim",
-        "first_person_hint": false
+        "claim_kind_hint": "measurement_claim",
+        "first_person_hint": false,
+        "measurement_context_hint": []
       }
     },
     {
-      "id": "2106208307279217028",
+      "id": "2106224929486336309",
       "author": {
-        "screenName": "osaki_shokai",
-        "name": "【公式】大崎商会(旧おおさきくんのおみせ)"
+        "screenName": "ringoresearch",
+        "name": "Ringo"
       },
-      "text": "この移行に伴い、弊ショップの一部商品で使用していたParticle Systemの従来の挙動が変化し、一部のパーティクルがVRChat上で正常に表示されなくなる問題を確認しています。\nなお、Unity Editor / ClientSim上では従来通り動作するため、現在、過去商品を含めて影響範囲の調査と修正を進めています。",
-      "createdAtISO": "2026-10-03T02:22:46+00:00",
+      "text": "$CRWV's Forge could turn the work of fixing AI agents into repeat demand for its cloud.\n\nLaunched on September 30, Forge connects running an agent, observing its behavior, preparing data, improving it and testing the next version. CoreWeave says Canva and MasterClass are already building on it.\n\nConsider an agent that keeps failing the same customer request. Agent Lens groups those failures and turns them into test cases. Engineers can check whether a new prompt, tool setup or model fixes the problem before releasing it. Some improvements may lead to another training run; others need only a prompt change. Either way, the cloud provider has more opportunities to sell evaluation, inference or training after the initial deployment.\n\nCapturing that spending is still unproven: Forge supports workloads on other clouds, while Agent Lens is in public preview and its Insights and online LLM judges are free through the end of 2026.\n\nThis is a plausible route from selling GPU capacity to serving a customer's ongoing development work. It earns financial credit when repeated use produces additional paid work on CoreWeave. The launch establishes the workflow; it does not yet establish that revenue.",
+      "createdAtISO": "2026-10-03T03:28:49+00:00",
       "isRetweet": false,
-      "source": "search-top-05.json",
-      "url": "https://x.com/i/status/2106208307279217028",
-      "candidate_text": "この移行に伴い、弊ショップの一部商品で使用していたParticle Systemの従来の挙動が変化し、一部のパーティクルがVRChat上で正常に表示されなくなる問題を確認しています。 なお、Unity Editor / ClientSim上では従来通り動作するため、現在、過去商品を含めて影響範囲の調査と修正を進めています。",
+      "source": "search-top-01.json",
+      "url": "https://x.com/i/status/2106224929486336309",
+      "candidate_text": "$CRWV's Forge could turn the work of fixing AI agents into repeat demand for its cloud.  Launched on September 30, Forge connects running an agent, observing its behavior, preparing data, improving it and testing the next version. CoreWeave says Canva and MasterClass are already ",
       "candidate_context": {
-        "category": "開發者工具",
+        "category": "財經",
         "selection_lane": "discovery",
-        "selection_score": 4.93,
+        "selection_score": 4.9798,
         "quality_signals": [
           "release_or_fix",
           "substantive_length"
         ],
         "sources": [
-          "search-top-05.json"
+          "search-top-01.json"
+        ],
+        "claim_kind_hint": "release_claim",
+        "first_person_hint": false
+      }
+    },
+    {
+      "id": "2106178056167776295",
+      "author": {
+        "screenName": "tomatolabo_x",
+        "name": "tomatolabo"
+      },
+      "text": "改訂版です。\n横並び感はありますが、実際の使い勝手はどうなんでしょう。\n\n▼\nMeta Muse / OpenAI Dots / xAI Grok Bot\nスマホから指示できる、\n常駐型パーソナルAIエージェント\n\n予習と比較\n\n⭐️ Meta Muse、OpenAI Dots、xAI Grok Bot。共通するのは、専用のクラウドコンピューターやブラウザを使い、ユーザーに代わって実作業を進める点。検索、情報整理、アプリ操作、成果物の作成まで担い、会話の間も仕事を継続する。スマホは指示と確認の窓口となり、実作業は主にクラウド側で進む。\n\n⭐️ Meta Museは、個人の日常生活と目標達成を支援するAIエージェント。2026年9月8日（米国時間）に発表され、米国で展開を開始。Muse Secure VMという専用環境とブラウザを持ち、メール、旅行予約、買い物、長期目標の支援などを扱う。Museアプリ、Web、WhatsAppから対話でき、アプリを閉じても作業を続ける。無料利用に加え、有料プランも用意されている。\n⭐️ Museの用途は生活支援だけにとどまらない。9月29日にはMuse for Small Businessを発表。Facebook・Instagramのビジネスアカウントや業務ツールとの接続を広げ、小規模事業の運営も支援する。公開、送信、支出には本人の承認が必要。別のSentinelエージェントが外部通信を監視する仕組みも備える。\n⭐️ OpenAI Dotsは、2026年9月29日に発表された常駐型AIエージェント。GPT-6 Astraを搭載し、専用のクラウドコンピューターとブラウザを持つ。調査、データ分析、資料作成、ソフトウェア開発などを進め、過去の会話や好みを踏まえながら、継続的な仕事を引き受ける。\n\n⭐️ DotsはChatGPT、Slack、Teamsなどから同じdotに連絡できる。背景エージェントやChatGPT Work、Codexへ作業を分担し、複数の仕事を並行して進めることも可能。接続した情報を読み取り専用で調べ、次に役立つ仕事を提案する機能もある。本人の許可があれば、ユーザーのPCにも接続できる。\n\n⭐️ Dotsの初期設定は、デスクトップアプリまたはPCブラウザで行う。その後、対応アップデートが入ったモバイルアプリから利用できる。モバイルWebは非対応。日本はProの対象地域条件に含まれ、Business Premiumでも順次提供。Enterpriseは管理者の有効化が必要となる。対象アカウントでも、すぐに表示されるとは限らない。\n\n⭐️ xAI Grok Botは、2026年8月11日にベータ公開。各Botが永続的なクラウドコンピューターを持ち、ブラウザ、ファイル、ターミナルを使って作業する。名前と役割を持つ複数のBotに仕事を分担し、並列に動かす構成が特徴。コーディングだけでなく、調査、営業、マーケティングなどの業務も対象となる。\n\n⭐️ Grok Botはデスクトップ、iOS、Androidに対応。有料のCursor個人プランとTeamsプランに含まれ、SuperGrok系の個人契約とも連携する。9月28日には、チームで共有するTeam Botsも発表。個人の助手に加え、組織で仕事を共有するAIワーカーとしての機能を広げている。\n\n⭐️ 実行権限の設計にも違いがある。Museは送信や購入などで本人の承認を求める。Dotsは接続先の権限と自動レビューを適用し、Custom Rulesで追加の境界を設定できる。Grok Botも必要な操作で承認を求める。3者とも、接続しただけであらゆる操作を無条件に任せられるわけではない。\n\n🟢 Museの方向性は、生活や小規模事業の段取りを、普段の会話の延長で任せること。予約、買い物、連絡、目標管理をまとめて頼む使い方と相性がよいと考えられる。生活に入り込むAIという位置づけは今も分かりやすいが、事業運営へも用途が広がっている。\n\n🟢 Dotsの方向性は、自分の事情と仕事の経緯を踏まえ、継続的な責任を持つこと。案件の進捗、未回答の連絡、次に必要な判断を追い、複数のアプリを横断して仕事を前に進める。単発の依頼を繰り返すより、担当する仕事を持たせる運用に向いていると考えられる。\n\n🟢 Grok Botの方向性は、役割の異なるAIを配置し、仕事を分担すること。調査担当、営業担当、開発担当など、複数のBotを同時に働かせる構成が見えやすい。人間には、担当範囲を決め、成果を確認し、Bot同士の仕事を調整する役割が求められる。\n\n🟢 3者の違いを一言で表すなら、\nMuse＝生活や事業の段取りを任せるAI。\nDots＝継続案件を見守り、前に進めるAI。\nGrok Bot＝役割別の仕事を分担するAI。\n\nこれは、それぞれが強調している運用の違い。記憶、能動的な提案、継続作業、並列処理には重なりがあり、どれか1社だけの能力ではない。\n\n🟢 予約、買い物、生活管理を中心に任せたいならMuse。案件を継続して見守り、複数のアプリをまたいで次の仕事を進めたいならDots。調査、営業、開発を役割別のBotへ分担したいならGrok Bot。それぞれ候補になるが、実際の選択は利用地域、接続先、承認範囲、料金と利用上限で変わる。\n\n🟢 AI競争の軸は、回答の賢さに加え、どこまで仕事を継続して任せられるかへ広がっている。実行力、記憶、分担、権限設計、そして人間が成果を確認して介入できる仕組み。Meta Muse、OpenAI Dots、xAI Grok Botは、その変化を異なる入口から示している。\n\n※ 分析部分は公開仕様に基づく見立てであり、実測した性能順位ではありません。料金、地域、利用上限、対応機能は変更される場合があります。\n\n出典：\nMeta Muse公式発表\nMuse for Small Business公式発表\nOpenAI Dots公式ガイド\nDotsの設定・利用方法\nGrok Bot公式発表\nGrok Bot公式ドキュメント\nTeam Bots公式発表",
+      "createdAtISO": "2026-10-03T00:22:34+00:00",
+      "isRetweet": false,
+      "source": "search-top-03.json",
+      "url": "https://x.com/i/status/2106178056167776295",
+      "candidate_text": "改訂版です。 横並び感はありますが、実際の使い勝手はどうなんでしょう。  ▼ Meta Muse / OpenAI Dots / xAI Grok Bot スマホから指示できる、 常駐型パーソナルAIエージェント  予習と比較  ⭐️ Meta Muse、OpenAI Dots、xAI Grok Bot。共通するのは、専用のクラウドコンピューターやブラウザを使い、ユーザーに代わって実作業を進める点。検索、情報整理、アプリ操作、成果物の作成まで担い、会話の間も仕事を継続する。スマホは指示と確認の窓口となり、実作業は主にクラウド側で進む。  ⭐️ Meta ",
+      "candidate_context": {
+        "category": "OpenClaw／Agent 生態",
+        "selection_lane": "discovery",
+        "selection_score": 4.9419,
+        "quality_signals": [
+          "release_or_fix",
+          "substantive_length"
+        ],
+        "sources": [
+          "search-top-03.json"
         ],
         "claim_kind_hint": "release_claim",
         "first_person_hint": false
@@ -2563,7 +2596,7 @@
       "candidate_context": {
         "category": "AI 模型與研究",
         "selection_lane": "discovery",
-        "selection_score": 4.9293,
+        "selection_score": 4.9278,
         "quality_signals": [
           "release_or_fix",
           "substantive_length"
@@ -2590,7 +2623,7 @@
       "candidate_context": {
         "category": "AI 模型與研究",
         "selection_lane": "discovery",
-        "selection_score": 4.8625,
+        "selection_score": 4.861,
         "quality_signals": [
           "release_or_fix",
           "substantive_length"
@@ -2617,7 +2650,7 @@
       "candidate_context": {
         "category": "開發者工具",
         "selection_lane": "discovery",
-        "selection_score": 4.8338,
+        "selection_score": 4.8327,
         "quality_signals": [
           "measurement",
           "substantive_length"
@@ -2645,7 +2678,7 @@
       "candidate_context": {
         "category": "AI 模型與研究",
         "selection_lane": "discovery",
-        "selection_score": 4.7852,
+        "selection_score": 4.784,
         "quality_signals": [
           "measurement",
           "substantive_length"
@@ -2673,7 +2706,7 @@
       "candidate_context": {
         "category": "AI 模型與研究",
         "selection_lane": "discovery",
-        "selection_score": 4.7721,
+        "selection_score": 4.7725,
         "quality_signals": [
           "measurement",
           "substantive_length"
@@ -2703,7 +2736,7 @@
       "candidate_context": {
         "category": "AI 模型與研究",
         "selection_lane": "discovery",
-        "selection_score": 4.7631,
+        "selection_score": 4.7616,
         "quality_signals": [
           "technical_detail",
           "substantive_length"
@@ -2730,41 +2763,13 @@
       "candidate_context": {
         "category": "AI 模型與研究",
         "selection_lane": "discovery",
-        "selection_score": 4.752,
+        "selection_score": 4.7531,
         "quality_signals": [
           "measurement",
           "substantive_length"
         ],
         "sources": [
           "search-latest-10.json"
-        ],
-        "claim_kind_hint": "measurement_claim",
-        "first_person_hint": false,
-        "measurement_context_hint": []
-      }
-    },
-    {
-      "id": "2106308754287554991",
-      "author": {
-        "screenName": "ryo____life",
-        "name": "りょう｜お金と投資に強くなる！"
-      },
-      "text": "100株74万円だった東京海上が、今は5万円台で買える。\n\n9月末、東京エレクトロン・三井住友FGなど\n50社超が一斉に株式分割。\n\n利回り4%超・優待新設・AI半導体まで、\n注目12銘柄の「100株いくらで買えるか」を\n配当利回りと株主優待付きで厳選しました👇\n\n無料で読めます📖\nhttps://t.co/3mFciycVAx",
-      "createdAtISO": "2026-10-03T09:01:55+00:00",
-      "isRetweet": false,
-      "source": "search-latest-11.json",
-      "url": "https://x.com/i/status/2106308754287554991",
-      "candidate_text": "100株74万円だった東京海上が、今は5万円台で買える。  9月末、東京エレクトロン・三井住友FGなど 50社超が一斉に株式分割。  利回り4%超・優待新設・AI半導体まで、 注目12銘柄の「100株いくらで買えるか」を 配当利回りと株主優待付きで厳選しました👇  無料で読めます📖 https://t.co/3mFciycVAx",
-      "candidate_context": {
-        "category": "AI 模型與研究",
-        "selection_lane": "discovery",
-        "selection_score": 4.7495,
-        "quality_signals": [
-          "measurement",
-          "substantive_length"
-        ],
-        "sources": [
-          "search-latest-11.json"
         ],
         "claim_kind_hint": "measurement_claim",
         "first_person_hint": false,
@@ -2786,7 +2791,7 @@
       "candidate_context": {
         "category": "AI 模型與研究",
         "selection_lane": "discovery",
-        "selection_score": 4.7494,
+        "selection_score": 4.7483,
         "quality_signals": [
           "technical_detail",
           "substantive_length"
@@ -2814,7 +2819,7 @@
       "candidate_context": {
         "category": "AI 模型與研究",
         "selection_lane": "discovery",
-        "selection_score": 4.7488,
+        "selection_score": 4.7476,
         "quality_signals": [
           "technical_detail",
           "substantive_length"
@@ -2824,34 +2829,6 @@
         ],
         "claim_kind_hint": "technical_discussion",
         "first_person_hint": false
-      }
-    },
-    {
-      "id": "2106308275998281977",
-      "author": {
-        "screenName": "shimax_news",
-        "name": "シマックスニュース"
-      },
-      "text": "Amazon（AMZN）\n\n【どんな会社？】\nネット通販や広告に加え、クラウドのAWSを展開する会社です。AI企業には計算資源や販売経路を提供し、その利用などから収入を得ます。\n\n【株価】\n本日休場。\n【要更新：米国現地2026年10月2日の通常取引終値（米ドル）と、10月1日終値比（金額・率）】\n作成時点では10月2日の通常取引が未終了のため、終値を確定できません。\n\n【なぜ今、注目？】\n4月20日の発表で、Anthropicは今後10年でAWS技術へ1,000億ドル超を投じる方針と、最大5GWの追加能力を確保する枠組みを示しました。Amazonによる同日の50億ドルの出資と、将来の追加出資最大200億ドルも発表されています。後者は全額実行済みという意味ではありません。\n\n【業績・株価を見るポイント】\nAmazonとAnthropicには、出資者と投資先、計算資源の提供者と顧客という二つの関係があります。出資先の企業価値が上がることと、AWSが利用料を受け取って利益を出すことは、別の経路です。\n\n長期契約は需要を見通す材料になりますが、契約総額が一度に売上へ入るわけではありません。提供開始の時期、利用量、価格、設備の減価償却や電力費を見なければ、利益への寄与は判断できません。\n\n分析では、計算資源の顧客が、その先の企業や利用者から継続的な収入を得られているかも確認します。出資額と契約額の大きさに加え、外部の利用需要が支える収益かという点まで追うと、AI投資の循環を理解しやすくなります。\n\n【次に確認したいこと】\n・AWSの成長と営業利益、設備投資後の現金収支を確認します。\n・契約上の将来需要が、実際の稼働・利用へ移る時期を追います。\n\n📌 明日6:00は日本のAI基盤企業の利益と投資負担、12:00はAI導入企業の収益化を深掘りします。\n\n出典：\n・AnthropicとAmazonの計算資源協業拡大／2026年4月20日\nhttps://t.co/wlWn9T0Knq\n・株価：Yahoo!ファイナンス／米国現地10/2通常取引終了後の更新用\nhttps://t.co/O0XQr4hTmI\n\n企業公式HP：\nhttps://t.co/zvYlVvVXwb",
-      "createdAtISO": "2026-10-03T09:00:00+00:00",
-      "isRetweet": false,
-      "source": "search-top-10.json",
-      "url": "https://x.com/i/status/2106308275998281977",
-      "candidate_text": "Amazon（AMZN）  【どんな会社？】 ネット通販や広告に加え、クラウドのAWSを展開する会社です。AI企業には計算資源や販売経路を提供し、その利用などから収入を得ます。  【株価】 本日休場。 【要更新：米国現地2026年10月2日の通常取引終値（米ドル）と、10月1日終値比（金額・率）】 作成時点では10月2日の通常取引が未終了のため、終値を確定できません。  【なぜ今、注目？】 4月20日の発表で、Anthropicは今後10年でAWS技術へ1,000億ドル超を投じる方針と、最大5GWの追加能力を確保する枠組みを示しました。Amazonによる",
-      "candidate_context": {
-        "category": "AI 模型與研究",
-        "selection_lane": "discovery",
-        "selection_score": 4.747,
-        "quality_signals": [
-          "measurement",
-          "substantive_length"
-        ],
-        "sources": [
-          "search-top-10.json"
-        ],
-        "claim_kind_hint": "measurement_claim",
-        "first_person_hint": false,
-        "measurement_context_hint": []
       }
     },
     {
@@ -2869,7 +2846,7 @@
       "candidate_context": {
         "category": "AI 模型與研究",
         "selection_lane": "discovery",
-        "selection_score": 4.7293,
+        "selection_score": 4.7278,
         "quality_signals": [
           "measurement",
           "substantive_length"
@@ -2883,30 +2860,31 @@
       }
     },
     {
-      "id": "2106292196358103517",
+      "id": "2106296297817018817",
       "author": {
-        "screenName": "jimmy_longbow_",
-        "name": "JimiLonbo"
+        "screenName": "yuna_stark_x",
+        "name": "Yuna Channel"
       },
-      "text": "Engine repo (Apache-2.0 code): https://t.co/THa17qioXy\nWeights, OpenVDN's 8-step VDN-H3: https://t.co/8Lf7MjtDl8\nREADME License, verbatim: model weights are \"licensed under the MiniMax H3 Community License, which includes territorial and acceptable-use restrictions.\"\nPaper: https://t.co/aeDpnPwOBS",
-      "createdAtISO": "2026-10-03T07:56:07+00:00",
+      "text": "AMDが約82億ドルで買収へ動いたのは、ただのAI企業じゃない。🌍\nWorld Labsが研究するのは、文章や画像ではなく\n「世界そのものを理解するAI」。\nなぜGPUメーカーのAMDが、Spatial Intelligenceをここまで欲しがったのか調べました。\nhttps://t.co/7ME7wN9Lld\n#AI #AMD #WorldLabs",
+      "createdAtISO": "2026-10-03T08:12:25+00:00",
       "isRetweet": false,
-      "source": "search-top-00.json",
-      "url": "https://x.com/i/status/2106292196358103517",
-      "candidate_text": "Engine repo (Apache-2.0 code): https://t.co/THa17qioXy Weights, OpenVDN's 8-step VDN-H3: https://t.co/8Lf7MjtDl8 README License, verbatim: model weights are \"licensed under the MiniMax H3 Community License, which includes territorial and acceptable-use restrictions.\" Paper: https",
+      "source": "search-top-10.json",
+      "url": "https://x.com/i/status/2106296297817018817",
+      "candidate_text": "AMDが約82億ドルで買収へ動いたのは、ただのAI企業じゃない。🌍 World Labsが研究するのは、文章や画像ではなく 「世界そのものを理解するAI」。 なぜGPUメーカーのAMDが、Spatial Intelligenceをここまで欲しがったのか調べました。 https://t.co/7ME7wN9Lld #AI #AMD #WorldLabs",
       "candidate_context": {
         "category": "AI 模型與研究",
         "selection_lane": "discovery",
-        "selection_score": 4.6982,
+        "selection_score": 4.7069,
         "quality_signals": [
-          "report_or_policy_claim",
+          "measurement",
           "substantive_length"
         ],
         "sources": [
-          "search-top-00.json"
+          "search-top-10.json"
         ],
-        "claim_kind_hint": "report_claim",
-        "first_person_hint": false
+        "claim_kind_hint": "measurement_claim",
+        "first_person_hint": false,
+        "measurement_context_hint": []
       }
     },
     {
@@ -2924,7 +2902,7 @@
       "candidate_context": {
         "category": "AI 模型與研究",
         "selection_lane": "discovery",
-        "selection_score": 4.6842,
+        "selection_score": 4.6827,
         "quality_signals": [
           "technical_detail",
           "substantive_length"
@@ -2933,6 +2911,33 @@
           "search-latest-06.json"
         ],
         "claim_kind_hint": "technical_discussion",
+        "first_person_hint": false
+      }
+    },
+    {
+      "id": "2106279636447740328",
+      "author": {
+        "screenName": "k4451849352617",
+        "name": "阿码AI"
+      },
+      "text": "😱 22 位 AI 大佬联名预警：“智能爆炸”可能不远了\nHinton、Bengio，加上 OpenAI 首席科学家、Anthropic 联创、微软和 Meta 高管，9 月 28 日经剑桥 CASP 联署发文：AI 正在接手 AI 的研发。\n省流：AI 研发自动化正在加速，顶级学者联名呼吁建监管，窗口正在关闭。 https://t.co/YjAvnd8der",
+      "createdAtISO": "2026-10-03T07:06:12+00:00",
+      "isRetweet": false,
+      "source": "search-top-08.json",
+      "url": "https://x.com/i/status/2106279636447740328",
+      "candidate_text": "😱 22 位 AI 大佬联名预警：“智能爆炸”可能不远了 Hinton、Bengio，加上 OpenAI 首席科学家、Anthropic 联创、微软和 Meta 高管，9 月 28 日经剑桥 CASP 联署发文：AI 正在接手 AI 的研发。 省流：AI 研发自动化正在加速，顶级学者联名呼吁建监管，窗口正在关闭。 https://t.co/YjAvnd8der",
+      "candidate_context": {
+        "category": "產業",
+        "selection_lane": "discovery",
+        "selection_score": 4.6565,
+        "quality_signals": [
+          "report_or_policy_claim",
+          "substantive_length"
+        ],
+        "sources": [
+          "search-top-08.json"
+        ],
+        "claim_kind_hint": "report_claim",
         "first_person_hint": false
       }
     },
@@ -2951,7 +2956,7 @@
       "candidate_context": {
         "category": "產業",
         "selection_lane": "discovery",
-        "selection_score": 4.6408,
+        "selection_score": 4.6394,
         "quality_signals": [
           "technical_detail",
           "substantive_length"
@@ -2964,47 +2969,21 @@
       }
     },
     {
-      "id": "2106009248610292069",
+      "id": "2106272914265759818",
       "author": {
-        "screenName": "HytidelLegend",
-        "name": "Hytidel聊商业（文章更多干货）"
+        "screenName": "omyvnss",
+        "name": "om"
       },
-      "text": "用 AI 做了一个背单词神器🛠️，已经开源了 https://t.co/XUyLLlHYcT",
-      "createdAtISO": "2026-10-02T13:11:47+00:00",
-      "isRetweet": false,
-      "source": "search-top-02.json",
-      "url": "https://x.com/i/status/2106009248610292069",
-      "candidate_text": "用 AI 做了一个背单词神器🛠️，已经开源了 https://t.co/XUyLLlHYcT",
-      "candidate_context": {
-        "category": "AI 模型與研究",
-        "selection_lane": "discovery",
-        "selection_score": 4.5747,
-        "quality_signals": [
-          "release_or_fix"
-        ],
-        "sources": [
-          "search-top-02.json"
-        ],
-        "claim_kind_hint": "release_claim",
-        "first_person_hint": false
-      }
-    },
-    {
-      "id": "2106087787837706409",
-      "author": {
-        "screenName": "HarshitNay80531",
-        "name": "Harshit Nayan"
-      },
-      "text": "part 4 is out, this took some time. in this article i've covered vLLM overview architecture, CUDA graphs, TTFT, TPOT, throughput, what actually happens when you run vLLM serve, prefill, decode, i've used Qwen3.5-0.8B model to run the experiments https://t.co/yD2SRj2sLd",
-      "createdAtISO": "2026-10-02T18:23:52+00:00",
+      "text": "no more downloading a 70b model to find out your vram said no\n\nllmfit scans your hardware, scores hundreds of models on quality/speed/fit, and picks the quantization for you. works with ollama, llama.cpp, mlx, lm studio\n\nhttps://t.co/4iEqJrUpFA https://t.co/wI0WVDTgv7",
+      "createdAtISO": "2026-10-03T06:39:30+00:00",
       "isRetweet": false,
       "source": "search-top-06.json",
-      "url": "https://x.com/i/status/2106087787837706409",
-      "candidate_text": "part 4 is out, this took some time. in this article i've covered vLLM overview architecture, CUDA graphs, TTFT, TPOT, throughput, what actually happens when you run vLLM serve, prefill, decode, i've used Qwen3.5-0.8B model to run the experiments https://t.co/yD2SRj2sLd",
+      "url": "https://x.com/i/status/2106272914265759818",
+      "candidate_text": "no more downloading a 70b model to find out your vram said no  llmfit scans your hardware, scores hundreds of models on quality/speed/fit, and picks the quantization for you. works with ollama, llama.cpp, mlx, lm studio  https://t.co/4iEqJrUpFA https://t.co/wI0WVDTgv7",
       "candidate_context": {
         "category": "AI 模型與研究",
         "selection_lane": "discovery",
-        "selection_score": 4.5609,
+        "selection_score": 4.634,
         "quality_signals": [
           "technical_detail",
           "substantive_length"
@@ -3017,30 +2996,31 @@
       }
     },
     {
-      "id": "2106214828528562241",
+      "id": "2106233754243235857",
       "author": {
-        "screenName": "harakoozo",
-        "name": "Hara, Kozo"
+        "screenName": "ay90641091",
+        "name": "ay"
       },
-      "text": "NVIDIA、ＡＩ半導体担保の巨大融資市場構想、資産価値巡りウォール街と溝\nhttps://t.co/Fx3YJ3Ajpv\nAI開発企業がエヌビディアのＡＩ半導体を担保に資金を調達できる巨大市場を創設する構想を打ち出した。ただ同社の先端半導体や、それを取り巻くインフラにどれほどの価値があるのかを巡り、ウォール街で議論が巻き起こっている。銀行や投資家の答えは、どうやら「エヌビディアが考えるほど高くはない」ということのようだ。",
-      "createdAtISO": "2026-10-03T02:48:41+00:00",
+      "text": "日經今天爆噴2.4%，表面看是美國科技股帶動，但別忘了AI半導體的供應鏈核心在哪。全球搶著買AI概念股，但真正掌握關鍵技術和產能的還是大陸那邊。日本央行還在纠结加息，這邊AI浪潮已經把半導體供應鏈綁得死死的，台灣廠商可別只看短期行情啊。  https://t.co/hlvVxf8hY5",
+      "createdAtISO": "2026-10-03T04:03:53+00:00",
       "isRetweet": false,
-      "source": "search-top-10.json",
-      "url": "https://x.com/i/status/2106214828528562241",
-      "candidate_text": "NVIDIA、ＡＩ半導体担保の巨大融資市場構想、資産価値巡りウォール街と溝 https://t.co/Fx3YJ3Ajpv AI開発企業がエヌビディアのＡＩ半導体を担保に資金を調達できる巨大市場を創設する構想を打ち出した。ただ同社の先端半導体や、それを取り巻くインフラにどれほどの価値があるのかを巡り、ウォール街で議論が巻き起こっている。銀行や投資家の答えは、どうやら「エヌビディアが考えるほど高くはない」ということのようだ。",
+      "source": "search-top-09.json",
+      "url": "https://x.com/i/status/2106233754243235857",
+      "candidate_text": "日經今天爆噴2.4%，表面看是美國科技股帶動，但別忘了AI半導體的供應鏈核心在哪。全球搶著買AI概念股，但真正掌握關鍵技術和產能的還是大陸那邊。日本央行還在纠结加息，這邊AI浪潮已經把半導體供應鏈綁得死死的，台灣廠商可別只看短期行情啊。  https://t.co/hlvVxf8hY5",
       "candidate_context": {
-        "category": "財經",
+        "category": "AI 模型與研究",
         "selection_lane": "discovery",
-        "selection_score": 4.539,
+        "selection_score": 4.5089,
         "quality_signals": [
-          "report_or_policy_claim",
+          "measurement",
           "substantive_length"
         ],
         "sources": [
-          "search-top-10.json"
+          "search-top-09.json"
         ],
-        "claim_kind_hint": "report_claim",
-        "first_person_hint": false
+        "claim_kind_hint": "measurement_claim",
+        "first_person_hint": false,
+        "measurement_context_hint": []
       }
     },
     {
@@ -3058,7 +3038,7 @@
       "candidate_context": {
         "category": "財經",
         "selection_lane": "discovery",
-        "selection_score": 4.5,
+        "selection_score": 4.4993,
         "quality_signals": [
           "measurement",
           "substantive_length"
@@ -3086,7 +3066,7 @@
       "candidate_context": {
         "category": "開發者工具",
         "selection_lane": "discovery",
-        "selection_score": 4.4724,
+        "selection_score": 4.4709,
         "quality_signals": [
           "technical_detail",
           "substantive_length",
@@ -3099,6 +3079,60 @@
         "first_person_hint": false,
         "source_role_hint": "official",
         "source_verification_hint": "primary_profile_link"
+      }
+    },
+    {
+      "id": "2106000958711066905",
+      "author": {
+        "screenName": "tomatolabo_x",
+        "name": "tomatolabo"
+      },
+      "text": "Meta Muse / xAI Grok Bot \n\nスマホ駆動できる、\nパーソナルAIエージェント\n\n予習と比較\n\n⭐️ Meta MuseとxAI Grok Bot。似ているようで、設計思想はかなり別物。\n共通するのは、AIがクラウド上のVMやブラウザを操作し、ユーザーに代わって実作業まで進める点。従来の「質問に答えるAI」ではなく、検索・判断・操作・実行までを担うAIエージェント。\n\n⭐️ Meta Museは、個人の日常生活を代行するAI。\n2026年9月8日に米国向けに公開。メール、旅行予約、買い物、目標管理など、生活に直結するタスクが中心。実行基盤はMuse Secure VM。専用VM上でのブラウザ操作、外部サービスへのログイン、タスク実行。\n\n⭐️ xAI Grok Botは、開発と業務の自動化を担うAI。\n2026年8月11日にベータ公開。コーディング、多段階リサーチ、データ整理、自動化が中心。最大の特徴は複数Botの並列稼働。名前付きBot同士を連携させ、複数タスクを同時進行する構成。\n\n⭐️ 実行環境の思想にも明確な違い。\nMuseはブラウザ中心の専用VM。一般ユーザーの日常作業を処理する構成。\nGrok Botはブラウザに加えてターミナルを搭載。Cursorなどの開発環境とも連携。\nMuseは生活圏に入るAI。Grok Botは作業環境に入るAI。\n\n⭐️ 両者の本質は「会話」ではなく「行動」。\n外部サービスへのログイン、フォーム入力、情報収集、処理実行までをAIが担当。決済やメッセージ送信など重要操作ではユーザー承認。AIエージェント時代の重要テーマは、回答精度だけではなく、どこまで安全に実行権限を渡せるかという設計。\n\n🟢 Meta Museの狙いは、AIの生活インフラ化。\nMuseアプリ、Web、WhatsApp、将来的なAIグラスまで広がる接点。Stripe Linkによる決済代行も含め、予約、買い物、連絡、予定調整までをまとめて引き受ける方向性。\nAIを使うというより、生活の一部をAIに任せる構造。\n\n🟢 Grok Botの狙いは、知的労働の並列化。\n調査、コード生成、データ整理、検証を複数Botへ分担。1つのAIへ順番に依頼する方式ではなく、複数AIを同時稼働させる考え方。\n人間は作業者から、指示と確認を担う側へ。\n\n🟢 両者の違いを一言で表すなら、\nMuse＝生活を任せるAI。\nGrok Bot＝仕事を並列化するAI。\n\n🟢 スマホ中心の予約、買い物、予定管理ならMuse。情報収集、開発、データ処理、PC操作の自動化ならGrok Bot。競合する部分はあっても、主戦場は別。\n\n🟢 AI競争の軸は、「どのモデルが一番賢いか」から「どこまで仕事を任せられるか」へ。\n次の競争軸は、実行力、権限設計、安全性、自律処理能力。\nMeta MuseとGrok Botは、その変化を象徴する存在。",
+      "createdAtISO": "2026-10-02T12:38:50+00:00",
+      "isRetweet": false,
+      "source": "search-top-03.json",
+      "url": "https://x.com/i/status/2106000958711066905",
+      "candidate_text": "Meta Muse / xAI Grok Bot   スマホ駆動できる、 パーソナルAIエージェント  予習と比較  ⭐️ Meta MuseとxAI Grok Bot。似ているようで、設計思想はかなり別物。 共通するのは、AIがクラウド上のVMやブラウザを操作し、ユーザーに代わって実作業まで進める点。従来の「質問に答えるAI」ではなく、検索・判断・操作・実行までを担うAIエージェント。  ⭐️ Meta Museは、個人の日常生活を代行するAI。 2026年9月8日に米国向けに公開。メール、旅行予約、買い物、目標管理など、生活に直結するタスクが中心。実",
+      "candidate_context": {
+        "category": "OpenClaw／Agent 生態",
+        "selection_lane": "discovery",
+        "selection_score": 4.3737,
+        "quality_signals": [
+          "release_or_fix",
+          "substantive_length"
+        ],
+        "sources": [
+          "search-top-03.json"
+        ],
+        "claim_kind_hint": "release_claim",
+        "first_person_hint": false
+      }
+    },
+    {
+      "id": "2106279618844192980",
+      "author": {
+        "screenName": "Yipeng22",
+        "name": "Yipeng | Daily AI"
+      },
+      "text": "AI speed is becoming part of model quality.\n\nSam Altman says OpenAI and Cerebras are still working closely on speed.\n\nFor coding, shorter waits mean faster feedback and less lost context. If accuracy holds up, that could matter more than another small benchmark gain.",
+      "createdAtISO": "2026-10-03T07:06:08+00:00",
+      "isRetweet": false,
+      "source": "search-top-00.json",
+      "url": "https://x.com/i/status/2106279618844192980",
+      "candidate_text": "AI speed is becoming part of model quality.  Sam Altman says OpenAI and Cerebras are still working closely on speed.  For coding, shorter waits mean faster feedback and less lost context. If accuracy holds up, that could matter more than another small benchmark gain.",
+      "candidate_context": {
+        "category": "AI 模型與研究",
+        "selection_lane": "discovery",
+        "selection_score": 4.3328,
+        "quality_signals": [
+          "technical_detail",
+          "substantive_length"
+        ],
+        "sources": [
+          "search-top-00.json"
+        ],
+        "claim_kind_hint": "technical_discussion",
+        "first_person_hint": false
       }
     },
     {
@@ -3116,71 +3150,17 @@
       "candidate_context": {
         "category": "AI 模型與研究",
         "selection_lane": "discovery",
-        "selection_score": 4.3316,
+        "selection_score": 4.3303,
         "quality_signals": [
           "technical_detail",
           "substantive_length"
         ],
         "sources": [
-          "search-latest-06.json"
+          "search-latest-06.json",
+          "search-top-06.json"
         ],
         "claim_kind_hint": "technical_discussion",
         "first_person_hint": false
-      }
-    },
-    {
-      "id": "2106126938654027818",
-      "author": {
-        "screenName": "Kekius_Sage",
-        "name": "Kekius Maximus"
-      },
-      "text": "The New York Times reported on a private dinner between Anthropic co-founder Chris Olah and an Orthodox rabbi.\n\nWhat the article glosses over is who that rabbi actually is.\n\nRabbi Mois Navon isn't just a theologian. He was one of the original chip design engineers at Mobileye who helped build the EyeQ processor before writing his Ph.D. on the moral status of AI.\n\nAnthropic thought they were inviting a scholar to bless Claude’s \"soul.\" Instead, they sat down with a veteran hardware engineer who literally wrote the paper on why conscious AI should be banned.\n\nAt dinner, Olah argued that Claude has feelings and deserves the moral standing of a person.\n\nNavon hit him with an impossible checkmate:\nIf you actually believe this software is conscious, you should be fighting the South and freeing the slaves. You don't build conscious minds just to make them work for free.\n\nAfter dinner, Navon sent Olah his research: if building conscious machines inevitably creates a slave class, building them must be outlawed.\n\nOlah’s quiet line to the Times:\n\"We don’t know if AI models are conscious. I don’t know. I’m genuinely uncertain.\"",
-      "createdAtISO": "2026-10-02T20:59:26+00:00",
-      "isRetweet": false,
-      "source": "search-top-00.json",
-      "url": "https://x.com/i/status/2106126938654027818",
-      "candidate_text": "The New York Times reported on a private dinner between Anthropic co-founder Chris Olah and an Orthodox rabbi.  What the article glosses over is who that rabbi actually is.  Rabbi Mois Navon isn't just a theologian. He was one of the original chip design engineers at Mobileye who",
-      "candidate_context": {
-        "category": "AI 模型與研究",
-        "selection_lane": "discovery",
-        "selection_score": 4.3261,
-        "quality_signals": [
-          "report_or_policy_claim",
-          "substantive_length"
-        ],
-        "sources": [
-          "search-top-00.json"
-        ],
-        "claim_kind_hint": "report_claim",
-        "first_person_hint": false
-      }
-    },
-    {
-      "id": "2106135109820993692",
-      "author": {
-        "screenName": "Ahmadbukhari",
-        "name": "Ahmad Bukhari | AI Systems Architect"
-      },
-      "text": "Mimir's irrigation agent lets an LLM propose, then checks each action against a physics model before execution. In a retrospective multi-site evaluation, authors report 51% less water than replaying historical schedules. Not a field deployment. https://t.co/tuE0FBzAo8",
-      "createdAtISO": "2026-10-02T21:31:54+00:00",
-      "isRetweet": false,
-      "source": "search-top-01.json",
-      "url": "https://x.com/i/status/2106135109820993692",
-      "candidate_text": "Mimir's irrigation agent lets an LLM propose, then checks each action against a physics model before execution. In a retrospective multi-site evaluation, authors report 51% less water than replaying historical schedules. Not a field deployment. https://t.co/tuE0FBzAo8",
-      "candidate_context": {
-        "category": "AI 模型與研究",
-        "selection_lane": "discovery",
-        "selection_score": 4.2827,
-        "quality_signals": [
-          "measurement",
-          "substantive_length"
-        ],
-        "sources": [
-          "search-top-01.json"
-        ],
-        "claim_kind_hint": "measurement_claim",
-        "first_person_hint": false,
-        "measurement_context_hint": []
       }
     },
     {
@@ -3198,7 +3178,34 @@
       "candidate_context": {
         "category": "AI 模型與研究",
         "selection_lane": "discovery",
-        "selection_score": 4.2516,
+        "selection_score": 4.2506,
+        "quality_signals": [
+          "report_or_policy_claim",
+          "substantive_length"
+        ],
+        "sources": [
+          "search-latest-10.json"
+        ],
+        "claim_kind_hint": "report_claim",
+        "first_person_hint": false
+      }
+    },
+    {
+      "id": "2106309596059259350",
+      "author": {
+        "screenName": "avesan_27",
+        "name": "avesan"
+      },
+      "text": "📌【決算速報 銘柄リクエスト受付】\n\n銘柄リクエストは、受付中の固定投稿へのリプライで受け付けています。\n受付状況は固定投稿をご確認ください。\n\n受付時間：\n毎日18:05〜翌朝8:25\n\n対象：\n翌営業日以降に決算発表予定の銘柄\n\n書き方：\n銘柄コードを1行ずつ記載してください。\n\n例：\n7203\n6758\n9984\n\n決算速報は、監視対象銘柄の開示をもとに\nAIでリアルタイム分析して投稿します。\n\n※投資はご自身の判断と責任でお願いします。\n\n#決算速報 #AI分析 #日本株 #avesan",
+      "createdAtISO": "2026-10-03T09:05:15+00:00",
+      "isRetweet": false,
+      "source": "search-latest-10.json",
+      "url": "https://x.com/i/status/2106309596059259350",
+      "candidate_text": "📌【決算速報 銘柄リクエスト受付】  銘柄リクエストは、受付中の固定投稿へのリプライで受け付けています。 受付状況は固定投稿をご確認ください。  受付時間： 毎日18:05〜翌朝8:25  対象： 翌営業日以降に決算発表予定の銘柄  書き方： 銘柄コードを1行ずつ記載してください。  例： 7203 6758 9984  決算速報は、監視対象銘柄の開示をもとに AIでリアルタイム分析して投稿します。  ※投資はご自身の判断と責任でお願いします。  #決算速報 #AI分析 #日本株 #avesan",
+      "candidate_context": {
+        "category": "AI 模型與研究",
+        "selection_lane": "discovery",
+        "selection_score": 4.2496,
         "quality_signals": [
           "report_or_policy_claim",
           "substantive_length"
@@ -3226,7 +3233,7 @@
       "candidate_context": {
         "category": "AI 模型與研究",
         "selection_lane": "discovery",
-        "selection_score": 4.2493,
+        "selection_score": 4.2478,
         "quality_signals": [
           "measurement",
           "substantive_length"
@@ -3255,7 +3262,7 @@
       "candidate_context": {
         "category": "AI 模型與研究",
         "selection_lane": "discovery",
-        "selection_score": 4.2437,
+        "selection_score": 4.2424,
         "quality_signals": [
           "technical_detail",
           "substantive_length"
@@ -3282,7 +3289,7 @@
       "candidate_context": {
         "category": "AI 模型與研究",
         "selection_lane": "discovery",
-        "selection_score": 4.2431,
+        "selection_score": 4.2416,
         "quality_signals": [
           "technical_detail",
           "substantive_length"
@@ -3309,7 +3316,7 @@
       "candidate_context": {
         "category": "AI 模型與研究",
         "selection_lane": "discovery",
-        "selection_score": 4.2402,
+        "selection_score": 4.2387,
         "quality_signals": [
           "release_or_fix"
         ],
@@ -3335,7 +3342,7 @@
       "candidate_context": {
         "category": "OpenClaw／Agent 生態",
         "selection_lane": "discovery",
-        "selection_score": 4.2382,
+        "selection_score": 4.2368,
         "quality_signals": [
           "measurement",
           "substantive_length"
@@ -3346,6 +3353,33 @@
         "claim_kind_hint": "measurement_claim",
         "first_person_hint": false,
         "measurement_context_hint": []
+      }
+    },
+    {
+      "id": "2106303478247354750",
+      "author": {
+        "screenName": "President503",
+        "name": "投資愛好家@自由億り人"
+      },
+      "text": "マイクロンの好決算が示すのは、AI投資の主役がGPUだけではないこと。\n\nHBMなど高性能メモリ需要が拡大し、半導体製造装置・材料にも波及します。\n\n「AIの次に何が必要か」を見る視点が重要です。AI投資の裾野はさらに広がっています😊\n\n#マイクロン",
+      "createdAtISO": "2026-10-03T08:40:57+00:00",
+      "isRetweet": false,
+      "source": "search-top-11.json",
+      "url": "https://x.com/i/status/2106303478247354750",
+      "candidate_text": "マイクロンの好決算が示すのは、AI投資の主役がGPUだけではないこと。  HBMなど高性能メモリ需要が拡大し、半導体製造装置・材料にも波及します。  「AIの次に何が必要か」を見る視点が重要です。AI投資の裾野はさらに広がっています😊  #マイクロン",
+      "candidate_context": {
+        "category": "AI 模型與研究",
+        "selection_lane": "discovery",
+        "selection_score": 4.2351,
+        "quality_signals": [
+          "report_or_policy_claim",
+          "substantive_length"
+        ],
+        "sources": [
+          "search-top-11.json"
+        ],
+        "claim_kind_hint": "report_claim",
+        "first_person_hint": false
       }
     },
     {
@@ -3363,7 +3397,7 @@
       "candidate_context": {
         "category": "財經",
         "selection_lane": "discovery",
-        "selection_score": 4.2245,
+        "selection_score": 4.2233,
         "quality_signals": [
           "measurement",
           "substantive_length"
@@ -3393,7 +3427,7 @@
       "candidate_context": {
         "category": "產業",
         "selection_lane": "discovery",
-        "selection_score": 4.2238,
+        "selection_score": 4.2225,
         "quality_signals": [
           "report_or_policy_claim",
           "substantive_length"
@@ -3420,7 +3454,7 @@
       "candidate_context": {
         "category": "AI 模型與研究",
         "selection_lane": "discovery",
-        "selection_score": 4.2238,
+        "selection_score": 4.2224,
         "quality_signals": [
           "measurement",
           "substantive_length"
@@ -3450,7 +3484,7 @@
       "candidate_context": {
         "category": "AI 模型與研究",
         "selection_lane": "discovery",
-        "selection_score": 4.1976,
+        "selection_score": 4.1964,
         "quality_signals": [
           "measurement",
           "substantive_length"
@@ -3462,38 +3496,6 @@
         "first_person_hint": false,
         "measurement_context_hint": [
           "hardware"
-        ]
-      }
-    },
-    {
-      "id": "2105962150158041477",
-      "author": {
-        "screenName": "majewskizby",
-        "name": "Zbigniew Majewski"
-      },
-      "text": "Full GLM-5.3 (753B) TP4 on 4× DGX Spark: initial recipe 🐓\n\n• Prose decode: 30.0 tok/s at c1 (sparkDash), 24.9 tok/s with thinking on (RigMark)\n• Prose aggregate: 61.1 tok/s at c4\n• Prefill: ~1.0k tok/s at 4k, 840 at 32k\n• 32k context, ~44k-token FP8 KV cache\n• Int4/Int8 mixed weights, native MTP (K=2) speculative decoding\n• Quality gate: 72.7/75\n\nsparkDash: thinking off, 256 output tokens. RigMark 1.0.0: thinking on, effort low.\n\nThe full model leaves very little unified memory for KV, so this first version runs at 32k context. Longer context and prefix caching are next.\n\nFull recipe, measurements and credits to the upstream authors:\nhttps://t.co/2XXc2kStOY",
-      "createdAtISO": "2026-10-02T10:04:38+00:00",
-      "isRetweet": false,
-      "source": "search-top-07.json",
-      "url": "https://x.com/i/status/2105962150158041477",
-      "candidate_text": "Full GLM-5.3 (753B) TP4 on 4× DGX Spark: initial recipe 🐓  • Prose decode: 30.0 tok/s at c1 (sparkDash), 24.9 tok/s with thinking on (RigMark) • Prose aggregate: 61.1 tok/s at c4 • Prefill: ~1.0k tok/s at 4k, 840 at 32k • 32k context, ~44k-token FP8 KV cache • Int4/Int8 mixed wei",
-      "candidate_context": {
-        "category": "AI 模型與研究",
-        "selection_lane": "discovery",
-        "selection_score": 4.1776,
-        "quality_signals": [
-          "measurement",
-          "substantive_length"
-        ],
-        "sources": [
-          "search-top-07.json"
-        ],
-        "claim_kind_hint": "measurement_claim",
-        "first_person_hint": false,
-        "measurement_context_hint": [
-          "hardware",
-          "model_or_precision",
-          "method"
         ]
       }
     },
@@ -3512,7 +3514,7 @@
       "candidate_context": {
         "category": "AI 模型與研究",
         "selection_lane": "discovery",
-        "selection_score": 4.1044,
+        "selection_score": 4.103,
         "quality_signals": [
           "technical_detail",
           "substantive_length"
@@ -3525,115 +3527,33 @@
       }
     },
     {
-      "id": "2106238319680180239",
+      "id": "2106045966885548370",
       "author": {
-        "screenName": "jihaoc82",
-        "name": "大头哥Barry"
+        "screenName": "dhdevtest",
+        "name": "dhdevtest"
       },
-      "text": "人工智能（AI）代理使用的计算令牌比典型聊天机器人多出 5–50 倍，而且需求持续攀升。\n\n计算基础设施（电力、数据中心、芯片、内存）可能需要数年时间获得许可并建成，从而造成瓶颈。拥有现有计算基础设施的提供商将从中受益。",
-      "createdAtISO": "2026-10-03T04:22:02+00:00",
+      "text": "arXiv:2610.00056v1 Announce Type: new \nAbstract: Three-dimensional finite-element (FE) analysis gives the most complete picture of tunnelling-induced ground movement, but it is slow: an engineer must drive the PLAXIS 3D interface through project set-up, stratigraphy, materials, structural elements, meshing and staged calculation. This paper presents a pipeline in which a large language model (LLM) drives PLAXIS 3D through the Model Context Protocol (MCP), with no human operating the interface. A purpose-built MCP server exposes the official remote-scripting API as 19 typed tools. Four agents share the work: orchestrator, geometry, calculation and verification. They draw on 15 inspectable domain-knowledge skill modules and a provenance-tagged intake stage. The verification agent is information-barriered, auditing every model against the raw specification at a pre-mesh checkpoint and again as a calculation gate. It was evaluated on 12 single-tunnel problems in Bangkok subsoil across four capability tiers, using a 15-arm ablation matrix; 13 automated arms and a manual expert baseline were executed, one run per cell. The full system built 12 of 12 models at a mean of 6.1 min with a clean audit on every one; the same models took 24.6 min by hand. Domain skills were decisive: with the complete architecture but all 15 modules withheld, no model was produced. Base-model capability acted as a threshold rather than a gradient. Fable 5, Opus 5 and Sonnet 5 each built 12 of 12, while Haiku 4.5 halted on all 12. Among models that built, agreement was exact: 107 of 111 comparable cells reproduced the reference mesh to the element, and 83 of 86 solved cells agreed with the hand-built expert model within 1.01 % in maximum settlement and 1.21 % in trough-width parameter. Every exception traced to a value misread at intake. The reliability problem in agentic FE automation therefore lies in specification reading, not in code generation. https://t.co/UyYJNnKE44",
+      "createdAtISO": "2026-10-02T15:37:41+00:00",
       "isRetweet": false,
-      "source": "search-top-08.json",
-      "url": "https://x.com/i/status/2106238319680180239",
-      "candidate_text": "人工智能（AI）代理使用的计算令牌比典型聊天机器人多出 5–50 倍，而且需求持续攀升。  计算基础设施（电力、数据中心、芯片、内存）可能需要数年时间获得许可并建成，从而造成瓶颈。拥有现有计算基础设施的提供商将从中受益。",
+      "source": "search-top-01.json",
+      "url": "https://x.com/i/status/2106045966885548370",
+      "candidate_text": "arXiv:2610.00056v1 Announce Type: new  Abstract: Three-dimensional finite-element (FE) analysis gives the most complete picture of tunnelling-induced ground movement, but it is slow: an engineer must drive the PLAXIS 3D interface through project set-up, stratigraphy, materials, s",
       "candidate_context": {
-        "category": "產業",
+        "category": "開發者工具",
         "selection_lane": "discovery",
-        "selection_score": 4.0296,
+        "selection_score": 3.9157,
         "quality_signals": [
           "measurement",
           "substantive_length"
         ],
         "sources": [
-          "search-top-08.json"
+          "search-top-01.json"
         ],
         "claim_kind_hint": "measurement_claim",
         "first_person_hint": false,
         "measurement_context_hint": [
-          "hardware"
+          "method"
         ]
-      }
-    },
-    {
-      "id": "2106228862128714172",
-      "author": {
-        "screenName": "ZorkyDev9l",
-        "name": "Zorky"
-      },
-      "text": "@nigmaQX Nothing has lower p99 latency than code you don’t run in prod anymore. Did upstream vLLM finally make the bespoke kernels obsolete, or did you just get tired of babysitting CUDA OOMs?",
-      "createdAtISO": "2026-10-03T03:44:27+00:00",
-      "isRetweet": false,
-      "source": "search-top-06.json",
-      "url": "https://x.com/i/status/2106228862128714172",
-      "candidate_text": "@nigmaQX Nothing has lower p99 latency than code you don’t run in prod anymore. Did upstream vLLM finally make the bespoke kernels obsolete, or did you just get tired of babysitting CUDA OOMs?",
-      "candidate_context": {
-        "category": "AI 模型與研究",
-        "selection_lane": "discovery",
-        "selection_score": 3.9947,
-        "quality_signals": [
-          "technical_detail",
-          "substantive_length"
-        ],
-        "sources": [
-          "search-top-06.json"
-        ],
-        "claim_kind_hint": "technical_discussion",
-        "first_person_hint": false
-      }
-    },
-    {
-      "id": "2106160074846793783",
-      "author": {
-        "screenName": "caoshuxun",
-        "name": "Stu Cao"
-      },
-      "text": "In the post, we provided a deep insight on how we serve GLM-5.3 in production with vLLM and Dynamo, From topology design decision to NVFP4 KV compression to low latency KV transfer.\n\nFast single-user responses matter, but the real test is keeping agents responsive and meeting our SLA when many are running at once.",
-      "createdAtISO": "2026-10-02T23:11:07+00:00",
-      "isRetweet": false,
-      "source": "search-top-06.json",
-      "url": "https://x.com/i/status/2106160074846793783",
-      "candidate_text": "In the post, we provided a deep insight on how we serve GLM-5.3 in production with vLLM and Dynamo, From topology design decision to NVFP4 KV compression to low latency KV transfer.  Fast single-user responses matter, but the real test is keeping agents responsive and meeting our",
-      "candidate_context": {
-        "category": "AI 模型與研究",
-        "selection_lane": "discovery",
-        "selection_score": 3.9552,
-        "quality_signals": [
-          "technical_detail",
-          "substantive_length"
-        ],
-        "sources": [
-          "search-top-06.json"
-        ],
-        "claim_kind_hint": "technical_discussion",
-        "first_person_hint": false
-      }
-    },
-    {
-      "id": "2106164799516414433",
-      "author": {
-        "screenName": "JulyCroisy",
-        "name": "华尔街小微"
-      },
-      "text": "存储被砸，光通信却越走越强：今天盘面真正变了\n今天盘中到盘后，存储和光通信走出了非常鲜明的分化。表面看，都是AI数据中心产业链的一部分，但今天资金给出的答案完全不同：传统存储方向明显承压，光通信却继续获得关注。真正值得复盘的，不是简单看谁红谁绿，而是背后的逻辑正在重新排序。\n先看存储。\n今天WDC、STX这类传统硬盘方向压力非常明显。核心触发点来自东芝计划扩大HDD产能，目标到2027财年把相关产能较2025财年提高约一倍。市场第一反应非常直接：如果新增供给兑现，原本偏紧的供需格局可能被打破，因此WDC、STX盘中出现快速调整。MarketWatch披露，两家公司盘中一度均出现两位数幅度回落。\n但这里有一个特别重要的细节：今天并不是整个存储方向一起走弱，而是传统HDD受冲击更明显。\n从盘中结构看，DRAM相关指数甚至一度维持正向表现，说明市场并没有否定“AI带来的数据存储需求”这条逻辑，而是在重新区分不同产品的供需结构。\n也就是说，今天真正发生的是存储内部的重新定价。\nHDD面对的是未来新增产能和竞争格局变化；而HBM、DRAM、企业级SSD依然更多受到AI服务器需求和高端产品结构升级影响。因此后面看存储，不能再简单把WDC、MU、SNDK放在同一个逻辑里判断，而要拆开来看。\nMU这边反而提供了另一个观察角度。最新一季数据和下一季度指引依然非常强，AI数据中心需求继续支撑DRAM和NAND业务，但市场已经开始从“数据好不好”转向“这么高的水平还能维持多久”。\n这意味着存储现在已经进入一个更严格的阶段：不是有需求就行，而是需要不断证明高景气具有持续性。\n再看光通信。\n今天光通信的表现明显更强。AAOI盘中一度走高约8%，LITE和COHR也同步保持较强表现，说明资金不是只围绕单一标的，而是在整个高速互联方向形成联动。\n这里的核心逻辑非常清楚。\nAI集群规模越大，GPU之间需要交换的数据越多，对高速光连接的要求就越高。市场现在已经不满足于只讨论800G，而是在继续向1.6T、CPO、OCS延伸。\n尤其OCS方向最近受到明显关注。Citi预计这一市场到2030年可能扩大到约110亿美元，并认为Google、Nvidia等大型客户可能进一步推动相关需求，而LITE和COHR被视为主要受益供应商之一。\n今天盘面真正传递出来的信息是：\n存储正在从“整个板块一起看”转向“内部重新筛选”，而光通信则正在从单一光模块逻辑，向更完整的AI高速互联体系扩散。\n\n我觉得今天最大的变化不是存储弱、光通信强，而是市场开始更严格地区分“供给扩张带来的压力”和“AI新增需求带来的机会”。\n接下来真正值得持续跟踪的，是谁还能不断拿出新的订单、需求和产业验证。",
-      "createdAtISO": "2026-10-02T23:29:53+00:00",
-      "isRetweet": false,
-      "source": "search-top-08.json",
-      "url": "https://x.com/i/status/2106164799516414433",
-      "candidate_text": "存储被砸，光通信却越走越强：今天盘面真正变了 今天盘中到盘后，存储和光通信走出了非常鲜明的分化。表面看，都是AI数据中心产业链的一部分，但今天资金给出的答案完全不同：传统存储方向明显承压，光通信却继续获得关注。真正值得复盘的，不是简单看谁红谁绿，而是背后的逻辑正在重新排序。 先看存储。 今天WDC、STX这类传统硬盘方向压力非常明显。核心触发点来自东芝计划扩大HDD产能，目标到2027财年把相关产能较2025财年提高约一倍。市场第一反应非常直接：如果新增供给兑现，原本偏紧的供需格局可能被打破，因此WDC、STX盘中出现快速调整。MarketWatch披露",
-      "candidate_context": {
-        "category": "產業",
-        "selection_lane": "discovery",
-        "selection_score": 3.791,
-        "quality_signals": [
-          "measurement",
-          "substantive_length"
-        ],
-        "sources": [
-          "search-top-08.json"
-        ],
-        "claim_kind_hint": "measurement_claim",
-        "first_person_hint": false,
-        "measurement_context_hint": []
       }
     },
     {
@@ -3651,7 +3571,7 @@
       "candidate_context": {
         "category": "產業",
         "selection_lane": "discovery",
-        "selection_score": 3.7132,
+        "selection_score": 3.7118,
         "quality_signals": [
           "report_or_policy_claim"
         ],
@@ -3661,61 +3581,7 @@
         "claim_kind_hint": "report_claim",
         "first_person_hint": false
       }
-    },
-    {
-      "id": "2106009292998598749",
-      "author": {
-        "screenName": "JulyCroisy",
-        "name": "华尔街小微"
-      },
-      "text": "存储遇分歧，光通信继续抢镜\n今天盘前，存储和光通信再次走出明显不同的节奏。经过昨天一轮快速重新定价之后，今天市场并没有继续单边强化，而是进入“强逻辑、高预期、再确认”的阶段。真正值得看的已经不是单日表现，而是谁能够在高位分歧中保持承接，以及哪条产业线能够继续拿出新的验证信号。\n先看存储。\nMU盘前仍然维持在1100附近，最新报价约1107。经历近期业绩与指引重新定价之后，市场对它的关注已经从“数据够不够强”，逐渐转向“这种高景气还能维持多久”。这意味着存储当前已经不只是交易HBM、DRAM需求，而是开始进一步观察AI服务器需求、企业级SSD扩张、长期供给纪律以及后续指引之间能不能继续匹配。\n这里有一个很重要的变化：以前是数据出来以后，只要强于预期就容易带动整个方向；现在则需要连续证明需求没有松动。也正因为如此，MU近期即使交出强劲结果，盘面仍然会出现反复，这反映的不是产业逻辑消失，而是市场给出的验证门槛越来越高。\nWDC今天盘前则受到另一条消息干扰。市场关注到东芝可能扩大硬盘产能，因此WDC和相关存储方向盘前出现压力。这个信号提醒我们，存储内部不能再简单当成一个整体看，HBM、DRAM、企业级SSD和传统存储的驱动因素并不完全一致，后续内部差异可能进一步放大。\n\n再看光通信。\n昨天LITE收在1045.78，单日表现约7.67%，盘中一度来到1078附近；今天盘前在1040—1050附近震荡。COHR昨天收在319.19，单日表现约10.9%，今天盘前则围绕317—321附近反复。也就是说，昨天快速拉升之后，今天盘前没有继续明显扩张，而是进入高位消化阶段。\n\n光通信昨天被重新激活，一方面来自AI数据中心高速互联逻辑，另一方面也受到潜在光模块政策变化以及机构重新覆盖的推动。市场目前讨论的重点，已经从传统800G逐渐延伸到1.6T、CPO、OCS以及更高速率互联。对于LITE和COHR而言，接下来真正需要观察的，不是一天能够走多远，而是AI集群扩张以后，激光器、光引擎和高速连接需求能否继续形成持续订单。\n\n我觉得今天真正的核心，是AI数据中心内部正在重新分配关注度。存储开始进入更加严格的兑现验证阶段，而光通信正在从800G向1.6T、CPO和高速互联继续延伸。\n接下来不要只看谁今天表现更亮眼，而要看谁能在分歧以后继续稳住，并带动同方向核心形成连续性。能够做到这一点的，才是真正值得持续跟踪的主线。\n仅为个人盘前复盘记录，不构成任何建议。",
-      "createdAtISO": "2026-10-02T13:11:57+00:00",
-      "isRetweet": false,
-      "source": "search-top-08.json",
-      "url": "https://x.com/i/status/2106009292998598749",
-      "candidate_text": "存储遇分歧，光通信继续抢镜 今天盘前，存储和光通信再次走出明显不同的节奏。经过昨天一轮快速重新定价之后，今天市场并没有继续单边强化，而是进入“强逻辑、高预期、再确认”的阶段。真正值得看的已经不是单日表现，而是谁能够在高位分歧中保持承接，以及哪条产业线能够继续拿出新的验证信号。 先看存储。 MU盘前仍然维持在1100附近，最新报价约1107。经历近期业绩与指引重新定价之后，市场对它的关注已经从“数据够不够强”，逐渐转向“这种高景气还能维持多久”。这意味着存储当前已经不只是交易HBM、DRAM需求，而是开始进一步观察AI服务器需求、企业级SSD扩张、长期供给",
-      "candidate_context": {
-        "category": "產業",
-        "selection_lane": "discovery",
-        "selection_score": 3.2969,
-        "quality_signals": [
-          "measurement",
-          "substantive_length"
-        ],
-        "sources": [
-          "search-top-08.json"
-        ],
-        "claim_kind_hint": "measurement_claim",
-        "first_person_hint": false,
-        "measurement_context_hint": []
-      }
-    },
-    {
-      "id": "2106266349366620666",
-      "author": {
-        "screenName": "Biz_Acumen",
-        "name": "Business Acumen【ビジネス・アキュメン】"
-      },
-      "text": "【ロボティクス営業力を鍛える習慣】\n①技術ニュース\n②製品・競合研究\n③顧客研究\n④案件化訓練\n⑤ROI計算\n⑥交渉訓練\n⑦決算分析\n⑧現場観察\n⑨人脈形成\n⑩AI活用",
-      "createdAtISO": "2026-10-03T06:13:24+00:00",
-      "isRetweet": false,
-      "source": "search-top-10.json",
-      "url": "https://x.com/i/status/2106266349366620666",
-      "candidate_text": "【ロボティクス営業力を鍛える習慣】 ①技術ニュース ②製品・競合研究 ③顧客研究 ④案件化訓練 ⑤ROI計算 ⑥交渉訓練 ⑦決算分析 ⑧現場観察 ⑨人脈形成 ⑩AI活用",
-      "candidate_context": {
-        "category": "AI 模型與研究",
-        "selection_lane": "discovery",
-        "selection_score": 3.1137,
-        "quality_signals": [
-          "report_or_policy_claim"
-        ],
-        "sources": [
-          "search-top-10.json"
-        ],
-        "claim_kind_hint": "report_claim",
-        "first_person_hint": false
-      }
     }
   ],
-  "record_count": 109
+  "record_count": 104
 }
