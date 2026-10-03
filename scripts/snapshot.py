@@ -4,10 +4,24 @@ from datetime import datetime, timezone, timedelta
 import json
 import os
 from pathlib import Path
+import re
 from prefilter import _parse_ts
 
 
-def build(raw_dir, candidates, run_id):
+def collection_id(run_id, run_attempt=1):
+    """Keep original run IDs; give each actual rerun its own numeric identity."""
+    run_id = str(run_id)
+    attempt = int(run_attempt)
+    if attempt < 1 or attempt > 9999:
+        raise ValueError('invalid_run_attempt')
+    if attempt == 1:
+        return run_id
+    if not re.fullmatch(r'\d{5,15}', run_id):
+        raise ValueError('invalid_github_run_id')
+    return run_id + str(attempt).zfill(4)
+
+
+def build(raw_dir, candidates, run_id, run_attempt=1):
     summary = json.loads((raw_dir / '_gather_summary.json').read_text())
     if summary.get('ok') is not True:
         raise ValueError('collection_not_successful')
@@ -45,7 +59,9 @@ def build(raw_dir, candidates, run_id):
                             'source_verification_hint', 'measurement_context_hint') if key in row}})
     if not records:
         raise ValueError('no_verifiable_candidates')
-    result = {'schema_version': 1, 'run_id': str(run_id), 'collected_at': now.isoformat(),
+    result = {'schema_version': 1, 'run_id': collection_id(run_id, run_attempt),
+              'github_run_id': str(run_id), 'github_run_attempt': int(run_attempt),
+              'collected_at': now.isoformat(),
               'source_repository': 'Coke1120/x-digest-cloud', 'coverage': summary,
               'records': records[:150]}
     diagnostics = raw_dir / '_prefilter_diagnostics.json'
@@ -69,7 +85,8 @@ def main():
     parser.add_argument('--candidates', required=True, type=Path)
     parser.add_argument('--output', required=True, type=Path)
     args = parser.parse_args()
-    result = build(args.raw, args.candidates, os.environ.get('GITHUB_RUN_ID', 'manual'))
+    result = build(args.raw, args.candidates, os.environ.get('GITHUB_RUN_ID', 'manual'),
+                   os.environ.get('GITHUB_RUN_ATTEMPT', '1'))
     args.output.parent.mkdir(parents=True, exist_ok=True)
     temporary = args.output.with_suffix('.tmp')
     temporary.write_text(json.dumps(result, ensure_ascii=False, indent=2) + '\n')
