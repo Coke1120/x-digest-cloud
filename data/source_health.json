@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-10-03T09:06:41.453948+00:00",
+  "updated_at": "2026-10-03T11:08:20.138142+00:00",
   "window_days": 7,
   "source_pool_revision": "2026-10-03",
   "semantic_reviewed": false,
@@ -509,6 +509,90 @@
           "hits": 4
         }
       ]
+    },
+    {
+      "run_id": "371117645550003",
+      "collected_at": "2026-10-03T11:08:20.138142+00:00",
+      "selected_records": 147,
+      "category_hints": {
+        "開發者工具": 19,
+        "OpenClaw／Agent 生態": 41,
+        "財經": 21,
+        "產業": 11,
+        "AI 模型與研究": 55
+      },
+      "account_calls": [
+        {
+          "handle": "OpenAI",
+          "ok": true,
+          "hits": 4
+        },
+        {
+          "handle": "AnthropicAI",
+          "ok": true,
+          "hits": 4
+        },
+        {
+          "handle": "deepseek_ai",
+          "ok": true,
+          "hits": 4
+        },
+        {
+          "handle": "openclaw",
+          "ok": true,
+          "hits": 4
+        },
+        {
+          "handle": "ggerganov",
+          "ok": true,
+          "hits": 4
+        },
+        {
+          "handle": "Vercel",
+          "ok": true,
+          "hits": 4
+        },
+        {
+          "handle": "AMD",
+          "ok": true,
+          "hits": 4
+        },
+        {
+          "handle": "lidangzzz",
+          "ok": true,
+          "hits": 4
+        },
+        {
+          "handle": "cursor_ai",
+          "ok": true,
+          "hits": 4
+        },
+        {
+          "handle": "Prince_Canuma",
+          "ok": true,
+          "hits": 4
+        },
+        {
+          "handle": "stripe",
+          "ok": true,
+          "hits": 4
+        },
+        {
+          "handle": "huggingface",
+          "ok": true,
+          "hits": 4
+        },
+        {
+          "handle": "Docker",
+          "ok": true,
+          "hits": 4
+        },
+        {
+          "handle": "vllm_project",
+          "ok": true,
+          "hits": 4
+        }
+      ]
     }
   ],
   "sources": [
@@ -546,13 +630,13 @@
         {
           "id": "2106247624634531889",
           "created_at": "2026-10-03T04:59:00+00:00",
-          "last_seen": "2026-10-03T09:06:41.453948+00:00",
+          "last_seen": "2026-10-03T11:08:20.138142+00:00",
           "category_hint": "OpenClaw／Agent 生態"
         },
         {
           "id": "2106162952923656337",
           "created_at": "2026-10-02T23:22:33+00:00",
-          "last_seen": "2026-10-03T09:06:41.453948+00:00",
+          "last_seen": "2026-10-03T11:08:20.138142+00:00",
           "category_hint": "OpenClaw／Agent 生態"
         }
       ],
@@ -584,7 +668,7 @@
         {
           "id": "2106087692438245853",
           "created_at": "2026-10-02T18:23:29+00:00",
-          "last_seen": "2026-10-03T09:06:41.453948+00:00",
+          "last_seen": "2026-10-03T11:08:20.138142+00:00",
           "category_hint": "開發者工具"
         }
       ],
@@ -600,7 +684,7 @@
         {
           "id": "2106034221005312448",
           "created_at": "2026-10-02T14:51:01+00:00",
-          "last_seen": "2026-10-03T09:06:41.453948+00:00",
+          "last_seen": "2026-10-03T11:08:20.138142+00:00",
           "category_hint": "OpenClaw／Agent 生態"
         }
       ],
@@ -616,7 +700,7 @@
         {
           "id": "2106139101422567748",
           "created_at": "2026-10-02T21:47:46+00:00",
-          "last_seen": "2026-10-03T06:36:55.666133+00:00",
+          "last_seen": "2026-10-03T11:08:20.138142+00:00",
           "category_hint": "開發者工具"
         }
       ],
@@ -632,7 +716,7 @@
         {
           "id": "2106159655290589305",
           "created_at": "2026-10-02T23:09:27+00:00",
-          "last_seen": "2026-10-03T09:06:41.453948+00:00",
+          "last_seen": "2026-10-03T11:08:20.138142+00:00",
           "category_hint": "AI 模型與研究"
         }
       ],
@@ -645,6 +729,12 @@
     {
       "handle": "userHandle",
       "posts": [
+        {
+          "id": "2106315249544515832",
+          "created_at": "2026-10-03T09:27:43+00:00",
+          "last_seen": "2026-10-03T11:08:20.138142+00:00",
+          "category_hint": "開發者工具"
+        },
         {
           "id": "2106287604065009793",
           "created_at": "2026-10-03T07:37:52+00:00",
@@ -684,18 +774,68 @@
         {
           "id": "2106216080586977770",
           "created_at": "2026-10-03T02:53:39+00:00",
-          "last_seen": "2026-10-03T05:35:54.086868+00:00",
+          "last_seen": "2026-10-03T11:08:20.138142+00:00",
           "category_hint": "AI 模型與研究"
         },
         {
           "id": "2106101054035402756",
           "created_at": "2026-10-02T19:16:35+00:00",
-          "last_seen": "2026-10-03T05:35:54.086868+00:00",
+          "last_seen": "2026-10-03T11:08:20.138142+00:00",
           "category_hint": "OpenClaw／Agent 生態"
         }
       ],
       "status": "unreviewed",
-      "distinct_posts_retained": 8,
+      "distinct_posts_retained": 9,
+      "distinct_post_dates_retained": 2
+    },
+    {
+      "handle": "david1989_zhu",
+      "posts": [
+        {
+          "id": "2106333660748337153",
+          "created_at": "2026-10-03T10:40:53+00:00",
+          "last_seen": "2026-10-03T11:08:20.138142+00:00",
+          "category_hint": "財經"
+        },
+        {
+          "id": "2106306857329705378",
+          "created_at": "2026-10-03T08:54:22+00:00",
+          "last_seen": "2026-10-03T09:06:41.453948+00:00",
+          "category_hint": "AI 模型與研究"
+        },
+        {
+          "id": "2106268952586498091",
+          "created_at": "2026-10-03T06:23:45+00:00",
+          "last_seen": "2026-10-03T06:36:55.666133+00:00",
+          "category_hint": "產業"
+        },
+        {
+          "id": "2106251978221531222",
+          "created_at": "2026-10-03T05:16:18+00:00",
+          "last_seen": "2026-10-03T05:35:54.086868+00:00",
+          "category_hint": "財經"
+        },
+        {
+          "id": "2106077529610350840",
+          "created_at": "2026-10-02T17:43:06+00:00",
+          "last_seen": "2026-10-02T18:07:19.287561+00:00",
+          "category_hint": "AI 模型與研究"
+        },
+        {
+          "id": "2106070096787742921",
+          "created_at": "2026-10-02T17:13:34+00:00",
+          "last_seen": "2026-10-02T18:07:19.287561+00:00",
+          "category_hint": "AI 模型與研究"
+        },
+        {
+          "id": "2106066537128014304",
+          "created_at": "2026-10-02T16:59:25+00:00",
+          "last_seen": "2026-10-02T18:07:19.287561+00:00",
+          "category_hint": "產業"
+        }
+      ],
+      "status": "unreviewed",
+      "distinct_posts_retained": 7,
       "distinct_post_dates_retained": 2
     },
     {
@@ -749,52 +889,64 @@
       "distinct_post_dates_retained": 2
     },
     {
-      "handle": "david1989_zhu",
+      "handle": "JKKK_Trader",
       "posts": [
         {
-          "id": "2106306857329705378",
-          "created_at": "2026-10-03T08:54:22+00:00",
-          "last_seen": "2026-10-03T09:06:41.453948+00:00",
-          "category_hint": "AI 模型與研究"
+          "id": "2106338477956546594",
+          "created_at": "2026-10-03T11:00:01+00:00",
+          "last_seen": "2026-10-03T11:08:20.138142+00:00",
+          "category_hint": "財經"
         },
         {
-          "id": "2106268952586498091",
-          "created_at": "2026-10-03T06:23:45+00:00",
+          "id": "2106330922345754963",
+          "created_at": "2026-10-03T10:30:00+00:00",
+          "last_seen": "2026-10-03T11:08:20.138142+00:00",
+          "category_hint": "財經"
+        },
+        {
+          "id": "2106315823669232061",
+          "created_at": "2026-10-03T09:30:00+00:00",
+          "last_seen": "2026-10-03T11:08:20.138142+00:00",
+          "category_hint": "財經"
+        },
+        {
+          "id": "2106262976957390883",
+          "created_at": "2026-10-03T06:00:00+00:00",
           "last_seen": "2026-10-03T06:36:55.666133+00:00",
-          "category_hint": "產業"
+          "category_hint": "財經"
         },
         {
-          "id": "2106251978221531222",
-          "created_at": "2026-10-03T05:16:18+00:00",
+          "id": "2106240325903942142",
+          "created_at": "2026-10-03T04:30:00+00:00",
           "last_seen": "2026-10-03T05:35:54.086868+00:00",
           "category_hint": "財經"
         },
         {
-          "id": "2106077529610350840",
-          "created_at": "2026-10-02T17:43:06+00:00",
-          "last_seen": "2026-10-02T18:07:19.287561+00:00",
-          "category_hint": "AI 模型與研究"
-        },
-        {
-          "id": "2106070096787742921",
-          "created_at": "2026-10-02T17:13:34+00:00",
-          "last_seen": "2026-10-02T18:07:19.287561+00:00",
-          "category_hint": "AI 模型與研究"
-        },
-        {
-          "id": "2106066537128014304",
-          "created_at": "2026-10-02T16:59:25+00:00",
-          "last_seen": "2026-10-02T18:07:19.287561+00:00",
-          "category_hint": "產業"
+          "id": "2106232777184289255",
+          "created_at": "2026-10-03T04:00:00+00:00",
+          "last_seen": "2026-10-03T05:35:54.086868+00:00",
+          "category_hint": "財經"
         }
       ],
       "status": "unreviewed",
       "distinct_posts_retained": 6,
-      "distinct_post_dates_retained": 2
+      "distinct_post_dates_retained": 1
     },
     {
       "handle": "ai_hakase_",
       "posts": [
+        {
+          "id": "2106339048079917475",
+          "created_at": "2026-10-03T11:02:17+00:00",
+          "last_seen": "2026-10-03T11:08:20.138142+00:00",
+          "category_hint": "AI 模型與研究"
+        },
+        {
+          "id": "2106339047840809130",
+          "created_at": "2026-10-03T11:02:17+00:00",
+          "last_seen": "2026-10-03T11:08:20.138142+00:00",
+          "category_hint": "AI 模型與研究"
+        },
         {
           "id": "2106248383409135864",
           "created_at": "2026-10-03T05:02:01+00:00",
@@ -815,8 +967,34 @@
         }
       ],
       "status": "unreviewed",
-      "distinct_posts_retained": 3,
+      "distinct_posts_retained": 5,
       "distinct_post_dates_retained": 2
+    },
+    {
+      "handle": "aiaicreate",
+      "posts": [
+        {
+          "id": "2106299640262054348",
+          "created_at": "2026-10-03T08:25:42+00:00",
+          "last_seen": "2026-10-03T11:08:20.138142+00:00",
+          "category_hint": "AI 模型與研究"
+        },
+        {
+          "id": "2106197375958368655",
+          "created_at": "2026-10-03T01:39:20+00:00",
+          "last_seen": "2026-10-03T05:35:54.086868+00:00",
+          "category_hint": "AI 模型與研究"
+        },
+        {
+          "id": "2106197141572256211",
+          "created_at": "2026-10-03T01:38:24+00:00",
+          "last_seen": "2026-10-03T05:35:54.086868+00:00",
+          "category_hint": "AI 模型與研究"
+        }
+      ],
+      "status": "unreviewed",
+      "distinct_posts_retained": 3,
+      "distinct_post_dates_retained": 1
     },
     {
       "handle": "bkdgiffug",
@@ -897,32 +1075,6 @@
       "distinct_post_dates_retained": 1
     },
     {
-      "handle": "JKKK_Trader",
-      "posts": [
-        {
-          "id": "2106262976957390883",
-          "created_at": "2026-10-03T06:00:00+00:00",
-          "last_seen": "2026-10-03T06:36:55.666133+00:00",
-          "category_hint": "財經"
-        },
-        {
-          "id": "2106240325903942142",
-          "created_at": "2026-10-03T04:30:00+00:00",
-          "last_seen": "2026-10-03T05:35:54.086868+00:00",
-          "category_hint": "財經"
-        },
-        {
-          "id": "2106232777184289255",
-          "created_at": "2026-10-03T04:00:00+00:00",
-          "last_seen": "2026-10-03T05:35:54.086868+00:00",
-          "category_hint": "財經"
-        }
-      ],
-      "status": "unreviewed",
-      "distinct_posts_retained": 3,
-      "distinct_post_dates_retained": 1
-    },
-    {
       "handle": "LIghtJUNction_x",
       "posts": [
         {
@@ -934,13 +1086,13 @@
         {
           "id": "2106030639590084867",
           "created_at": "2026-10-02T14:36:47+00:00",
-          "last_seen": "2026-10-03T05:35:54.086868+00:00",
+          "last_seen": "2026-10-03T11:08:20.138142+00:00",
           "category_hint": "AI 模型與研究"
         },
         {
           "id": "2106030636960186592",
           "created_at": "2026-10-02T14:36:46+00:00",
-          "last_seen": "2026-10-03T05:35:54.086868+00:00",
+          "last_seen": "2026-10-03T11:08:20.138142+00:00",
           "category_hint": "AI 模型與研究"
         }
       ],
@@ -1027,6 +1179,26 @@
       "distinct_post_dates_retained": 3
     },
     {
+      "handle": "888semi",
+      "posts": [
+        {
+          "id": "2106327833975128417",
+          "created_at": "2026-10-03T10:17:43+00:00",
+          "last_seen": "2026-10-03T11:08:20.138142+00:00",
+          "category_hint": "產業"
+        },
+        {
+          "id": "2105903691094200474",
+          "created_at": "2026-10-02T06:12:20+00:00",
+          "last_seen": "2026-10-03T06:36:55.666133+00:00",
+          "category_hint": "OpenClaw／Agent 生態"
+        }
+      ],
+      "status": "unreviewed",
+      "distinct_posts_retained": 2,
+      "distinct_post_dates_retained": 2
+    },
+    {
       "handle": "ai_300",
       "posts": [
         {
@@ -1040,26 +1212,6 @@
           "created_at": "2026-10-03T02:00:01+00:00",
           "last_seen": "2026-10-03T06:36:55.666133+00:00",
           "category_hint": "OpenClaw／Agent 生態"
-        }
-      ],
-      "status": "unreviewed",
-      "distinct_posts_retained": 2,
-      "distinct_post_dates_retained": 1
-    },
-    {
-      "handle": "aiaicreate",
-      "posts": [
-        {
-          "id": "2106197375958368655",
-          "created_at": "2026-10-03T01:39:20+00:00",
-          "last_seen": "2026-10-03T05:35:54.086868+00:00",
-          "category_hint": "AI 模型與研究"
-        },
-        {
-          "id": "2106197141572256211",
-          "created_at": "2026-10-03T01:38:24+00:00",
-          "last_seen": "2026-10-03T05:35:54.086868+00:00",
-          "category_hint": "AI 模型與研究"
         }
       ],
       "status": "unreviewed",
@@ -1147,6 +1299,26 @@
       "distinct_post_dates_retained": 2
     },
     {
+      "handle": "BenjieMalinao",
+      "posts": [
+        {
+          "id": "2106340291921809665",
+          "created_at": "2026-10-03T11:07:14+00:00",
+          "last_seen": "2026-10-03T11:08:20.138142+00:00",
+          "category_hint": "OpenClaw／Agent 生態"
+        },
+        {
+          "id": "2106340009662190009",
+          "created_at": "2026-10-03T11:06:06+00:00",
+          "last_seen": "2026-10-03T11:08:20.138142+00:00",
+          "category_hint": "AI 模型與研究"
+        }
+      ],
+      "status": "unreviewed",
+      "distinct_posts_retained": 2,
+      "distinct_post_dates_retained": 1
+    },
+    {
       "handle": "BlockTempo",
       "posts": [
         {
@@ -1167,6 +1339,26 @@
       "distinct_post_dates_retained": 1
     },
     {
+      "handle": "connect24h",
+      "posts": [
+        {
+          "id": "2106320690349769015",
+          "created_at": "2026-10-03T09:49:20+00:00",
+          "last_seen": "2026-10-03T11:08:20.138142+00:00",
+          "category_hint": "OpenClaw／Agent 生態"
+        },
+        {
+          "id": "2106299357536645373",
+          "created_at": "2026-10-03T08:24:34+00:00",
+          "last_seen": "2026-10-03T11:08:20.138142+00:00",
+          "category_hint": "OpenClaw／Agent 生態"
+        }
+      ],
+      "status": "unreviewed",
+      "distinct_posts_retained": 2,
+      "distinct_post_dates_retained": 1
+    },
+    {
       "handle": "CryptoWesearch",
       "posts": [
         {
@@ -1180,6 +1372,26 @@
           "created_at": "2026-10-02T17:52:01+00:00",
           "last_seen": "2026-10-02T18:07:19.287561+00:00",
           "category_hint": "AI 模型與研究"
+        }
+      ],
+      "status": "unreviewed",
+      "distinct_posts_retained": 2,
+      "distinct_post_dates_retained": 1
+    },
+    {
+      "handle": "DanKornas",
+      "posts": [
+        {
+          "id": "2106338206295761370",
+          "created_at": "2026-10-03T10:58:56+00:00",
+          "last_seen": "2026-10-03T11:08:20.138142+00:00",
+          "category_hint": "OpenClaw／Agent 生態"
+        },
+        {
+          "id": "2106292910358511859",
+          "created_at": "2026-10-03T07:58:57+00:00",
+          "last_seen": "2026-10-03T11:08:20.138142+00:00",
+          "category_hint": "OpenClaw／Agent 生態"
         }
       ],
       "status": "unreviewed",
@@ -1219,6 +1431,26 @@
           "id": "2106246810138497404",
           "created_at": "2026-10-03T04:55:46+00:00",
           "last_seen": "2026-10-03T05:35:54.086868+00:00",
+          "category_hint": "AI 模型與研究"
+        }
+      ],
+      "status": "unreviewed",
+      "distinct_posts_retained": 2,
+      "distinct_post_dates_retained": 1
+    },
+    {
+      "handle": "ikinokore_3k",
+      "posts": [
+        {
+          "id": "2106319026784002468",
+          "created_at": "2026-10-03T09:42:44+00:00",
+          "last_seen": "2026-10-03T11:08:20.138142+00:00",
+          "category_hint": "AI 模型與研究"
+        },
+        {
+          "id": "2106316246547616018",
+          "created_at": "2026-10-03T09:31:41+00:00",
+          "last_seen": "2026-10-03T11:08:20.138142+00:00",
           "category_hint": "AI 模型與研究"
         }
       ],
@@ -1307,6 +1539,26 @@
       "distinct_post_dates_retained": 1
     },
     {
+      "handle": "LaboNft",
+      "posts": [
+        {
+          "id": "2106315831303114893",
+          "created_at": "2026-10-03T09:30:02+00:00",
+          "last_seen": "2026-10-03T11:08:20.138142+00:00",
+          "category_hint": "財經"
+        },
+        {
+          "id": "2106315745722573099",
+          "created_at": "2026-10-03T09:29:41+00:00",
+          "last_seen": "2026-10-03T11:08:20.138142+00:00",
+          "category_hint": "財經"
+        }
+      ],
+      "status": "unreviewed",
+      "distinct_posts_retained": 2,
+      "distinct_post_dates_retained": 1
+    },
+    {
       "handle": "maitan18",
       "posts": [
         {
@@ -1359,6 +1611,26 @@
           "id": "2106270714290442495",
           "created_at": "2026-10-03T06:30:45+00:00",
           "last_seen": "2026-10-03T06:36:55.666133+00:00",
+          "category_hint": "AI 模型與研究"
+        }
+      ],
+      "status": "unreviewed",
+      "distinct_posts_retained": 2,
+      "distinct_post_dates_retained": 1
+    },
+    {
+      "handle": "memolithapp",
+      "posts": [
+        {
+          "id": "2106178362800848933",
+          "created_at": "2026-10-03T00:23:47+00:00",
+          "last_seen": "2026-10-03T11:08:20.138142+00:00",
+          "category_hint": "AI 模型與研究"
+        },
+        {
+          "id": "2106178339224670700",
+          "created_at": "2026-10-03T00:23:41+00:00",
+          "last_seen": "2026-10-03T11:08:20.138142+00:00",
           "category_hint": "AI 模型與研究"
         }
       ],
@@ -1472,13 +1744,33 @@
         {
           "id": "2106135743429333461",
           "created_at": "2026-10-02T21:34:26+00:00",
-          "last_seen": "2026-10-03T05:35:54.086868+00:00",
+          "last_seen": "2026-10-03T11:08:20.138142+00:00",
           "category_hint": "OpenClaw／Agent 生態"
         },
         {
           "id": "2106135739167850539",
           "created_at": "2026-10-02T21:34:24+00:00",
-          "last_seen": "2026-10-03T05:35:54.086868+00:00",
+          "last_seen": "2026-10-03T11:08:20.138142+00:00",
+          "category_hint": "OpenClaw／Agent 生態"
+        }
+      ],
+      "status": "unreviewed",
+      "distinct_posts_retained": 2,
+      "distinct_post_dates_retained": 1
+    },
+    {
+      "handle": "okapi_fukugyo",
+      "posts": [
+        {
+          "id": "2106157261181825513",
+          "created_at": "2026-10-02T22:59:56+00:00",
+          "last_seen": "2026-10-03T11:08:20.138142+00:00",
+          "category_hint": "OpenClaw／Agent 生態"
+        },
+        {
+          "id": "2106157258942067098",
+          "created_at": "2026-10-02T22:59:55+00:00",
+          "last_seen": "2026-10-03T11:08:20.138142+00:00",
           "category_hint": "OpenClaw／Agent 生態"
         }
       ],
@@ -1560,6 +1852,26 @@
           "created_at": "2026-10-02T17:21:26+00:00",
           "last_seen": "2026-10-02T18:07:19.287561+00:00",
           "category_hint": "產業"
+        }
+      ],
+      "status": "unreviewed",
+      "distinct_posts_retained": 2,
+      "distinct_post_dates_retained": 1
+    },
+    {
+      "handle": "Randam0330",
+      "posts": [
+        {
+          "id": "2106331327662596133",
+          "created_at": "2026-10-03T10:31:36+00:00",
+          "last_seen": "2026-10-03T11:08:20.138142+00:00",
+          "category_hint": "AI 模型與研究"
+        },
+        {
+          "id": "2106331051866132804",
+          "created_at": "2026-10-03T10:30:31+00:00",
+          "last_seen": "2026-10-03T11:08:20.138142+00:00",
+          "category_hint": "AI 模型與研究"
         }
       ],
       "status": "unreviewed",
@@ -1707,6 +2019,26 @@
       "distinct_post_dates_retained": 2
     },
     {
+      "handle": "wowwowai",
+      "posts": [
+        {
+          "id": "2106340254223348001",
+          "created_at": "2026-10-03T11:07:05+00:00",
+          "last_seen": "2026-10-03T11:08:20.138142+00:00",
+          "category_hint": "AI 模型與研究"
+        },
+        {
+          "id": "2106326540166345016",
+          "created_at": "2026-10-03T10:12:35+00:00",
+          "last_seen": "2026-10-03T11:08:20.138142+00:00",
+          "category_hint": "AI 模型與研究"
+        }
+      ],
+      "status": "unreviewed",
+      "distinct_posts_retained": 2,
+      "distinct_post_dates_retained": 1
+    },
+    {
       "handle": "XihuangHuang",
       "posts": [
         {
@@ -1797,6 +2129,20 @@
       "distinct_post_dates_retained": 1
     },
     {
+      "handle": "13_ohitrio",
+      "posts": [
+        {
+          "id": "2106311308983599391",
+          "created_at": "2026-10-03T09:12:04+00:00",
+          "last_seen": "2026-10-03T11:08:20.138142+00:00",
+          "category_hint": "AI 模型與研究"
+        }
+      ],
+      "status": "unreviewed",
+      "distinct_posts_retained": 1,
+      "distinct_post_dates_retained": 1
+    },
+    {
       "handle": "2022meimei3",
       "posts": [
         {
@@ -1804,6 +2150,20 @@
           "created_at": "2026-10-03T02:48:14+00:00",
           "last_seen": "2026-10-03T05:35:54.086868+00:00",
           "category_hint": "AI 模型與研究"
+        }
+      ],
+      "status": "unreviewed",
+      "distinct_posts_retained": 1,
+      "distinct_post_dates_retained": 1
+    },
+    {
+      "handle": "2logics",
+      "posts": [
+        {
+          "id": "2106334152303972491",
+          "created_at": "2026-10-03T10:42:50+00:00",
+          "last_seen": "2026-10-03T11:08:20.138142+00:00",
+          "category_hint": "產業"
         }
       ],
       "status": "unreviewed",
@@ -1839,6 +2199,34 @@
       "distinct_post_dates_retained": 1
     },
     {
+      "handle": "5000e12",
+      "posts": [
+        {
+          "id": "2106275235729412292",
+          "created_at": "2026-10-03T06:48:43+00:00",
+          "last_seen": "2026-10-03T11:08:20.138142+00:00",
+          "category_hint": "AI 模型與研究"
+        }
+      ],
+      "status": "unreviewed",
+      "distinct_posts_retained": 1,
+      "distinct_post_dates_retained": 1
+    },
+    {
+      "handle": "55518Armani",
+      "posts": [
+        {
+          "id": "2106291686930526217",
+          "created_at": "2026-10-03T07:54:05+00:00",
+          "last_seen": "2026-10-03T11:08:20.138142+00:00",
+          "category_hint": "AI 模型與研究"
+        }
+      ],
+      "status": "unreviewed",
+      "distinct_posts_retained": 1,
+      "distinct_post_dates_retained": 1
+    },
+    {
       "handle": "7571_pj070336",
       "posts": [
         {
@@ -1860,20 +2248,6 @@
           "created_at": "2026-10-02T23:27:43+00:00",
           "last_seen": "2026-10-03T01:14:59.682222+00:00",
           "category_hint": "AI 模型與研究"
-        }
-      ],
-      "status": "unreviewed",
-      "distinct_posts_retained": 1,
-      "distinct_post_dates_retained": 1
-    },
-    {
-      "handle": "888semi",
-      "posts": [
-        {
-          "id": "2105903691094200474",
-          "created_at": "2026-10-02T06:12:20+00:00",
-          "last_seen": "2026-10-03T06:36:55.666133+00:00",
-          "category_hint": "OpenClaw／Agent 生態"
         }
       ],
       "status": "unreviewed",
@@ -1923,6 +2297,20 @@
       "distinct_post_dates_retained": 1
     },
     {
+      "handle": "_luckyj888",
+      "posts": [
+        {
+          "id": "2106293432981585938",
+          "created_at": "2026-10-03T08:01:02+00:00",
+          "last_seen": "2026-10-03T11:08:20.138142+00:00",
+          "category_hint": "OpenClaw／Agent 生態"
+        }
+      ],
+      "status": "unreviewed",
+      "distinct_posts_retained": 1,
+      "distinct_post_dates_retained": 1
+    },
+    {
       "handle": "_moto___",
       "posts": [
         {
@@ -1930,6 +2318,20 @@
           "created_at": "2026-10-03T03:14:58+00:00",
           "last_seen": "2026-10-03T05:35:54.086868+00:00",
           "category_hint": "開發者工具"
+        }
+      ],
+      "status": "unreviewed",
+      "distinct_posts_retained": 1,
+      "distinct_post_dates_retained": 1
+    },
+    {
+      "handle": "_petert",
+      "posts": [
+        {
+          "id": "2105995293804335592",
+          "created_at": "2026-10-02T12:16:20+00:00",
+          "last_seen": "2026-10-03T11:08:20.138142+00:00",
+          "category_hint": "AI 模型與研究"
         }
       ],
       "status": "unreviewed",
@@ -1965,6 +2367,20 @@
       "distinct_post_dates_retained": 1
     },
     {
+      "handle": "_zheergen",
+      "posts": [
+        {
+          "id": "2106337982399807740",
+          "created_at": "2026-10-03T10:58:03+00:00",
+          "last_seen": "2026-10-03T11:08:20.138142+00:00",
+          "category_hint": "開發者工具"
+        }
+      ],
+      "status": "unreviewed",
+      "distinct_posts_retained": 1,
+      "distinct_post_dates_retained": 1
+    },
+    {
       "handle": "A1aBrIGp0Q30150",
       "posts": [
         {
@@ -1972,6 +2388,20 @@
           "created_at": "2026-10-02T22:51:25+00:00",
           "last_seen": "2026-10-03T06:36:55.666133+00:00",
           "category_hint": "AI 模型與研究"
+        }
+      ],
+      "status": "unreviewed",
+      "distinct_posts_retained": 1,
+      "distinct_post_dates_retained": 1
+    },
+    {
+      "handle": "A3fxflyagain",
+      "posts": [
+        {
+          "id": "2106318281963663638",
+          "created_at": "2026-10-03T09:39:46+00:00",
+          "last_seen": "2026-10-03T11:08:20.138142+00:00",
+          "category_hint": "財經"
         }
       ],
       "status": "unreviewed",
@@ -2035,12 +2465,40 @@
       "distinct_post_dates_retained": 1
     },
     {
+      "handle": "agentreleases",
+      "posts": [
+        {
+          "id": "2106131400827216333",
+          "created_at": "2026-10-02T21:17:10+00:00",
+          "last_seen": "2026-10-03T11:08:20.138142+00:00",
+          "category_hint": "OpenClaw／Agent 生態"
+        }
+      ],
+      "status": "unreviewed",
+      "distinct_posts_retained": 1,
+      "distinct_post_dates_retained": 1
+    },
+    {
       "handle": "Ahmadbukhari",
       "posts": [
         {
           "id": "2106135109820993692",
           "created_at": "2026-10-02T21:31:54+00:00",
           "last_seen": "2026-10-03T09:04:52.507879+00:00",
+          "category_hint": "AI 模型與研究"
+        }
+      ],
+      "status": "unreviewed",
+      "distinct_posts_retained": 1,
+      "distinct_post_dates_retained": 1
+    },
+    {
+      "handle": "AI_Chronicle_jp",
+      "posts": [
+        {
+          "id": "2106314850813268102",
+          "created_at": "2026-10-03T09:26:08+00:00",
+          "last_seen": "2026-10-03T11:08:20.138142+00:00",
           "category_hint": "AI 模型與研究"
         }
       ],
@@ -2098,272 +2556,6 @@
           "created_at": "2026-10-02T18:05:30+00:00",
           "last_seen": "2026-10-02T18:07:19.287561+00:00",
           "category_hint": "開發者工具"
-        }
-      ],
-      "status": "unreviewed",
-      "distinct_posts_retained": 1,
-      "distinct_post_dates_retained": 1
-    },
-    {
-      "handle": "AIGuideNote",
-      "posts": [
-        {
-          "id": "2106253507808604662",
-          "created_at": "2026-10-03T05:22:23+00:00",
-          "last_seen": "2026-10-03T05:35:54.086868+00:00",
-          "category_hint": "AI 模型與研究"
-        }
-      ],
-      "status": "unreviewed",
-      "distinct_posts_retained": 1,
-      "distinct_post_dates_retained": 1
-    },
-    {
-      "handle": "aikabulab",
-      "posts": [
-        {
-          "id": "2106306906587570665",
-          "created_at": "2026-10-03T08:54:34+00:00",
-          "last_seen": "2026-10-03T09:04:52.507879+00:00",
-          "category_hint": "AI 模型與研究"
-        }
-      ],
-      "status": "unreviewed",
-      "distinct_posts_retained": 1,
-      "distinct_post_dates_retained": 1
-    },
-    {
-      "handle": "AIQuickFindings",
-      "posts": [
-        {
-          "id": "2106153233765085664",
-          "created_at": "2026-10-02T22:43:56+00:00",
-          "last_seen": "2026-10-03T09:06:41.453948+00:00",
-          "category_hint": "AI 模型與研究"
-        }
-      ],
-      "status": "unreviewed",
-      "distinct_posts_retained": 1,
-      "distinct_post_dates_retained": 1
-    },
-    {
-      "handle": "aisijizuoan",
-      "posts": [
-        {
-          "id": "2106304864712298709",
-          "created_at": "2026-10-03T08:46:27+00:00",
-          "last_seen": "2026-10-03T09:06:41.453948+00:00",
-          "category_hint": "產業"
-        }
-      ],
-      "status": "unreviewed",
-      "distinct_posts_retained": 1,
-      "distinct_post_dates_retained": 1
-    },
-    {
-      "handle": "AItokoyonokuni",
-      "posts": [
-        {
-          "id": "2106022762531934697",
-          "created_at": "2026-10-02T14:05:29+00:00",
-          "last_seen": "2026-10-02T18:07:19.287561+00:00",
-          "category_hint": "AI 模型與研究"
-        }
-      ],
-      "status": "unreviewed",
-      "distinct_posts_retained": 1,
-      "distinct_post_dates_retained": 1
-    },
-    {
-      "handle": "AkihisaShiozaki",
-      "posts": [
-        {
-          "id": "2106150145549279741",
-          "created_at": "2026-10-02T22:31:39+00:00",
-          "last_seen": "2026-10-03T06:36:55.666133+00:00",
-          "category_hint": "AI 模型與研究"
-        }
-      ],
-      "status": "unreviewed",
-      "distinct_posts_retained": 1,
-      "distinct_post_dates_retained": 1
-    },
-    {
-      "handle": "akshayjha2111",
-      "posts": [
-        {
-          "id": "2106279664209588588",
-          "created_at": "2026-10-03T07:06:19+00:00",
-          "last_seen": "2026-10-03T09:06:41.453948+00:00",
-          "category_hint": "AI 模型與研究"
-        }
-      ],
-      "status": "unreviewed",
-      "distinct_posts_retained": 1,
-      "distinct_post_dates_retained": 1
-    },
-    {
-      "handle": "alacheng",
-      "posts": [
-        {
-          "id": "2106308432383062309",
-          "created_at": "2026-10-03T09:00:38+00:00",
-          "last_seen": "2026-10-03T09:06:41.453948+00:00",
-          "category_hint": "財經"
-        }
-      ],
-      "status": "unreviewed",
-      "distinct_posts_retained": 1,
-      "distinct_post_dates_retained": 1
-    },
-    {
-      "handle": "alexale15864366",
-      "posts": [
-        {
-          "id": "2106306023090782230",
-          "created_at": "2026-10-03T08:51:03+00:00",
-          "last_seen": "2026-10-03T09:06:41.453948+00:00",
-          "category_hint": "AI 模型與研究"
-        }
-      ],
-      "status": "unreviewed",
-      "distinct_posts_retained": 1,
-      "distinct_post_dates_retained": 1
-    },
-    {
-      "handle": "AlfaFinderUSA",
-      "posts": [
-        {
-          "id": "2106134396277596583",
-          "created_at": "2026-10-02T21:29:04+00:00",
-          "last_seen": "2026-10-02T22:16:52.835372+00:00",
-          "category_hint": "財經"
-        }
-      ],
-      "status": "unreviewed",
-      "distinct_posts_retained": 1,
-      "distinct_post_dates_retained": 1
-    },
-    {
-      "handle": "Ana688888",
-      "posts": [
-        {
-          "id": "2106181865237606890",
-          "created_at": "2026-10-03T00:37:42+00:00",
-          "last_seen": "2026-10-03T01:14:59.682222+00:00",
-          "category_hint": "AI 模型與研究"
-        }
-      ],
-      "status": "unreviewed",
-      "distinct_posts_retained": 1,
-      "distinct_post_dates_retained": 1
-    },
-    {
-      "handle": "AndrePhillip",
-      "posts": [
-        {
-          "id": "2106138473342398618",
-          "created_at": "2026-10-02T21:45:16+00:00",
-          "last_seen": "2026-10-02T22:16:52.835372+00:00",
-          "category_hint": "財經"
-        }
-      ],
-      "status": "unreviewed",
-      "distinct_posts_retained": 1,
-      "distinct_post_dates_retained": 1
-    },
-    {
-      "handle": "ApexF1Data",
-      "posts": [
-        {
-          "id": "2106270649702289647",
-          "created_at": "2026-10-03T06:30:30+00:00",
-          "last_seen": "2026-10-03T06:36:55.666133+00:00",
-          "category_hint": "AI 模型與研究"
-        }
-      ],
-      "status": "unreviewed",
-      "distinct_posts_retained": 1,
-      "distinct_post_dates_retained": 1
-    },
-    {
-      "handle": "appleS000da2",
-      "posts": [
-        {
-          "id": "2106023275738591717",
-          "created_at": "2026-10-02T14:07:31+00:00",
-          "last_seen": "2026-10-02T18:07:19.287561+00:00",
-          "category_hint": "開發者工具"
-        }
-      ],
-      "status": "unreviewed",
-      "distinct_posts_retained": 1,
-      "distinct_post_dates_retained": 1
-    },
-    {
-      "handle": "AravSrinivas",
-      "posts": [
-        {
-          "id": "2106119404433908149",
-          "created_at": "2026-10-02T20:29:30+00:00",
-          "last_seen": "2026-10-03T09:06:41.453948+00:00",
-          "category_hint": "開發者工具"
-        }
-      ],
-      "status": "unreviewed",
-      "distinct_posts_retained": 1,
-      "distinct_post_dates_retained": 1
-    },
-    {
-      "handle": "ArchanPsioppen",
-      "posts": [
-        {
-          "id": "2106063586242281917",
-          "created_at": "2026-10-02T16:47:42+00:00",
-          "last_seen": "2026-10-03T01:14:59.682222+00:00",
-          "category_hint": "財經"
-        }
-      ],
-      "status": "unreviewed",
-      "distinct_posts_retained": 1,
-      "distinct_post_dates_retained": 1
-    },
-    {
-      "handle": "aroraabhinav1",
-      "posts": [
-        {
-          "id": "2106190203455168925",
-          "created_at": "2026-10-03T01:10:50+00:00",
-          "last_seen": "2026-10-03T01:14:59.682222+00:00",
-          "category_hint": "產業"
-        }
-      ],
-      "status": "unreviewed",
-      "distinct_posts_retained": 1,
-      "distinct_post_dates_retained": 1
-    },
-    {
-      "handle": "AscensionFi",
-      "posts": [
-        {
-          "id": "2106143720957415432",
-          "created_at": "2026-10-02T22:06:07+00:00",
-          "last_seen": "2026-10-02T22:16:52.835372+00:00",
-          "category_hint": "財經"
-        }
-      ],
-      "status": "unreviewed",
-      "distinct_posts_retained": 1,
-      "distinct_post_dates_retained": 1
-    },
-    {
-      "handle": "AsenjoX",
-      "posts": [
-        {
-          "id": "2106141429361770622",
-          "created_at": "2026-10-02T21:57:01+00:00",
-          "last_seen": "2026-10-02T22:16:52.835372+00:00",
-          "category_hint": "財經"
         }
       ],
       "status": "unreviewed",
