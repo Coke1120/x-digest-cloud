@@ -40,6 +40,7 @@ jobs:
         run: |
           python scripts/test_selection.py
           python scripts/test_snapshot.py
+          python scripts/test_official_sources.py
       - name: Verify login and gather real X sources
         env:
           TWITTER_AUTH_TOKEN: ${{ secrets.TWITTER_AUTH_TOKEN }}
@@ -48,7 +49,8 @@ jobs:
       - name: Prefilter candidates and retain full evidence
         run: |
           python scripts/prefilter.py /tmp/x-digest-raw-${{ github.run_id }}-${{ github.run_attempt }} -o work/candidates.jsonl --hours 26 --limit 150
-          python scripts/snapshot.py --raw /tmp/x-digest-raw-${{ github.run_id }}-${{ github.run_attempt }} --candidates work/candidates.jsonl --output data/latest.json
+          python scripts/official_sources.py --output work/official-sources.json
+          python scripts/snapshot.py --official work/official-sources.json --raw /tmp/x-digest-raw-${{ github.run_id }}-${{ github.run_attempt }} --candidates work/candidates.jsonl --output data/latest.json
           python scripts/source_health.py --snapshot data/latest.json --output data/source_health.json
       - name: Save the private source snapshot
         run: |

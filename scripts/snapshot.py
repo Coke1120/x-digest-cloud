@@ -21,7 +21,7 @@ def collection_id(run_id, run_attempt=1):
     return run_id + str(attempt).zfill(4)
 
 
-def build(raw_dir, candidates, run_id, run_attempt=1):
+def build(raw_dir, candidates, run_id, run_attempt=1, official=None):
     summary = json.loads((raw_dir / '_gather_summary.json').read_text())
     if summary.get('ok') is not True:
         raise ValueError('collection_not_successful')
@@ -64,6 +64,16 @@ def build(raw_dir, candidates, run_id, run_attempt=1):
               'collected_at': now.isoformat(),
               'source_repository': 'Coke1120/x-digest-cloud', 'coverage': summary,
               'records': records[:150]}
+    if official is not None:
+        feeds = json.loads(official.read_text(encoding='utf-8'))
+        if feeds.get('schema_version') != 1 or not isinstance(feeds.get('records'), list) or len(feeds['records']) > 80:
+            raise ValueError('invalid_official_snapshot')
+        fetched = _parse_ts(feeds.get('collected_at', ''))
+        if fetched is None or fetched.tzinfo is None or fetched > now:
+            raise ValueError('invalid_official_collection_time')
+        result['official_records'] = feeds['records']
+        result['official_coverage'] = feeds['coverage']
+        result['official_collected_at'] = feeds['collected_at']
     diagnostics = raw_dir / '_prefilter_diagnostics.json'
     if diagnostics.exists():
         report = json.loads(diagnostics.read_text())
@@ -72,7 +82,10 @@ def build(raw_dir, candidates, run_id, run_attempt=1):
         result['coverage']['selection_diagnostics'] = report
     # GitHub contents access remains below 1 MiB; remove lowest-ranked records intact.
     while len(json.dumps(result, ensure_ascii=False).encode()) > 750_000 and result['records']:
-        result['records'].pop()
+        if result.get('official_records'):
+            result['official_records'].pop()
+        else:
+            result['records'].pop()
     if not result['records']:
         raise ValueError('source_snapshot_too_large')
     result['record_count'] = len(result['records'])
@@ -81,12 +94,13 @@ def build(raw_dir, candidates, run_id, run_attempt=1):
 
 def main():
     parser = argparse.ArgumentParser()
+    parser.add_argument('--official', type=Path)
     parser.add_argument('--raw', required=True, type=Path)
     parser.add_argument('--candidates', required=True, type=Path)
     parser.add_argument('--output', required=True, type=Path)
     args = parser.parse_args()
     result = build(args.raw, args.candidates, os.environ.get('GITHUB_RUN_ID', 'manual'),
-                   os.environ.get('GITHUB_RUN_ATTEMPT', '1'))
+                   os.environ.get('GITHUB_RUN_ATTEMPT', '1'), args.official)
     args.output.parent.mkdir(parents=True, exist_ok=True)
     temporary = args.output.with_suffix('.tmp')
     temporary.write_text(json.dumps(result, ensure_ascii=False, indent=2) + '\n')
