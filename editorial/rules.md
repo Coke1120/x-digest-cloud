@@ -33,7 +33,7 @@ Use **`最後更新：香港時間 YYYY-MM-DD HH:MM`** (Asia/Hong_Kong). Do **no
 ## Categories
 **Required twelve:** AI 模型與研究｜OpenClaw／Agent 生態｜開發者工具｜產業｜財經｜本地 AI／部署與推理｜AI 安全／私隱與合規｜算力／晶片與硬件｜香港與區域要聞｜國際重大新聞｜科學／醫療與健康｜環境／能源與公共安全
 
-Keep all twelve headings, even when a category has zero supported events. Publish actual supported counts with no per-category minimum; aim for a useful breadth, at most 300 source bullets overall. This owner-approved expansion (2026-10-08) supersedes five-category, 45–55 total and mandatory 10–20-per-category guidance. Record category availability, exclusions, actual counts and gaps privately; never pad.
+Keep all twelve headings, even when a category has zero supported events. The owner's updated target (2026-10-08) is at least ten substantive independent events in every category, normally 10–20 per category (120–240 overall), with an absolute maximum of 300 source bullets. This supersedes the earlier no-per-category-target guidance. Review the complete eligible candidate pool for each category before declaring a shortfall; a small initial shortlist is not a reason to stop. Publish only actual supported events: the target never relaxes the exact 24-hour window, evidence quality, event deduplication or normal two-per-author rule. Record all twelve candidate/rejection/publication counts and any below-ten gap privately; never pad or split events.
 
 Each event belongs once in its most relevant category. Hardware products/specifications go in 算力／晶片與硬件; local inference implementations/measurements in 本地 AI／部署與推理; financing and material economic data in 財經; concrete AI/privacy/security/legal developments in AI 安全／私隱與合規. Keep 產業 for business adoption, partnerships, capacity and operational developments.
 
@@ -41,7 +41,7 @@ General news needs a concrete material development with broad public impact: pol
 
 ## Gather / prefilter
 ```bash
-python3 <skill-dir>/scripts/gather.py --out-dir /tmp/x-digest-raw-YYYY-MM-DD-HHMM-vN --n 20 --user-n 4
+python3 <skill-dir>/scripts/gather.py --out-dir /tmp/x-digest-raw-YYYY-MM-DD-HHMM-vN --n 50 --user-n 12
 python3 <skill-dir>/scripts/prefilter.py /tmp/x-digest-raw-YYYY-MM-DD-HHMM-vN -o <private-work-dir>/candidates.jsonl --hours 26 --limit 450
 ```
 

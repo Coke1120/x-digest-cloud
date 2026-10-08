@@ -45,7 +45,7 @@ jobs:
         env:
           TWITTER_AUTH_TOKEN: ${{ secrets.TWITTER_AUTH_TOKEN }}
           TWITTER_CT0: ${{ secrets.TWITTER_CT0 }}
-        run: python scripts/gather.py --out-dir /tmp/x-digest-raw-${{ github.run_id }}-${{ github.run_attempt }}
+        run: python scripts/gather.py --n 50 --user-n 12 --out-dir /tmp/x-digest-raw-${{ github.run_id }}-${{ github.run_attempt }}
       - name: Prefilter candidates and retain full evidence
         run: |
           python scripts/prefilter.py /tmp/x-digest-raw-${{ github.run_id }}-${{ github.run_attempt }} -o work/candidates.jsonl --hours 26 --limit 450
