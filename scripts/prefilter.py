@@ -78,12 +78,22 @@ def _parse_ts(s: str) -> datetime | None:
 
 OFFICIAL = {'openai', 'anthropicai', 'deepseek_ai', 'openclaw', 'unitygames', 'googledeepmind'}
 CATEGORIES = {
-    '開發者工具': r'\b(?:mcp|rolldown|vite|unity|copilot|sdk|typescript|blender|macdock)\b|開發工具|开发工具',
-    'OpenClaw／Agent 生態': r'\b(?:openclaw|claude code|codex|harness|agentic|opendots|dots|hermes|grok bot|skills?)\b|智能体|智能體|代理工具|エージェント',
-    '財經': r'\b(?:ipo|funding|valuation|earnings|revenue|acquisition|investment|stablecoins?|treasur(?:y|ies)|bankrupt\w*|stripe|privy)\b|融资|融資|上市|財報|财报|破产|破產|收购|收購|估值',
-    '產業': r'\b(?:ai safety|alignment|regulation|governance|policy|subscription|copyright|privacy|licensing|legislation|data centers?|partnership|procurement|energy)\b|监管|監管|安全承诺|安全承諾|版權|版权|隱私|隐私|数据中心|數據中心',
-    'AI 模型與研究': r'\b(?:ai|llm|gpt\w*|openai|anthropic|deepseek|qwen|gemini|glm|kimi|minimax|astra|sol|vllm|sglang|mlx|cuda|gpu|benchmark|llama\.cpp)\b|人工智能|模型|量化|推理|評測|评测|モデル|量子化|ベンチマーク|AI(?=[\u4e00-\u9fff])',
+    'AI 安全／私隱與合規': r'\b(?:ai safety|alignment|prompt injection|jailbreak|vulnerabil\w*|security advisory|privacy|copyright|licensing|regulation|governance)\b|漏洞|私隱|隐私|隱私|版權|版权|監管|监管|資安|安全承諾|安全承诺|脆弱性|プライバシー|著作権',
+    '財經': r'\b(?:ipo|funding|valuation|earnings|revenue|acquisition|investment|stablecoins?|treasur(?:y|ies)|bankrupt\w*|inflation|GDP|employment|unemployment|central bank|interest rate|mortgage|property market|CPI)\b|融資|融资|上市|財報|财报|收購|收购|估值|央行|通脹|通胀|利率|樓市|楼市|就業|就业|決算|金利|雇用|買収',
+    '本地 AI／部署與推理': r'\b(?:mlx|llama\.cpp|vllm|sglang|quantization|tok/s|local inference|local llm|self.hosted llm|prefill|decode|offload)\b|量化|量子化|本地.{0,8}(?:模型|推理|AI)|顯存|显存|吞吐|推論',
+    '算力／晶片與硬件': r'\b(?:GPU|CPU|NVIDIA|AMD|Intel|TSMC|HBM|Blackwell|RTX|DGX|semiconductor|chip|chips|fabrication|Apple Silicon)\b|晶片|芯片|半導體|半导体|顯卡|显卡|製程|制程|半導体',
+    '科學／醫療與健康': r'\b(?:clinical trial|public health|vaccine|vaccination|NASA|astronom\w*|spacecraft|medical|medicine|disease|cancer|WHO|FDA|epidemic|pandemic)\b|科學|科学|醫療|医疗|疫苗|臨床|临床|疾病|癌症|太空|航天|醫學|医学|宇宙|ワクチン|臨床試験',
+    '環境／能源與公共安全': r'\b(?:severe weather|earthquake|evacuat\w*|flood\w*|wildfire|typhoon|hurricane|energy supply|power outage|climate|renewable|nuclear power|rescue|public safety)\b|颱風|台风|地震|洪水|山火|氣候|气候|能源|停電|停电|疏散|公共安全|救援|災害|灾害|警報|避難|エネルギー|気候',
+    '開發者工具': r'\b(?:mcp|rolldown|vite|unity|copilot|cursor|sdk|typescript|blender|macdock|developer tools|CLI|plugin)\b|開發工具|开发工具|開発ツール',
+    'OpenClaw／Agent 生態': r'\b(?:openclaw|claude code|codex|harness|agentic|agents?|opendots|dots|hermes|grok bot|skills?)\b|智能体|智能體|代理工具|エージェント',
+    '產業': r'\b(?:subscription|data centers?|partnership|procurement|capacity|cloud|deployment|pricing)\b|數據中心|数据中心|雲端|雲計算|云计算|採購|采购|合作|產能|产能|企業|企业|提携|調達',
+    'AI 模型與研究': r'\b(?:ai|llm|gpt\w*|openai|anthropic|deepseek|qwen|gemini|glm|kimi|minimax|astra|sol|benchmark)\b|人工智能|模型|評測|评测|モデル|ベンチマーク|AI(?=[\u4e00-\u9fff])',
+    '香港與區域要聞': r'\b(?:Hong Kong|Taiwan|Macau|Macao)\b|香港|台灣|台湾|澳門|澳门',
+    '國際重大新聞': r'\b(?:ceasefire|election|treaty|sanctions?|humanitarian|diplomac\w*|parliament|government|court|war|conflict|president|UN)\b|停火|選舉|选举|外交|制裁|人道|戰爭|战争|政府|法院|裁決|裁决|停戦|選挙|合意',
 }
+NEWS = re.compile(r'\b(?:announc\w*|confirm\w*|approv\w*|ruling|signed|agreement|results?|warning|emergency|suspended|evacuat\w*|killed|injured|passed|resign\w*|elected)\b|宣布|公布|通過|通过|裁決|裁决|批准|確認|确认|協議|协议|結果|结果|警告|疏散|緊急|紧急|停駛|死亡|受傷|發表|発表|承認|決定|警報|避難|合意', re.I)
+GENERAL_CATEGORIES = {'財經', '香港與區域要聞', '國際重大新聞', '科學／醫療與健康', '環境／能源與公共安全'}
+
 RELEASE = re.compile(r'\b(?:releas\w*|launch\w*|shipp\w*|introduc\w*|changelog|beta|open.sourc\w*|fix(?:ed|es)?|rfc)\b|发布|發布|推出|開源|开源|修复|修復|新版|リリース|修正|公開', re.I)
 TECHNICAL = re.compile(r'github\.com|\b(?:github|documentation|docs|benchmark|latency|throughput|vram|quantization|sdk|rfc|install|docker|lean 4)\b|技术细节|技術細節|评测|評測|量化|復現|复现', re.I)
 MEASUREMENT = re.compile(r'\d[\d.,]*\s*(?:%|gb|mb|tb|tps|tok/s|ms|seconds|倍|秒|美元|億|亿)', re.I)
@@ -111,6 +121,8 @@ def rank(row, now, hints=None):
             signals.append(name); quality += weight
     if REPORT.search(text):
         signals.append('report_or_policy_claim'); quality += 2
+    if category in GENERAL_CATEGORIES and NEWS.search(text):
+        signals.append('concrete_news_development'); quality += 2
     if not signals or PROMOTION.search(text) or HYPE.search(text):
         return None
     if len(text) >= 100:
@@ -129,7 +141,7 @@ def rank(row, now, hints=None):
     row.update(role_hints)
     row['claim_kind_hint'] = ('measurement_claim' if MEASUREMENT.search(text) else
                               'release_claim' if RELEASE.search(text) else
-                              'report_claim' if REPORT.search(text) else 'technical_discussion')
+                              'report_claim' if REPORT.search(text) or (category in GENERAL_CATEGORIES and NEWS.search(text)) else 'technical_discussion')
     row['first_person_hint'] = bool(FIRST_PERSON.search(text))
     if MEASUREMENT.search(text):
         row['measurement_context_hint'] = [name for name, pattern in CONTEXT.items() if pattern.search(text)]
@@ -222,7 +234,7 @@ def main() -> None:
     ap.add_argument("raw_dir", type=Path)
     ap.add_argument("-o", "--output", type=Path, required=True)
     ap.add_argument("--hours", type=float, default=26.0)
-    ap.add_argument("--limit", type=int, default=150)
+    ap.add_argument("--limit", type=int, default=450)
     ap.add_argument(
         "--watchlist",
         default=None,
@@ -230,8 +242,8 @@ def main() -> None:
     ap.add_argument('--author-limit',type=int,default=4)
     ap.add_argument('--source-pool', type=Path, default=CONFIG)
     args = ap.parse_args()
-    if not 1 <= args.limit <= 150 or args.hours <= 0 or args.author_limit <= 0:
-        ap.error('Use limit 1..150, positive hours and positive author-limit')
+    if not 1 <= args.limit <= 450 or args.hours <= 0 or args.author_limit <= 0:
+        ap.error('Use limit 1..450, positive hours and positive author-limit')
 
     pool = load_pool(args.source_pool)
     hints = account_hints(pool)
@@ -283,3 +295,4 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
+

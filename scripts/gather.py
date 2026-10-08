@@ -20,7 +20,7 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('--out-dir', required=True, type=Path)
     parser.add_argument('--since', default=(datetime.now(timezone.utc) - timedelta(hours=24)).strftime('%Y-%m-%d'))
-    parser.add_argument('--n', type=int, default=12)
+    parser.add_argument('--n', type=int, default=20)
     parser.add_argument('--user-n', type=int, default=4)
     parser.add_argument('--plan', action='store_true')
     parser.add_argument('--source-pool', type=Path, default=CONFIG)
@@ -89,3 +89,4 @@ def main():
 
 if __name__ == '__main__':
     raise SystemExit(main())
+

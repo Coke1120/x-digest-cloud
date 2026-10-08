@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "revision": "2026-10-03",
+  "revision": "2026-10-08-12-categories",
   "max_account_calls": 14,
   "account_review_days": 60,
   "topics": {
@@ -36,21 +36,45 @@
       "(MLX OR llama.cpp OR GPU) (量子化 OR メモリ OR 推論 OR 実測)",
       "(3090 OR \"Apple Silicon\" OR \"DGX Spark\") (ベンチマーク OR 推論 OR 消費電力 OR 実測)"
     ],
+    "security": [
+      "(AI OR LLM OR agent) (\"security advisory\" OR vulnerability OR \"prompt injection\" OR privacy OR regulation)",
+      "(AI OR 人工智能 OR 智能體) (安全 OR 私隱 OR 隱私 OR 漏洞 OR 監管 OR 版權)",
+      "(AI OR エージェント) (脆弱性 OR プライバシー OR 規制 OR 著作権 OR 安全性)"
+    ],
+    "hardware": [
+      "(NVIDIA OR AMD OR Intel OR TSMC OR GPU OR chip) (launch OR specifications OR fabrication OR HBM OR packaging)",
+      "(晶片 OR 芯片 OR 顯卡 OR 显卡 OR 半導體 OR 半导体) (發布 OR 发布 OR 規格 OR 產能 OR 製程 OR 記憶體)",
+      "(半導体 OR GPU OR チップ) (発表 OR 仕様 OR 製造 OR メモリ OR 生産)"
+    ],
     "industry": [
-      "(AI OR cloud OR \"data center\") (capacity OR partnership OR procurement OR privacy OR licensing OR regulation)",
-      "(Cloudflare OR AWS OR Vercel OR Supabase OR Docker) (incident OR security OR \"self-hosted\" OR deployment OR pricing)",
-      "(AI OR 数据中心 OR 云计算) (监管 OR 隐私 OR 许可 OR 能耗 OR 产能)",
-      "(AI OR 數據中心 OR 雲端) (監管 OR 隱私 OR 授權 OR 能耗 OR 產能)",
-      "(AI OR データセンター OR クラウド) (規制 OR 電力 OR 調達 OR 障害 OR セキュリティ)",
-      "(Cloudflare OR AWS OR Vercel OR Supabase) (料金 OR 更新 OR 障害 OR セキュリティ)"
+      "(AI OR cloud OR \"data center\") (partnership OR procurement OR capacity OR incident OR pricing)",
+      "(AI OR 數據中心 OR 数据中心 OR 雲端) (合作 OR 採購 OR 產能 OR 部署 OR 故障 OR 定價)",
+      "(AI OR データセンター OR クラウド) (提携 OR 調達 OR 障害 OR 料金 OR 導入)"
     ],
     "finance": [
-      "(Nvidia OR AMD OR Micron OR \"AI startup\") (earnings OR revenue OR funding OR acquisition OR capex)",
-      "(Stripe OR stablecoin OR \"AI infrastructure\") (funding OR valuation OR payments OR revenue OR investment)",
-      "(AI OR 英伟达 OR AMD OR 美光) (财报 OR 融资 OR 收购 OR 营收 OR 资本开支)",
-      "(AI OR 英偉達 OR AMD OR 美光) (財報 OR 融資 OR 收購 OR 營收 OR 資本開支)",
-      "(AI OR Nvidia OR AMD OR Micron) (決算 OR 売上 OR 資金調達 OR 買収 OR 設備投資)",
-      "(半導体 OR AI OR stablecoin) (決算 OR 資金調達 OR 金利 OR 売上 OR 投資)"
+      "(\"central bank\" OR inflation OR GDP OR employment OR earnings OR acquisition) (announced OR reported OR data OR decision)",
+      "(央行 OR 通脹 OR 通胀 OR 利率 OR 樓市 OR 楼市 OR 就業 OR 财报 OR 財報) (公布 OR 數據 OR 数据 OR 決定 OR 收購)",
+      "(中央銀行 OR インフレ OR 金利 OR 雇用 OR 決算 OR 買収) (発表 OR 統計 OR 決定 OR 売上)"
+    ],
+    "hk_region": [
+      "(\"Hong Kong\" OR Taiwan OR Macau) (government OR court OR transport OR election OR \"public service\") (announced OR ruling OR approved OR suspended)",
+      "(香港 OR 台灣 OR 台湾 OR 澳門 OR 澳门) (政府 OR 法院 OR 交通 OR 教育 OR 房屋 OR 社會) (公布 OR 通過 OR 裁決 OR 改革 OR 停駛)",
+      "(香港 OR 台湾 OR マカオ) (政府 OR 裁判 OR 交通 OR 選挙 OR 政策) (発表 OR 決定 OR 承認)"
+    ],
+    "world": [
+      "(from:Reuters OR from:AP OR from:UN) (ceasefire OR election OR treaty OR sanctions OR court OR humanitarian)",
+      "(停火 OR 選舉 OR 选举 OR 外交 OR 制裁 OR 人道 OR 戰爭 OR 战争) (宣布 OR 公布 OR 協議 OR 协议 OR 裁決 OR 通過)",
+      "(停戦 OR 選挙 OR 外交 OR 制裁 OR 人道 OR 戦争) (発表 OR 合意 OR 決定 OR 承認)"
+    ],
+    "science_health": [
+      "(\"clinical trial\" OR \"public health\" OR vaccine OR NASA OR \"research study\") (results OR approved OR published OR launched OR alert)",
+      "(科學 OR 科学 OR 醫療 OR 医疗 OR 疫苗 OR 臨床 OR 临床 OR 太空) (研究 OR 公布 OR 批准 OR 結果 OR 结果 OR 發射)",
+      "(科学 OR 医療 OR ワクチン OR 臨床試験 OR 宇宙) (研究 OR 発表 OR 承認 OR 結果 OR 打ち上げ)"
+    ],
+    "environment_safety": [
+      "(\"severe weather\" OR earthquake OR evacuation OR flood OR \"energy supply\" OR \"power outage\" OR climate) (warning OR confirmed OR announced OR emergency OR report)",
+      "(颱風 OR 台风 OR 地震 OR 洪水 OR 山火 OR 能源 OR 氣候 OR 气候 OR 停電 OR 停电) (警告 OR 疏散 OR 公布 OR 確認 OR 紧急 OR 緊急)",
+      "(台風 OR 地震 OR 洪水 OR 山火事 OR エネルギー OR 気候 OR 停電) (警報 OR 避難 OR 発表 OR 確認 OR 緊急)"
     ]
   },
   "accounts": [

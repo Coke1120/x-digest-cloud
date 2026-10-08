@@ -7,7 +7,7 @@ from urllib.parse import urlsplit
 from zoneinfo import ZoneInfo
 
 CONFIG = Path(__file__).with_name('source_pool.json')
-TOPICS = ('models', 'agents', 'tools', 'local', 'industry', 'finance')
+TOPICS = ('models', 'agents', 'tools', 'local', 'security', 'hardware', 'industry', 'finance', 'hk_region', 'world', 'science_health', 'environment_safety')
 ROLES = {'official', 'maintainer', 'researcher', 'practitioner', 'commentator', 'community'}
 
 
@@ -64,8 +64,8 @@ def rotation(pool, now=None, rotation_hour=None):
     queries = []
     for index, topic in enumerate(TOPICS):
         options = pool['topics'][topic]
-        offset = (hour * 2 + index * 2) % len(options)
-        queries.extend({'topic': topic, 'query': options[(offset+i) % len(options)]} for i in range(2))
+        offset = (hour + index) % len(options)
+        queries.append({'topic': topic, 'query': options[offset]})
     active = active_accounts(pool, now)
     core = [a for a in active if a['core']]
     queues = {topic: [a for a in active if not a['core'] and a['topic'] == topic] for topic in TOPICS}
@@ -89,3 +89,4 @@ def account_hints(pool):
     return {a['handle'].lower(): {'source_role_hint': a['role'],
                                 'source_verification_hint': a['verification']['kind']}
             for a in pool['accounts'] if a['status'] == 'active'}
+

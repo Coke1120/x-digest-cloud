@@ -48,7 +48,7 @@ jobs:
         run: python scripts/gather.py --out-dir /tmp/x-digest-raw-${{ github.run_id }}-${{ github.run_attempt }}
       - name: Prefilter candidates and retain full evidence
         run: |
-          python scripts/prefilter.py /tmp/x-digest-raw-${{ github.run_id }}-${{ github.run_attempt }} -o work/candidates.jsonl --hours 26 --limit 150
+          python scripts/prefilter.py /tmp/x-digest-raw-${{ github.run_id }}-${{ github.run_attempt }} -o work/candidates.jsonl --hours 26 --limit 450
           python scripts/official_sources.py --output work/official-sources.json
           python scripts/snapshot.py --official work/official-sources.json --raw /tmp/x-digest-raw-${{ github.run_id }}-${{ github.run_attempt }} --candidates work/candidates.jsonl --output data/latest.json
           python scripts/source_health.py --snapshot data/latest.json --output data/source_health.json
@@ -61,3 +61,4 @@ jobs:
             git commit -m 'Refresh verified X source snapshot'
             git push origin HEAD:main
           fi
+

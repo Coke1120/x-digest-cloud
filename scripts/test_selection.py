@@ -50,17 +50,34 @@ class SelectionTests(unittest.TestCase):
         self.assertEqual(len(select_candidates(rows,1,{'a'},NOW)),1)
 
     def test_high_volume_topic_cannot_crowd_out_other_categories(self):
-        texts=['Released LLM benchmark on GitHub', 'Released Codex skill on GitHub', 'Released MCP SDK on GitHub', 'AI copyright regulation research report: licensing cost changed 5%', 'AI startup funding revenue report: revenue increased 50%']
+        texts=['Released LLM model weights on GitHub', 'Released Codex agent on GitHub', 'Released MCP SDK on GitHub', 'AI partnership capacity announced 5%', 'Startup earnings revenue reported 50%', 'MLX quantization benchmark 40 tok/s', 'AI privacy security advisory released', 'GPU HBM specifications announced 80 GB', 'Hong Kong transport government approved service reform', 'Ceasefire treaty signed by government', 'Clinical trial results published for vaccine', 'Typhoon evacuation warning confirmed']
         rows=[]
         for category,text in enumerate(texts):
             for i in range(100 if category==0 else 26):
                 number=category*1000+i
-                rows.append(row(number,'builder'+str(number),text+' project '+str(number)+' with detailed verifiable technical context.',likes=100000 if category==0 else 0))
+                rows.append(row(number,'builder'+str(number),text+' project '+str(number)+' with detailed verifiable context.',likes=100000 if category==0 else 0))
         output=select_candidates(rows,150,set(),NOW)
         counts={category:sum(r['category']==category for r in output) for category in {r['category'] for r in output}}
-        self.assertEqual(len(counts),5)
+        self.assertEqual(len(counts),12)
         self.assertEqual(len(output),150)
-        self.assertTrue(all(count>=24 for count in counts.values()),counts)
+        self.assertTrue(all(count>=10 for count in counts.values()),counts)
+
+    def test_general_news_requires_development_and_finance_is_broad(self):
+        rows=[row(1,'a','Hong Kong government is so annoying. '*5),
+              row(2,'b','Ceasefire treaty signed after government talks; confirmed terms are published.'),
+              row(3,'c','Central bank announced interest rate decision after inflation data.'),
+              row(4,'d','Clinical trial results published for vaccine; the study reports its limitations.'),
+              row(5,'e','Typhoon warning confirmed with evacuation notices for coastal residents.')]
+        out=select_candidates(rows,150,set(),NOW)
+        self.assertEqual({r['category'] for r in out},{'國際重大新聞','財經','科學／醫療與健康','環境／能源與公共安全'})
+        self.assertNotIn('a',{r['handle'] for r in out})
+
+    def test_hardware_measurements_and_financing_are_distinct(self):
+        rows=[row(1,'a','Released GPU HBM specifications: memory capacity 80 GB.'),
+              row(2,'b','MLX GPU quantization benchmark: Qwen Q4 with batch 1, context 8k achieved 40 tok/s.'),
+              row(3,'c','GPU infrastructure funding round reported a valuation of 20 billion dollars.')]
+        out=select_candidates(rows,150,set(),NOW)
+        self.assertEqual({r['category'] for r in out},{'算力／晶片與硬件','本地 AI／部署與推理','財經'})
 
     def test_cli_preserves_all_source_provenance(self):
         with tempfile.TemporaryDirectory() as directory:
@@ -159,3 +176,4 @@ class SelectionTests(unittest.TestCase):
             health({'schema_version': 1, 'coverage': {'ok': False}, 'records': [{}]}, {}, load_pool())
 
 if __name__=='__main__':unittest.main()
+

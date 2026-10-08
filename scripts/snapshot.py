@@ -63,7 +63,7 @@ def build(raw_dir, candidates, run_id, run_attempt=1, official=None):
               'github_run_id': str(run_id), 'github_run_attempt': int(run_attempt),
               'collected_at': now.isoformat(),
               'source_repository': 'Coke1120/x-digest-cloud', 'coverage': summary,
-              'records': records[:150]}
+              'records': records[:450]}
     if official is not None:
         feeds = json.loads(official.read_text(encoding='utf-8'))
         if feeds.get('schema_version') != 1 or not isinstance(feeds.get('records'), list) or len(feeds['records']) > 80:
@@ -81,7 +81,7 @@ def build(raw_dir, candidates, run_id, run_attempt=1, official=None):
             raise ValueError('invalid_selection_diagnostics')
         result['coverage']['selection_diagnostics'] = report
     # GitHub contents access remains below 1 MiB; remove lowest-ranked records intact.
-    while len(json.dumps(result, ensure_ascii=False).encode()) > 750_000 and result['records']:
+    while len(json.dumps(result, ensure_ascii=False, indent=2).encode()) > 750_000 and result['records']:
         if result.get('official_records'):
             result['official_records'].pop()
         else:
@@ -110,3 +110,4 @@ def main():
 
 if __name__ == '__main__':
     main()
+
