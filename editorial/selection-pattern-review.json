@@ -4,8 +4,9 @@
   "review_interval_days": 7,
   "retry_after_hours": 24,
   "last_successful_review_at": "2026-10-03T01:16:00+08:00",
-  "last_attempted_at": "2026-10-02T18:33:14.124Z",
+  "last_attempted_at": "2026-10-09T19:19:31Z",
   "last_attempt_status": "source_read_unavailable",
+  "last_attempt_detail": "Exact public index retrieval was blocked by both web research and the browser; prior successful findings and review date were preserved.",
   "basis": "Summary of the previously completed 2026-10-03 01:16 public-text observation in this conversation; fresh retrieval failed, so no new sampling is claimed.",
   "observations": {
     "source_bullets": 66,
@@ -55,3 +56,4 @@
   ],
   "next_review_not_before": "2026-10-10T01:16:00+08:00"
 }
+
