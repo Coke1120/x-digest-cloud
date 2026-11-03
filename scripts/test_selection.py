@@ -127,7 +127,7 @@ class SelectionTests(unittest.TestCase):
         self.assertNotEqual(plans[0]['accounts'],plans[1]['accounts'])
 
     def test_paused_and_unreviewed_sources_are_not_sampled(self):
-        pool=copy.deepcopy(load_pool());pool['accounts'][4]['status']='paused'
+        pool=copy.deepcopy(fixture_pool());pool['accounts'][4]['status']='paused'
         pool['accounts'][5]['reviewed_at']='2026-01-01'
         selected=rotation(pool,datetime(2026,10,3,tzinfo=timezone.utc),0)
         sampled={a['handle'] for a in selected['accounts']}
@@ -136,7 +136,7 @@ class SelectionTests(unittest.TestCase):
         self.assertIn(pool['accounts'][5]['handle'],selected['review_due'])
 
     def test_hong_kong_review_date_accepts_current_evening_utc(self):
-        pool=load_pool()
+        pool=fixture_pool()
         self.assertEqual(len(active_accounts(pool,datetime(2026,10,2,18,tzinfo=timezone.utc))),len(pool['accounts']))
 
     def test_pure_long_opinion_and_trade_hype_cannot_fill_a_category(self):
@@ -151,7 +151,7 @@ class SelectionTests(unittest.TestCase):
     def test_account_role_does_not_make_a_claim_first_party_or_boost_its_score(self):
         base=row(1,'sample_source04','Released an AI tool on GitHub, benchmark 20 ms.')
         plain=select_candidates([base],1,set(),NOW)[0]
-        tagged=select_candidates([base],1,set(),NOW,hints=account_hints(load_pool()))[0]
+        tagged=select_candidates([base],1,set(),NOW,hints=account_hints(fixture_pool()))[0]
         self.assertEqual(plain['selection_score'],tagged['selection_score'])
         self.assertEqual(tagged['source_role_hint'],'community')
         self.assertFalse(tagged['first_person_hint'])
@@ -170,8 +170,8 @@ class SelectionTests(unittest.TestCase):
                 'records': [{'id': '1980000000000000001', 'author': {'screenName': 'newbuilder'},
                              'text': 'Offline fixture, never publish.', 'createdAtISO': (NOW-timedelta(hours=2)).isoformat(),
                              'isRetweet': False, 'candidate_context': {'category': '開發者工具'}}]}
-        first = health(base, {}, load_pool())
-        second = health(base, first, load_pool())
+        first = health(base, {}, fixture_pool())
+        second = health(base, first, fixture_pool())
         self.assertEqual(len(second['runs']), 1)
         self.assertEqual(second['sources'][0]['distinct_posts_retained'], 1)
         self.assertEqual(second['sources'][0]['status'], 'unreviewed')
@@ -180,14 +180,14 @@ class SelectionTests(unittest.TestCase):
         base['collected_at'] = (NOW+timedelta(days=8)).isoformat()
         base['records'][0]['id'] = '1980000000000000002'
         base['records'][0]['createdAtISO'] = (NOW+timedelta(days=8, hours=-1)).isoformat()
-        third = health(base, second, load_pool())
+        third = health(base, second, fixture_pool())
         self.assertEqual(len(third['runs']), 1)
         self.assertEqual(third['sources'][0]['distinct_posts_retained'], 1)
         self.assertEqual(third['sources'][0]['posts'][0]['id'], '1980000000000000002')
 
     def test_failed_collection_cannot_advance_source_health(self):
         with self.assertRaisesRegex(ValueError, 'invalid_health_snapshot'):
-            health({'schema_version': 1, 'coverage': {'ok': False}, 'records': [{}]}, {}, load_pool())
+            health({'schema_version': 1, 'coverage': {'ok': False}, 'records': [{}]}, {}, fixture_pool())
 
 if __name__=='__main__':unittest.main()
 
