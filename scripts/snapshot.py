@@ -64,7 +64,7 @@ def build(raw_dir, candidates, run_id, run_attempt=1, official=None, source_repo
         raise ValueError('no_verifiable_candidates')
     result = {'schema_version': 1, 'run_id': collection_id(run_id, run_attempt),
               'github_run_id': str(run_id), 'github_run_attempt': int(run_attempt),
-              'collected_at': now.isoformat(),
+              'collected_at': now.isoformat(), 'code_sha': os.environ.get('GITHUB_SHA', ''),
               'source_repository': repository, 'coverage': summary,
               'records': records[:450]}
     if official is not None:
@@ -114,4 +114,5 @@ def main():
 
 if __name__ == '__main__':
     main()
+
 

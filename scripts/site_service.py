@@ -46,6 +46,20 @@ def main():
         path, method, payload = '/api/status', 'GET', None
     elif operation == 'instructions':
         path, method, payload = '/api/instructions', 'GET', None
+    elif operation == 'private_snapshot':
+        path, method, payload = '/api/private/snapshots/latest', 'GET', None
+    elif operation in ('private_state', 'save_private_state'):
+        if value.get('state_key') not in ('source_health', 'selection_pattern_review'):
+            raise ValueError('invalid_private_state_key')
+        path = '/api/private/state/' + value['state_key']
+        method = 'GET' if operation == 'private_state' else 'POST'
+        payload = None
+        if operation == 'save_private_state':
+            if 'state_file' in value:
+                from pathlib import Path
+                payload = json.loads(Path(value['state_file']).read_text())
+            else:
+                payload = value['state']
     elif operation == 'publish':
         if 'publication_file' in value:
             from pathlib import Path
@@ -53,12 +67,13 @@ def main():
         else:
             publication = value['publication']
         path, method, payload = '/api/publish', 'POST', publication
-    elif operation == 'read':
+    elif operation in ('read', 'private_edition'):
         import re
         key = value['key']
         if not re.fullmatch(r'x-digest-\d{4}-\d{2}-\d{2}-v\d+', key):
             raise ValueError('invalid_edition_key')
-        path, method, payload = '/editions/' + key + '.md', 'GET', None
+        path = '/editions/' + key + '.md' if operation == 'read' else '/api/private/editions/' + key
+        method, payload = 'GET', None
     elif operation == 'mcp':
         path, method, payload = '/mcp', 'POST', {'jsonrpc':'2.0','id':1,'method':value['method'],'params':value.get('params',{})}
     else:
@@ -92,3 +107,4 @@ if __name__ == '__main__':
     try: raise SystemExit(main())
     except (ValueError,KeyError):
         print(json.dumps({'ok':False,'error':'invalid_service_request_or_response'}));raise SystemExit(2)
+

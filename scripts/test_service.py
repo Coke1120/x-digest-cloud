@@ -27,3 +27,31 @@ class ServiceTests(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main()
+
+
+class PrivateServiceTests(unittest.TestCase):
+    def test_private_read_and_state_routes_keep_origin_allowlist(self):
+        import io, json
+        from contextlib import redirect_stdout
+        from unittest.mock import MagicMock, patch
+        from site_service import main
+        for operation, state_key, expected_method, expected_path in (
+            ('private_snapshot', None, 'GET', '/api/private/snapshots/latest'),
+            ('private_edition', None, 'GET', '/api/private/editions/x-digest-2026-01-01-v1'),
+            ('private_state', 'source_health', 'GET', '/api/private/state/source_health'),
+            ('save_private_state', 'selection_pattern_review', 'POST', '/api/private/state/selection_pattern_review')):
+            value = {'origin':'https://example.test', 'allowed_origins':['https://example.test'],
+                     'token':'synthetic', 'key':'x-digest-2026-01-01-v1', 'operation':operation, 'state_key':state_key, 'state':{'version':1}}
+            opener = MagicMock()
+            response = opener.open.return_value.__enter__.return_value
+            response.headers = {'Content-Type':'application/json'}
+            response.read.return_value = '{}'
+            with patch('sys.stdin', io.StringIO(json.dumps(value))), patch('site_service.urllib.request.build_opener', return_value=opener), redirect_stdout(io.StringIO()):
+                self.assertEqual(main(), 0)
+            request = opener.open.call_args.args[0]
+            self.assertEqual(request.full_url, 'https://example.test'+expected_path)
+            self.assertEqual(request.method, expected_method)
+            self.assertEqual(request.get_header('X-digest-authorization'), 'Bearer synthetic')
+            del value['allowed_origins']
+            with patch('sys.stdin', io.StringIO(json.dumps(value))), redirect_stdout(io.StringIO()), self.assertRaises(ValueError):
+                main()

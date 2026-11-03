@@ -10,7 +10,7 @@ Keep deployment URLs, project IDs, selected accounts, query overrides and public
 
 Keep X credentials in GitHub Actions Secrets (`TWITTER_AUTH_TOKEN` and `TWITTER_CT0`) or an explicitly configured local Agent-Reach installation. The collector does not extract browser cookies or post, like, follow or message.
 
-Raw results, candidate files, snapshots, source-health history and editorial notes belong in access-controlled private storage. A public repository's branches, Actions logs and artifacts are not private storage. The included workflow never commits or uploads collected evidence.
+Raw results, candidate files, snapshots, source-health history and editorial notes belong in access-controlled private storage. A public repository's branches, Actions logs and artifacts are not private storage. The included workflow never commits evidence or uploads Actions artifacts. It uploads evidence only to the configured private collector API.
 
 The committed `examples/source_pool.json` uses deliberately fictitious, paused accounts and expired review dates. It is a schema example, not an identity-verified source list. Copy it to ignored `private/source_pool.json`, replace every example account and verification link, review real sources, and set their review dates before collecting. The scripts fail closed when that private configuration is missing.
 
@@ -22,15 +22,24 @@ Install the pinned CLI and dependencies from `requirements.txt` in a virtual env
 python scripts/gather.py --source-pool private/source_pool.json --n 50 --user-n 12 --out-dir /tmp/x-digest-raw-RUN
 python scripts/prefilter.py /tmp/x-digest-raw-RUN --source-pool private/source_pool.json -o work/candidates.jsonl --hours 26 --limit 450
 python scripts/official_sources.py --output work/official-sources.json
-python scripts/snapshot.py --source-repository OWNER/PRIVATE-EVIDENCE-REPO --official work/official-sources.json --raw /tmp/x-digest-raw-RUN --candidates work/candidates.jsonl --output data/latest.json
-python scripts/source_health.py --source-repository OWNER/PRIVATE-EVIDENCE-REPO --source-pool private/source_pool.json --snapshot data/latest.json --output data/source_health.json
+python scripts/snapshot.py --source-repository OWNER/COLLECTOR-REPO --official work/official-sources.json --raw /tmp/x-digest-raw-RUN --candidates work/candidates.jsonl --output data/latest.json
+python scripts/source_health.py --source-repository OWNER/COLLECTOR-REPO --source-pool private/source_pool.json --snapshot data/latest.json --output data/source_health.json
 ```
 
 Use a new raw directory for every run. The 26-hour candidate buffer does not extend the exact rolling 24-hour publication window. Snapshots retain genuine full records, collection cutoff, coverage and distinct run/attempt identities; selection scores and role fields are hints, not semantic validation.
 
 `--source-repository` must identify the actual verified evidence repository. In Actions it defaults to `GITHUB_REPOSITORY`; never copy a different repository identity to bypass a publisher's source policy.
 
-The workflow runs credential-free tests on pull requests and relevant pushes. Manual collection requires an explicit opt-in and a private source-pool JSON supplied through the `DIGEST_SOURCE_POOL_JSON` Actions Secret. Evidence remains ephemeral until the operator implements a private, authenticated storage destination. No collection schedule or publication is enabled by this template.
+The workflow runs credential-free tests on pull requests and relevant pushes. Collection runs on main only: daily at 00:15 UTC or with the manual `collect` opt-in. Configure these Actions Secrets before relying on the schedule:
+
+- `DIGEST_SOURCE_POOL_JSON`: reviewed private source-pool JSON.
+- `DIGEST_UPLOAD_URL`: exact HTTPS `/api/private/snapshots` endpoint, without query, fragment or credentials.
+- `DIGEST_UPLOAD_TOKEN`: dedicated collector-only credential. Never use a Site writer/service token.
+- Existing `TWITTER_AUTH_TOKEN` and `TWITTER_CT0`: available only to the collection step.
+
+Missing configuration fails closed. The upload step gets no X cookies. Private collection diagnostics, raw records and per-run health stay on ephemeral runner disk and are removed afterward, including on failure. Only safe status codes reach public logs; no evidence artifacts or commits are produced. The API must authenticate the collector independently and deny it private reads and publication. Redirects are refused, response identity is checked, and uploads bind snapshot run/attempt, repository and `code_sha` to the current runner. API validation remains required; a bearer credential alone is not a GitHub attestation.
+
+The server stores full snapshots and per-run health. The writer reads the latest snapshot and merges cumulative source-health into private writer state; the collector never reads history. A failed upload leaves the previous staged snapshot intact. Publication and semantic review remain separate from collection. Set the private editorial task after the collection slot and allow for GitHub schedule delays.
 
 ## Protected Site client
 
@@ -39,7 +48,9 @@ The workflow runs credential-free tests on pull requests and relevant pushes. Ma
 - `origin`: the exact HTTPS origin confirmed by fresh Site metadata.
 - `allowed_origins`: a nonempty explicit list of metadata-verified origins from private operator configuration.
 - `token`: a fresh service-access token, held only in memory.
-- `operation`: `status`, `instructions`, `read`, `publish` or `mcp`.
+- `operation`: `status`, `instructions`, `read`, `publish`, `private_snapshot`, `private_edition`, `private_state`, `save_private_state` or `mcp`.
+- `private_edition` requires a validated edition `key` and retrieves protected notes/source metadata.
+- Private state operations require `state_key`: `source_health` or `selection_pattern_review`; saving additionally supplies credential-free `state` or `state_file`.
 
 The helper rejects non-origin URLs, unlisted origins and redirects, and sends the token in both authorization headers. Do not put real tokens in command arguments, files, examples, repository secrets or task prompts. Public reading does not authorize publication. Preserve the publisher's separate writer protection and audience.
 
@@ -49,7 +60,7 @@ Publication JSON is credential-free and requires a complete verified snapshot, p
 
 Store your non-secret deployment identity, source policy, preferred categories/languages, private source-pool configuration and operating procedure in the existing task's private prompt. Retain the task's timezone and explicitly chosen daily time. Fetch code pinned to a commit; obtain runtime credentials only through supported metadata or secret mechanisms.
 
-Before enabling the task, configure private evidence storage and verify collection, authenticated publication and full readback independently. Without that storage, preserve the last edition and report `private_evidence_store_unconfigured`; do not fall back to committing raw data here. A task prompt is not an evidence store.
+Before relying on the task, verify collection, private snapshot read access, authenticated publication and full readback independently. If any prerequisite fails, preserve the last edition and report the actual safe error code; do not fall back to committing raw data here. A task prompt is not an evidence store.
 
 Optional source-pattern review state must also remain in private storage. Do not recreate it in the public repository.
 
@@ -64,3 +75,4 @@ Tests use synthetic fixtures only and make no authenticated network requests.
 ## Privacy limitations
 
 Removing a file in a new commit does not erase previous commits, forks, clones, Actions artifacts or caches. Historical cleanup requires a separate reviewed history-rewrite plan and, if necessary, GitHub support. Rotate any exposed credential rather than relying on deletion. This template does not claim that Git history has been purged.
+

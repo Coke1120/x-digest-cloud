@@ -1,13 +1,15 @@
-name: Check X digest template
+name: Check and collect X digest template
 
 on:
   workflow_dispatch:
     inputs:
       collect:
-        description: 'Opt in to ephemeral collection with private configuration (no upload or commit)'
+        description: 'Collect and upload evidence to the configured private store'
         type: boolean
         required: true
         default: false
+  schedule:
+    - cron: '15 0 * * *'
   pull_request:
   push:
     branches: [main]
@@ -19,10 +21,6 @@ on:
 
 permissions:
   contents: read
-
-concurrency:
-  group: x-digest-template-${{ github.ref }}
-  cancel-in-progress: true
 
 jobs:
   check:
@@ -42,34 +40,52 @@ jobs:
         env:
           PYTHONDONTWRITEBYTECODE: '1'
         run: python -m unittest discover -s scripts -p 'test_*.py'
-      - name: Load explicit private source configuration
-        if: github.event_name == 'workflow_dispatch' && inputs.collect
+  collect:
+    needs: check
+    if: github.ref == 'refs/heads/main' && (github.event_name == 'schedule' || (github.event_name == 'workflow_dispatch' && inputs.collect))
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    concurrency:
+      group: private-digest-collection
+      cancel-in-progress: false
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+      - name: Check private destination configuration without disclosure
         env:
+          DIGEST_UPLOAD_URL: ${{ secrets.DIGEST_UPLOAD_URL }}
+          DIGEST_UPLOAD_TOKEN: ${{ secrets.DIGEST_UPLOAD_TOKEN }}
           DIGEST_SOURCE_POOL_JSON: ${{ secrets.DIGEST_SOURCE_POOL_JSON }}
         run: |
           python - <<'PY'
-          import json, os
-          from pathlib import Path
-          value = os.environ.get('DIGEST_SOURCE_POOL_JSON')
-          if not value:
-              raise SystemExit('private_source_pool_unconfigured')
-          config = json.loads(value)
-          root = Path('private')
-          root.mkdir(mode=0o700, exist_ok=True)
-          path = root / 'source_pool.json'
-          path.write_text(json.dumps(config), encoding='utf-8')
-          path.chmod(0o600)
+          import os, sys
+          sys.path.insert(0, 'scripts')
+          from upload_snapshot import endpoint_url
+          try:
+              endpoint_url(os.environ.get('DIGEST_UPLOAD_URL'))
+              assert os.environ.get('DIGEST_UPLOAD_TOKEN') and os.environ.get('DIGEST_SOURCE_POOL_JSON')
+          except Exception:
+              raise SystemExit('private_collection_unconfigured') from None
           PY
-      - name: Gather real X sources on private runner disk only
-        if: github.event_name == 'workflow_dispatch' && inputs.collect
+      - name: Install the pinned read-only source CLI
+        run: python -m pip install -r requirements.txt
+      - name: Collect privately with no evidence in logs or artifacts
         env:
+          DIGEST_SOURCE_POOL_JSON: ${{ secrets.DIGEST_SOURCE_POOL_JSON }}
           TWITTER_AUTH_TOKEN: ${{ secrets.TWITTER_AUTH_TOKEN }}
           TWITTER_CT0: ${{ secrets.TWITTER_CT0 }}
-        run: python scripts/gather.py --source-pool private/source_pool.json --n 50 --user-n 12 --out-dir /tmp/x-digest-raw-${{ github.run_id }}-${{ github.run_attempt }} > private/collection.log
-      - name: Build ephemeral evidence (never commit or upload)
-        if: github.event_name == 'workflow_dispatch' && inputs.collect
+        run: python scripts/collect_private.py
+      - name: Upload to the collector-only private API
+        env:
+          DIGEST_UPLOAD_URL: ${{ secrets.DIGEST_UPLOAD_URL }}
+          DIGEST_UPLOAD_TOKEN: ${{ secrets.DIGEST_UPLOAD_TOKEN }}
+        run: python scripts/upload_snapshot.py --snapshot "$RUNNER_TEMP/x-digest-private/snapshot.json" --source-health "$RUNNER_TEMP/x-digest-private/source-health.json"
+      - name: Remove ephemeral private files
+        if: always()
         run: |
-          python scripts/prefilter.py /tmp/x-digest-raw-${{ github.run_id }}-${{ github.run_attempt }} --source-pool private/source_pool.json -o work/candidates.jsonl --hours 26 --limit 450
-          python scripts/official_sources.py --output work/official-sources.json
-          python scripts/snapshot.py --official work/official-sources.json --raw /tmp/x-digest-raw-${{ github.run_id }}-${{ github.run_attempt }} --candidates work/candidates.jsonl --output data/latest.json
-          python scripts/source_health.py --snapshot data/latest.json --source-pool private/source_pool.json --output data/source_health.json
+          rm -rf -- "$RUNNER_TEMP/x-digest-private" "/tmp/x-digest-raw-${GITHUB_RUN_ID}-${GITHUB_RUN_ATTEMPT}"
