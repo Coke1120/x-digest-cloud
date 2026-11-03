@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-02T15:59:26.687692+00:00",
+  "updated_at": "2026-11-03T01:02:03.512399+00:00",
   "window_days": 7,
   "source_pool_revision": "2026-10-08-12-categories",
   "semantic_reviewed": false,
@@ -460,12 +460,121 @@
           "hits": 12
         }
       ]
+    },
+    {
+      "run_id": "41556659944",
+      "collected_at": "2026-11-03T01:02:03.512399+00:00",
+      "selected_records": 80,
+      "category_hints": {
+        "AI 安全／私隱與合規": 13,
+        "財經": 43,
+        "本地 AI／部署與推理": 9,
+        "算力／晶片與硬件": 2,
+        "科學／醫療與健康": 5,
+        "環境／能源與公共安全": 3,
+        "開發者工具": 0,
+        "OpenClaw／Agent 生態": 4,
+        "產業": 0,
+        "AI 模型與研究": 1,
+        "香港與區域要聞": 0,
+        "國際重大新聞": 0
+      },
+      "account_calls": [
+        {
+          "handle": "OpenAI",
+          "ok": true,
+          "hits": 12
+        },
+        {
+          "handle": "AnthropicAI",
+          "ok": true,
+          "hits": 12
+        },
+        {
+          "handle": "deepseek_ai",
+          "ok": true,
+          "hits": 12
+        },
+        {
+          "handle": "openclaw",
+          "ok": true,
+          "hits": 12
+        },
+        {
+          "handle": "sama",
+          "ok": true,
+          "hits": 12
+        },
+        {
+          "handle": "steipete",
+          "ok": true,
+          "hits": 12
+        },
+        {
+          "handle": "unsafemut",
+          "ok": true,
+          "hits": 12
+        },
+        {
+          "handle": "simonw",
+          "ok": true,
+          "hits": 12
+        },
+        {
+          "handle": "supabase",
+          "ok": true,
+          "hits": 12
+        },
+        {
+          "handle": "levelsio",
+          "ok": true,
+          "hits": 12
+        },
+        {
+          "handle": "emollick",
+          "ok": true,
+          "hits": 12
+        },
+        {
+          "handle": "NousResearch",
+          "ok": true,
+          "hits": 12
+        },
+        {
+          "handle": "sydneyrunkle",
+          "ok": true,
+          "hits": 12
+        },
+        {
+          "handle": "awnihannun",
+          "ok": true,
+          "hits": 12
+        }
+      ]
     }
   ],
   "sources": [
     {
       "handle": "Nikola_pn2501",
       "posts": [
+        {
+          "id": "2117364670659186804",
+          "created_at": "2026-11-02T21:14:10+00:00",
+          "last_seen": "2026-11-03T01:02:03.512399+00:00",
+          "category_hint": "財經"
+        },
+        {
+          "id": "2117364666477511150",
+          "created_at": "2026-11-02T21:14:09+00:00",
+          "last_seen": "2026-11-03T01:02:03.512399+00:00",
+          "category_hint": "財經"
+        },
+        {
+          "id": "2117361800207651190",
+          "created_at": "2026-11-02T21:02:46+00:00",
+          "last_seen": "2026-11-03T01:02:03.512399+00:00",
+          "category_hint": "財經"
+        },
         {
           "id": "2117222805486100826",
           "created_at": "2026-11-02T11:50:27+00:00",
@@ -475,7 +584,7 @@
         {
           "id": "2117222801400848675",
           "created_at": "2026-11-02T11:50:26+00:00",
-          "last_seen": "2026-11-02T15:59:26.687692+00:00",
+          "last_seen": "2026-11-03T01:02:03.512399+00:00",
           "category_hint": "財經"
         },
         {
@@ -522,8 +631,64 @@
         }
       ],
       "status": "unreviewed",
-      "distinct_posts_retained": 9,
+      "distinct_posts_retained": 12,
       "distinct_post_dates_retained": 3
+    },
+    {
+      "handle": "kyookine",
+      "posts": [
+        {
+          "id": "2117400747394637824",
+          "created_at": "2026-11-02T23:37:32+00:00",
+          "last_seen": "2026-11-03T01:02:03.512399+00:00",
+          "category_hint": "財經"
+        },
+        {
+          "id": "2117396702978359455",
+          "created_at": "2026-11-02T23:21:27+00:00",
+          "last_seen": "2026-11-03T01:02:03.512399+00:00",
+          "category_hint": "財經"
+        },
+        {
+          "id": "2117268342004126004",
+          "created_at": "2026-11-02T14:51:24+00:00",
+          "last_seen": "2026-11-03T01:02:03.512399+00:00",
+          "category_hint": "財經"
+        },
+        {
+          "id": "2117218135577387369",
+          "created_at": "2026-11-02T11:31:54+00:00",
+          "last_seen": "2026-11-03T01:02:03.512399+00:00",
+          "category_hint": "財經"
+        },
+        {
+          "id": "2117212675537338501",
+          "created_at": "2026-11-02T11:10:12+00:00",
+          "last_seen": "2026-11-02T15:59:26.687692+00:00",
+          "category_hint": "AI 安全／私隱與合規"
+        },
+        {
+          "id": "2117072392388526125",
+          "created_at": "2026-11-02T01:52:46+00:00",
+          "last_seen": "2026-11-02T06:09:17.473238+00:00",
+          "category_hint": "財經"
+        },
+        {
+          "id": "2117067854029963603",
+          "created_at": "2026-11-02T01:34:44+00:00",
+          "last_seen": "2026-11-02T15:59:26.687692+00:00",
+          "category_hint": "財經"
+        },
+        {
+          "id": "2117041411124269181",
+          "created_at": "2026-11-01T23:49:39+00:00",
+          "last_seen": "2026-11-02T15:59:26.687692+00:00",
+          "category_hint": "財經"
+        }
+      ],
+      "status": "unreviewed",
+      "distinct_posts_retained": 8,
+      "distinct_post_dates_retained": 2
     },
     {
       "handle": "Emmie0908",
@@ -564,42 +729,36 @@
       "distinct_post_dates_retained": 1
     },
     {
-      "handle": "kyookine",
+      "handle": "domainlancer",
       "posts": [
         {
-          "id": "2117268342004126004",
-          "created_at": "2026-11-02T14:51:24+00:00",
-          "last_seen": "2026-11-02T15:59:26.687692+00:00",
-          "category_hint": "財經"
-        },
-        {
-          "id": "2117212675537338501",
-          "created_at": "2026-11-02T11:10:12+00:00",
-          "last_seen": "2026-11-02T15:59:26.687692+00:00",
+          "id": "2117265484940734880",
+          "created_at": "2026-11-02T14:40:03+00:00",
+          "last_seen": "2026-11-03T01:02:03.512399+00:00",
           "category_hint": "AI 安全／私隱與合規"
         },
         {
-          "id": "2117072392388526125",
-          "created_at": "2026-11-02T01:52:46+00:00",
-          "last_seen": "2026-11-02T06:09:17.473238+00:00",
-          "category_hint": "財經"
+          "id": "2117014330826752176",
+          "created_at": "2026-11-01T22:02:03+00:00",
+          "last_seen": "2026-11-01T22:06:29.530053+00:00",
+          "category_hint": "AI 安全／私隱與合規"
         },
         {
-          "id": "2117067854029963603",
-          "created_at": "2026-11-02T01:34:44+00:00",
-          "last_seen": "2026-11-02T15:59:26.687692+00:00",
-          "category_hint": "財經"
+          "id": "2117002703964610856",
+          "created_at": "2026-11-01T21:15:51+00:00",
+          "last_seen": "2026-11-01T22:06:29.530053+00:00",
+          "category_hint": "AI 安全／私隱與合規"
         },
         {
-          "id": "2117041411124269181",
-          "created_at": "2026-11-01T23:49:39+00:00",
-          "last_seen": "2026-11-02T15:59:26.687692+00:00",
-          "category_hint": "財經"
+          "id": "2116681544462971325",
+          "created_at": "2026-10-31T23:59:40+00:00",
+          "last_seen": "2026-11-01T06:10:13.911348+00:00",
+          "category_hint": "AI 安全／私隱與合規"
         }
       ],
       "status": "unreviewed",
-      "distinct_posts_retained": 5,
-      "distinct_post_dates_retained": 2
+      "distinct_posts_retained": 4,
+      "distinct_post_dates_retained": 3
     },
     {
       "handle": "ISAO224688",
@@ -729,7 +888,7 @@
         {
           "id": "2117179551843495945",
           "created_at": "2026-11-02T08:58:35+00:00",
-          "last_seen": "2026-11-02T15:59:26.687692+00:00",
+          "last_seen": "2026-11-03T01:02:03.512399+00:00",
           "category_hint": "財經"
         },
         {
@@ -776,24 +935,24 @@
       "distinct_post_dates_retained": 3
     },
     {
-      "handle": "domainlancer",
+      "handle": "arnaudmercier",
       "posts": [
         {
-          "id": "2117014330826752176",
-          "created_at": "2026-11-01T22:02:03+00:00",
-          "last_seen": "2026-11-01T22:06:29.530053+00:00",
-          "category_hint": "AI 安全／私隱與合規"
+          "id": "2117262717727687021",
+          "created_at": "2026-11-02T14:29:03+00:00",
+          "last_seen": "2026-11-02T15:59:26.687692+00:00",
+          "category_hint": "本地 AI／部署與推理"
         },
         {
-          "id": "2117002703964610856",
-          "created_at": "2026-11-01T21:15:51+00:00",
-          "last_seen": "2026-11-01T22:06:29.530053+00:00",
-          "category_hint": "AI 安全／私隱與合規"
+          "id": "2117164954281242908",
+          "created_at": "2026-11-02T08:00:34+00:00",
+          "last_seen": "2026-11-03T01:02:03.512399+00:00",
+          "category_hint": "科學／醫療與健康"
         },
         {
-          "id": "2116681544462971325",
-          "created_at": "2026-10-31T23:59:40+00:00",
-          "last_seen": "2026-11-01T06:10:13.911348+00:00",
+          "id": "2116856523322261759",
+          "created_at": "2026-11-01T11:34:59+00:00",
+          "last_seen": "2026-11-01T13:29:41.030102+00:00",
           "category_hint": "AI 安全／私隱與合規"
         }
       ],
@@ -826,6 +985,32 @@
       "status": "unreviewed",
       "distinct_posts_retained": 3,
       "distinct_post_dates_retained": 2
+    },
+    {
+      "handle": "lewang_teraliq",
+      "posts": [
+        {
+          "id": "2117419288143503531",
+          "created_at": "2026-11-03T00:51:12+00:00",
+          "last_seen": "2026-11-03T01:02:03.512399+00:00",
+          "category_hint": "財經"
+        },
+        {
+          "id": "2116764393069502531",
+          "created_at": "2026-11-01T05:28:53+00:00",
+          "last_seen": "2026-11-01T06:10:13.911348+00:00",
+          "category_hint": "財經"
+        },
+        {
+          "id": "2116677910027452796",
+          "created_at": "2026-10-31T23:45:14+00:00",
+          "last_seen": "2026-11-01T06:10:13.911348+00:00",
+          "category_hint": "AI 安全／私隱與合規"
+        }
+      ],
+      "status": "unreviewed",
+      "distinct_posts_retained": 3,
+      "distinct_post_dates_retained": 3
     },
     {
       "handle": "maru2rich",
@@ -930,6 +1115,32 @@
       "status": "unreviewed",
       "distinct_posts_retained": 3,
       "distinct_post_dates_retained": 2
+    },
+    {
+      "handle": "ykidera",
+      "posts": [
+        {
+          "id": "2117419323367260347",
+          "created_at": "2026-11-03T00:51:21+00:00",
+          "last_seen": "2026-11-03T01:02:03.512399+00:00",
+          "category_hint": "財經"
+        },
+        {
+          "id": "2117418695765135391",
+          "created_at": "2026-11-03T00:48:51+00:00",
+          "last_seen": "2026-11-03T01:02:03.512399+00:00",
+          "category_hint": "AI 安全／私隱與合規"
+        },
+        {
+          "id": "2117418113876779423",
+          "created_at": "2026-11-03T00:46:32+00:00",
+          "last_seen": "2026-11-03T01:02:03.512399+00:00",
+          "category_hint": "財經"
+        }
+      ],
+      "status": "unreviewed",
+      "distinct_posts_retained": 3,
+      "distinct_post_dates_retained": 1
     },
     {
       "handle": "0411taisei",
@@ -1112,26 +1323,6 @@
       "distinct_post_dates_retained": 1
     },
     {
-      "handle": "arnaudmercier",
-      "posts": [
-        {
-          "id": "2117262717727687021",
-          "created_at": "2026-11-02T14:29:03+00:00",
-          "last_seen": "2026-11-02T15:59:26.687692+00:00",
-          "category_hint": "本地 AI／部署與推理"
-        },
-        {
-          "id": "2116856523322261759",
-          "created_at": "2026-11-01T11:34:59+00:00",
-          "last_seen": "2026-11-01T13:29:41.030102+00:00",
-          "category_hint": "AI 安全／私隱與合規"
-        }
-      ],
-      "status": "unreviewed",
-      "distinct_posts_retained": 2,
-      "distinct_post_dates_retained": 2
-    },
-    {
       "handle": "BkashJosi",
       "posts": [
         {
@@ -1177,7 +1368,7 @@
         {
           "id": "2117160710992175443",
           "created_at": "2026-11-02T07:43:43+00:00",
-          "last_seen": "2026-11-02T15:59:26.687692+00:00",
+          "last_seen": "2026-11-03T01:02:03.512399+00:00",
           "category_hint": "財經"
         },
         {
@@ -1264,6 +1455,26 @@
           "id": "2117190976209076413",
           "created_at": "2026-11-02T09:43:58+00:00",
           "last_seen": "2026-11-02T15:59:26.687692+00:00",
+          "category_hint": "財經"
+        }
+      ],
+      "status": "unreviewed",
+      "distinct_posts_retained": 2,
+      "distinct_post_dates_retained": 1
+    },
+    {
+      "handle": "FrankIndie",
+      "posts": [
+        {
+          "id": "2117416438147502320",
+          "created_at": "2026-11-03T00:39:53+00:00",
+          "last_seen": "2026-11-03T01:02:03.512399+00:00",
+          "category_hint": "財經"
+        },
+        {
+          "id": "2117415979441680718",
+          "created_at": "2026-11-03T00:38:03+00:00",
+          "last_seen": "2026-11-03T01:02:03.512399+00:00",
           "category_hint": "財經"
         }
       ],
@@ -1372,24 +1583,24 @@
       "distinct_post_dates_retained": 1
     },
     {
-      "handle": "lewang_teraliq",
+      "handle": "LiLensss",
       "posts": [
         {
-          "id": "2116764393069502531",
-          "created_at": "2026-11-01T05:28:53+00:00",
-          "last_seen": "2026-11-01T06:10:13.911348+00:00",
-          "category_hint": "財經"
+          "id": "2117372122448466093",
+          "created_at": "2026-11-02T21:43:47+00:00",
+          "last_seen": "2026-11-03T01:02:03.512399+00:00",
+          "category_hint": "AI 安全／私隱與合規"
         },
         {
-          "id": "2116677910027452796",
-          "created_at": "2026-10-31T23:45:14+00:00",
-          "last_seen": "2026-11-01T06:10:13.911348+00:00",
-          "category_hint": "AI 安全／私隱與合規"
+          "id": "2117358751934283918",
+          "created_at": "2026-11-02T20:50:39+00:00",
+          "last_seen": "2026-11-03T01:02:03.512399+00:00",
+          "category_hint": "本地 AI／部署與推理"
         }
       ],
       "status": "unreviewed",
       "distinct_posts_retained": 2,
-      "distinct_post_dates_retained": 2
+      "distinct_post_dates_retained": 1
     },
     {
       "handle": "lunkertw",
@@ -1492,6 +1703,26 @@
       "distinct_post_dates_retained": 1
     },
     {
+      "handle": "NFT_Chen",
+      "posts": [
+        {
+          "id": "2117284788621221925",
+          "created_at": "2026-11-02T15:56:45+00:00",
+          "last_seen": "2026-11-03T01:02:03.512399+00:00",
+          "category_hint": "本地 AI／部署與推理"
+        },
+        {
+          "id": "2117173073715908992",
+          "created_at": "2026-11-02T08:32:50+00:00",
+          "last_seen": "2026-11-03T01:02:03.512399+00:00",
+          "category_hint": "OpenClaw／Agent 生態"
+        }
+      ],
+      "status": "unreviewed",
+      "distinct_posts_retained": 2,
+      "distinct_post_dates_retained": 1
+    },
+    {
       "handle": "pick_fin",
       "posts": [
         {
@@ -1510,6 +1741,26 @@
       "status": "unreviewed",
       "distinct_posts_retained": 2,
       "distinct_post_dates_retained": 1
+    },
+    {
+      "handle": "re_viewinglife",
+      "posts": [
+        {
+          "id": "2117412210884374963",
+          "created_at": "2026-11-03T00:23:05+00:00",
+          "last_seen": "2026-11-03T01:02:03.512399+00:00",
+          "category_hint": "財經"
+        },
+        {
+          "id": "2117269560449552396",
+          "created_at": "2026-11-02T14:56:14+00:00",
+          "last_seen": "2026-11-03T01:02:03.512399+00:00",
+          "category_hint": "AI 安全／私隱與合規"
+        }
+      ],
+      "status": "unreviewed",
+      "distinct_posts_retained": 2,
+      "distinct_post_dates_retained": 2
     },
     {
       "handle": "RealAlexJones",
@@ -1732,6 +1983,26 @@
       "distinct_post_dates_retained": 1
     },
     {
+      "handle": "zhou1492987",
+      "posts": [
+        {
+          "id": "2117378894932344871",
+          "created_at": "2026-11-02T22:10:42+00:00",
+          "last_seen": "2026-11-03T01:02:03.512399+00:00",
+          "category_hint": "財經"
+        },
+        {
+          "id": "2117263214316761329",
+          "created_at": "2026-11-02T14:31:01+00:00",
+          "last_seen": "2026-11-03T01:02:03.512399+00:00",
+          "category_hint": "財經"
+        }
+      ],
+      "status": "unreviewed",
+      "distinct_posts_retained": 2,
+      "distinct_post_dates_retained": 1
+    },
+    {
       "handle": "004be5L8KODiLTc",
       "posts": [
         {
@@ -1907,6 +2178,20 @@
           "created_at": "2026-11-01T21:12:43+00:00",
           "last_seen": "2026-11-01T22:06:29.530053+00:00",
           "category_hint": "財經"
+        }
+      ],
+      "status": "unreviewed",
+      "distinct_posts_retained": 1,
+      "distinct_post_dates_retained": 1
+    },
+    {
+      "handle": "666X777crossI",
+      "posts": [
+        {
+          "id": "2117418055643070820",
+          "created_at": "2026-11-03T00:46:18+00:00",
+          "last_seen": "2026-11-03T01:02:03.512399+00:00",
+          "category_hint": "環境／能源與公共安全"
         }
       ],
       "status": "unreviewed",
@@ -2124,6 +2409,34 @@
       "distinct_post_dates_retained": 1
     },
     {
+      "handle": "ai_for_success",
+      "posts": [
+        {
+          "id": "2117085567813054967",
+          "created_at": "2026-11-02T02:45:07+00:00",
+          "last_seen": "2026-11-03T01:02:03.512399+00:00",
+          "category_hint": "OpenClaw／Agent 生態"
+        }
+      ],
+      "status": "unreviewed",
+      "distinct_posts_retained": 1,
+      "distinct_post_dates_retained": 1
+    },
+    {
+      "handle": "AI_Whisper_X",
+      "posts": [
+        {
+          "id": "2117251283572928646",
+          "created_at": "2026-11-02T13:43:37+00:00",
+          "last_seen": "2026-11-03T01:02:03.512399+00:00",
+          "category_hint": "本地 AI／部署與推理"
+        }
+      ],
+      "status": "unreviewed",
+      "distinct_posts_retained": 1,
+      "distinct_post_dates_retained": 1
+    },
+    {
       "handle": "aibitc",
       "posts": [
         {
@@ -2180,6 +2493,20 @@
       "distinct_post_dates_retained": 1
     },
     {
+      "handle": "Alfred3o3",
+      "posts": [
+        {
+          "id": "2117417502456365521",
+          "created_at": "2026-11-03T00:44:06+00:00",
+          "last_seen": "2026-11-03T01:02:03.512399+00:00",
+          "category_hint": "AI 安全／私隱與合規"
+        }
+      ],
+      "status": "unreviewed",
+      "distinct_posts_retained": 1,
+      "distinct_post_dates_retained": 1
+    },
+    {
       "handle": "AlicanKiraz0",
       "posts": [
         {
@@ -2215,146 +2542,6 @@
           "created_at": "2026-11-01T22:40:52+00:00",
           "last_seen": "2026-11-02T06:09:17.473238+00:00",
           "category_hint": "科學／醫療與健康"
-        }
-      ],
-      "status": "unreviewed",
-      "distinct_posts_retained": 1,
-      "distinct_post_dates_retained": 1
-    },
-    {
-      "handle": "AndrewSignalZ",
-      "posts": [
-        {
-          "id": "2117065136884297810",
-          "created_at": "2026-11-02T01:23:56+00:00",
-          "last_seen": "2026-11-02T06:09:17.473238+00:00",
-          "category_hint": "算力／晶片與硬件"
-        }
-      ],
-      "status": "unreviewed",
-      "distinct_posts_retained": 1,
-      "distinct_post_dates_retained": 1
-    },
-    {
-      "handle": "andyz8818576155",
-      "posts": [
-        {
-          "id": "2117048064817209689",
-          "created_at": "2026-11-02T00:16:06+00:00",
-          "last_seen": "2026-11-02T15:59:26.687692+00:00",
-          "category_hint": "AI 安全／私隱與合規"
-        }
-      ],
-      "status": "unreviewed",
-      "distinct_posts_retained": 1,
-      "distinct_post_dates_retained": 1
-    },
-    {
-      "handle": "AnikaCodes",
-      "posts": [
-        {
-          "id": "2116752307702349964",
-          "created_at": "2026-11-01T04:40:52+00:00",
-          "last_seen": "2026-11-01T06:10:13.911348+00:00",
-          "category_hint": "AI 模型與研究"
-        }
-      ],
-      "status": "unreviewed",
-      "distinct_posts_retained": 1,
-      "distinct_post_dates_retained": 1
-    },
-    {
-      "handle": "AnthonyWidodo_",
-      "posts": [
-        {
-          "id": "2116908509388521525",
-          "created_at": "2026-11-01T15:01:33+00:00",
-          "last_seen": "2026-11-01T22:06:29.530053+00:00",
-          "category_hint": "財經"
-        }
-      ],
-      "status": "unreviewed",
-      "distinct_posts_retained": 1,
-      "distinct_post_dates_retained": 1
-    },
-    {
-      "handle": "anytutorai",
-      "posts": [
-        {
-          "id": "2116911710632386793",
-          "created_at": "2026-11-01T15:14:16+00:00",
-          "last_seen": "2026-11-02T15:59:26.687692+00:00",
-          "category_hint": "科學／醫療與健康"
-        }
-      ],
-      "status": "unreviewed",
-      "distinct_posts_retained": 1,
-      "distinct_post_dates_retained": 1
-    },
-    {
-      "handle": "AppWombAI",
-      "posts": [
-        {
-          "id": "2117004636888453513",
-          "created_at": "2026-11-01T21:23:32+00:00",
-          "last_seen": "2026-11-01T22:06:29.530053+00:00",
-          "category_hint": "環境／能源與公共安全"
-        }
-      ],
-      "status": "unreviewed",
-      "distinct_posts_retained": 1,
-      "distinct_post_dates_retained": 1
-    },
-    {
-      "handle": "Apurv35904761",
-      "posts": [
-        {
-          "id": "2117135614860832797",
-          "created_at": "2026-11-02T06:03:59+00:00",
-          "last_seen": "2026-11-02T06:09:17.473238+00:00",
-          "category_hint": "科學／醫療與健康"
-        }
-      ],
-      "status": "unreviewed",
-      "distinct_posts_retained": 1,
-      "distinct_post_dates_retained": 1
-    },
-    {
-      "handle": "aruneiq",
-      "posts": [
-        {
-          "id": "2116920873621860718",
-          "created_at": "2026-11-01T15:50:41+00:00",
-          "last_seen": "2026-11-01T22:06:29.530053+00:00",
-          "category_hint": "開發者工具"
-        }
-      ],
-      "status": "unreviewed",
-      "distinct_posts_retained": 1,
-      "distinct_post_dates_retained": 1
-    },
-    {
-      "handle": "ASEANReview",
-      "posts": [
-        {
-          "id": "2116774448116474329",
-          "created_at": "2026-11-01T06:08:50+00:00",
-          "last_seen": "2026-11-01T06:10:13.911348+00:00",
-          "category_hint": "AI 安全／私隱與合規"
-        }
-      ],
-      "status": "unreviewed",
-      "distinct_posts_retained": 1,
-      "distinct_post_dates_retained": 1
-    },
-    {
-      "handle": "AthinaKech36429",
-      "posts": [
-        {
-          "id": "2116887427667091854",
-          "created_at": "2026-11-01T13:37:47+00:00",
-          "last_seen": "2026-11-01T22:06:29.530053+00:00",
-          "category_hint": "財經"
         }
       ],
       "status": "unreviewed",
