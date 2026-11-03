@@ -1,64 +1,75 @@
-name: Collect X sources
+name: Check X digest template
 
 on:
   workflow_dispatch:
-  schedule:
-    - cron: '17 */6 * * *'
+    inputs:
+      collect:
+        description: 'Opt in to ephemeral collection with private configuration (no upload or commit)'
+        type: boolean
+        required: true
+        default: false
+  pull_request:
   push:
     branches: [main]
     paths:
       - '.github/workflows/collect.yml'
       - 'scripts/**'
+      - 'examples/**'
       - 'requirements.txt'
 
 permissions:
   contents: read
 
 concurrency:
-  group: x-source-collector
+  group: x-digest-template-${{ github.ref }}
   cancel-in-progress: true
 
 jobs:
-  collect:
+  check:
     runs-on: ubuntu-latest
     timeout-minutes: 20
-    permissions:
-      contents: write
     steps:
       - uses: actions/checkout@v4
         with:
-          ref: main
+          persist-credentials: false
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
           cache: pip
       - name: Install the pinned read-only source CLI
         run: python -m pip install -r requirements.txt
-      - name: Check selection and collection behavior without credentials
+      - name: Test without credentials
         env:
           PYTHONDONTWRITEBYTECODE: '1'
+        run: python -m unittest discover -s scripts -p 'test_*.py'
+      - name: Load explicit private source configuration
+        if: github.event_name == 'workflow_dispatch' && inputs.collect
+        env:
+          DIGEST_SOURCE_POOL_JSON: ${{ secrets.DIGEST_SOURCE_POOL_JSON }}
         run: |
-          python scripts/test_selection.py
-          python scripts/test_snapshot.py
-          python scripts/test_official_sources.py
-      - name: Verify login and gather real X sources
+          python - <<'PY'
+          import json, os
+          from pathlib import Path
+          value = os.environ.get('DIGEST_SOURCE_POOL_JSON')
+          if not value:
+              raise SystemExit('private_source_pool_unconfigured')
+          config = json.loads(value)
+          root = Path('private')
+          root.mkdir(mode=0o700, exist_ok=True)
+          path = root / 'source_pool.json'
+          path.write_text(json.dumps(config), encoding='utf-8')
+          path.chmod(0o600)
+          PY
+      - name: Gather real X sources on private runner disk only
+        if: github.event_name == 'workflow_dispatch' && inputs.collect
         env:
           TWITTER_AUTH_TOKEN: ${{ secrets.TWITTER_AUTH_TOKEN }}
           TWITTER_CT0: ${{ secrets.TWITTER_CT0 }}
-        run: python scripts/gather.py --n 50 --user-n 12 --out-dir /tmp/x-digest-raw-${{ github.run_id }}-${{ github.run_attempt }}
-      - name: Prefilter candidates and retain full evidence
+        run: python scripts/gather.py --source-pool private/source_pool.json --n 50 --user-n 12 --out-dir /tmp/x-digest-raw-${{ github.run_id }}-${{ github.run_attempt }} > private/collection.log
+      - name: Build ephemeral evidence (never commit or upload)
+        if: github.event_name == 'workflow_dispatch' && inputs.collect
         run: |
-          python scripts/prefilter.py /tmp/x-digest-raw-${{ github.run_id }}-${{ github.run_attempt }} -o work/candidates.jsonl --hours 26 --limit 450
+          python scripts/prefilter.py /tmp/x-digest-raw-${{ github.run_id }}-${{ github.run_attempt }} --source-pool private/source_pool.json -o work/candidates.jsonl --hours 26 --limit 450
           python scripts/official_sources.py --output work/official-sources.json
           python scripts/snapshot.py --official work/official-sources.json --raw /tmp/x-digest-raw-${{ github.run_id }}-${{ github.run_attempt }} --candidates work/candidates.jsonl --output data/latest.json
-          python scripts/source_health.py --snapshot data/latest.json --output data/source_health.json
-      - name: Save the private source snapshot
-        run: |
-          git config user.name 'github-actions[bot]'
-          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add data/latest.json data/source_health.json
-          if ! git diff --cached --quiet; then
-            git commit -m 'Refresh verified X source snapshot'
-            git push origin HEAD:main
-          fi
-
+          python scripts/source_health.py --snapshot data/latest.json --source-pool private/source_pool.json --output data/source_health.json

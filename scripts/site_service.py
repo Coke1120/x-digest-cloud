@@ -1,10 +1,24 @@
-"""Call this exact Site with protected writer access from hidden stdin."""
+"""Call a metadata-verified Site with protected writer access from hidden stdin."""
 import json
 import sys
 import urllib.request
 import urllib.error
+from urllib.parse import urlsplit
 
-ORIGINS = {'https://leo-x-daily.howailok1120jp2.chatgpt.site', 'https://news.hwl-hk.com'}
+def validate_origin(origin, allowed_origins):
+    """The trusted caller supplies this allowlist from fresh Site metadata."""
+    if not isinstance(allowed_origins, list) or not 1 <= len(allowed_origins) <= 8:
+        raise ValueError('invalid_service_access')
+    for item in allowed_origins:
+        if not isinstance(item, str):
+            raise ValueError('invalid_service_access')
+        parsed = urlsplit(item)
+        if (parsed.scheme != 'https' or not parsed.hostname or
+                parsed.netloc != parsed.hostname or parsed.path or
+                parsed.query or parsed.fragment or parsed.geturl() != item):
+            raise ValueError('invalid_service_access')
+    if origin not in allowed_origins:
+        raise ValueError('invalid_service_access')
 
 class NoRedirect(urllib.request.HTTPRedirectHandler):
     def redirect_request(self, req, fp, code, msg, headers, newurl):
@@ -24,7 +38,8 @@ def main():
     finally:
         if settings is not None:
             termios.tcsetattr(sys.stdin.fileno(), termios.TCSANOW, settings)
-    if value.get('origin') not in ORIGINS or not isinstance(value.get('token'), str) or not value['token']:
+    validate_origin(value.get('origin'), value.get('allowed_origins'))
+    if not isinstance(value.get('token'), str) or not value['token']:
         raise ValueError('invalid_service_access')
     operation = value.get('operation', 'mcp')
     if operation == 'status':

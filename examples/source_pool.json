@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "revision": "2026-10-08-12-categories",
+  "revision": "example-not-reviewed",
   "max_account_calls": 14,
   "account_review_days": 60,
   "topics": {
@@ -79,339 +79,243 @@
   },
   "accounts": [
     {
-      "handle": "OpenAI",
+      "handle": "sample_source00",
       "topic": "models",
-      "role": "official",
+      "role": "community",
       "core": true,
-      "status": "active",
-      "reviewed_at": "2026-10-03",
+      "status": "paused",
+      "reviewed_at": "2000-01-01",
       "verification": {
-        "kind": "existing_curated_source",
-        "url": "https://github.com/Coke1120/x-digest-cloud/blob/dc2b90019e49a9c0aaa409fd2acb4af92cefd78f/scripts/gather.py"
+        "kind": "primary_profile_link",
+        "url": "https://example.org/source-0"
       }
     },
     {
-      "handle": "AnthropicAI",
-      "topic": "models",
-      "role": "official",
-      "core": true,
-      "status": "active",
-      "reviewed_at": "2026-10-03",
-      "verification": {
-        "kind": "existing_curated_source",
-        "url": "https://github.com/Coke1120/x-digest-cloud/blob/dc2b90019e49a9c0aaa409fd2acb4af92cefd78f/scripts/gather.py"
-      }
-    },
-    {
-      "handle": "deepseek_ai",
-      "topic": "models",
-      "role": "official",
-      "core": true,
-      "status": "active",
-      "reviewed_at": "2026-10-03",
-      "verification": {
-        "kind": "existing_curated_source",
-        "url": "https://github.com/Coke1120/x-digest-cloud/blob/dc2b90019e49a9c0aaa409fd2acb4af92cefd78f/scripts/gather.py"
-      }
-    },
-    {
-      "handle": "openclaw",
+      "handle": "sample_source01",
       "topic": "agents",
-      "role": "official",
+      "role": "community",
       "core": true,
-      "status": "active",
-      "reviewed_at": "2026-10-03",
+      "status": "paused",
+      "reviewed_at": "2000-01-01",
       "verification": {
-        "kind": "existing_curated_source",
-        "url": "https://github.com/Coke1120/x-digest-cloud/blob/dc2b90019e49a9c0aaa409fd2acb4af92cefd78f/scripts/gather.py"
+        "kind": "primary_profile_link",
+        "url": "https://example.org/source-1"
       }
     },
     {
-      "handle": "sama",
-      "topic": "models",
-      "role": "commentator",
-      "core": false,
-      "status": "active",
-      "reviewed_at": "2026-10-03",
+      "handle": "sample_source02",
+      "topic": "tools",
+      "role": "community",
+      "core": true,
+      "status": "paused",
+      "reviewed_at": "2000-01-01",
       "verification": {
-        "kind": "existing_curated_source",
-        "url": "https://github.com/Coke1120/x-digest-cloud/blob/dc2b90019e49a9c0aaa409fd2acb4af92cefd78f/scripts/gather.py"
+        "kind": "primary_profile_link",
+        "url": "https://example.org/source-2"
       }
     },
     {
-      "handle": "steipete",
-      "topic": "agents",
-      "role": "maintainer",
-      "core": false,
-      "status": "active",
-      "reviewed_at": "2026-10-03",
-      "verification": {
-        "kind": "existing_curated_source",
-        "url": "https://github.com/Coke1120/x-digest-cloud/blob/dc2b90019e49a9c0aaa409fd2acb4af92cefd78f/scripts/gather.py"
-      }
-    },
-    {
-      "handle": "emollick",
-      "topic": "models",
-      "role": "researcher",
-      "core": false,
-      "status": "active",
-      "reviewed_at": "2026-10-03",
-      "verification": {
-        "kind": "existing_curated_source",
-        "url": "https://github.com/Coke1120/x-digest-cloud/blob/dc2b90019e49a9c0aaa409fd2acb4af92cefd78f/scripts/gather.py"
-      }
-    },
-    {
-      "handle": "dotey",
-      "topic": "models",
-      "role": "commentator",
-      "core": false,
-      "status": "active",
-      "reviewed_at": "2026-10-03",
-      "verification": {
-        "kind": "existing_curated_source",
-        "url": "https://github.com/Coke1120/x-digest-cloud/blob/dc2b90019e49a9c0aaa409fd2acb4af92cefd78f/scripts/gather.py"
-      }
-    },
-    {
-      "handle": "simonw",
+      "handle": "sample_source03",
       "topic": "local",
-      "role": "maintainer",
-      "core": false,
-      "status": "active",
-      "reviewed_at": "2026-10-03",
+      "role": "community",
+      "core": true,
+      "status": "paused",
+      "reviewed_at": "2000-01-01",
       "verification": {
-        "kind": "existing_curated_source",
-        "url": "https://github.com/Coke1120/x-digest-cloud/blob/dc2b90019e49a9c0aaa409fd2acb4af92cefd78f/scripts/gather.py"
+        "kind": "primary_profile_link",
+        "url": "https://example.org/source-3"
       }
     },
     {
-      "handle": "lidangzzz",
+      "handle": "sample_source04",
+      "topic": "security",
+      "role": "community",
+      "core": false,
+      "status": "paused",
+      "reviewed_at": "2000-01-01",
+      "verification": {
+        "kind": "primary_profile_link",
+        "url": "https://example.org/source-4"
+      }
+    },
+    {
+      "handle": "sample_source05",
+      "topic": "hardware",
+      "role": "community",
+      "core": false,
+      "status": "paused",
+      "reviewed_at": "2000-01-01",
+      "verification": {
+        "kind": "primary_profile_link",
+        "url": "https://example.org/source-5"
+      }
+    },
+    {
+      "handle": "sample_source06",
+      "topic": "industry",
+      "role": "community",
+      "core": false,
+      "status": "paused",
+      "reviewed_at": "2000-01-01",
+      "verification": {
+        "kind": "primary_profile_link",
+        "url": "https://example.org/source-6"
+      }
+    },
+    {
+      "handle": "sample_source07",
+      "topic": "finance",
+      "role": "community",
+      "core": false,
+      "status": "paused",
+      "reviewed_at": "2000-01-01",
+      "verification": {
+        "kind": "primary_profile_link",
+        "url": "https://example.org/source-7"
+      }
+    },
+    {
+      "handle": "sample_source08",
+      "topic": "hk_region",
+      "role": "community",
+      "core": false,
+      "status": "paused",
+      "reviewed_at": "2000-01-01",
+      "verification": {
+        "kind": "primary_profile_link",
+        "url": "https://example.org/source-8"
+      }
+    },
+    {
+      "handle": "sample_source09",
+      "topic": "world",
+      "role": "community",
+      "core": false,
+      "status": "paused",
+      "reviewed_at": "2000-01-01",
+      "verification": {
+        "kind": "primary_profile_link",
+        "url": "https://example.org/source-9"
+      }
+    },
+    {
+      "handle": "sample_source10",
+      "topic": "science_health",
+      "role": "community",
+      "core": false,
+      "status": "paused",
+      "reviewed_at": "2000-01-01",
+      "verification": {
+        "kind": "primary_profile_link",
+        "url": "https://example.org/source-10"
+      }
+    },
+    {
+      "handle": "sample_source11",
+      "topic": "environment_safety",
+      "role": "community",
+      "core": false,
+      "status": "paused",
+      "reviewed_at": "2000-01-01",
+      "verification": {
+        "kind": "primary_profile_link",
+        "url": "https://example.org/source-11"
+      }
+    },
+    {
+      "handle": "sample_source12",
       "topic": "models",
       "role": "community",
       "core": false,
-      "status": "active",
-      "reviewed_at": "2026-10-03",
-      "verification": {
-        "kind": "existing_curated_source",
-        "url": "https://github.com/Coke1120/x-digest-cloud/blob/dc2b90019e49a9c0aaa409fd2acb4af92cefd78f/scripts/gather.py"
-      }
-    },
-    {
-      "handle": "levelsio",
-      "topic": "finance",
-      "role": "practitioner",
-      "core": false,
-      "status": "active",
-      "reviewed_at": "2026-10-03",
-      "verification": {
-        "kind": "existing_curated_source",
-        "url": "https://github.com/Coke1120/x-digest-cloud/blob/dc2b90019e49a9c0aaa409fd2acb4af92cefd78f/scripts/gather.py"
-      }
-    },
-    {
-      "handle": "unsafemut",
-      "topic": "tools",
-      "role": "maintainer",
-      "core": false,
-      "status": "active",
-      "reviewed_at": "2026-10-03",
-      "verification": {
-        "kind": "existing_curated_source",
-        "url": "https://github.com/Coke1120/x-digest-cloud/blob/dc2b90019e49a9c0aaa409fd2acb4af92cefd78f/scripts/gather.py"
-      }
-    },
-    {
-      "handle": "sydneyrunkle",
-      "topic": "tools",
-      "role": "practitioner",
-      "core": false,
-      "status": "active",
-      "reviewed_at": "2026-10-03",
-      "verification": {
-        "kind": "existing_curated_source",
-        "url": "https://github.com/Coke1120/x-digest-cloud/blob/dc2b90019e49a9c0aaa409fd2acb4af92cefd78f/scripts/gather.py"
-      }
-    },
-    {
-      "handle": "unitygames",
-      "topic": "tools",
-      "role": "official",
-      "core": false,
-      "status": "active",
-      "reviewed_at": "2026-10-03",
-      "verification": {
-        "kind": "existing_curated_source",
-        "url": "https://github.com/Coke1120/x-digest-cloud/blob/dc2b90019e49a9c0aaa409fd2acb4af92cefd78f/scripts/gather.py"
-      }
-    },
-    {
-      "handle": "awnihannun",
-      "topic": "local",
-      "role": "researcher",
-      "core": false,
-      "status": "active",
-      "reviewed_at": "2026-10-03",
+      "status": "paused",
+      "reviewed_at": "2000-01-01",
       "verification": {
         "kind": "primary_profile_link",
-        "url": "https://github.com/awni"
+        "url": "https://example.org/source-12"
       }
     },
     {
-      "handle": "ggerganov",
-      "topic": "local",
-      "role": "maintainer",
-      "core": false,
-      "status": "active",
-      "reviewed_at": "2026-10-03",
-      "verification": {
-        "kind": "primary_profile_link",
-        "url": "https://github.com/ggerganov"
-      }
-    },
-    {
-      "handle": "Prince_Canuma",
-      "topic": "local",
-      "role": "maintainer",
-      "core": false,
-      "status": "active",
-      "reviewed_at": "2026-10-03",
-      "verification": {
-        "kind": "primary_profile_link",
-        "url": "https://github.com/Blaizzy"
-      }
-    },
-    {
-      "handle": "vllm_project",
-      "topic": "local",
-      "role": "official",
-      "core": false,
-      "status": "active",
-      "reviewed_at": "2026-10-03",
-      "verification": {
-        "kind": "primary_profile_link",
-        "url": "https://vllm.ai/"
-      }
-    },
-    {
-      "handle": "NousResearch",
+      "handle": "sample_source13",
       "topic": "agents",
-      "role": "official",
+      "role": "community",
       "core": false,
-      "status": "active",
-      "reviewed_at": "2026-10-03",
+      "status": "paused",
+      "reviewed_at": "2000-01-01",
       "verification": {
         "kind": "primary_profile_link",
-        "url": "https://nousresearch.com/"
+        "url": "https://example.org/source-13"
       }
     },
     {
-      "handle": "huggingface",
-      "topic": "models",
-      "role": "official",
-      "core": false,
-      "status": "active",
-      "reviewed_at": "2026-10-03",
-      "verification": {
-        "kind": "primary_profile_link",
-        "url": "https://huggingface.co/"
-      }
-    },
-    {
-      "handle": "cursor_ai",
+      "handle": "sample_source14",
       "topic": "tools",
-      "role": "official",
+      "role": "community",
       "core": false,
-      "status": "active",
-      "reviewed_at": "2026-10-03",
+      "status": "paused",
+      "reviewed_at": "2000-01-01",
       "verification": {
         "kind": "primary_profile_link",
-        "url": "https://cursor.com/"
+        "url": "https://example.org/source-14"
       }
     },
     {
-      "handle": "Docker",
-      "topic": "tools",
-      "role": "official",
+      "handle": "sample_source15",
+      "topic": "local",
+      "role": "community",
       "core": false,
-      "status": "active",
-      "reviewed_at": "2026-10-03",
+      "status": "paused",
+      "reviewed_at": "2000-01-01",
       "verification": {
         "kind": "primary_profile_link",
-        "url": "https://www.docker.com/"
+        "url": "https://example.org/source-15"
       }
     },
     {
-      "handle": "supabase",
+      "handle": "sample_source16",
+      "topic": "security",
+      "role": "community",
+      "core": false,
+      "status": "paused",
+      "reviewed_at": "2000-01-01",
+      "verification": {
+        "kind": "primary_profile_link",
+        "url": "https://example.org/source-16"
+      }
+    },
+    {
+      "handle": "sample_source17",
+      "topic": "hardware",
+      "role": "community",
+      "core": false,
+      "status": "paused",
+      "reviewed_at": "2000-01-01",
+      "verification": {
+        "kind": "primary_profile_link",
+        "url": "https://example.org/source-17"
+      }
+    },
+    {
+      "handle": "sample_source18",
       "topic": "industry",
-      "role": "official",
+      "role": "community",
       "core": false,
-      "status": "active",
-      "reviewed_at": "2026-10-03",
+      "status": "paused",
+      "reviewed_at": "2000-01-01",
       "verification": {
         "kind": "primary_profile_link",
-        "url": "https://supabase.com/"
+        "url": "https://example.org/source-18"
       }
     },
     {
-      "handle": "Cloudflare",
-      "topic": "industry",
-      "role": "official",
-      "core": false,
-      "status": "active",
-      "reviewed_at": "2026-10-03",
-      "verification": {
-        "kind": "primary_profile_link",
-        "url": "https://www.cloudflare.com/"
-      }
-    },
-    {
-      "handle": "Vercel",
-      "topic": "industry",
-      "role": "official",
-      "core": false,
-      "status": "active",
-      "reviewed_at": "2026-10-03",
-      "verification": {
-        "kind": "primary_profile_link",
-        "url": "https://vercel.com/"
-      }
-    },
-    {
-      "handle": "NVIDIA",
+      "handle": "sample_source19",
       "topic": "finance",
-      "role": "official",
+      "role": "community",
       "core": false,
-      "status": "active",
-      "reviewed_at": "2026-10-03",
+      "status": "paused",
+      "reviewed_at": "2000-01-01",
       "verification": {
         "kind": "primary_profile_link",
-        "url": "https://www.nvidia.com/en-us/"
-      }
-    },
-    {
-      "handle": "AMD",
-      "topic": "finance",
-      "role": "official",
-      "core": false,
-      "status": "active",
-      "reviewed_at": "2026-10-03",
-      "verification": {
-        "kind": "primary_profile_link",
-        "url": "https://www.amd.com/en.html"
-      }
-    },
-    {
-      "handle": "stripe",
-      "topic": "finance",
-      "role": "official",
-      "core": false,
-      "status": "active",
-      "reviewed_at": "2026-10-03",
-      "verification": {
-        "kind": "primary_profile_link",
-        "url": "https://stripe.com/"
+        "url": "https://example.org/source-19"
       }
     }
   ]

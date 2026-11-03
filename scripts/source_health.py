@@ -3,6 +3,7 @@ import argparse
 from collections import Counter
 from datetime import timedelta
 import json
+import os
 from pathlib import Path
 import re
 from prefilter import CATEGORIES, _parse_ts
@@ -13,9 +14,11 @@ MAX_SOURCES = 100
 MAX_POSTS = 20
 
 
-def build(snapshot, previous, pool):
-    if (snapshot.get('schema_version') != 1 or
-            snapshot.get('source_repository') != 'Coke1120/x-digest-cloud' or
+def build(snapshot, previous, pool, source_repository=None):
+    repository = source_repository or os.environ.get('GITHUB_REPOSITORY', '')
+    if (not re.fullmatch(r'[A-Za-z0-9][A-Za-z0-9_.-]*/[A-Za-z0-9][A-Za-z0-9_.-]*', repository) or
+            snapshot.get('schema_version') != 1 or
+            snapshot.get('source_repository') != repository or
             snapshot.get('coverage', {}).get('ok') is not True or not snapshot.get('records')):
         raise ValueError('invalid_health_snapshot')
     now = _parse_ts(snapshot.get('collected_at', ''))
@@ -97,11 +100,12 @@ def build(snapshot, previous, pool):
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('--snapshot', type=Path, required=True)
+    parser.add_argument('--source-repository', default=os.environ.get('GITHUB_REPOSITORY'))
     parser.add_argument('--output', type=Path, required=True)
     parser.add_argument('--source-pool', type=Path, default=CONFIG)
     args = parser.parse_args()
     previous = json.loads(args.output.read_text()) if args.output.exists() else {}
-    result = build(json.loads(args.snapshot.read_text()), previous, load_pool(args.source_pool))
+    result = build(json.loads(args.snapshot.read_text()), previous, load_pool(args.source_pool), args.source_repository)
     args.output.parent.mkdir(parents=True, exist_ok=True)
     temporary = args.output.with_suffix('.tmp')
     temporary.write_text(json.dumps(result, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')

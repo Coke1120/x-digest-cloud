@@ -1,4 +1,4 @@
-"""Save bounded full source records for the private hourly editorial task."""
+"""Save bounded full evidence for a privately configured editorial task."""
 import argparse
 from datetime import datetime, timezone, timedelta
 import json
@@ -21,7 +21,10 @@ def collection_id(run_id, run_attempt=1):
     return run_id + str(attempt).zfill(4)
 
 
-def build(raw_dir, candidates, run_id, run_attempt=1, official=None):
+def build(raw_dir, candidates, run_id, run_attempt=1, official=None, source_repository=None):
+    repository = source_repository or os.environ.get('GITHUB_REPOSITORY', '')
+    if not re.fullmatch(r'[A-Za-z0-9][A-Za-z0-9_.-]*/[A-Za-z0-9][A-Za-z0-9_.-]*', repository):
+        raise ValueError('invalid_source_repository')
     summary = json.loads((raw_dir / '_gather_summary.json').read_text())
     if summary.get('ok') is not True:
         raise ValueError('collection_not_successful')
@@ -62,7 +65,7 @@ def build(raw_dir, candidates, run_id, run_attempt=1, official=None):
     result = {'schema_version': 1, 'run_id': collection_id(run_id, run_attempt),
               'github_run_id': str(run_id), 'github_run_attempt': int(run_attempt),
               'collected_at': now.isoformat(),
-              'source_repository': 'Coke1120/x-digest-cloud', 'coverage': summary,
+              'source_repository': repository, 'coverage': summary,
               'records': records[:450]}
     if official is not None:
         feeds = json.loads(official.read_text(encoding='utf-8'))
@@ -95,12 +98,13 @@ def build(raw_dir, candidates, run_id, run_attempt=1, official=None):
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('--official', type=Path)
+    parser.add_argument('--source-repository', default=os.environ.get('GITHUB_REPOSITORY'))
     parser.add_argument('--raw', required=True, type=Path)
     parser.add_argument('--candidates', required=True, type=Path)
     parser.add_argument('--output', required=True, type=Path)
     args = parser.parse_args()
     result = build(args.raw, args.candidates, os.environ.get('GITHUB_RUN_ID', 'manual'),
-                   os.environ.get('GITHUB_RUN_ATTEMPT', '1'), args.official)
+                   os.environ.get('GITHUB_RUN_ATTEMPT', '1'), args.official, args.source_repository)
     args.output.parent.mkdir(parents=True, exist_ok=True)
     temporary = args.output.with_suffix('.tmp')
     temporary.write_text(json.dumps(result, ensure_ascii=False, indent=2) + '\n')

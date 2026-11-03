@@ -6,7 +6,7 @@ from pathlib import Path
 from urllib.parse import urlsplit
 from zoneinfo import ZoneInfo
 
-CONFIG = Path(__file__).with_name('source_pool.json')
+CONFIG = Path(__file__).resolve().parents[1] / 'private' / 'source_pool.json'
 TOPICS = ('models', 'agents', 'tools', 'local', 'security', 'hardware', 'industry', 'finance', 'hk_region', 'world', 'science_health', 'environment_safety')
 ROLES = {'official', 'maintainer', 'researcher', 'practitioner', 'commentator', 'community'}
 

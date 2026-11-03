@@ -1,5 +1,11 @@
 __pycache__/
 .venv/
 work/
-*.pyc
+data/
+private/
 .env
+.env.*
+!.env.example
+*.pyc
+editorial/selection-pattern-review.json
+*-NOTES.md

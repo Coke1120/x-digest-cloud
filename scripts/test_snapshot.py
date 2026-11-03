@@ -4,7 +4,11 @@ import json
 from pathlib import Path
 import tempfile
 import unittest
-from snapshot import build, collection_id
+from snapshot import build as build_snapshot, collection_id
+
+
+def build(*args, **kwargs):
+    return build_snapshot(*args, source_repository='example/x-digest-cloud', **kwargs)
 from recovery import decide
 
 
@@ -36,6 +40,16 @@ class SnapshotTests(unittest.TestCase):
             (raw/'_prefilter_diagnostics.json').write_text(json.dumps({'semantic_reviewed': True}))
             with self.assertRaisesRegex(ValueError, 'invalid_selection_diagnostics'):
                 build(raw, path, 'offline-test')
+
+    def test_repository_identity_is_explicit_and_rejected_when_missing(self):
+        from unittest.mock import patch
+        with patch.dict('os.environ', {}, clear=True):
+            with self.assertRaisesRegex(ValueError, 'invalid_source_repository'):
+                build_snapshot(Path('.'), Path('absent.jsonl'), 'offline-test')
+        for invalid in ('', 'not-a-repository', '../repo', 'owner/repo/extra'):
+            with patch.dict('os.environ', {}, clear=True):
+                with self.assertRaisesRegex(ValueError, 'invalid_source_repository'):
+                    build_snapshot(Path('.'), Path('absent.jsonl'), 'offline-test', source_repository=invalid)
 
     def test_rerun_identity_is_distinct_stable_and_numeric(self):
         original = '37103577428'

@@ -10,7 +10,21 @@ from gather import plan
 from prefilter import select_candidates, selection_report
 from source_pool import load_pool, rotation, account_hints, active_accounts
 import copy
-from source_health import build as health
+from source_health import build as build_health
+
+EXAMPLE_POOL = Path(__file__).resolve().parents[1] / 'examples' / 'source_pool.json'
+
+
+def fixture_pool():
+    pool = load_pool(EXAMPLE_POOL)
+    for account in pool['accounts']:
+        account['status'] = 'active'
+        account['reviewed_at'] = '2026-10-03'
+    return pool
+
+
+def health(snapshot, previous, pool):
+    return build_health(snapshot, previous, pool, source_repository='example/x-digest-cloud')
 
 NOW = datetime.now(timezone.utc)
 def row(number, handle, text, likes=0, views=0, age=1):
@@ -83,14 +97,14 @@ class SelectionTests(unittest.TestCase):
         with tempfile.TemporaryDirectory() as directory:
             root=Path(directory);tweet={'id':'1980000000000000001','author':{'screenName':'builder','name':'Builder'},'text':'Released an LLM tool on GitHub, with latency 20 ms.','createdAtISO':NOW.isoformat(),'isRetweet':False,'metrics':{'views':100}}
             for name in ['search-top-00.json','search-latest-00.json']:(root/name).write_text(json.dumps({'data':[tweet]}))
-            result=subprocess.run([sys.executable,str(Path(__file__).with_name('prefilter.py')),str(root),'-o',str(root/'out.jsonl')],capture_output=True,text=True,check=True)
+            result=subprocess.run([sys.executable,str(Path(__file__).with_name('prefilter.py')),str(root),'-o',str(root/'out.jsonl'),'--source-pool',str(EXAMPLE_POOL)],capture_output=True,text=True,check=True)
             output=json.loads((root/'out.jsonl').read_text())
             self.assertEqual(output['sources'],['search-latest-00.json','search-top-00.json'])
             self.assertEqual(json.loads(result.stdout)['distinct_authors'],1)
 
     def test_collection_plan_has_both_orders_and_only_read_commands(self):
         fixed=datetime(2026,10,3,tzinfo=timezone.utc)
-        jobs=plan('2026-10-01',12,4,now=fixed,rotation_hour=0)
+        jobs=plan('2026-10-01',12,4,pool=fixture_pool(),now=fixed,rotation_hour=0)
         searches=[command for _,command in jobs if command[0]=='search']
         self.assertEqual(len(jobs),40);self.assertEqual(len(searches),24)
         self.assertEqual(len([c for _,c in jobs if c[0]=='user-posts']),14)
@@ -99,7 +113,7 @@ class SelectionTests(unittest.TestCase):
         self.assertTrue(all(command[0] in {'search','feed','user-posts'} for _,command in jobs))
 
     def test_rotation_reaches_every_source_and_every_query_without_duplicates(self):
-        pool=load_pool();fixed=datetime(2026,10,3,tzinfo=timezone.utc)
+        pool=fixture_pool();fixed=datetime(2026,10,3,tzinfo=timezone.utc)
         handles,queries=set(),set()
         plans=[rotation(pool,fixed,h) for h in range(24)]
         for selected in plans:
@@ -135,11 +149,11 @@ class SelectionTests(unittest.TestCase):
         self.assertEqual(set(output[0]['measurement_context_hint']),{'hardware','model_or_precision','method'})
 
     def test_account_role_does_not_make_a_claim_first_party_or_boost_its_score(self):
-        base=row(1,'Docker','Released an AI tool on GitHub, benchmark 20 ms.')
+        base=row(1,'sample_source04','Released an AI tool on GitHub, benchmark 20 ms.')
         plain=select_candidates([base],1,set(),NOW)[0]
         tagged=select_candidates([base],1,set(),NOW,hints=account_hints(load_pool()))[0]
         self.assertEqual(plain['selection_score'],tagged['selection_score'])
-        self.assertEqual(tagged['source_role_hint'],'official')
+        self.assertEqual(tagged['source_role_hint'],'community')
         self.assertFalse(tagged['first_person_hint'])
 
     def test_private_funnel_and_proposals_do_not_assert_semantic_review(self):
@@ -151,7 +165,7 @@ class SelectionTests(unittest.TestCase):
         self.assertEqual(report['source_proposals'][0]['status'],'unreviewed')
 
     def test_health_retains_distinct_evidence_without_automatic_promotion(self):
-        base = {'schema_version': 1, 'source_repository': 'Coke1120/x-digest-cloud',
+        base = {'schema_version': 1, 'source_repository': 'example/x-digest-cloud',
                 'run_id': 'offline-test-1', 'collected_at': NOW.isoformat(), 'coverage': {'ok': True},
                 'records': [{'id': '1980000000000000001', 'author': {'screenName': 'newbuilder'},
                              'text': 'Offline fixture, never publish.', 'createdAtISO': (NOW-timedelta(hours=2)).isoformat(),
